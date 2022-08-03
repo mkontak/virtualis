@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 1.3
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">1.3</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1">this is my long string</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        [base64 mime encoded serialized .NET Framework object]
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        [base64 mime encoded string representing a byte array form of the .NET Framework object]
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used forserialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="m_contextMenu.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_contextMenu.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </data>
+  <data name="m_contextMenu.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_contextMenu.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>No</value>
+  </data>
+  <data name="m_menuItemSaveElementAs.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_menuItemSaveElementAs.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_menuItemSaveElementAs.Enabled" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_menuItemSaveElementAs.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="m_menuItemSaveElementAs.ShowShortcut" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_menuItemSaveElementAs.Text">
+    <value>Save Elements As</value>
+  </data>
+  <data name="m_menuItemSaveElementAs.Visible" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_menuItemSaveElementAsTxt.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_menuItemSaveElementAsTxt.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_menuItemSaveElementAsTxt.Enabled" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_menuItemSaveElementAsTxt.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="m_menuItemSaveElementAsTxt.ShowShortcut" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_menuItemSaveElementAsTxt.Text">
+    <value>Txt</value>
+  </data>
+  <data name="m_menuItemSaveElementAsTxt.Visible" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_menuItemSaveElementAsXml.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_menuItemSaveElementAsXml.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_menuItemSaveElementAsXml.Enabled" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_menuItemSaveElementAsXml.Shortcut" type="System.Windows.Forms.Shortcut, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="m_menuItemSaveElementAsXml.ShowShortcut" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_menuItemSaveElementAsXml.Text">
+    <value>Xml</value>
+  </data>
+  <data name="m_menuItemSaveElementAsXml.Visible" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_toolTip.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_toolTip.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>148, 17</value>
+  </data>
+  <data name="m_toolTip.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>8, 8</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_groupBoxDicomInformation.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_groupBoxDicomInformation.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Left</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_groupBoxDicomInformation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.Enabled" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.Font" type="System.Drawing.Font, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 8</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>518, 565</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.TabIndex" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>6</value>
+  </data>
+  <data name="m_groupBoxDicomInformation.Text">
+    <value />
+  </data>
+  <data name="m_groupBoxDicomInformation.ToolTip">
+    <value />
+  </data>
+  <data name="m_groupBoxDicomInformation.Visible" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;m_groupBoxDicomInformation.Name">
+    <value>m_groupBoxDicomInformation</value>
+  </data>
+  <data name="&gt;&gt;m_groupBoxDicomInformation.Type">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_groupBoxDicomInformation.Parent">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_groupBoxDicomInformation.ZOrder">
+    <value>0</value>
+  </data>
+  <data name="m_dataGridDicom.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="m_dataGridDicom.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_dataGridDicom.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_dataGridDicom.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_dataGridDicom.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_dataGridDicom.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Left</value>
+  </data>
+  <data name="m_dataGridDicom.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_dataGridDicom.CaptionFont" type="System.Drawing.Font, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>Impact, 11.25pt, style=Bold</value>
+  </data>
+  <data name="m_dataGridDicom.CaptionText">
+    <value>Dicom Tags</value>
+  </data>
+  <data name="m_dataGridDicom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="m_dataGridDicom.Enabled" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_dataGridDicom.Font" type="System.Drawing.Font, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="m_dataGridDicom.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="m_dataGridDicom.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>3, 88</value>
+  </data>
+  <data name="m_dataGridDicom.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="m_dataGridDicom.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>512, 472</value>
+  </data>
+  <data name="m_dataGridDicom.TabIndex" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>8</value>
+  </data>
+  <data name="m_dataGridDicom.ToolTip">
+    <value />
+  </data>
+  <data name="m_dataGridDicom.Visible" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;m_dataGridDicom.Name">
+    <value>m_dataGridDicom</value>
+  </data>
+  <data name="&gt;&gt;m_dataGridDicom.Type">
+    <value>System.Windows.Forms.DataGrid, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_dataGridDicom.Parent">
+    <value>m_groupBoxDicomInformation</value>
+  </data>
+  <data name="&gt;&gt;m_dataGridDicom.ZOrder">
+    <value>0</value>
+  </data>
+  <data name="m_buttonSearch.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="m_buttonSearch.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_buttonSearch.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_buttonSearch.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_buttonSearch.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_buttonSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Right</value>
+  </data>
+  <data name="m_buttonSearch.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_buttonSearch.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="m_buttonSearch.Enabled" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_buttonSearch.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Standard</value>
+  </data>
+  <data name="m_buttonSearch.Font" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_buttonSearch.Image" type="System.Drawing.Bitmap, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAlJJREFUOE+NkltI
+        k3EYh7+RCm5ooB1QDKxBMPKimyIQsxZZphWsKycuOl3UVW0G5dhi1bJopeUR0bBsGhU2K2StJDdtTQuN
+        UgkPy6YSTVZUFlTU0/ctiEYufOG9+B9+z3uUCVHMZrPhcrmEtLQ0AX4KweC0UFhYKGi1Wlk0TfheEiqV
+        SsrLztHmcFBXU0ldRRm3Wy6TuWYVBoOBqABJaDaZeNrtxnb1Dt5BP+2BHyy9AcnVQWq7/CxMmj87ICUl
+        hUsNDfT4fOx/ECLwlT+mbgelCNnoBKvpCAqFIhJitVrZkpvL1OQElv7vGJ9B2RBcfwV7uiHPBSsdcKr3
+        C153hySOBGwWxV73Q26OfaZqFGpFP/8STCLoYA9o3bCtAwaf93PP6fwXINU+PjpM4yQ43kCb6PYAXByB
+        o/1wqA9G/K+xN13BbDYTHx8fmYFGo8FkLKHvG3hnwPcR7k5DkwjsegfjLx5RUVFFc3NzOLrUr4hJ1NfX
+        hx8C/jGC7z/w9tMMw4Eputwerp0twl1bgLe1VPwTi1qtnn0K6enpqFQq3J2dtIiRLpSXc/xkKdUmDa1n
+        8hm6VcyG1UqOWU5E34PExMRwJhIoIyMDuSKBJckx2E1ZOCsLmLhvITVlUXSAVJfH40Gv16PT6fhdmozT
+        e5djt+TQaFxLzeFsBFns/yF/N2jX7n1kr4ijeLuCAzmx6PPjSE0QeOzrnRtkYGAwXJZxhxzDVjklGnn4
+        3NP7ZG4AKZukBYtZliywXiUgjxG3UDZv7mIJEAqF2JSbR2bWOop0OyPEvwB57ofkElq19QAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="m_buttonSearch.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="m_buttonSearch.ImageIndex" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>-1</value>
+  </data>
+  <data name="m_buttonSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>NoControl</value>
+  </data>
+  <data name="m_buttonSearch.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>480, 57</value>
+  </data>
+  <data name="m_buttonSearch.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="m_buttonSearch.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>32, 23</value>
+  </data>
+  <data name="m_buttonSearch.TabIndex" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>7</value>
+  </data>
+  <data name="m_buttonSearch.Text">
+    <value />
+  </data>
+  <data name="m_buttonSearch.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="m_buttonSearch.ToolTip">
+    <value>Click  to perform search</value>
+  </data>
+  <data name="m_buttonSearch.Visible" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;m_buttonSearch.Name">
+    <value>m_buttonSearch</value>
+  </data>
+  <data name="&gt;&gt;m_buttonSearch.Type">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_buttonSearch.Parent">
+    <value>m_groupBoxDicomInformation</value>
+  </data>
+  <data name="&gt;&gt;m_buttonSearch.ZOrder">
+    <value>1</value>
+  </data>
+  <data name="m_textBoxSearch.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_textBoxSearch.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="m_textBoxSearch.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_textBoxSearch.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_textBoxSearch.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_textBoxSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="m_textBoxSearch.AutoSize" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_textBoxSearch.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_textBoxSearch.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="m_textBoxSearch.Enabled" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_textBoxSearch.Font" type="System.Drawing.Font, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="m_textBoxSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="m_textBoxSearch.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>64, 57</value>
+  </data>
+  <data name="m_textBoxSearch.MaxLength" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>32767</value>
+  </data>
+  <data name="m_textBoxSearch.Multiline" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="m_textBoxSearch.PasswordChar" type="System.Char, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_textBoxSearch.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="m_textBoxSearch.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="m_textBoxSearch.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>408, 20</value>
+  </data>
+  <data name="m_textBoxSearch.TabIndex" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>6</value>
+  </data>
+  <data name="m_textBoxSearch.Text">
+    <value />
+  </data>
+  <data name="m_textBoxSearch.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Left</value>
+  </data>
+  <data name="m_textBoxSearch.ToolTip">
+    <value>Enter the desctription to search for</value>
+  </data>
+  <data name="m_textBoxSearch.Visible" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_textBoxSearch.WordWrap" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;m_textBoxSearch.Name">
+    <value>m_textBoxSearch</value>
+  </data>
+  <data name="&gt;&gt;m_textBoxSearch.Type">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_textBoxSearch.Parent">
+    <value>m_groupBoxDicomInformation</value>
+  </data>
+  <data name="&gt;&gt;m_textBoxSearch.ZOrder">
+    <value>2</value>
+  </data>
+  <data name="m_labelSearch.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="m_labelSearch.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_labelSearch.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_labelSearch.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_labelSearch.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_labelSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Left</value>
+  </data>
+  <data name="m_labelSearch.AutoSize" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="m_labelSearch.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="m_labelSearch.Enabled" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_labelSearch.Font" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_labelSearch.Image" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_labelSearch.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="m_labelSearch.ImageIndex" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>-1</value>
+  </data>
+  <data name="m_labelSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>NoControl</value>
+  </data>
+  <data name="m_labelSearch.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>8, 56</value>
+  </data>
+  <data name="m_labelSearch.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="m_labelSearch.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>56, 23</value>
+  </data>
+  <data name="m_labelSearch.TabIndex" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>5</value>
+  </data>
+  <data name="m_labelSearch.Text">
+    <value>Search:</value>
+  </data>
+  <data name="m_labelSearch.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="m_labelSearch.ToolTip">
+    <value />
+  </data>
+  <data name="m_labelSearch.Visible" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;m_labelSearch.Name">
+    <value>m_labelSearch</value>
+  </data>
+  <data name="&gt;&gt;m_labelSearch.Type">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_labelSearch.Parent">
+    <value>m_groupBoxDicomInformation</value>
+  </data>
+  <data name="&gt;&gt;m_labelSearch.ZOrder">
+    <value>3</value>
+  </data>
+  <data name="m_comboBoxGroups.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_comboBoxGroups.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="m_comboBoxGroups.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_comboBoxGroups.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_comboBoxGroups.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_comboBoxGroups.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Left</value>
+  </data>
+  <data name="m_comboBoxGroups.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_comboBoxGroups.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="m_comboBoxGroups.Enabled" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_comboBoxGroups.Font" type="System.Drawing.Font, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="m_comboBoxGroups.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="m_comboBoxGroups.IntegralHeight" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_comboBoxGroups.ItemHeight" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>13</value>
+  </data>
+  <data name="m_comboBoxGroups.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>64, 24</value>
+  </data>
+  <data name="m_comboBoxGroups.MaxDropDownItems" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>8</value>
+  </data>
+  <data name="m_comboBoxGroups.MaxLength" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>0</value>
+  </data>
+  <data name="m_comboBoxGroups.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="m_comboBoxGroups.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>448, 21</value>
+  </data>
+  <data name="m_comboBoxGroups.TabIndex" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>4</value>
+  </data>
+  <data name="m_comboBoxGroups.Text">
+    <value />
+  </data>
+  <data name="m_comboBoxGroups.ToolTip">
+    <value>Select the DICOM group to display</value>
+  </data>
+  <data name="m_comboBoxGroups.Visible" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;m_comboBoxGroups.Name">
+    <value>m_comboBoxGroups</value>
+  </data>
+  <data name="&gt;&gt;m_comboBoxGroups.Type">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_comboBoxGroups.Parent">
+    <value>m_groupBoxDicomInformation</value>
+  </data>
+  <data name="&gt;&gt;m_comboBoxGroups.ZOrder">
+    <value>4</value>
+  </data>
+  <data name="m_labelDicomGroup.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="m_labelDicomGroup.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_labelDicomGroup.Modifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="m_labelDicomGroup.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_labelDicomGroup.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_labelDicomGroup.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Top, Left</value>
+  </data>
+  <data name="m_labelDicomGroup.AutoSize" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="m_labelDicomGroup.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>None</value>
+  </data>
+  <data name="m_labelDicomGroup.Enabled" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="m_labelDicomGroup.Font" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_labelDicomGroup.Image" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="m_labelDicomGroup.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="m_labelDicomGroup.ImageIndex" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>-1</value>
+  </data>
+  <data name="m_labelDicomGroup.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>NoControl</value>
+  </data>
+  <data name="m_labelDicomGroup.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>8, 24</value>
+  </data>
+  <data name="m_labelDicomGroup.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="m_labelDicomGroup.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>72, 23</value>
+  </data>
+  <data name="m_labelDicomGroup.TabIndex" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>3</value>
+  </data>
+  <data name="m_labelDicomGroup.Text">
+    <value>Group:</value>
+  </data>
+  <data name="m_labelDicomGroup.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="m_labelDicomGroup.ToolTip">
+    <value />
+  </data>
+  <data name="m_labelDicomGroup.Visible" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;m_labelDicomGroup.Name">
+    <value>m_labelDicomGroup</value>
+  </data>
+  <data name="&gt;&gt;m_labelDicomGroup.Type">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_labelDicomGroup.Parent">
+    <value>m_groupBoxDicomInformation</value>
+  </data>
+  <data name="&gt;&gt;m_labelDicomGroup.ZOrder">
+    <value>5</value>
+  </data>
+  <data name="$this.TrayLargeIcon" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="$this.Locked" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="$this.SnapToGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="$this.DrawGrid" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="$this.TrayHeight" type="System.Int32, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>80</value>
+  </data>
+  <data name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>(Default)</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="$this.Name">
+    <value>DicomInformationControl</value>
+  </data>
+  <data name="$this.DefaultModifiers" type="System.CodeDom.MemberAttributes, System, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Private</value>
+  </data>
+  <data name="$this.GridSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>8, 8</value>
+  </data>
+  <data name="$this.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="$this.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </data>
+  <data name="$this.AutoScrollMargin" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.AutoScrollMinSize" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value />
+  </data>
+  <data name="$this.Enabled" type="System.Boolean, mscorlib, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="$this.Location" type="System.Drawing.Point, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Inherit</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>520, 576</value>
+  </data>
+  <data name="$this.ToolTip">
+    <value />
+  </data>
+  <data name="&gt;&gt;m_contextMenu.Name">
+    <value>m_contextMenu</value>
+  </data>
+  <data name="&gt;&gt;m_contextMenu.Type">
+    <value>System.Windows.Forms.ContextMenu, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSaveElementAs.Name">
+    <value>m_menuItemSaveElementAs</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSaveElementAs.Type">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSaveElementAsTxt.Name">
+    <value>m_menuItemSaveElementAsTxt</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSaveElementAsTxt.Type">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSaveElementAsXml.Name">
+    <value>m_menuItemSaveElementAsXml</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSaveElementAsXml.Type">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_toolTip.Name">
+    <value>m_toolTip</value>
+  </data>
+  <data name="&gt;&gt;m_toolTip.Type">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name">
+    <value>DicomInformationControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

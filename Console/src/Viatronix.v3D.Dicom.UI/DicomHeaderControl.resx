@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="m_contextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="m_menuItemSearch.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="m_menuItemSeperator1.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="m_menuItemShowPrivateGroups.Text" xml:space="preserve">
+    <value>Show Private Groups</value>
+  </data>
+  <data name="m_menuItemSeperator.Text" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="m_menuItemSaveElementAsTxt.Text" xml:space="preserve">
+    <value>Txt</value>
+  </data>
+  <data name="m_menuItemSaveElementAsXml.Text" xml:space="preserve">
+    <value>Xml</value>
+  </data>
+  <data name="m_menuItemSaveElementAs.Text" xml:space="preserve">
+    <value>Save Elements As</value>
+  </data>
+  <metadata name="m_toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>148, 17</value>
+  </metadata>
+  <data name="m_columnHeaderElement.Text" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="m_columnHeaderElement.Width" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="m_columnHeaderDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="m_columnHeaderDescription.Width" type="System.Int32, mscorlib">
+    <value>246</value>
+  </data>
+  <data name="m_columnHeaderType.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="m_columnHeaderType.Width" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="m_columnHeaderValue.Text" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="m_columnHeaderValue.Width" type="System.Int32, mscorlib">
+    <value>215</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="m_treeListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="m_treeListView.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="m_treeListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="m_treeListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>520, 576</value>
+  </data>
+  <metadata name="m_imageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>249, 22</value>
+  </metadata>
+  <data name="m_imageList.ImageSize" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="m_treeListView.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="m_treeListView.ToolTip" xml:space="preserve">
+    <value>Dicom Header Information</value>
+  </data>
+  <data name="&gt;&gt;m_treeListView.Name" xml:space="preserve">
+    <value>m_treeListView</value>
+  </data>
+  <data name="&gt;&gt;m_treeListView.Type" xml:space="preserve">
+    <value>Viatronix.UI.TreeListView, Viatronix.UI, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;m_treeListView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;m_treeListView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>520, 576</value>
+  </data>
+  <data name="&gt;&gt;m_contextMenu.Name" xml:space="preserve">
+    <value>m_contextMenu</value>
+  </data>
+  <data name="&gt;&gt;m_contextMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenu, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSearch.Name" xml:space="preserve">
+    <value>m_menuItemSearch</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSeperator1.Name" xml:space="preserve">
+    <value>m_menuItemSeperator1</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSeperator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemShowPrivateGroups.Name" xml:space="preserve">
+    <value>m_menuItemShowPrivateGroups</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemShowPrivateGroups.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSeperator.Name" xml:space="preserve">
+    <value>m_menuItemSeperator</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSeperator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSaveElementAs.Name" xml:space="preserve">
+    <value>m_menuItemSaveElementAs</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSaveElementAs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSaveElementAsTxt.Name" xml:space="preserve">
+    <value>m_menuItemSaveElementAsTxt</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSaveElementAsTxt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSaveElementAsXml.Name" xml:space="preserve">
+    <value>m_menuItemSaveElementAsXml</value>
+  </data>
+  <data name="&gt;&gt;m_menuItemSaveElementAsXml.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_toolTip.Name" xml:space="preserve">
+    <value>m_toolTip</value>
+  </data>
+  <data name="&gt;&gt;m_toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_columnHeaderElement.Name" xml:space="preserve">
+    <value>m_columnHeaderElement</value>
+  </data>
+  <data name="&gt;&gt;m_columnHeaderElement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_columnHeaderDescription.Name" xml:space="preserve">
+    <value>m_columnHeaderDescription</value>
+  </data>
+  <data name="&gt;&gt;m_columnHeaderDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_columnHeaderType.Name" xml:space="preserve">
+    <value>m_columnHeaderType</value>
+  </data>
+  <data name="&gt;&gt;m_columnHeaderType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_columnHeaderValue.Name" xml:space="preserve">
+    <value>m_columnHeaderValue</value>
+  </data>
+  <data name="&gt;&gt;m_columnHeaderValue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;m_imageList.Name" xml:space="preserve">
+    <value>m_imageList</value>
+  </data>
+  <data name="&gt;&gt;m_imageList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DicomHeaderControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

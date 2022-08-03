@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D687626E-D79F-4814-B0C7-7C4BC6EB65E5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>res\Viatron.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Console</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Viatronix.Console</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>Viatronix.Console.Startup</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath Condition=" '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Console\</OutputPath>
+    <OutputPath Condition=" '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Console\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\bin\vxConsole\Viatronix.v3D.Console.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath Condition=" '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Console\</OutputPath>
+    <OutputPath Condition=" '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Console\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType />
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\bin\vxConsole\Viatronix.v3D.Console.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <DefineConstants>
+    </DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Console.exe.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Dicom\Viatronix.Dicom.vcxproj">
+      <Project>{28b5550d-628e-4755-afa6-32a9f04951f9}</Project>
+      <Name>Viatronix.Dicom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Encryption\Viatronix.Encryption.csproj">
+      <Project>{ed270924-47cb-4d77-88c3-3f89cadc3491}</Project>
+      <Name>Viatronix.Encryption</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Enterprise\Viatronix.Enterprise.csproj">
+      <Project>{2c472d70-da70-47d7-bbd4-af591fae0d1d}</Project>
+      <Name>Viatronix.Enterprise</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Logging\Viatronix.Logging.vcxproj">
+      <Project>{eb450513-1b40-4e1f-9d8b-25266dc31efb}</Project>
+      <Name>Viatronix.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.UI\Viatronix.UI.csproj">
+      <Project>{cf5f8616-ea2b-4ac9-a514-e46cd6c5595e}</Project>
+      <Name>Viatronix.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Utilities\Viatronix.Utilities.vcxproj">
+      <Project>{1767198d-43d8-44e0-908f-28db9a16a8e6}</Project>
+      <Name>Viatronix.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\V3DViewer\src\Viatronix.Reporting\Viatronix.Reporting.csproj">
+      <Project>{f943d3cd-38ba-4f38-9be9-4f21effd4d24}</Project>
+      <Name>Viatronix.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.Console.Core\Viatronix.Console.Core.csproj">
+      <Project>{14478e29-6ba1-495f-b9c6-848aea880fc6}</Project>
+      <Name>Viatronix.Console.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.v3D.Dicom.UI\Viatronix.v3D.Dicom.UI.csproj">
+      <Project>{ad69634e-2d8e-4393-b7a3-2a055602bb6d}</Project>
+      <Name>Viatronix.v3D.Dicom.UI</Name>
+    </ProjectReference>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WPF45">
+      <HintPath>..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.Extras.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF45">
+      <HintPath>..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libraries\microsoft\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\..\..\Libraries\microsoft\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectListView, Version=2.5.1.13151, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libraries\ui\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Name>System.Runtime.Remoting</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Viatronix.v3D.Interop.PDFlib32">
+      <HintPath>..\..\..\Libraries\pdf\bin\Viatronix.v3D.Interop.PDFlib32.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="misc\RefreshTimer.cs" />
+    <Compile Include="panes\DatabaseSearchPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panes\DatabaseSearchPane.Designer.cs">
+      <DependentUpon>DatabaseSearchPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panes\ScanDateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panes\ScanDateControl.Designer.cs">
+      <DependentUpon>ScanDateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panes\SearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panes\SearchControl.Designer.cs">
+      <DependentUpon>SearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DiskusageMonitorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hotkeys\HotKeyHelp.cs" />
+    <Compile Include="hotkeys\HotKeySearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="hotkeys\HotKeyTogglePanes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="menus\MenuFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="menus\MenuHelp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="menus\SeriesContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="menus\StudyContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="panes\DetailsPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panes\DiskMonitorPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="panes\DiskMonitorPane.Designer.cs">
+      <DependentUpon>DiskMonitorPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="panes\PACSSearchPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\PACSTransferProviderForArchival.cs" />
+    <Compile Include="Transfer\DatabaseTransferProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\DicomServerTransferProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\FileSystemTransferProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\ISessionProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\PACSTransferProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\RemovableMediaTransferProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\RemovableMediaTransferProviderForArchival.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\RemovableMediaTransferProviderForPatient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\ReportTags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferExceptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferProviderDetails.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferProviderSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfer\TransferUtilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\V3DSessionProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transfer\VCSessionProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="views\Browser Plugins\DefaultSessionViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\Browser Plugins\SeriesDetailsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\Browser Plugins\SessionViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\Custom Controls\MessagesColumnHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\ProcessAsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\StatusViewerProcessor\ViewStatusPacs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\StatusViewerProcessor\FormDicomManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\StatusViewerProcessor\ReadOnlyDataGridTextBoxColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="views\StatusViewerProcessor\ViewStatusProcessor.cs" />
+    <Compile Include="views\UMAS\FormUserManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\UMAS\ViewUMAS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\ViewBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="views\ViewGroups.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="DiskusageMonitorControl.resx">
+      <DependentUpon>DiskusageMonitorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panes\DatabaseSearchPane.resx">
+      <DependentUpon>DatabaseSearchPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panes\DetailsPane.resx">
+      <DependentUpon>DetailsPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panes\DiskMonitorPane.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DiskMonitorPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panes\PACSSearchPane.resx">
+      <DependentUpon>PACSSearchPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panes\SearchControl.resx">
+      <DependentUpon>SearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\administrator.ico" />
+    <EmbeddedResource Include="res\administrators.ico" />
+    <EmbeddedResource Include="res\bullet.png" />
+    <EmbeddedResource Include="res\Diary.gif" />
+    <EmbeddedResource Include="res\error.bmp" />
+    <EmbeddedResource Include="res\Information.bmp" />
+    <EmbeddedResource Include="res\logo-ang.png" />
+    <EmbeddedResource Include="res\logo-cs.png" />
+    <EmbeddedResource Include="res\logo-ln.png" />
+    <EmbeddedResource Include="res\logo-vas.png" />
+    <EmbeddedResource Include="res\logo-vc.png" />
+    <EmbeddedResource Include="res\logo-xp.png" />
+    <EmbeddedResource Include="res\movieheader.bmp" />
+    <EmbeddedResource Include="res\operator.ico" />
+    <EmbeddedResource Include="res\operators.ico" />
+    <EmbeddedResource Include="res\physician.ico" />
+    <EmbeddedResource Include="res\physicians.ico" />
+    <EmbeddedResource Include="res\roles.ico" />
+    <EmbeddedResource Include="res\service.ico" />
+    <EmbeddedResource Include="res\services.ico" />
+    <EmbeddedResource Include="res\tempLogo.PNG" />
+    <EmbeddedResource Include="res\toolbar-standard-about.png" />
+    <EmbeddedResource Include="res\toolbar-standard-exit.png" />
+    <EmbeddedResource Include="res\toolbar-standard-help.png" />
+    <EmbeddedResource Include="res\user.ico" />
+    <EmbeddedResource Include="res\users.ico" />
+    <EmbeddedResource Include="res\warning.bmp" />
+    <EmbeddedResource Include="res\warning.png" />
+    <EmbeddedResource Include="Transfer\TransferProgressDialog.resx">
+      <DependentUpon>TransferProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer\TransferProviderSelector.resx">
+      <DependentUpon>TransferProviderSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Browser Plugins\DefaultSessionViewer.resx">
+      <DependentUpon>DefaultSessionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\Browser Plugins\SessionViewer.resx">
+      <DependentUpon>SessionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ProcessAsDialog.resx">
+      <DependentUpon>ProcessAsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\StatusViewerProcessor\ViewStatusPacs.resx">
+      <DependentUpon>ViewStatusPacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\StatusViewerProcessor\FormDicomManagement.resx">
+      <DependentUpon>FormDicomManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\StatusViewerProcessor\ViewStatusProcessor.resx">
+      <DependentUpon>ViewStatusProcessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\UMAS\FormUserManagement.resx">
+      <DependentUpon>FormUserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\UMAS\ViewUMAS.resx">
+      <DependentUpon>ViewUMAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ViewBrowser.resx">
+      <DependentUpon>ViewBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ViewGroups.resx">
+      <DependentUpon>ViewGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Prebuild.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="views\StatusViewerPACS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\pdf-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\receiving.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\processing.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\locked.gif" />
+    <EmbeddedResource Include="res\pending.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\pending.png" />
+    <EmbeddedResource Include="res\processing.png" />
+    <EmbeddedResource Include="res\receiving.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if $(ConfigurationName) == Release $(ProjectDir)..\..\..\Libraries\utilities\Versioning  -c "$(ConfigurationName)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</PreBuildEvent>
+    <PostBuildEvent>echo Post Build
+
+echo - Copying dll's to taget directory
+xcopy /Y /R "$(ProjectDir)..\..\..\Libraries\vx\bin\*.dll" "$(TargetDir)"
+
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

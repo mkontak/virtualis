@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14478E29-6BA1-495F-B9C6-848AEA880FC6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Viatronix.Console</RootNamespace>
+    <AssemblyName>v3dconcore</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;V3D_NO_LICENSING</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x86\Debug\Viatronix.v3D.Console.Core.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x86\Release\Viatronix.v3D.Console.Core.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WPF45">
+      <HintPath>..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.Extras.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF45">
+      <HintPath>..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\SVN\Branch\Codebase\Libraries\microsoft\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\SVN\Branch\Codebase\Libraries\microsoft\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PDFlib_dotnet">
+      <HintPath>..\..\..\Libraries\pdf\bin\PDFlib_dotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="entities\Movie.cs" />
+    <Compile Include="entities\MovieCollection.cs" />
+    <Compile Include="entities\Snapshot.cs" />
+    <Compile Include="entities\SnapshotCollection.cs" />
+    <Compile Include="ImageRedactor\ImagePreviewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImageRedactor\ImageRedactor.cs" />
+    <Compile Include="ImageRedactor\RedactInformation.cs" />
+    <Compile Include="ImageRedactor\RedactorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageRedactor\RedactorViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImageRedactor\Tracker.cs" />
+    <Compile Include="Interfaces\IBrowser.cs" />
+    <Compile Include="Interfaces\ISearchPane.cs" />
+    <Compile Include="Interfaces\ISearchView.cs" />
+    <Compile Include="Interfaces\ISessionDetails.cs" />
+    <Compile Include="Interfaces\ITransferProvider.cs" />
+    <Compile Include="Launching\launchers\CardiacLauncher.cs" />
+    <Compile Include="Launching\launchers\LauncherArgs.cs" />
+    <Compile Include="Launching\rules\CardiacRule.cs" />
+    <Compile Include="Launching\ViewerLauncherComparer.cs" />
+    <Compile Include="Misc\ConsoleState.cs" />
+    <Compile Include="Misc\CoreState.cs" />
+    <Compile Include="Misc\LogicalOp.cs" />
+    <Compile Include="Misc\PacsClient.cs" />
+    <Compile Include="Misc\RelationalOp.cs" />
+    <Compile Include="Misc\SimpleModeRule.cs" />
+    <Compile Include="configuration\SimpleModeRulesConfigSectionHandler.cs" />
+    <Compile Include="ImageRedactor\providers\Exceptions.cs" />
+    <Compile Include="remoting\IConsole.cs" />
+    <Compile Include="remoting\IReport.cs" />
+    <Compile Include="remoting\IViewer.cs" />
+    <Compile Include="remoting\IWindow.cs" />
+    <Compile Include="remoting\RemotingArgs.cs" />
+    <Compile Include="remoting\WindowUtilities.cs" />
+    <Compile Include="transfer\TransferItem.cs" />
+    <Compile Include="UI\FrameConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\Global.cs" />
+    <Compile Include="Interfaces\ILaunchable.cs" />
+    <Compile Include="Interfaces\ISearchable.cs" />
+    <Compile Include="Interfaces\ILaunchRule.cs" />
+    <Compile Include="Interfaces\IViewerLauncher.cs" />
+    <Compile Include="Launching\launchers\Launcher.cs" />
+    <Compile Include="Launching\launchers\V3DReportLauncher.cs" />
+    <Compile Include="Launching\vcData\LaunchException.cs" />
+    <Compile Include="Launching\LaunchManager.cs" />
+    <Compile Include="Launching\rules\FusionRule.cs" />
+    <Compile Include="Launching\rules\LaunchRule.cs" />
+    <Compile Include="Launching\rules\LaunchRuleConfigSectionHandler.cs" />
+    <Compile Include="Launching\rules\PreprocessedRule.cs" />
+    <Compile Include="Launching\rules\VcCADRule.cs" />
+    <Compile Include="Launching\rules\VcRule.cs" />
+    <Compile Include="Launching\rules\VolumeRule.cs" />
+    <Compile Include="Launching\launchers\V3DLauncher.cs" />
+    <Compile Include="Launching\SelectViewerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Launching\launchers\VCLauncher.cs" />
+    <Compile Include="Misc\ConsoleUtils.cs" />
+    <Compile Include="UI\SessionDescriptionbDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ViewerSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Misc\SearchManager.cs" />
+    <Compile Include="UI\UserLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Dicom.Imaging\Viatronix.Dicom.Imaging.vcxproj">
+      <Project>{b56b7e17-153b-4b81-9db7-a28b3e5611d6}</Project>
+      <Name>Viatronix.Dicom.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Dicom\Viatronix.Dicom.vcxproj">
+      <Project>{28b5550d-628e-4755-afa6-32a9f04951f9}</Project>
+      <Name>Viatronix.Dicom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Encryption\Viatronix.Encryption.csproj">
+      <Project>{ed270924-47cb-4d77-88c3-3f89cadc3491}</Project>
+      <Name>Viatronix.Encryption</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Enterprise\Viatronix.Enterprise.csproj">
+      <Project>{2c472d70-da70-47d7-bbd4-af591fae0d1d}</Project>
+      <Name>Viatronix.Enterprise</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Logging\Viatronix.Logging.vcxproj">
+      <Project>{eb450513-1b40-4e1f-9d8b-25266dc31efb}</Project>
+      <Name>Viatronix.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Messaging\Viatronix.Messaging.vcxproj">
+      <Project>{b2a224ad-1b7f-47f6-82f0-21d365058df6}</Project>
+      <Name>Viatronix.Messaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.UI\Viatronix.UI.csproj">
+      <Project>{cf5f8616-ea2b-4ac9-a514-e46cd6c5595e}</Project>
+      <Name>Viatronix.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Utilities\Viatronix.Utilities.vcxproj">
+      <Project>{1767198d-43d8-44e0-908f-28db9a16a8e6}</Project>
+      <Name>Viatronix.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.v3D.Utilities.RemovableMedia\Viatronix.v3D.Utilities.RemovableMedia.vcxproj">
+      <Project>{24ac7b53-7ba2-4dc9-80b0-b9d8c1b78cd1}</Project>
+      <Name>Viatronix.v3D.Utilities.RemovableMedia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Launching\SelectViewerDialog.resx">
+      <DependentUpon>SelectViewerDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ViewerSelector.resx">
+      <DependentUpon>ViewerSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImageRedactor\ImagePreviewer.resx">
+      <DependentUpon>ImagePreviewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageRedactor\RedactorForm.resx">
+      <DependentUpon>RedactorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageRedactor\RedactorViewer.resx">
+      <DependentUpon>RedactorViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\error.png" />
+    <EmbeddedResource Include="res\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImageRedactor\next.jpg" />
+    <EmbeddedResource Include="ImageRedactor\prev.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\movie.png" />
+    <EmbeddedResource Include="UI\SessionDescriptionbDialog.resx">
+      <DependentUpon>SessionDescriptionbDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if $(ConfigurationName) == Release $(ProjectDir)..\..\..\Libraries\utilities\Versioning  -c "$(ConfigurationName)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

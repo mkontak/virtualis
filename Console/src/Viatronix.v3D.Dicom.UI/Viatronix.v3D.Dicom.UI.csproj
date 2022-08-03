@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD69634E-2D8E-4393-B7A3-2A055602BB6D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>v3ddcmui</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Viatronix.v3D.Dicom.UI</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x86\Debug\Viatronix.v3D.Dicom.UI.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType />
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x86\Release\Viatronix.v3D.Dicom.UI.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WPF45">
+      <HintPath>..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.Extras.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF45">
+      <HintPath>..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DicomHeaderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DicomHeaderDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DicomHeaderSearchDialoig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DicomHeaderSearchDialoig.Designer.cs">
+      <DependentUpon>DicomHeaderSearchDialoig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\AutoHidePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Collections\CollectionWithEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Collections\ContentCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Collections\HotZoneCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Collections\ManagerContentCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Collections\MenuCommandCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Collections\StringCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Collections\TabGroupBaseCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Collections\TabPageCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Collections\TargetCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Collections\WindowCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Collections\WindowDetailCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Collections\WizardPageCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Collections\ZoneCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Common\ColorHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Common\ControlHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Common\ConversionHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Common\DebugHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Common\DrawHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Common\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Common\ResourceHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Content.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\BorderForControl\BorderForControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\InertButton\InertButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\ResizeBar\ResizeBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\TabbedGroups\TabbedGroupEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\TabbedGroups\TabbedGroups.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\TabbedGroups\TabGroupBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\TabbedGroups\TabGroupLeaf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\TabbedGroups\TabGroupSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\TabbedGroups\Target.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\TabControl\TabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\TabControl\TabControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\TabControl\TabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\WizardControl\WizardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\WizardControl\WizardControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\WizardControl\WizardPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Definitions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\DockingManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\FloatinglForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\Forms\WizardDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Docking\HotZone.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\HotZoneFloating.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\HotZoneNull.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\HotZoneReposition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\HotZoneSequence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\HotZoneTabbed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Menus\DrawCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Menus\MenuCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Menus\MenuControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Menus\MenuControlDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Menus\PopupMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Redocker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\RedockerContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Restore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\TabStub.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docking\Win32\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Win32\Gdi32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Win32\Structs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Win32\User32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\Window.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\WindowContent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\WindowContentTabbed.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\WindowDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\WindowDetailCaption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Zone.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\ZoneHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Docking\ZoneSequence.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ElementSaveAsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group.cs" />
+    <Compile Include="GroupSettingsSectionHandler.cs" />
+    <Compile Include="PacsSelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="DicomHeaderControl.resx">
+      <DependentUpon>DicomHeaderControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DicomHeaderDialog.resx">
+      <DependentUpon>DicomHeaderDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DicomHeaderSearchDialoig.resx">
+      <DependentUpon>DicomHeaderSearchDialoig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\AutoHidePanel.resx">
+      <DependentUpon>AutoHidePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Controls\BorderForControl\BorderForControl.resx">
+      <DependentUpon>BorderForControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Controls\InertButton\InertButton.resx">
+      <DependentUpon>InertButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Controls\ResizeBar\ResizeBar.resx">
+      <DependentUpon>ResizeBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Controls\TabbedGroups\TabbedGroups.resx">
+      <DependentUpon>TabbedGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Controls\TabControl\TabControl.resx">
+      <DependentUpon>TabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Controls\TabControl\TabPage.resx">
+      <DependentUpon>TabPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Controls\WizardControl\WizardControl.resx">
+      <DependentUpon>WizardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Controls\WizardControl\WizardPage.resx">
+      <DependentUpon>WizardPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\FloatinglForm.resx">
+      <DependentUpon>FloatinglForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Forms\WizardDialog.resx">
+      <DependentUpon>WizardDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Menus\MenuCommand.resx">
+      <DependentUpon>MenuCommand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Menus\MenuControl.bmp" />
+    <EmbeddedResource Include="Docking\Menus\MenuControl.resx">
+      <DependentUpon>MenuControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Resources\ImagesCaptionIDE.bmp" />
+    <EmbeddedResource Include="Docking\Resources\ImagesCaptionPlain.bmp" />
+    <EmbeddedResource Include="Docking\Resources\ImagesMenuControl.bmp" />
+    <EmbeddedResource Include="Docking\Resources\ImagesPopupMenu.bmp" />
+    <EmbeddedResource Include="Docking\Resources\ImagesTabbedGroups.bmp" />
+    <EmbeddedResource Include="Docking\Resources\ImagesTabControl.bmp" />
+    <EmbeddedResource Include="Docking\Resources\TabbedInvalid.cur" />
+    <EmbeddedResource Include="Docking\Resources\TabbedValid.cur" />
+    <EmbeddedResource Include="Docking\Resources\WizardPicture.bmp" />
+    <EmbeddedResource Include="Docking\Window.resx">
+      <DependentUpon>Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\WindowDetail.resx">
+      <DependentUpon>WindowDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\WindowDetailCaption.resx">
+      <DependentUpon>WindowDetailCaption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Zone.resx">
+      <DependentUpon>Zone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElementSaveAsDialog.resx">
+      <DependentUpon>ElementSaveAsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PacsSelectionControl.resx">
+      <DependentUpon>PacsSelectionControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Docking\Controls\InertButton.bmp" />
+    <Content Include="Docking\Controls\TabbedGroups.bmp" />
+    <Content Include="Docking\Controls\TabControl.bmp" />
+    <Content Include="Docking\Controls\WizardControl.bmp" />
+    <Content Include="res\Info.ico" />
+    <Content Include="res\patient.ico" />
+    <Content Include="res\patients.ico" />
+    <Content Include="res\Search.ico" />
+    <Content Include="res\series.ico" />
+    <Content Include="res\study.ico" />
+    <Content Include="res\TXT.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Dicom.Imaging\Viatronix.Dicom.Imaging.vcxproj">
+      <Project>{b56b7e17-153b-4b81-9db7-a28b3e5611d6}</Project>
+      <Name>Viatronix.Dicom.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Dicom\Viatronix.Dicom.vcxproj">
+      <Project>{28b5550d-628e-4755-afa6-32a9f04951f9}</Project>
+      <Name>Viatronix.Dicom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Enterprise\Viatronix.Enterprise.csproj">
+      <Project>{2c472d70-da70-47d7-bbd4-af591fae0d1d}</Project>
+      <Name>Viatronix.Enterprise</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.Logging\Viatronix.Logging.vcxproj">
+      <Project>{eb450513-1b40-4e1f-9d8b-25266dc31efb}</Project>
+      <Name>Viatronix.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\src\v3d\Viatronix.UI\Viatronix.UI.csproj">
+      <Project>{cf5f8616-ea2b-4ac9-a514-e46cd6c5595e}</Project>
+      <Name>Viatronix.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if $(ConfigurationName) == Release $(ProjectDir)..\..\..\Libraries\utilities\Versioning  -c "$(ConfigurationName)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
