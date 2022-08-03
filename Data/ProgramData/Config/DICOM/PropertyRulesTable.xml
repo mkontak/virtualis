@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PropertyRules>
+  <Property name="subtype">
+  
+    <Rule group="0008" field="1030" criteria="VC*" value="VC" />
+    <Rule group="0008" field="1030" criteria="VAS*" value="VAS" />
+    <Rule group="0008" field="1030" criteria="ANG*" value="ANG" />
+    <Rule group="0008" field="1030" criteria="CS*" value="CS" />
+    <Rule group="0008" field="1030" criteria="XP*" value="XP" />
+
+    <Rule group="0008" field="103e" criteria="VC*" value="VC" />
+    <Rule group="0008" field="103e" criteria="VAS*" value="VAS" />
+    <Rule group="0008" field="103e" criteria="ANG*" value="ANG" />
+    <Rule group="0008" field="103e" criteria="CS*" value="CS" />
+    <Rule group="0008" field="103e" criteria="XP*" value="XP" />
+    <Rule group="0008" field="103e" criteria="*%*" value="CAR" />
+
+    <Rule group="0010" field="0010" criteria="*(VC)*" value="VC" />
+    <Rule group="0010" field="0010" criteria="*(VAS)*" value="VAS" />
+    <Rule group="0010" field="0010" criteria="*(ANG)*" value="ANG" />
+    <Rule group="0010" field="0010" criteria="*(CS)*" value="CS" />
+    <Rule group="0010" field="0010" criteria="*(XP)*" value="XP" />
+
+    <Rule group="0018" field="1061" criteria="ECG" value="CS" />
+
+    <Rule group="0018" field="1090" criteria="> 0" value="CS" />
+
+    <Rule creatorId="GEMS_HELIOS_01" group="0045" field="ff33" criteria="*" value="CAR" />
+
+
+  </Property>
+
+  <Property name="phasePercent">
+
+    <Rule creatorId="GEMS_HELIOS_01" group="0045" field="ff33" criteria="*" value="." />
+    
+  </Property>
+
+</PropertyRules>

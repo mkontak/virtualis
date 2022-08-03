@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SeriesIdentifiers>
+  <Series id="Original" type="1" />
+  <Series id="Snapshots" type="2" />
+  <Series id="Report" type="3" />
+  <Series id="Movie" type="4" />
+  <Series id="Session" type="5" />
+  <Series id="Preprocssed" type="6" />
+  <Series id="Cad" type="7" />
+</SeriesIdentifiers>

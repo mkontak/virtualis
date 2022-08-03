@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  ======================================================================================================================================== -->
+<!--                                                                                                                                           -->
+<!--  Allowable Attributes                                                                                                                     -->
+<!--                                                                                                                                           -->
+<!--  explicit_transfer                 (true or false)   Indicates that explicit transfer is used.                                            -->
+<!--  implicit_transfer                 (true or false)   Indicates that implicit transfer is used                                             -->
+<!--  validates_server_prior_to_store   (true or false)   Indicates that the client will send a dicom echo prior to the push/move              -->
+<!--  network_timout                    (Numerical Value) Allows the setting of the read/write timeout                                         -->
+<!--  supports_series_level_query       (true or false)   Indicates that the server does not support a series level query without a study uid  -->
+<!--  supports_get_command              (true or false)   Allows you to specify if the server supports the get command. If false               -->
+<!--                                    the GET/MOVE/SCP implementation is used.                                                               -->
+<!--  blocking_mode			(BLOCKING or NONBLOCKING) Allows the setting of the mode of network operation 			       -->
+<!--  attribute_file                    (File Path)       Allows you to specify a attribute file                                               -->
+<!--                                                                                                                                           -->
+<!--  this is example of how a <host> section is formatted                                		                                       -->
+<!--                                                                                                                                           -->
+<!--  <host>                                                                                                                                   -->
+<!--     name 	  Name of the PACS server that will be used for lookup                                                                         -->
+<!--     server	  TCP/IP hostname or ip address                                                                                                -->
+<!--     aetitle  AE Title of the server                                                                                                       -->
+<!--     port     Port the service is listening on                                                                                             -->
+<!---     services Services the server/port supports                                                                                           -->
+<!--              QUERY        Supports query (C-FIND)                                                                                         -->
+<!--              RETRIEVE	Support retrieve (C-MOVE)                                                                                       -->
+<!--              STORE        Support store (C-STOR)                                                                                          -->
+<!--              ALL          Supports all the above                                                                                          -->
+<!--                                                                                                                                           -->
+<!--                                                                                                                                           -->
+<!-- <host name="GRUMPY" server="Grumpy" aetitle="CONQUEST" port="5678" services="QUERY|RETREIVE|STORE">                                       -->
+<!--   <attributes>                                                                                                                            -->
+<!--    <attribute name="supports_get_command" value="false" />                                                                                -->
+<!--    <attribute name="supports_encapsulated_pdf" value ="false" />                                                                          -->
+<!--    <attribute name="supports_series_level_query" value="true" />                                                                          -->
+<!--   </attributes>                                                                                                                           -->
+<!-- </host>                                                                                                                                   -->
+<!--                                                                                                                                           -->
+<!--  ======================================================================================================================================== -->
+<hosts>
+  <host name="Kodak" server="kodak-pacs" aetitle="kodak-pacsFIR" port="2104" services="QUERY|RETRIEVE|STORE">
+    <attributes>
+      <attribute name="supports_get_command" value="false" />
+      <attribute name="supports_encapsulated_pdf" value ="true" />
+      <attribute name="supports_series_level_query" value="false" />
+    </attributes>
+  </host>
+</hosts>
+

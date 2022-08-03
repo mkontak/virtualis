@@ -1,0 +1,32 @@
+<Anonymization version="1.0">
+  <!--Anonymization Rules -->
+  <Rules>
+    <global>
+      <files>
+        <file pattern="*.ecv,*.mkvl,*.vol,*.cdv" anonymizer="Viatronix.Anonymization.AnonymizerVolume, v3danon" />
+        <file pattern="*.vrx" anonymizer="Viatronix.Anonymization.AnonymizerVrx, v3danon" />
+        <file pattern="*.dcm" anonymizer="Viatronix.Anonymization.AnonymizerDicom, v3danon" />
+        <file pattern="*.jpg,*.png" anonymizer="Viatronix.Anonymization.AnonymizerImage, v3danon" />
+        <file pattern="*.slv,*.pdr,*.sld,*.dif,*.ins,*.wmv,*.avi,*.thr,*.seg,*.wrn,*.uld,*.csi,*.pdv,*.dif,*.scv,*.thv" anonymizer="Viatronix.Anonymization.AnonymizerDummyFile, v3danon" />
+        <file pattern="study.xml"   anonymizer="Viatronix.Anonymization.AnonymizerStudy, v3danon" />
+        <file pattern="series.xml"  anonymizer="Viatronix.Anonymization.AnonymizerSeries, v3danon" />
+        <file pattern="*.txt,*.xml" anonymizer="Viatronix.Anonymization.AnonymizerTextFile, v3danon" />
+      </files>
+      <exclusions>
+
+      </exclusions>
+    </global>
+  
+    <overrides>
+      <series type="pre-proc" subtype="VC" version="1.0" >
+        <files>
+
+        </files>
+        <exclusions>
+
+        </exclusions>
+      </series>
+    </overrides>
+  </Rules>
+</Anonymization>
+ 

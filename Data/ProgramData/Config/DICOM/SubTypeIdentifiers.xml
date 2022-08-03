@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SubTypeIdentifiers>
+  <SubType id="VC" type="1" />
+  <SubType id="AAA" type="2" />
+  <SubType id="CS" type="3" />
+  <SubType id="XP" type="4" />
+  <SubType id="VAS" type="5" />
+  <SubType id="ANGIO" type="6" />
+  <SubType id="LN" type="7" />
+  <SubType id="FN" type="8" />
+</SubTypeIdentifiers>

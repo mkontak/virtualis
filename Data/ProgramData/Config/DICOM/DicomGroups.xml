@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Groups>
+  <Group id="0000" desc="Command Group" />
+  <Group id="0002" desc="Meta File Elements" />
+  <Group id="0004" desc="Directory Structure Information" />
+  <Group id="0008" desc="General Information" />
+  <Group id="0010" desc="Patient Information" />
+  <Group id="0018" desc="Acquisition Information" />
+  <Group id="0020" desc="Relationship Information" />
+  <Group id="0028" desc="Image Presentation Information" />
+  <Group id="0032" desc="Study Information" />
+  <Group id="0038" desc="Admission Information"  />
+  <Group id="0040" desc="Schedule Information" />
+  <Group id="0050" desc="Device Group"  />
+  <Group id="0060" desc="Historgram Group"  />
+  <Group id="5400" desc="Waveform Data Group"  />
+  <Group id="003A" desc="Waveform Group"  />
+  <Group id="2000" desc="Film Session Group"  />
+  <Group id="2010" desc="Film Box Group"  />
+  <Group id="2020" desc="Image Box Group"  />
+  <Group id="2030" desc="Annotation Box Group"  />
+  <Group id="2040" desc="Image Overlay Box Group"  />
+  <Group id="2100" desc="Print Job Group"  />
+  <Group id="2110" desc="Printer Status Group"  />
+  <Group id="4008" desc="Interpretation Group"  />
+  <Group id="50XX" desc="Curve Group"  />
+  <Group id="60XX" desc="Overlay Group"  />
+  <Group id="7FE0" desc="Pixel Group"  />
+
+</Groups>

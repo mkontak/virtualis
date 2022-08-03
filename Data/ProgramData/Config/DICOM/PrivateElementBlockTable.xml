@@ -1,0 +1,26 @@
+<PrivateElementBlocks>
+
+  <PrivateElementBlock group="2221" field="00ff" desc="T_2221_00xx" vr="LO" vm="1" creatorId="VIATRONIX" >
+    <Element group="2221" field="ff10" desc="T_2221_xx10"  vr="ST" vm="1" id="imageType" />
+    <Element group="2221" field="ff12" desc="T_2221_xx12" vr="US" vm="1" id="studyType" />
+    <Element group="2221" field="ff13" desc="T_2221_xx13" vr="ST" vm="1" id="subType" />
+    <Element group="2221" field="ff20" desc="T_2221_xx20" vr="ST" vm="1" id="fileName" />
+    <Element group="2221" field="ff21" desc="T_2221_xx21" vr="ST" vm="1" id="path" />
+    <Element group="2221" field="ff22" desc="T_2221_xx22" vr="LT" vm="1" id="parameters" />
+  </PrivateElementBlock>
+
+  <PrivateElementBlock group="7005" field="00ff" desc="T_7005_00xx" vr="LO" vm="1" creatorId="TOSHIBA_MEC_CT3" >
+    <Element group="7005" field="ff03" desc="T_7005_xx03"  vr="SH" vm="1" id="cardiacRRMeanTime" />
+    <Element group="7005" field="ff04" desc="T_7005_xx04" vr="SH" vm="1" id="cardiacReconPhasePercent" />
+    <Element group="7005" field="ff05" desc="T_7005_xx05" vr="SH" vm="1" id="cardiacReconPhaseMM" />
+    <Element group="7005" field="ff06" desc="T_7005_xx06" vr="SH" vm="1" id="caridacReconMode" />
+  </PrivateElementBlock>
+
+  <PrivateElementBlock group="0045" field="00ff" desc="T_0045_00xx" vr="LO" vm="1" creatorId="GEMS_HELIOS_01" >
+    <Element group="0045" field="ff31" desc="T_0045_xx31" vr="CS" vm="1" id="avgHeartRateForImage" />
+    <Element group="0045" field="ff33" desc="T_0045_xx33" vr="CS" vm="1" id="percentRPeakDelay" />
+    <Element group="0045" field="ff34" desc="T_0045_xx34" vr="CS" vm="1" id="actualPctRPeakDelay" />
+  </PrivateElementBlock>
+
+  
+</PrivateElementBlocks>

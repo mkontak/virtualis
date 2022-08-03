@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <v3d_title/>
+    <script type="text/javascript">
+function OpenDataFile( file )
+{
+ open( file )
+}
+    </script>
+  </head>
+  <body bgcolor="#ffffff">
+    <P align="center">
+      <img border="0" src="../Logo/logo.png" width="300" height="75" align="middle" hspace="0" /></P>
+    <P align="center"></P>
+    <P align="center"></P>
+    <P><STRONG><FONT color="#6600cc">Patient Information</FONT></STRONG></P>
+    <table border="1" width="656" id="table1" height="129">
+      <tr>
+        <td width="138" align="right">
+          <P align="left">Name</P>
+        </td>
+        <td align="left"><v3d_patientInfo property="Name" /></td>
+      </tr>
+      <tr>
+        <td width="138" align="right">
+          <P align="left">Medical ID</P>
+        </td>
+        <td align="left"><v3d_patientInfo property="MedicalId" /></td>
+      </tr>
+      <tr>
+        <td width="138" align="right">
+          <P align="left">Date of Birth</P>
+        </td>
+        <td align="left"><v3d_patientInfo property="Dob" /></td>
+      </tr>
+      <tr>
+        <td width="138" align="right">
+          <P align="left">Gender</P>
+        </td>
+        <td align="left"><v3d_patientInfo property="Gender" /></td>
+      </tr>
+    </table>
+    <p></p>
+    <p><font size="4" color="#6600CC">Disclaimer: The multimedia information contained 
+        herein is for non-diagnostic use only.</font></p>
+    <p><font size="4" color="#6600cc">Study Reports</font></p>
+    <v3d_reportheader />
+  </body>
+</html>

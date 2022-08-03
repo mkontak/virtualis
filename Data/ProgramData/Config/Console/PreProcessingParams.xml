@@ -1,0 +1,63 @@
+<processingParametereters version="1.0">
+  <!---VC Parametereters -->
+  <Parameters id="VC" modality="CT">
+    <Process id="Pipeline">
+      <Parameter name="ElectronicCleansing" displayName="Electronic Cleansing" type="choice" default="Yes" desc="Electrnoic Cleansing">
+        <Values>
+          <Value id="Yes" commandLine="-stage all" />
+          <Value id="No" commandLine="-stage allnoec" />
+        </Values>
+      </Parameter>
+    </Process>
+    <Process id="CAD">
+      <Parameter name="ApplicationId" displayName="CAD" type="choice" default="Medicsight" desc="CAD Preprocessing options.">
+        <Values>
+          <Value id="Medicsight" commandLine="-appid Medicsight.ColonCADPlugin.1" />
+          <Value id="QI" commandLine="-appid QI.CADProcessorPlugin" />
+        </Values>
+      </Parameter>
+    </Process>
+  </Parameters>
+  <Parameters id="VAS" modality="CT">
+    <Process id="Pipeline">
+      <Parameter name="VesselType" displayName="Vessel Type" type="choice" default="Carotid" desc="Vessel type options.">
+        <Values>
+          <Value id="AAA" commandLine="-paraSet aaa" />
+          <Value id="Aorta" commandLine="-paraSet aorta" />
+          <Value id="Brain" commandLine="-paraSet brain" />
+          <Value id="Carotid" commandLine="-paraSet carotid" />
+          <Value id="Circle of Willis" commandLine="-paraSet cow" />
+          <Value id="Coronary" commandLine="-paraSet coronary" />
+          <Value id="Iliac" commandLine="-paraSet iliac" />
+          <Value id="Large Vessel" commandLine="-paraSet largev" />
+          <Value id="Limbs" commandLine="-paraSet limb" />
+          <Value id="Liver" commandLine="-paraSet liver" />
+          <Value id="Medium Vessels" commandLine="-paraSet mediumv" />
+          <Value id="MR Time of Flight" commandLine="-paraSet mrTOF" />
+          <Value id="Pulmonary Arteries" commandLine="-paraSet pa" />
+          <Value id="Pulmonary Trunk" commandLine="-paraSet pt" />
+          <Value id="Renal" commandLine="-paraSet renal" />
+          <Value id="Runoff" commandLine="-paraSet runoff" />
+          <Value id="Smal Vessels" commandLine="-paraSet smallv" />
+          <Value id="X-Ray Angiography" commandLine="-paraSet angiovecon" />
+        </Values>
+      </Parameter>
+      <Parameter name="SegmentHeart" displayName="Segment Heart" type="choice" default="Yes" desc="Isolate the heart away from the ribs">
+        <Values>
+          <Value id="Yes" commandLine="-segment 1" />
+          <Value id="No" commandLine="-segment 0" />
+        </Values>
+      </Parameter>
+    </Process>
+  </Parameters>
+  <Parameters id="LN" modality="CT">
+    <Process id="CAD">
+      <Parameter name="ApplicationId" displayName="CAD" type="choice" default="iCAD" desc="CAD Preprocessing options.">
+        <Values>
+          <Value id="iCAD" value="iCAD.LungCadProcessorPlugin" commandLine="" />
+          <Value id="Medicsight" value="Medicsight.ColonCADPlugin.1" commandLine="" />
+        </Values>
+      </Parameter>
+    </Process>
+  </Parameters>
+</processingParametereters>

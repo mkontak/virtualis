@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Attributes>
+
+  <Attribute name="medium_types">
+    <Values>
+      <Value value="BLUE FILM"/>
+      <Value value="CLEAR FILM"/>
+      <Value value="PAPER"/>
+    </Values>
+  </Attribute>
+
+  <Attribute name="polarities">
+    <Values>
+      <Value value="NORMAL" />
+      <Value value="REVERSE" />
+    </Values>
+  </Attribute>
+
+  <Attribute name="film_destinations" >
+    <Values>
+      <Value value="PROCESSOR"/>
+      <Value value="BIN_[1-30]"/>
+    </Values>
+  </Attribute>
+
+  <Attribute name="orientations" >
+    <Values>
+      <Value value="PORTRAIT"/>
+      <Value value="LANDSCAPE"/>
+    </Values>
+  </Attribute>
+
+  <Attribute name="interpolation_types">
+    <Values>
+      <Value value="NONE"/>
+      <Value value="CUBIC"/>
+      <Value value="BILINEAR"/>
+      <Value value="REPLICATE"/>
+    </Values>
+  </Attribute>
+
+  <Attribute name="smoothing_types">
+    <Values>
+      <Value value="MEDIUM"/>
+      <Value value="SHARP"/>
+      <Value value="SMOOTH"/>
+    </Values>
+  </Attribute>
+
+  <Attribute name="border_densities">
+    <Values>
+      <Value value="BLACK"/>
+      <Value value="WHITE"/>
+    </Values>
+  </Attribute>
+
+  <Attribute name="film_sizes">
+    <Values>
+      <Value value="14IN X 17IN"/>
+      <Value value="8IN X 10IN"/>
+      <Value value="8.5IN X 11IN"/>
+    </Values>
+  </Attribute>
+
+  <Attribute name="empty_image_densities" value="UNSUPPORTED" />
+  <Attribute name="min_density" value="0" />
+  <Attribute name="max_density" value="300" />
+  <Attribute name="max_images_per_row" value="10" />
+  <Attribute name="max_images_per_col" value="10" />
+  <Attribute name="min_dpi" value="1" />
+  <Attribute name="max_dpi" value="300" />
+
+</Attributes>

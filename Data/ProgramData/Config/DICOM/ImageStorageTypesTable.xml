@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageStorageTypeTable>
+  <ImageStorageType uid="1.2.840.10008.5.1.1.29"         desc="HardcopyGrayImgStorage"   />      
+  <ImageStorageType uid="1.2.840.10008.5.1.1.30"         desc="HardcopyColorImgStorage"  />      
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.1"      desc="CrImgStorage" />
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.1.1"    desc="DigiXrayPresImgStorage" />
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.1.1.1"  desc="DigiXrayProcImgStorage" />
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.1.2"    desc="DigiMammoPresImgStorage" />
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.1.2.1"  desc="DigiMammoProcImgStorage" />
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.1.3"    desc="DigiIntraOralPresImgStorage" />
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.1.3.1"  desc="DigiIntraOralProcImgStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.2"      desc="CtImgStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.3"      desc="UsMultiImgRetStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.3.1"    desc="UsMultiImgStorage"  /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.4"      desc="MrImgStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.5"      desc="NmImgRetStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.6"      desc="UsImgRetStorage"  /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.6.1"    desc="UsImgStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.7"      desc="ScImgStorage"  /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.7.1"    desc="MultiSingleBitScImgStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.7.2"    desc="MultiGrayByteScImgStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.7.3"    desc="MultiGrayWordScImgStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.7.4"    desc="MultiTrueColorScImgStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.8"      desc="OvlyStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.9"      desc="CurveStorage"  /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.9.1"    desc="WaveformStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.9.1.1"  desc="TwelveLeadEcgWaveformStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.9.1.2"  desc="GeneralEcgWaveformStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.9.1.3"  desc="AmbulatoryEcgWaveformStorage"  /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.9.2.1"  desc="HemoWaveformStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.9.3.1"  desc="CardiacElectroWaveformStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.9.4.1"  desc="BasicAudioWaveformStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.12.1"   desc="XrayAngioImgStorage"  /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.12.2"   desc="XrayRfImgStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.12.3"   desc="XrayAngioBiPlaneImgStorage"  /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.20"     desc="NmImgStorage"  /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.77.1.1" desc="VlEndoImgStorage"  /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.77.1.2" desc="VlMicroImgStorage"  /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.77.1.3" desc="VlSlideMicroImgStorage"  /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.77.1.4" desc="VlPhotoImgStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.128"    desc="PetImgStorage"  /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.129"    desc="PetCurveStorage" /> 
+  <ImageStorageType uid="1.2.840.10008.5.1.4.1.1.481.1"  desc="RtImgStorage"  /> 
+</ImageStorageTypeTable>

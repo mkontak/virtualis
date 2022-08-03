@@ -1,0 +1,18 @@
+########################################################################################################################
+#                                           ATTRIBUTE FILE
+########################################################################################################################
+medium_types/BLUE FILM/CLEAR FILM/PAPER
+polarities/NORMAL/REVERSE
+film_destinations/PROCESSOR/BIN_[1-30]
+orientations/PORTRAIT/LANDSCAPE
+interpolation_types/NONE/CUBIC/BILINEAR/REPLICATE
+smoothing_types/MEDIUM/SHARP/SMOOTH
+border_densities/BLACK/WHITE
+empty_image_densities/UNSUPPORTED
+film_sizes/14IN X 17IN/8IN X 10IN/8.5IN X 11IN
+min_density/0
+max_density/300
+max_images_per_row/10
+max_images_per_col/10
+min_dpi/1
+max_dpi/300
