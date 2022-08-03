@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="misc">
+      <UniqueIdentifier>{e808fe78-ead1-4d71-91f7-3b6f4489f819}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessorPlugin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Module.cpp" />
+    <ClCompile Include="ProcessorPlugin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="registry.rgs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vs2012.rc">
+      <Filter>misc</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

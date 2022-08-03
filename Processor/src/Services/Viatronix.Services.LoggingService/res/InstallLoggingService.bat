@@ -1,0 +1,2 @@
+sc create "LoggingService" start= auto binPath= "C:\Program Files\Viatronix\Services\LoggingService\LoggingService.exe"  DisplayName= "Viatronix Logging Service"
+sc description "LoggingService" "Manages the logging of messages from remote viatronix clients to the server"

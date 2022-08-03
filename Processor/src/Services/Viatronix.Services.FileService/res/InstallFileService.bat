@@ -1,0 +1,2 @@
+sc create "FileService" start= auto binPath= "C:\Program Files\Viatronix\Services\FileService\FileService.exe"  DisplayName= "Viatronix File Service"
+sc description "FileService" "Manages the access of files/directories on the server"

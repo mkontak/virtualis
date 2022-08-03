@@ -1,0 +1,1059 @@
+// $Id: vxComCAD.idl,v 1.9.2.1 2009/07/16 19:05:34 dongqing Exp $
+//
+// Copyright © 2005, Viatronix Inc., All Rights Reserved.
+//
+// This is PROPRIETARY SOURCE CODE of Viatronix Inc. The contents of this file
+// may not be disclosed to third parties, copied or duplicated in any form,
+// in whole or in part, without the prior written permission Viatronix Inc.
+//
+// Author: George Economos( mailto:george@viatronix.com )
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+
+////////////////////////////////////////////////////////////////////////////
+// ViatronixCAD Library
+[ uuid( 4558843F-148D-459a-A9C9-5BCD3AF60D34 ), helpstring( "Viatronix CAD API 1.0" ) ]
+library vxComCAD
+{
+  // forward declarations
+  interface IDictionary;
+  interface IFinding;
+  interface IFindingCollection;
+  interface IFindingDimension;
+  interface IFindingDimensions;
+  interface IFindingROI;
+  interface ILogger;
+  interface IProcessor;
+  interface IProcessorEnvironment;
+  interface IProcessorPlugin;
+  interface IVector;
+  interface IVolume;
+  interface IVolumeDimensions;
+  interface IVolumeUnits;
+  interface IVoxelPosition;
+  interface IVoxelPositionCollection;
+
+////////////////////////////////////////////////////////////////////////////
+// VectorUnits
+  
+  typedef enum VectorUnits
+	{
+    Millimeter,
+    Voxels,
+	} VectorUnits;
+
+
+////////////////////////////////////////////////////////////////////////////
+// IDictionary
+  
+  /**
+   * Represents a simple key-value based container.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( 8E877FAC-DCC4-49d5-8BB1-AA100247D8C6 )
+  ]
+  interface IDictionary : IDispatch
+  {
+    /**
+     * Adds the specified key-value to the dictionary.
+     *
+     * @param   sKey    Key value.
+     * @param   sValue  Value.
+     * @return    S_OK on success
+     */
+    [ id( 0x60003001 ) ] 
+    HRESULT Add( [ in ] BSTR sKey, [ in ] BSTR sValue );
+
+    /**
+     * Removes the specified key-value from the dictionary.
+     *
+     * @param   sKey    Key value of item to remove.
+     * @return    S_OK on success
+     */
+    [ id( 0x60003002 ) ] 
+    HRESULT Remove( [ in ] BSTR sKey );
+
+    /**
+     * Get the value for the specified key.
+     *
+     * @param   sKey        Key value of item to retrieve.
+     * @param   psValue     Upon return the value associated with the specified key.
+     * @return    S_OK on success
+     */
+    [ id( 0x60003003 ) ] 
+    HRESULT GetValue( [ in ] BSTR sKey, [ out, retval ] BSTR * psValue );
+
+   /**
+     * Checks if the specified key is contained within the collection.
+     *
+     * @param   sKey        Key value of item to check.
+     * @param   pbContains  Upon return indicates if the key is contained within the collection.
+     * @return    S_OK on success
+     */
+   [ id( 0x60003004 ) ] 
+    HRESULT Contains( [ in ] BSTR sKey, [ out, retval ] VARIANT_BOOL * pbContains );
+  }; // interface IDictionary
+
+
+////////////////////////////////////////////////////////////////////////////
+// IFinding
+  
+  /**
+   * Represents a finding to be reported back to the processor. Each finding includes a centroid, dimension, 
+   * volume ROI, surface ROI (region of interest) and vendor specific features.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( C6380D2D-09FE-4163-8FAD-D0472257F31C )
+  ]
+  interface IFinding : IDispatch
+  {
+    /**
+     * Gets a unique identifier associated with the finding.
+     *
+     * @param   psId    Upon return contains the unique identifier.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002001) ] 
+    HRESULT Id( [ out, retval ] BSTR * psId );
+
+    /**
+     * Gets/Sets the segment index associated with the finding.
+     *
+     * @param   piSegment    Upon return contains the segment index.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002002) ] 
+    HRESULT Segment( [ out, retval ] unsigned char * piSegment );
+
+    /**
+     * Gets/Sets the segment index associated with the finding.
+     *
+     * @param   iSegment    Segment index.
+     * @return    S_OK on success
+     */
+    [ propput, id(0x60002002) ] 
+    HRESULT Segment( [ in ] unsigned char iSegment );
+
+    /**
+     * Gets the dimensions associated with the finding.
+     *
+     * @param   ppiDimensions    Upon return contains an IFindingDimensions interface pointer
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002003) ] 
+    HRESULT Dimensions( [ out, retval ] IFindingDimensions ** ppiDimensions );
+
+    /**
+     * Represents the center of detected anomalies based on either anatomy or geometry information.
+     *
+     * @param  ppiCentroid     Upon return contains an IVector interface pointer
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002004) ] 
+    HRESULT Centroid( [ out, retval ] IVector ** ppiCentroid );
+
+    /**
+     * Definition various from specific CAD applications. The CAD vendor needs to provide the definition.
+     *
+     * @param  ppiNormal     Upon return contains an IVector interface pointer
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002005) ] 
+    HRESULT Normal( [ out, retval ] IVector ** ppiNormal );
+
+    /**
+     * Gets the contour of the volume ROI. The contour is a set of coordinates of voxels.
+     *
+     * @param  ppiSurfaceROI     Upon return contains an IFindingROI interface pointer.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002006) ] 
+    HRESULT SurfaceROI( [ out, retval ] IFindingROI ** ppiSurfaceROI );
+
+    /**
+     * Gets the entire region that the finding should cover based on the anatomy or 
+     * pathology information/knowledge. The region is a set of coordinates of voxels.
+     *
+     * @param  ppiSurfaceROI     Upon return contains an IFindingROI interface pointer.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002007) ] 
+    HRESULT VolumeROI( [ out, retval ] IFindingROI ** ppiVolumeROI );
+
+   /**
+     * Gets the data dictionary that is used to store vendor specific data.
+     *
+     * @param   ppiDictionary Upon return contains a IDictionary interface pointer.
+     * @return    S_OK on success
+     */
+   [ propget, id(0x60002008) ] 
+    HRESULT VendorSpecificData( [ out, retval ] IDictionary ** ppiData  );
+
+  }; // interface IFinding
+
+
+////////////////////////////////////////////////////////////////////////////
+// IFindingCollection
+
+  /**
+   * Represents a collection IFindings.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( 547B1BFD-96C5-4fd7-92B8-EC65F0E70F3F )
+  ]
+  interface IFindingCollection : IDispatch
+  {
+    /**
+     * Gets the number of findings in the collection.
+     *
+     * @param   piCount Upon return contains the number of findings in the collection.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002001) ] 
+    HRESULT Count( [ out, retval ] int * piCount );
+
+    /**
+     * Gets the vendor that generated the collection of findings.
+     *
+     * @param   psVendor Upon return contains the vendor string.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002002) ] 
+    HRESULT Vendor( [ out, retval ] BSTR * psVendor );
+
+    /**
+     * Sets the vendor that generated the collection of findings.  This is typically the company name.
+     *
+     * @param   sVendor vendor string.
+     * @return    S_OK on success
+     */
+    [ propput, id(0x60002002) ] 
+    HRESULT Vendor( [ in ] BSTR  vendor);
+
+    /**
+     * Sets the version string for the collection.  This version is tracked by the vendor and is independent of Viatronix's
+     * version.
+     *
+     * @param   psVersion Upon return contains the version string.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002003) ] 
+    HRESULT Version( [ out, retval ] BSTR * psVersion ) ;
+
+    /**
+     * Sets the version string for the collection.  This version is tracked by the vendor and is independent of Viatronix's
+     * version.
+     *
+     * @param   sVersion Version string.
+     * @return    S_OK on success
+     */
+    [ propput, id(0x60002003) ] 
+    HRESULT Version( [ in ] BSTR  sVersion );
+
+    /**
+     * Gets the data dictionary that is used to store vendor specific data.
+     *
+     * @param   ppiDictionary Upon return contains a IDictionary interface pointer.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002004) ] 
+    HRESULT VendorSpecificData( [ out, retval ] IDictionary ** ppiDictionary );
+
+    /**
+     * Adds the specified finding to the collection.
+     *
+     * @param piFinding   Finding to add.
+     * @return    S_OK on success
+     */
+    [ id( 0x60003001 ) ] 
+    HRESULT Add( [ in ] IFinding * piFinding );
+
+    /**
+     * Gets the finding at the specified index.
+     *
+     * @param   iIndex      Index of finding to retrieve.
+     * @param   ppiFinding  Upon return contains a IFinding interface pointer.
+     * @return    S_OK on success
+     */
+    [ id( 0x60003002 ) ] 
+    HRESULT Get( [ in ] int iIndex, [out,retval] IFinding ** ppiFinding );
+
+    /**
+     * Removes all findings fom the collection.
+     *
+     * @return    S_OK on success
+     */
+    [ id( 0x60003003 ) ] 
+    HRESULT Clear();
+
+    [ id( 0x60003004 ) ] 
+    HRESULT Remove( [ in ] int index );
+
+    /**
+     * Creates a new finding.
+     *
+     * @param   ppiFinding  Upon return contains a IFinding interface pointer.
+     * @return    S_OK on success
+     */
+    [id( 0x60003005 ) ] 
+    HRESULT CreateFinding( [ out, retval ] IFinding ** ppiFinding );
+
+    /**
+     * Saves the findings collection to the specified filename.
+     *
+     * @param sFilename   Output filename.
+     * @return    S_OK on success
+     */
+    [id( 0x60003006 ) ] 
+    HRESULT ToFile( [ in ] BSTR sFilename );
+
+  }; // interface IFindingCollection
+
+
+////////////////////////////////////////////////////////////////////////////
+// IFindingDimension
+  
+  /**
+   * Represents a linear distance in 3D. Please note that the start and end point units
+   * are specified in the IVector interface.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( 73D35558-5AA7-4255-9BA0-FF206392E600 )
+  ]
+  interface IFindingDimension : IDispatch
+  {
+    /**
+     * The start point for the dimension.
+     * 
+     * @param   ppiVector   Upon return contains a IVector interface pointer representing the start point.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002001) ] 
+    HRESULT StartPoint( [ out, retval ] IVector ** ppiVector );
+
+    /**
+     * The end point for the dimension.
+     * 
+     * @param   ppiVector   Upon return contains a IVector interface pointer representing the end point.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002002) ] 
+    HRESULT EndPoint( [ out, retval ] IVector ** ppiVector );
+
+  }; // interface IFindingDimension
+
+
+////////////////////////////////////////////////////////////////////////////
+// IFindingDimensions
+  
+  /**
+   * Groups the different dimension components associated with a finding.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( D8A86671-74CF-4164-BF57-CAAC083BFDA7 )
+  ]
+  interface IFindingDimensions : IDispatch
+  {
+     /**
+      * The largest measurment of a finding.
+      *
+      * @param ppiLargest   Upon return contains an IFindingDimension interface pointer.
+      * @return    S_OK on success
+      */
+    [ propget, id(0x60002001) ] 
+    HRESULT Largest( [ out, retval ] IFindingDimension ** ppiLargest );
+
+     /**
+      * The measurment perpendicular to the largest finding.
+      *
+      * @param ppiPerpendicular   Upon return contains an IFindingDimension interface pointer.
+      * @return    S_OK on success
+      */
+    [ propget, id(0x60002002) ] 
+    HRESULT Perpendicular( [ out, retval ] IFindingDimension ** ppiPerpendicular );
+
+    /**
+     * This value is currently unused.
+     *
+     * @param ppiDepth   Upon return contains an IFindingDimension interface pointer.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002003) ] 
+    HRESULT Depth( [ out, retval ] IFindingDimension ** ppiDepth );
+
+  }; // interface IFindingDimensions
+
+
+////////////////////////////////////////////////////////////////////////////
+// IFindingROI
+  
+  /**
+   * Represents a Region Of Interest (ROI) associated with a Finding.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( 2797390E-A9B0-4ca2-AE20-8D277908B4B4 )
+  ]
+  interface IFindingROI : IDispatch
+  {
+    /**
+     * Gets the voxels associated with the ROI.
+     *
+     * @param   ppiVoxels Upon return contains an IVoxelPositionCollection interface pointer.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002001) ] 
+    HRESULT Voxels( [ out, retval ] IVoxelPositionCollection ** ppiVoxels );
+
+    /**
+     * Gets the average HU for the ROI;
+     *
+     * @param   pfAverage Upon return contains the average HU for the ROI.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002002) ] 
+    HRESULT AverageHU( [ out, retval ] float * pfAverage );
+
+    /**
+     * Sets the average HU for the ROI;
+     *
+     * @param   fAaverage Average HU for the ROI.
+     * @return    S_OK on success
+     */
+    [ propput, id(0x60002002) ] 
+    HRESULT AverageHU( [ in ] float fAverage );
+
+    /**
+     * Gets the standard deviation ( expressed in HU ) for the ROI;
+     *
+     * @param   fStddev Upon return contains the standard deviation for the ROI.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002003) ] 
+    HRESULT StandardDeviationHU( [ out, retval ] float * fStddev );
+
+    /**
+     * Sets the standard deviation ( expressed in HU ) for the ROI;
+     *
+     * @param   fStddev Standard deviation for the ROI.
+     * @return    S_OK on success
+     */
+    [ propput, id(0x60002003) ] 
+    HRESULT StandardDeviationHU( [ in ] float fStddev );
+
+  }; // interface IFindingROI
+
+
+////////////////////////////////////////////////////////////////////////////
+// ILogger
+  
+  /**
+   * The ILogger interface provides a logging facilty for a plugin to use.  It is highly recommned using the logging mechansim
+   * as it can be used as a valuable debugging tool.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( 3E56BFB7-2CAE-4c78-A8A1-DDD1F6CB229D )
+  ]
+  interface ILogger : IDispatch
+  {
+    /**
+     * Writes the specified error to the log.
+     *
+     * @param   sMsg  Message text.
+     * @param   sFunction  Function name in which the message was logged.
+     * @param   sClassname  Class name in which the message was logged.
+     * @return    S_OK on success
+     */
+    [ id(0x60003001 ) ] 
+    HRESULT LogError( [ in ] BSTR sMsg, [ in ] BSTR sFunction, [ in ] BSTR sClassname );
+
+    /**
+     * Writes the specified warning to the log.
+     *
+     * @param   sMsg  Message text.
+     * @param   sFunction  Function name in which the message was logged.
+     * @param   sClassname  Class name in which the message was logged.
+     * @return    S_OK on success
+     */
+    [ id(0x60003002 ) ] 
+    HRESULT LogWarning( [ in ] BSTR sMsg, [ in ] BSTR sFunction, [ in ] BSTR sClassname );
+
+    /**
+     * Writes the specified informational message to the log.
+     *
+     * @param   sMsg  Message text.
+     * @param   sFunction  Function name in which the message was logged.
+     * @param   sClassname  Class name in which the message was logged.
+     * @return    S_OK on success
+     */
+    [ id(0x60003003 ) ] 
+    HRESULT LogInformation( [ in ] BSTR sMsg, [ in ] BSTR sFunction, [ in ] BSTR sClassname );
+
+    /**
+     * Writes the specified debug message to the log.
+     *
+     * @param   sMsg  Message text.
+     * @param   sFunction  Function name in which the message was logged.
+     * @param   sClassname  Class name in which the message was logged.
+     * @return    S_OK on success
+     */
+    [ id(0x60003004 ) ] 
+    HRESULT LogDebug( [ in ] BSTR sMsg, [ in ] BSTR sFunction, [ in ] BSTR sClassname );
+
+    /**
+     * Writes the specified temporary message to the log.
+     *
+     * @param   sMsg  Message text.
+     * @param   sFunction  Function name in which the message was logged.
+     * @param   sClassname  Class name in which the message was logged.
+     * @return    S_OK on success
+     */
+    [ id(0x60003005 ) ] 
+    HRESULT LogTemporary( [ in ] BSTR sMsg, [ in ] BSTR sFunction, [ in ] BSTR sClassname );
+
+  }; // interface ILogger
+
+
+////////////////////////////////////////////////////////////////////////////
+// IProcessor
+  
+  /**
+   * The IProcessor interface represents the topmost interface in the API hierarchy. Each plugin is passed an instance in 
+   * the IProcessorPlugin::Run function.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( 804F0825-4486-480d-BF79-AC09ABF1949E )
+  ]
+  interface IProcessor : IDispatch
+  {
+    /**
+     * Returns a processor environment object. The processor environment contains all data available useful for analysis.
+     *
+     * @param   ppiEnvironment    Upon success returns an IProcessorEnvironment interface pointer
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002001) ] 
+    HRESULT Environment( [ out, retval ] IProcessorEnvironment ** ppiEnvironment );
+
+    /**
+     * Returns a findings object.  Findings are used to report back any suspicious findings to the V3D processor.
+     *
+     * @param   ppiFindings    Upon success returns an IFindingCollection interface pointer.
+     * @return    S_OK on success
+     */
+   [ propget, id(0x60002002) ] 
+    HRESULT Findings( [ out, retval ] IFindingCollection ** ppiFindings );
+
+    /**
+     * Returns a logger object. The logger is used for conveying diagnostic information back to the V3D processor.
+     *
+     * @param   ppiLogger    Upon success returns an ILogger interface pointer
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002003) ] 
+    HRESULT Logger( [ out, retval ] ILogger ** ppiLogger );
+
+  }; // interface IProcessor
+
+
+
+////////////////////////////////////////////////////////////////////////////
+// IProcessorEnvironment
+  
+  /**
+   * The IProcessorEnvironment interface provides access to all data available for diagnostic review.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( 770D1C6E-44E0-4ac0-89F7-2BAB3EC71B15 )
+  ]
+  interface IProcessorEnvironment : IDispatch
+  {
+    /**
+     * Returns a volume object. The intensity volume contains the 3D volumetric representation of the DICOM data.
+     *
+     * @param   ppiIntensity    Upon success returns an IVolume interface pointer
+     * @return    S_OK on success
+     */
+   [ propget, id( 0x60002001 ) ] 
+   HRESULT IntensityVolume( [ out, retval ] IVolume ** ppiIntensity );
+
+   /**
+     * Returns a volume object. The segment volume contains the segemented colon regions. A non-zero voxel indicates
+     * that a particular position is within the colon.
+     *
+     * @param   ppiIntensity    Upon success returns an IVolume interface pointer
+     * @return    S_OK on success
+     */
+   [ propget, id( 0x60002002 ) ] 
+   HRESULT SegmentVolume( [ out, retval ] IVolume ** ppiSegment );
+
+   /**
+     * Returns the DICOM directory. 
+     *
+     * @param   psDirectory    DICOM directory.
+     * @return    S_OK on success
+     */
+   [ propget, id( 0x60002003 ) ] 
+   HRESULT DicomDirectory( [ out, retval ] BSTR * psDirectory );
+
+   /**
+     * Returns the cad destination directory. 
+     *
+     * @param   psDirectory    cad destination directory.
+     * @return    S_OK on success
+     */
+   [ propget, id( 0x60002004 ) ] 
+   HRESULT DestDirectory( [ out, retval ] BSTR * psDirectory );
+
+  }; // interface IProcessorEnvironment
+
+ 
+////////////////////////////////////////////////////////////////////////////
+// IProcessorPlugin
+  
+  /**
+   * The IProcessorPlugin interface provides the V3D processor a single function Run that is used as an entry point
+   * for CAD analysis. Every single CAD vendor must supply at least one object that implements IProcessorPlugin. That object 
+   * must be registered in the registry.  It is strongly advised that the object be created as a out-of-process singleton server.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( 9724D4BD-9A24-4f3f-98A9-8F119AE6F454 )
+  ]
+  interface IProcessorPlugin : IDispatch
+  {
+    /**
+     * Entry point for a CAD processor plugin. The plugin is passed an instance of the IProcessorPlugin which the
+     * V3D CAD Processor implements.
+     *
+     * @param   piProcessor    IProcessor interface
+     * @return    S_OK on success
+     */
+   [ id( 0x60003001 ) ] 
+   HRESULT Run( [ in ] IProcessor * piProcessor );
+  }; // interface IProcessorPlugin
+
+
+////////////////////////////////////////////////////////////////////////////
+// IVector
+  
+  /**
+   * Represents a 3D vector with specified units.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( F7DF4AEE-2073-4be0-B3D2-DD694A78368B )
+  ]
+  interface IVector : IDispatch
+  {
+    /**
+     * Gets/Sets the X component for the vector.
+     *
+     * @param   pfX  Upon return contains the X component of the vector.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002001) ] 
+    HRESULT X( [ out, retval ] float * pfX );
+
+    /**
+     * Gets/Sets the X component for the vector.
+     *
+     * @param   fX  X component of vector.
+     * @return    S_OK on success
+     */
+    [ propput, id(0x60002001) ] 
+    HRESULT X( [ in ] float fX );
+
+     /**
+      * Gets/Sets the Y component for the vector.
+      *
+      * @param   pfY  Upon return contains the Y component of the vector.
+      * @return    S_OK on success
+      */
+    [ propget, id(0x60002002) ] 
+    HRESULT Y( [ out, retval ] float * pfY );
+
+    /**
+     * Gets/Sets the Y component for the vector.
+     *
+     * @param   fY  Y component of vector.
+     * @return    S_OK on success
+     */
+    [ propput, id(0x60002002) ] 
+    HRESULT Y( [ in ] float fY );
+
+    /**
+     * Gets/Sets the Z component for the vector.
+     *
+     * @param   pfZ  Upon return contains the Z component of the vector.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002003) ] 
+    HRESULT Z( [ out, retval ] float * pfZ );
+
+    /**
+     * Gets/Sets the Z component for the vector.
+     *
+     * @param   fZ  Z component of vector.
+     * @return    S_OK on success
+     */
+    [ propput, id(0x60002003) ] 
+    HRESULT Z( [ in ] float fZ );
+
+    /**
+     * Gets/Sets the vector units.
+     *
+     * @param   pUnits    Upon return contains the units for the vector.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002004) ] 
+    HRESULT Units( [ out, retval ] VectorUnits * pUnits );
+
+    /**
+     * Gets/Sets the vector units.
+     *
+     * @param   units    Vector units to set.
+     * @return    S_OK on success
+     */
+    [ propput, id(0x60002004) ] 
+    HRESULT Units( [ in ] VectorUnits units );
+    
+    /**
+     * Sets the X, Y and Z components for the vector.
+     * @param   fX   X  component of vector.
+     * @param   fY   Y  component of vector.
+     * @param   fZ   Z  component of vector.
+     * @return    S_OK on success
+     */
+     [ id(0x60003001) ] 
+     HRESULT Set( [ in ] float fX, [ in ] float fY, [ in ] float fZ );
+
+  }; // interface IVector
+
+  
+////////////////////////////////////////////////////////////////////////////
+// IVolume
+  
+  /**
+   * Represents a 3D volumetric representation of the DICOM data.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( 22820AB8-B477-4e2a-9A68-13A9D2659827 )
+  ]
+  interface IVolume : IDispatch
+  {
+    /**
+     * Gets the voxel dimensions of the volume.
+     *
+     * @param   ppiDimensions    Upon return contains an IVolumeDimensions interface pointer.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002001) ] 
+    HRESULT Dimensions( [ out, retval ] IVolumeDimensions ** ppiDimensions );
+
+     /**
+      * Gets the units for the volume.
+      *
+      * @param   ppiUnits    Upon return contains an IVolumeUnits interface pointer.
+      * @return    S_OK on success
+      */
+    [ propget, id(0x60002002) ] 
+    HRESULT Units( [ out, retval ] IVolumeUnits ** ppiUnits );
+
+     /**
+      * Gets the all the voxels for the volume.  The voxels are laid out in linear Z-Y-X order. For CT data the 
+      * voxels are interpreted as HU values, MR data the voxels are return as the original DICOM value.
+      *
+      * @param   pVoxels    Upon return contains an SAFEARRAY of voxels intensities.
+      * @return    S_OK on success
+      */
+    [ propget, id(0x60002003) ] 
+    HRESULT Voxels( [ out, retval ] VARIANT * pVoxels );
+
+     /**
+      * Gets the specified DICOM header variable value.
+      *
+      * @param   sGroup    DICOM group identifier.
+      * @param   sField    DICOM field identifier.
+      * @param   psValue    Upon return contains the value of the requested DICOM field
+      * @return    S_OK on success
+      */
+   [ id(0x60003001) ] 
+    HRESULT GetHdrVar( [ in ] BSTR sGroup, [ in ] BSTR sField, [ out, retval ] BSTR * psValue );
+
+  }; // interface IVolume
+
+
+////////////////////////////////////////////////////////////////////////////
+// IVolumeDimensions
+  
+  /**
+   * The volume dimensions in voxels.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( 6AA6323F-4264-4ce9-BDDD-577D57985C7A )
+  ]
+  interface IVolumeDimensions : IDispatch
+  {
+    /**
+     * Gets the dimension of the volume in the X direction.
+     *
+     * @param   piX   Upon return contains the X dimension in voxels.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002001) ] 
+    HRESULT X( [ out, retval ] long * piX );
+
+    /**
+     * Gets the dimension of the volume in the Y direction.
+     *
+     * @param   piY   Upon return contains the Y dimension in voxels.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002002) ] 
+    HRESULT Y( [ out, retval ] long * piY );
+
+   /**
+    * Gets the dimension of the volume in the Z direction.
+    *
+    * @param   piZ   Upon return contains the Z dimension in voxels.
+    * @return    S_OK on success
+    */
+   [ propget, id(0x60002003) ] 
+    HRESULT Z( [ out, retval ] long * piZ );
+  }; // interface IVolumeDimensions
+
+
+
+////////////////////////////////////////////////////////////////////////////
+// IVolumeUnits
+  
+  /**
+   * The volume units give the voxel spacing in X, Y and Z direction.
+   */
+ [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( 4648ACA6-C500-497c-B78A-46E0351A4BC9 )
+  ]
+  interface IVolumeUnits : IDispatch
+  {
+    /**
+     * Gets the voxel spacing in the X direction.
+     *
+     * @param   piX   Upon return contains the voxel spacing in the X direction.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002001) ] 
+    HRESULT X( [ out, retval ] float * pfX );
+
+    /**
+     * Gets the voxel spacing in the Y direction.
+     *
+     * @param   piY   Upon return contains the voxel spacing in the Y direction.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002002) ] 
+    HRESULT Y( [ out, retval ] float * pfY );
+
+    /**
+     * Gets the voxel spacing in the Z direction.
+     *
+     * @param   piZ   Upon return contains the voxel spacing in the Z direction.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002003) ] 
+    HRESULT Z( [ out, retval ] float * pfZ );
+  }; // interface IVolumeUnits
+
+
+////////////////////////////////////////////////////////////////////////////
+// IVoxelPosition
+  
+  /**
+   *  Position of a voxel within a volume.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( 9ED04CB4-BC3B-4c82-BD02-8D0382C48ECA )
+  ]
+  interface IVoxelPosition : IDispatch
+  {
+    /**
+     * Gets/Sets the X position within the volume.
+     *
+     * @param   piX   Upon return contains the X voxel position.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002001) ] 
+    HRESULT X( [ out, retval ] int * piX );
+
+    /**
+     * Gets/Sets the X position within the volume.
+     *
+     * @param   iX  X voxel position.
+     * @return    S_OK on success
+     */
+   [ propput, id(0x60002001) ] 
+    HRESULT X( [ in ] int iX );
+
+    /**
+     * Gets/Sets the Y position within the volume.
+     *
+     * @param   piY   Upon return contains the Y voxel position.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002002) ] 
+    HRESULT Y( [ out, retval ] int * piY );
+
+    /**
+     * Gets/Sets the Y position within the volume.
+     *
+     * @param   iY  Y voxel position.
+     * @return    S_OK on success
+     */
+    [ propput, id(0x60002002) ] 
+    HRESULT Y( [ in ] int iY );
+
+    /**
+     * Gets/Sets the Z position within the volume.
+     *
+     * @param   piZ   Upon return contains the Z voxel position.
+     * @return    S_OK on success
+     */
+    [ propget, id(0x60002003) ] 
+    HRESULT Z( [ out, retval ] int * piZ );
+
+     /**
+      * Gets/Sets the Z position within the volume.
+      *
+      * @param   iZ  Z voxel position.
+      * @return    S_OK on success
+      */
+    [ propput, id(0x60002003) ] 
+    HRESULT Z( [ in ] int iZ );
+
+    /**
+     * Sets the X, Y and Z position of a voxel position.
+     * @param   iX   X voxel position.
+     * @param   iY   Y voxel position.
+     * @param   iZ   Z voxel position.
+     * @return    S_OK on success
+     */
+    [ id(0x60003001) ] 
+    HRESULT Set( [ in ] int iX, [ in ] int iY, [ in ] int iZ );
+
+  }; // interface IVoxelPosition
+
+
+////////////////////////////////////////////////////////////////////////////
+// IVoxelPositionCollection
+
+  /**
+   * Represents a collection of voxel positions.
+   */
+  [
+  	object, nonextensible, dual, pointer_default( unique ),
+		uuid( C9CE589D-F039-4ec1-BA0D-C1A994876E45 )
+  ]
+  interface IVoxelPositionCollection : IDispatch
+  {
+    /**
+     * The number of voxels in thye collection.
+     *
+     * @param    piCount    Upon return contains the number of voxels in the collection.
+     * @return    S_OK on success
+     */
+    [ propget, id( 0x60002001 ) ] 
+    HRESULT Count( [ out, retval ] int * piCount );
+
+    /**
+     * Adds the specified X, Y and Z voxel position to the collection
+     * @param   iX   X voxel position.
+     * @param   iY   Y voxel position.
+     * @param   iZ   Z voxel position.
+     * @return    S_OK on success
+     */ 
+    [ id( 0x60003001 ) ] 
+    HRESULT Add( [ in ] int iX, [ in ] int iY, [ in ] int iZ  );
+
+    /**
+     * Gets an IVoxelPosition interface for the voxel at the specified index.
+     *
+     * @param   iIndex        Index of voxel to retrieve.
+     * @param   ppiPosition   Upon return contains a pointer to a IVoxelPosition interface.
+     * @return    S_OK on success
+     */
+    [ id( 0x60003002 ) ] 
+    HRESULT Get( [ in ] int iIndex, [out,retval] IVoxelPosition ** ppiPosition );
+
+    /**
+     * Removes all voxels from the collection.
+     */
+    [ id( 0x60003003 ) ] 
+    HRESULT Clear();
+
+    /**
+     * Removes the voxel at the specified index.
+     *
+     * @param   iIndex    Index of voxel to remove.
+     * @return    S_OK on success
+     */
+    [ id( 0x60003004 ) ] 
+    HRESULT Remove( [ in ] int iIndex );
+    
+  }; // interface IVoxelPositionCollection
+
+}; // library 
+
+
+// $Log: vxComCAD.idl,v $
+// Revision 1.9.2.1  2009/07/16 19:05:34  dongqing
+// add cad destination path into the processorEnvironment
+//
+// Revision 1.9  2007/01/05 14:54:08  geconomos
+// added comments for doxygen creation
+//
+// Revision 1.8  2006/01/27 20:31:37  jmeade
+// Merge from VC_2-0: 051121 to present
+//
+// Revision 1.7.2.2  2006/01/09 20:01:26  geconomos
+// added vendor specific data to findings collection
+//
+// Revision 1.7.2.1  2005/12/08 17:00:25  geconomos
+// added IDicitionary
+//
+// Revision 1.7  2005/10/11 13:23:11  geconomos
+// added api version property
+//
+// Revision 1.6  2005/10/05 14:54:55  geconomos
+// no message
+//
+// Revision 1.4  2005/09/30 19:53:51  geconomos
+// added VectorUnits to IVector
+//
+// Revision 1.3  2005/09/23 12:09:56  geconomos
+// added ILogger
+//
+// Revision 1.2  2005/09/20 18:58:00  geconomos
+// changed all interfaces to be dual instead of cutom only
+//
+// Revision 1.1  2005/09/16 14:48:26  geconomos
+// moved from vxCAD
+//
+// Revision 1.1  2005/09/15 16:38:27  geconomos
+// initial revision
+//
+// $Header: /CVS/cvsRepository/V3D/src/Viatronix.v3D.Processor.Plugins.CAD/vxComCAD.idl,v 1.9.2.1 2009/07/16 19:05:34 dongqing Exp $
+// $Id: vxComCAD.idl,v 1.9.2.1 2009/07/16 19:05:34 dongqing Exp $

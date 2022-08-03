@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B07F384-E0B4-4FB6-8455-F37EE14B6F1E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>res\App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Conversion</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Viatronix.Processing</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\Viatronix\Processing\Conversion\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath Condition=" '$(TeamBuildOutDir)'=='' ">..\..\..\..\Viatronix\Processing\Conversion\</OutputPath>
+    <OutputPath Condition=" '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Processing\Conversion\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath Condition=" '$(TeamBuildOutDir)'=='' ">..\..\..\..\Viatronix\Processing\Conversion\</OutputPath>
+    <OutputPath Condition=" '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Processing\Conversion\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\bin\vxProcessor\Viatronix.v3D.Processor.Plugins.Conversion.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath Condition=" '$(TeamBuildOutDir)'=='' ">..\..\..\..\Viatronix\Processing\Conversion\</OutputPath>
+    <OutputPath Condition=" '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Processing\Conversion\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType />
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\bin\vxProcessor\Conversion\Viatronix.v3D.Processor.Plugins.Conversion.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(Configuration)'=='Debug'" />
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="vxloglib, Version=1.0.4271.37642, Culture=neutral, processorArchitecture=AMD64" Condition="'$(Configuration)'=='Release'">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>..\..\..\libs\ent\bin\vxloglib.dll</HintPath>
+        </Reference>
+        <Reference Include="vxconvlib, Version=1.0.4271.37642, Culture=neutral, processorArchitecture=AMD64" Condition="'$(Configuration)'=='Release'">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>..\..\..\libs\ent\bin\vxconvlib.dll</HintPath>
+        </Reference>
+        <Reference Include="vxdicomlib, Version=1.0.4271.37642, Culture=neutral, processorArchitecture=AMD64" Condition="'$(Configuration)'=='Release'">
+          <SpecificVersion>False</SpecificVersion>
+          <HintPath>..\..\..\libs\ent\bin\vxdicomlib.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conversion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Convert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="res\App.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Conversion\Viatronix.Conversion.vcxproj">
+      <Project>{b92d2b00-a8dc-4413-b4b6-1e67eb203163}</Project>
+      <Name>Viatronix.Conversion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Dicom\Viatronix.Dicom.vcxproj">
+      <Project>{28b5550d-628e-4755-afa6-32a9f04951f9}</Project>
+      <Name>Viatronix.Dicom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Encryption\Viatronix.Encryption.csproj">
+      <Project>{ed270924-47cb-4d77-88c3-3f89cadc3491}</Project>
+      <Name>Viatronix.Encryption</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Enterprise\Viatronix.Enterprise.csproj">
+      <Project>{2c472d70-da70-47d7-bbd4-af591fae0d1d}</Project>
+      <Name>Viatronix.Enterprise</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Logging\Viatronix.Logging.vcxproj">
+      <Project>{eb450513-1b40-4e1f-9d8b-25266dc31efb}</Project>
+      <Name>Viatronix.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Messaging\Viatronix.Messaging.vcxproj">
+      <Project>{b2a224ad-1b7f-47f6-82f0-21d365058df6}</Project>
+      <Name>Viatronix.Messaging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>echo Pre-Build
+
+if $(ConfigurationName) == Release $(ProjectDir)..\..\..\..\Libraries\utilities\Versioning  -c "$(ConfigurationName)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</PreBuildEvent>
+    <PostBuildEvent>echo Post-Build
+
+echo Copying required dll's
+if $(ConfigurationName) == Release  xcopy /Y /R $(ProjectDir)..\..\..\..\Libraries\vx\bin\vxBase.dll $(TargetDir)
+if $(ConfigurationName) == Release  xcopy /Y /R $(ProjectDir)..\..\..\..\Libraries\vx\bin\vxBlockVolume.dll $(TargetDir)
+if $(ConfigurationName) == Release  xcopy /Y /R $(ProjectDir)..\..\..\..\Libraries\vx\bin\vxConversion.dll $(TargetDir)
+if $(ConfigurationName) == Release  xcopy /Y /R $(ProjectDir)..\..\..\..\Libraries\vx\bin\vxDicom.dll $(TargetDir)
+if $(ConfigurationName) == Release  xcopy /Y /R $(ProjectDir)..\..\..\..\Libraries\vx\bin\vxLogger.dll $(TargetDir)
+if $(ConfigurationName) == Release  xcopy /Y /R $(ProjectDir)..\..\..\..\Libraries\vx\bin\vxMessaging.dll $(TargetDir)
+
+if $(ConfigurationName) == Debug  xcopy /Y /R $(ProjectDir)..\..\..\..\Libraries\vx\bin\vxBased.dll $(TargetDir)
+if $(ConfigurationName) == Debug  xcopy /Y /R $(ProjectDir)..\..\..\..\Libraries\vx\bin\vxBlockVolumed.dll $(TargetDir)
+if $(ConfigurationName) == Debug  xcopy /Y /R $(ProjectDir)..\..\..\..\Libraries\vx\bin\vxConversiond.dll $(TargetDir)
+if $(ConfigurationName) == Debug  xcopy /Y /R $(ProjectDir)..\..\..\..\Libraries\vx\bin\vxDicomd.dll $(TargetDir)
+if $(ConfigurationName) == Debug  xcopy /Y /R $(ProjectDir)..\..\..\..\Libraries\vx\bin\vxLoggerd.dll $(TargetDir)
+if $(ConfigurationName) == Debug  xcopy /Y /R $(ProjectDir)..\..\..\..\Libraries\vx\bin\vxMessagingd.dll $(TargetDir)
+
+
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

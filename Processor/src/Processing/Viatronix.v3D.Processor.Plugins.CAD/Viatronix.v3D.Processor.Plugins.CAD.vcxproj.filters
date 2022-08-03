@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="com">
+      <UniqueIdentifier>{99baf385-22eb-462a-9f45-36cc2cefded5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{2748c49b-62a5-4fdd-b8fa-76b2a57edab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dll">
+      <UniqueIdentifier>{cc07c917-ea7d-4607-9ab8-0bb54ac83d2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dictionary.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="Finding.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="FindingCollection.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="FindingDimension.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="FindingDimensions.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="FindingROI.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggerCom.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="Processor.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessorEnvironment.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessorFactory.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="Volume.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumeDimensions.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="VolumeUnits.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="VoxelPosition.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="VoxelPositionCollection.C">
+      <Filter>com</Filter>
+    </ClCompile>
+    <ClCompile Include="ColonEnvironmentArgs.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandlineDlg.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleBuffer.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Conversion.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitCursor.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportedLibraries.C">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.C">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.C" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dictionary.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="Finding.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="FindingCollection.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="FindingDimension.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="FindingDimensions.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="FindingROI.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggerCom.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="Processor.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessorEnvironment.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessorFactory.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="Volume.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumeDimensions.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="VolumeUnits.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="VoxelPosition.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="VoxelPositionCollection.h">
+      <Filter>com</Filter>
+    </ClInclude>
+    <ClInclude Include="ColonEnvironmentArgs.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandlineDlg.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleBuffer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Conversion.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitCursor.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="vxComCAD.idl">
+      <Filter>com</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources.rc">
+      <Filter>dll</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,117 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""vxComCAD.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// IDD
+//
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COMMANDLINEARGS DIALOGEX 0, 0, 286, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Viatronix CAD API Test Console"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,172,150,42,15
+    PUSHBUTTON      "Cancel",IDCANCEL,215,150,42,15
+    RTEXT           "Pre-Processed File",IDC_STATIC,7,102,71,8
+    RTEXT           "App ID",IDC_STATIC,7,23,71,8
+    RTEXT           "DICOM Folder",IDC_STATIC,7,66,71,8
+    RTEXT           "Destionation Folder",IDC_STATIC,7,121,71,8
+    RTEXT           "Volume File",IDC_STATIC,7,83,71,8
+    EDITTEXT        IDC_APPID_EDIT,89,19,96,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SRC_FILE_PATH_EDIT,89,98,141,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DICOM_FILE_PATH_EDIT,89,63,141,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DEST_FILE_PATH_EDIT,89,118,141,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VOLUME_FILE_PATH_EDIT,89,80,141,14,ES_AUTOHSCROLL
+    CONTROL         "DICOM Only",IDC_DICOMONLY_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,89,44,94,10
+    PUSHBUTTON      "...",IDC_SRC_BROWSE,234,98,23,14
+    PUSHBUTTON      "...",IDC_DICOM_BROWSE,234,63,23,14
+    PUSHBUTTON      "...",IDC_DEST_BROWSE,234,118,23,14
+    PUSHBUTTON      "...",IDC_VOL_BROWSE,234,80,23,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_COMMANDLINEARGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "vxComCAD.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

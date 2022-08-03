@@ -1,0 +1,120 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1727AE74-5157-413D-AD31-C65AF9E5DD0D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Viatronix.v3D.Processor.Plugins.Vascular</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Viatronix.v3D.Processor.Plugins.Vascular</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>Viatronix.v3D.Processor.Plugins.Vascular.Pipeline</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath Condition=" '$(TeamBuildOutDir)'=='' ">..\..\..\..\Viatronix\Processing\VAS\</OutputPath>
+    <OutputPath Condition=" '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Processing\VAS\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath Condition=" '$(TeamBuildOutDir)'=='' ">..\..\..\..\Viatronix\Processing\VAS\</OutputPath>
+    <OutputPath Condition=" '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Processing\VAS\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\Viatronix.v3D.Dicom.UI\Viatronix.v3D.Dicom.UI.csproj">
+      <Project>{AD69634E-2D8E-4393-B7A3-2A055602BB6D}</Project>
+      <Name>Viatronix.v3D.Dicom.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.v3D.Dicom\Viatronix.v3D.Dicom.vcproj">
+      <Project>{7CE6573D-C39B-4720-AAA0-3548E76F8DBA}</Project>
+      <Name>Viatronix.v3D.Dicom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.v3D.Licensing\Viatronix.v3D.Licensing.vcproj">
+      <Project>{1A6D4618-B0DA-4430-AC62-C532791B2FC6}</Project>
+      <Name>Viatronix.v3D.Licensing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.v3D.Logger\Viatronix.v3D.Logger.vcproj">
+      <Project>{85DC5DF7-75D3-4D20-8493-8010AB3B6DFA}</Project>
+      <Name>Viatronix.v3D.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.v3D.UI\Viatronix.v3D.UI.csproj">
+      <Project>{2DCE045C-DE23-4B33-9F18-665D9BBC7712}</Project>
+      <Name>Viatronix.v3D.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.v3D.Utilities\Viatronix.v3D.Utilities.vcproj">
+      <Project>{8A4F5181-4515-45FD-85CB-468945BE149E}</Project>
+      <Name>Viatronix.v3D.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.v3D.Viewer.Core\Viatronix.v3D.Viewer.Core.csproj">
+      <Project>{67C33E75-8412-45FC-ADC4-27F6E04022E9}</Project>
+      <Name>Viatronix.v3D.Viewer.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.v3D.Viewer.Plugins.Vascular\Viatronix.v3D.Viewer.Plugins.Vascular.vcproj">
+      <Name>Viatronix.v3D.Viewer.Plugins.Vascular</Name>
+      <Project>{7396B14E-7403-470F-A6A8-AF821D0DC582}</Project>
+      <Package>{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.v3D.Visualization\Viatronix.v3D.Visualization.vcproj">
+      <Name>Viatronix.v3D.Visualization</Name>
+      <Project>{1E7C9E02-006F-42BA-B917-A7B53123C7F7}</Project>
+      <Package>{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Content Include="App.ico" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pipeline.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>xcopy "..\..\libs\vx\bin\vxViewer32.dll" "..\..\bin\vxProcessor\" /Y /R
+xcopy "..\..\libs\vx\bin\vxViewer32d.dll" "..\..\bin\vxProcessor\" /Y /R
+xcopy "..\..\libs\vx\bin\vxbase32d.dll" "..\..\bin\vxProcessor\" /Y /R
+xcopy "..\..\libs\vx\bin\vxblockvolume32d.dll" "..\..\bin\vxProcessor\" /Y /R
+xcopy "..\..\libs\vx\bin\vxlogger32d.dll" "..\..\bin\vxProcessor\" /Y /R
+xcopy "..\..\libs\vx\bin\vxbase32.dll" "..\..\bin\vxProcessor\" /Y /R
+xcopy "..\..\libs\vx\bin\vxblockvolume32.dll" "..\..\bin\vxProcessor\" /Y /R
+xcopy "..\..\libs\vx\bin\vxlogger32.dll" "..\..\bin\vxProcessor\" /Y /R</PreBuildEvent>
+    <PostBuildEvent>..\..\bin\Tools\editbin.exe  /LARGEADDRESSAWARE $(TargetPath)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

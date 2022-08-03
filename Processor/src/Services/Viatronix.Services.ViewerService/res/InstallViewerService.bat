@@ -1,0 +1,2 @@
+sc create "ViewerService" start= auto binPath= "C:\Program Files\Viatronix\Services\ViewerService\ViewerService.exe" depend= "MSSQL$V3DENT" DisplayName= "Viatronix Viewer Service"
+sc description "ViewerService" "Manages the access of Viatronix Viewers"
