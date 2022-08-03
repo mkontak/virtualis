@@ -1,0 +1,2 @@
+Local machine has to have vxservice user with password set to stonybrook89!
+System needs to be set on the Viatronix Domain.
