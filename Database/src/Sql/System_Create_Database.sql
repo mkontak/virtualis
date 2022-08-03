@@ -1,0 +1,133 @@
+USE [master]
+GO
+
+
+-- ==================================
+-- Drop the System database first
+-- ===================================
+IF EXISTS (SELECT * FROM master.dbo.sysdatabases WHERE name = N'System')
+  PRINT 'Dropping [System] Database'
+  DROP DATABASE [System]
+GO
+
+
+-- ===============================
+-- Create the System database
+-- ===============================
+
+PRINT 'Creating [System] Database'
+
+-- Create
+CREATE DATABASE [System]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'System', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.V3DENT\MSSQL\DATA\System.mdf' , SIZE = 12544KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
+ LOG ON 
+( NAME = N'System_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.V3DENT\MSSQL\DATA\System_log.LDF' , SIZE = 12352KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)
+GO
+
+EXEC [System].sys.sp_addextendedproperty @name=N'Viatronix', @value=N'True' 
+GO
+
+EXEC [System].sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Contains all global configuration data for thre V3D Enterprise System' 
+GO
+
+ALTER DATABASE [System] SET COMPATIBILITY_LEVEL = 100
+GO
+
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [System].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+
+ALTER DATABASE [System] SET ANSI_NULL_DEFAULT ON 
+GO
+
+ALTER DATABASE [System] SET ANSI_NULLS ON 
+GO
+
+ALTER DATABASE [System] SET ANSI_PADDING ON 
+GO
+
+ALTER DATABASE [System] SET ANSI_WARNINGS ON 
+GO
+
+ALTER DATABASE [System] SET ARITHABORT ON 
+GO
+
+ALTER DATABASE [System] SET AUTO_CLOSE OFF 
+GO
+
+ALTER DATABASE [System] SET AUTO_CREATE_STATISTICS ON 
+GO
+
+ALTER DATABASE [System] SET AUTO_SHRINK OFF 
+GO
+
+ALTER DATABASE [System] SET AUTO_UPDATE_STATISTICS ON 
+GO
+
+ALTER DATABASE [System] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+
+ALTER DATABASE [System] SET CURSOR_DEFAULT  LOCAL 
+GO
+
+ALTER DATABASE [System] SET CONCAT_NULL_YIELDS_NULL ON 
+GO
+
+ALTER DATABASE [System] SET NUMERIC_ROUNDABORT OFF 
+GO
+
+ALTER DATABASE [System] SET QUOTED_IDENTIFIER ON 
+GO
+
+ALTER DATABASE [System] SET RECURSIVE_TRIGGERS OFF 
+GO
+
+ALTER DATABASE [System] SET  DISABLE_BROKER 
+GO
+
+ALTER DATABASE [System] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+
+ALTER DATABASE [System] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+
+ALTER DATABASE [System] SET TRUSTWORTHY ON 
+GO
+
+ALTER DATABASE [System] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+
+ALTER DATABASE [System] SET PARAMETERIZATION SIMPLE 
+GO
+
+ALTER DATABASE [System] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+
+ALTER DATABASE [System] SET HONOR_BROKER_PRIORITY OFF 
+GO
+
+ALTER DATABASE [System] SET RECOVERY FULL 
+GO
+
+ALTER DATABASE [System] SET  MULTI_USER 
+GO
+
+ALTER DATABASE [System] SET PAGE_VERIFY NONE  
+GO
+
+ALTER DATABASE [System] SET DB_CHAINING OFF 
+GO
+
+ALTER DATABASE [System] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+
+ALTER DATABASE [System] SET TARGET_RECOVERY_TIME = 0 SECONDS 
+GO
+
+ALTER DATABASE [System] SET  READ_WRITE 
+GO
+
