@@ -1,0 +1,63 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:gala="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WPF45" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:Viatronix.Dicom.MVVM.ViewModels;assembly=v3ddcmmvvm"
+             xmlns:view="clr-namespace:DicomViewer.Views"
+             x:Class="DicomViewer.Views.ImagesView"
+             x:Name="imageView"
+             mc:Ignorable="d" 
+             DataContext="vm::SerieViewModel"
+             Background="Black"
+             d:DesignHeight="300" 
+             d:DesignWidth="300">
+
+  <UserControl.Resources>
+
+    <SolidColorBrush x:Key="ImageViewTextColorBrush" Color="#FF9CC0FF"/>
+
+    <Style x:Key="ImageViewTextStyle" TargetType="{x:Type TextBlock}">
+      <Setter Property="Foreground" Value="{StaticResource ImageViewTextColorBrush}"/>
+      <Setter Property="TextAlignment" Value="Center"/>
+      <Setter Property="FontWeight" Value="Medium" />
+      <Setter Property="FontFamily" Value="Arial"/>
+      <Setter Property="FontSize" Value="12" />
+      <Setter Property="Background" Value="Transparent"/>
+    </Style>
+
+  </UserControl.Resources>
+
+
+
+
+  <Grid Width="Auto" Height="Auto">
+
+
+     
+    <view:SingleImageView Cursor="{Binding Cursor}" 
+           DataContext="{Binding SelectedImage}" 
+           Visibility="{Binding IsViewingImage, Converter={StaticResource imageVisibilityConverter}}" 
+           IsEnabled="{Binding IsViewingImage}" />
+
+
+
+    <view:FourImageView
+          DataContext="{Binding}"
+          Visibility="{Binding IsViewingImage, Converter={StaticResource multiImageVisibilityConverter}}" 
+          IsEnabled="{Binding IsViewingImage, Converter={StaticResource boolFlipConverter}}"
+          HorizontalAlignment="Stretch" />
+    
+    <view:SixImageView
+          DataContext="{Binding}"
+          Visibility="{Binding IsViewingImage, Converter={StaticResource multiImageVisibilityConverter}}" 
+          IsEnabled="{Binding IsViewingImage, Converter={StaticResource boolFlipConverter}}"
+          HorizontalAlignment="Stretch" />
+
+
+  </Grid>
+
+
+</UserControl>

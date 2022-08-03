@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5064A5A-848B-4DBF-99BD-3960AF076D80}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Viatronix.Utilities.Importer</RootNamespace>
+    <AssemblyName>Importer</AssemblyName>
+    <StartupObject>Viatronix.Utilities.Importer.ImportDialog</StartupObject>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath Condition=" '$(TeamBuildOutDir)'=='' ">..\..\..\..\Viatronix\Utilities\Importing\</OutputPath>
+    <OutputPath Condition=" '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Utilities\Importing\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath Condition=" '$(TeamBuildOutDir)'=='' ">..\..\..\..\Viatronix\Utilities\Importing\</OutputPath>
+    <OutputPath Condition=" '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Utilities\Importing\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath Condition=" '$(TeamBuildOutDir)'=='' ">..\..\..\..\Viatronix\Utilities\Importing\</OutputPath>
+    <OutputPath Condition=" '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Utilities\Importing\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath Condition=" '$(TeamBuildOutDir)'=='' ">..\..\..\..\Viatronix\Utilities\Importing\</OutputPath>
+    <OutputPath Condition=" '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Utilities\Importing\</OutputPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath Condition=" '$(TeamBuildOutDir)'=='' ">..\..\..\..\Viatronix\Utilities\Importing\</OutputPath>
+    <OutputPath Condition=" '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Utilities\Importing\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\bin\vxUtilities\Viatronix.v3D.Utilities.Importer.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath Condition=" '$(TeamBuildOutDir)'=='' ">..\..\..\..\Viatronix\Utilities\Importing\</OutputPath>
+    <OutputPath Condition=" '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Utilities\Importing\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\bin\vxUtilities\Viatronix.v3D.Utilities.Importer.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WPF45">
+      <HintPath>..\..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.Extras.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF45">
+      <HintPath>..\..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\FileParseInfo.cs" />
+    <Compile Include="Data\Patient.cs" />
+    <Compile Include="Filters\Filter20.cs" />
+    <Compile Include="Filters\Filter30.cs" />
+    <Compile Include="Filters\FilterFactory.cs" />
+    <Compile Include="Filters\IFilter.cs" />
+    <Compile Include="Filters\VASFilter20.cs" />
+    <Compile Include="Filters\VCFilter20.cs" />
+    <Compile Include="Filters\XPFilter20.cs" />
+    <Compile Include="Data\Global.cs" />
+    <Compile Include="Data\IFile.cs" />
+    <Compile Include="IImporter.cs" />
+    <Compile Include="ImportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportDialog.designer.cs">
+      <DependentUpon>ImportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ImportedFile.cs" />
+    <Compile Include="ImportManager20.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImportManager30.cs" />
+    <Compile Include="Data\ImporterArgs.cs" />
+    <Compile Include="Data\PatientImportStatusRecord.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ParsedStudy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ImportDialog.resx">
+      <DependentUpon>ImportDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Data\ParsedSeries.cs" />
+    <Compile Include="Data\SeriesTypeComparer.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Data\VirtualFile.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Dicom\Viatronix.Dicom.vcxproj">
+      <Project>{28b5550d-628e-4755-afa6-32a9f04951f9}</Project>
+      <Name>Viatronix.Dicom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Encryption\Viatronix.Encryption.csproj">
+      <Project>{ed270924-47cb-4d77-88c3-3f89cadc3491}</Project>
+      <Name>Viatronix.Encryption</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Enterprise\Viatronix.Enterprise.csproj">
+      <Project>{2c472d70-da70-47d7-bbd4-af591fae0d1d}</Project>
+      <Name>Viatronix.Enterprise</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Logging\Viatronix.Logging.vcxproj">
+      <Project>{eb450513-1b40-4e1f-9d8b-25266dc31efb}</Project>
+      <Name>Viatronix.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.UI\Viatronix.UI.csproj">
+      <Project>{cf5f8616-ea2b-4ac9-a514-e46cd6c5595e}</Project>
+      <Name>Viatronix.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Utilities\Viatronix.Utilities.vcxproj">
+      <Project>{1767198d-43d8-44e0-908f-28db9a16a8e6}</Project>
+      <Name>Viatronix.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.Utilities.Importer.Base\Viatronix.Utilities.Importer.Base.vcxproj">
+      <Project>{471AD76C-3AA0-43C8-81BF-6A0D6E534C33}</Project>
+      <Name>Viatronix.Utilities.Importer.Base</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if $(ConfigurationName) == Release xcopy /Y /R $(ProjectDir)\..\..\..\..\Libraries\vx\bin\vxBase.dll $(TargetDir)
+if $(ConfigurationName) == Release xcopy /Y /R $(ProjectDir)\..\..\..\..\Libraries\vx\bin\vxBlockVolume.dll $(TargetDir)
+if $(ConfigurationName) == Release xcopy /Y /R $(ProjectDir)\..\..\..\..\Libraries\vx\bin\vxLogger.dll $(TargetDir)
+if $(ConfigurationName) == Release xcopy /Y /R $(ProjectDir)\..\..\..\..\Libraries\vx\bin\vxDicom.dll $(TargetDir)
+if $(ConfigurationName) == Release xcopy /Y /R $(ProjectDir)\..\..\..\..\Libraries\vx\bin\vxMessaging.dll $(TargetDir)
+
+if $(ConfigurationName) == Debug xcopy /Y /R $(ProjectDir)\..\..\..\..\Libraries\vx\bin\vxBased.dll $(TargetDir)
+if $(ConfigurationName) == Debug xcopy /Y /R $(ProjectDir)\..\..\..\..\Libraries\vx\bin\vxBlockVolumed.dll $(TargetDir)
+if $(ConfigurationName) == Debug xcopy /Y /R $(ProjectDir)\..\..\..\..\Libraries\vx\bin\vxLoggerd.dll $(TargetDir)
+if $(ConfigurationName) == Debug xcopy /Y /R $(ProjectDir)\..\..\..\..\Libraries\vx\bin\vxDicomd.dll $(TargetDir)
+if $(ConfigurationName) == Debug xcopy /Y /R $(ProjectDir)\..\..\..\..\Libraries\vx\bin\vxMessagingd.dll $(TargetDir)
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>if $(ConfigurationName) == "Release"  $(ProjectDir)..\..\..\..\Libraries\utilities\Versioning  -c "$(ConfigurationName)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

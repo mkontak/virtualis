@@ -1,0 +1,111 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:gala="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WPF45" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:Viatronix.Dicom.MVVM.ViewModels;assembly=v3ddcmmvvm"
+             xmlns:view="clr-namespace:DicomViewer.Views"
+             x:Class="DicomViewer.Views.MultiImageView"
+             mc:Ignorable="d" 
+             DataContext="vm::SerieViewModel"
+             Background="Black"
+             d:DesignHeight="660" 
+             d:DesignWidth="660">
+
+  <UserControl.Resources>
+
+    <SolidColorBrush x:Key="ImageViewTextColorBrush" Color="#FF9CC0FF"/>
+    
+ 
+    <Style x:Key="ImageViewTextStyle" TargetType="{x:Type TextBlock}">
+      <Setter Property="Foreground" Value="WhiteSmoke"/>
+      <Setter Property="TextAlignment" Value="Center"/>
+      <Setter Property="FontWeight" Value="Medium" />
+      <Setter Property="FontFamily" Value="Arial"/>
+      <Setter Property="FontSize" Value="12" />
+      <Setter Property="Background" Value="Transparent"/>
+    </Style>
+
+    <Style x:Key="ImageGridStyle" TargetType="view:SingleImageView" >
+      <Setter Property="Margin" Value="2"/>
+      <Setter Property="BorderBrush" Value="WhiteSmoke" />
+      <Setter Property="BorderThickness" Value="1" />
+      <Setter Property="SnapsToDevicePixels" Value="True" />
+      <Style.Triggers>
+        <DataTrigger Binding="{Binding DataContext.IsSelected}" Value="True">
+          <Setter Property="BorderBrush" Value="{StaticResource ImageViewTextColorBrush}" />
+          <Setter Property="BorderThickness" Value="2" />
+          <Setter Property="SnapsToDevicePixels" Value="True" />
+        </DataTrigger>
+        <DataTrigger Binding="{Binding DataContext.IsSelected}" Value="False">
+          <Setter Property="BorderBrush" Value="WhiteSmoke" />
+          <Setter Property="BorderThickness" Value="1" />
+          <Setter Property="SnapsToDevicePixels" Value="True" />
+        </DataTrigger>
+      </Style.Triggers>
+    </Style>
+    
+  </UserControl.Resources>
+
+
+
+
+    <Grid x:Name="quadImgesGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+      
+     <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="{Binding (FrameworkElement.ActualWidth), Converter={StaticResource sizeConverter}, ConverterParameter=0.5}"
+    				              MinWidth="{Binding ItemWidth, RelativeSource={RelativeSource Self}}"/>
+      <ColumnDefinition Width="{Binding (FrameworkElement.ActualWidth), Converter={StaticResource sizeConverter}, ConverterParameter=0.5}"
+    				              MinWidth="{Binding ItemWidth, RelativeSource={RelativeSource Self}}"/>
+      <ColumnDefinition Width="15"/>
+    </Grid.ColumnDefinitions>
+      
+     <Grid.RowDefinitions>
+      <RowDefinition Height="{Binding (FrameworkElement.ActualHeight), Converter={StaticResource sizeConverter}, ConverterParameter=0.5}"/>
+      <RowDefinition Height="{Binding (FrameworkElement.ActualHeight), Converter={StaticResource sizeConverter}, ConverterParameter=0.5}"/>
+    </Grid.RowDefinitions>
+
+      <i:Interaction.Triggers>
+        <i:EventTrigger EventName="MouseDoubleClick" >
+          <gala:EventToCommand  Command="{Binding ToggleViewImageCommand}" CommandParameter="{Binding SelectedImage}" />
+        </i:EventTrigger>
+      </i:Interaction.Triggers>
+
+    <DockPanel Grid.Column ="0" Grid.Row="0" >
+      <view:SingleImageView  DataContext="{Binding CurrentPage.Images[0]}" Style="{StaticResource ImageGridStyle}"/>
+    </DockPanel>
+
+    <DockPanel Grid.Column ="1" Grid.Row="0" >
+      <view:SingleImageView DataContext="{Binding CurrentPage.Images[1]}" Style="{StaticResource ImageGridStyle}"/>
+    </DockPanel>
+
+    <DockPanel  Grid.Column ="0" Grid.Row="1" >
+      <view:SingleImageView  DataContext="{Binding CurrentPage.Images[2]}" Style="{StaticResource ImageGridStyle}"/>
+    </DockPanel>
+
+    <DockPanel Grid.Column ="1" Grid.Row="1"  >
+      <view:SingleImageView DataContext="{Binding CurrentPage.Images[3]}" Style="{StaticResource ImageGridStyle}"/>
+    </DockPanel>
+
+    <ScrollBar x:Name="pageScroller" SmallChange="1.0"
+               VerticalAlignment="Stretch" Grid.Column="2" Grid.RowSpan="2" BorderBrush="DarkBlue" BorderThickness="1" 
+               Background="{StaticResource ImageViewTextColorBrush}" Minimum="0" Maximum="{Binding Pages.Count}"
+               Foreground="DarkBlue" >
+       
+      <i:Interaction.Triggers>
+        <i:EventTrigger EventName="ValueChanged" >
+          <gala:EventToCommand  Command="{Binding ChangePageCommand}" CommandParameter="{Binding ElementName=pageScroller, Path=Value}" />
+        </i:EventTrigger>
+      </i:Interaction.Triggers>
+
+    </ScrollBar>
+      
+  </Grid>
+
+
+
+
+
+</UserControl>

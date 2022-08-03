@@ -1,0 +1,25 @@
+﻿<Window x:Class="DicomViewer.Windows.HeaderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:gala="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WPF4.5" 
+        xmlns:views="clr-namespace:Viatronix.Dicom.MVVM.Views;assembly=v3ddcmmvvm"
+        FontSize="14" 
+        FontWeight="Bold"
+        FontFamily="Verdana"
+        MinWidth="650" MinHeight="420"
+        x:Name="dicomHeader"
+        Title="{Binding  Path=PatientName}"
+        Width="600" 
+        Height="500" 
+         >
+
+          
+        <Border Margin="5"  Style="{StaticResource borderStyle}" >
+          <HeaderedContentControl Header="Header" Style="{StaticResource headerTemplate}" >
+            <views:HeaderView    DataContext="{Binding}" />
+          </HeaderedContentControl>
+        </Border>
+
+
+</Window>

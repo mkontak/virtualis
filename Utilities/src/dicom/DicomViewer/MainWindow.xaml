@@ -1,0 +1,259 @@
+﻿<Window x:Class="DicomViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:gala="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WPF45" 
+        xmlns:viewer="clr-namespace:DicomViewer"
+        xmlns:vm="clr-namespace:Viatronix.Dicom.MVVM.ViewModels;assembly=v3ddcmmvvm"
+        xmlns:gest="clr-namespace:Viatronix.UI.Gestures;assembly=v3dwpfui" 
+        xmlns:view="clr-namespace:DicomViewer.Views"
+        xmlns:behavoir="clr-namespace:Viatronix.Dicom.MVVM.Behavior;assembly=v3ddcmmvvm"
+        FontSize="13" 
+        FontFamily="Verdana"
+        MinWidth="650" MinHeight="420"
+        x:Name="dicomViewer"
+        Title="Dicom Viewer"
+        AllowDrop="True"
+        Cursor="{Binding IsBusy, Converter={StaticResource cursorConverter}}"
+        Width="1200" 
+        Height="684"
+        WindowStartupLocation="CenterScreen" >
+
+  <Window.Resources>
+    <viewer:MainViewModel x:Key="viewerSource"/>
+
+    <gest:MouseWheelGesture x:Key="MouseWheelDown" MouseWheelAction="WheelDown"/>
+    <gest:MouseWheelGesture x:Key="MouseWheelUp" MouseWheelAction="WheelUp"/>
+
+    <Style TargetType="ListView">
+      <Style.Triggers>
+        <Trigger Property="IsEnabled" Value="False">
+          <Setter Property="Background" Value="LightGray" />
+         </Trigger>
+      </Style.Triggers>
+    </Style>
+
+    <Style TargetType="{x:Type view:SeriesView}" >
+      <Style.Triggers>
+        <Trigger Property="IsEnabled" Value="False">
+          <Setter Property="Background" Value="Black" />
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+
+  </Window.Resources>
+
+
+  <i:Interaction.Triggers>
+    <i:EventTrigger EventName="Closing">
+      <gala:EventToCommand Command="{Binding CloseCommand}" />
+    </i:EventTrigger>
+  </i:Interaction.Triggers>
+
+
+  <DockPanel DataContext="{StaticResource viewerSource}"  >
+    
+
+    <!-- Top docking panel contains the menu bar  -->
+    <DockPanel DockPanel.Dock="Top" KeyboardNavigation.TabNavigation="None" HorizontalAlignment="Stretch" IsEnabled="{Binding IsBusy, Converter={StaticResource boolFlipConverter}}">
+      
+      <Menu KeyboardNavigation.TabNavigation="Cycle" >
+        <MenuItem Header="_File">
+          <MenuItem Header="Load Files" Command="{Binding LoadFilesCommand}" >
+            <MenuItem.Icon>
+              <Image Height="20" Source="/DicomViewer;component/Resources/DicomImage.ico" />
+            </MenuItem.Icon>
+          </MenuItem>
+          <Separator></Separator>
+          <MenuItem Header="Load Directory" Command="{Binding LoadDirectoryCommand}" >
+            <MenuItem.Icon>
+              <Image Height="20" Source="/DicomViewer;component/Resources/ImagesFolder.ico" />
+            </MenuItem.Icon>
+          </MenuItem>
+          <Separator></Separator>
+          <MenuItem Header="E_xit" Command="{Binding Path=ExitCommand}" />
+        </MenuItem>
+        <MenuItem Header="_View">
+          <MenuItem Header="View Header" Command="{Binding ViewHeaderCommand}"  IsEnabled="{Binding IsSeriesSelected, Mode=OneWay}"/>
+        </MenuItem>
+        <MenuItem Header="_Help" />
+      </Menu>
+    </DockPanel>
+
+    <!-- Bottom docking panel contains the menu bar  -->
+    <DockPanel  DockPanel.Dock="Bottom"  HorizontalAlignment="Stretch"  VerticalAlignment="Bottom" >
+      <Border Margin="2"  Style="{StaticResource BorderStyle}" HorizontalAlignment="Stretch" VerticalAlignment="Center" >
+         <TextBlock Margin="2" Text="{Binding Path=Status}" Foreground="DarkBlue" Background="LightGray" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+       </Border>
+    </DockPanel>
+
+
+    <DockPanel HorizontalAlignment="Stretch" >
+
+
+      <Grid Margin="3">
+
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="400" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <DockPanel >
+          
+         <Border Margin="2" Grid.Column="0"  Grid.Row="0" Style="{StaticResource BorderStyle}" >
+          
+ 
+            <HeaderedContentControl Header="Datasets" Style="{StaticResource HeaderTemplate}">
+            
+              
+            <ListView x:Name="DatasetListView" ItemsSource="{Binding Series}" SelectionMode="Single" AllowDrop="True" 
+                      behavoir:ListViewBehavior.PreviewDropCommand="{Binding DropCommand}" Background="LightGray" 
+                      SelectedItem="{Binding SelectedSeries, Mode=OneWay}" 
+                      IsEnabled="{Binding IsBusy, Converter={StaticResource boolFlipConverter}}" >
+              
+ 
+              <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <gala:EventToCommand Command="{Binding SelectSeriesCommand}" CommandParameter="{Binding ElementName=DatasetListView, Path=SelectedItems[0]}" />
+                </i:EventTrigger>
+                <i:EventTrigger EventName="MouseLeftButtonDown" >
+                  <gala:EventToCommand Command="{Binding DoubleClickCommand}" PassEventArgsToCommand="True"/>
+                </i:EventTrigger>
+               </i:Interaction.Triggers>
+
+              <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                  <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                </Style>
+               </ListView.ItemContainerStyle>
+              
+              <ListView.ItemTemplate>
+                
+                <DataTemplate>
+
+                  <Border CornerRadius="3" BorderBrush="DarkBlue" BorderThickness="1" HorizontalAlignment="Stretch" >
+                    
+                  <StackPanel  Margin="2"  Orientation="Horizontal" HorizontalAlignment="Stretch" >
+                    
+                    <Grid>
+                      <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="4"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="3"/>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+
+                        </Grid.ColumnDefinitions>
+                      <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+
+                        <RowDefinition Height="*"/>
+                      </Grid.RowDefinitions>
+
+                      <TextBlock  Grid.Row="0"  Grid.Column="2" Text="Patient:" TextAlignment="Left" FontSize="12" Foreground="DarkBlue" />
+                      <TextBlock  Grid.Row="0"  Grid.Column="4" Text="{Binding Path=PatientName}" TextAlignment="Left" FontSize="12" Foreground="DarkBlue" />
+
+                      <TextBlock  Grid.Row="1"  Grid.Column="2" Text="Medical Id:" TextAlignment="Left" FontSize="12" Foreground="DarkBlue" />
+                      <TextBlock  Grid.Row="1"  Grid.Column="4" Text="{Binding Path=MedicalId}" TextAlignment="Left" FontSize="12" Foreground="DarkBlue" />
+
+                      <TextBlock Grid.Row="2"  Grid.Column="2" Text="Scan Date:" TextAlignment="Left" FontSize="12" Foreground="DarkBlue" />
+                      <TextBlock  Grid.Row="2"  Grid.Column="4" Text="{Binding Path=ScanDate}" TextAlignment="Left" FontSize="12" Foreground="DarkBlue" />
+
+                      <TextBlock Grid.Row="3"  Grid.Column="2" Text="Modality:" TextAlignment="Left" FontSize="12" Foreground="DarkBlue" />
+                      <TextBlock Grid.Row="3"  Grid.Column="4" Text="{Binding Path=Modality}" TextAlignment="Left" FontSize="12" Foreground="DarkBlue" />
+
+                      <TextBlock  Grid.Row="4"  Grid.Column="2" Text="Orientation:" TextAlignment="Left" FontSize="12" Foreground="DarkBlue" />
+                      <TextBlock  Grid.Row="4"  Grid.Column="4" Text="{Binding Path=Orientation}" TextAlignment="Left" FontSize="12" Foreground="DarkBlue" />
+                      <!--<RadioButton  Grid.Row="4"  Grid.Column="7"  FontSize="12" Foreground="DarkBlue" 
+                                    IsChecked="{Binding IsSorted, Mode=OneWay, Converter={StaticResource boolFlipConverter}}" 
+                                    Command="{Binding SortCommand}"
+                                    IsEnabled="{Binding IsSelected}">
+                        <TextBlock Text="Implied"/>
+                      </RadioButton>-->
+
+                      <TextBlock Grid.Row="5"  Grid.Column="2" Text="Images:" TextAlignment="Left" FontSize="12" Foreground="DarkBlue" />
+                      <TextBlock  Grid.Row="5"  Grid.Column="4" Text="{Binding Path=Images.Count}" TextAlignment="Left" FontSize="12" Foreground="DarkBlue" />
+                      <!--<RadioButton  Grid.Row="5"  Grid.Column="7"  FontSize="12" Foreground="DarkBlue" 
+                                    IsChecked="{Binding IsSorted, Mode=OneWay}"
+                                    Command="{Binding SortCommand}"
+                                    IsEnabled="{Binding IsSelected}">
+                            <TextBlock Text="Sorted"/>
+                      </RadioButton>-->
+
+                      <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.RowSpan="6" HorizontalAlignment="Right" VerticalAlignment="Center">
+                        <Border BorderBrush="Black"  BorderThickness="1" CornerRadius="3" >
+                           <Image  Source="{Binding Thumbnail, Converter={StaticResource bitmapConverter}}" Width="90" Height="90"/>
+                         </Border>
+                       </StackPanel>
+                      
+                      </Grid>
+                  </StackPanel>
+                  </Border>
+
+                </DataTemplate>
+                
+              </ListView.ItemTemplate>
+
+  
+
+            </ListView>
+
+          </HeaderedContentControl>
+          
+        </Border>
+        </DockPanel>
+
+        <DockPanel x:Name="ImageDockPanel" DataContext="{Binding SelectedSeries}"  Grid.Column="1"  KeyboardNavigation.ControlTabNavigation="Local" IsEnabled="{Binding IsBusy, Converter={StaticResource boolFlipConverter}}">
+          <DockPanel.InputBindings>
+            <MouseBinding MouseAction="WheelClick"
+                  Gesture="{StaticResource MouseWheelUp}" 
+                  Command="{Binding MouseWheelUpCommand}" />
+            <MouseBinding MouseAction="WheelClick" 
+                  Gesture="{StaticResource MouseWheelDown}" 
+                  Command="{Binding MouseWheelDownCommand}" />
+          </DockPanel.InputBindings>
+
+          <i:Interaction.Triggers>
+            <i:EventTrigger EventName="MouseMove">
+              <gala:EventToCommand Command="{Binding MouseMoveCommand}" CommandParameter="{Binding ElementName=ImageDockPanel}" />
+            </i:EventTrigger>
+            <i:EventTrigger EventName="MouseDown">
+              <gala:EventToCommand Command="{Binding MouseDownCommand}" PassEventArgsToCommand="True" />
+            </i:EventTrigger>
+         </i:Interaction.Triggers>
+
+
+          <Border Margin="2" Style="{StaticResource BorderStyle}" >
+            <view:ImagesView DataContext="{Binding }" />
+          </Border>
+          
+
+        </DockPanel>
+        <!--<view:SeriesView  Margin="2" DataContext="{Binding SelectedSeries}"  Grid.Column="1"  KeyboardNavigation.ControlTabNavigation="Local" IsEnabled="{Binding IsBusy, Converter={StaticResource boolFlipConverter}}"/>-->
+ 
+        
+
+      </Grid>
+
+        
+      
+      </DockPanel>
+
+ 
+  </DockPanel>
+
+   
+  
+</Window>

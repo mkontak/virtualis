@@ -1,0 +1,6 @@
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\licensing\Viatronix.Licensing\bin\x64\Release\vxliclib.dll
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\licensing\Viatronix.Licensing\bin\x64\Release\vxliclib.pdb
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\licensing\Viatronix.Licensing\obj\x64\Release\Viatronix.Licensing.csprojAssemblyReference.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\licensing\Viatronix.Licensing\obj\x64\Release\Viatronix.Licensing.csproj.CoreCompileInputs.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\licensing\Viatronix.Licensing\obj\x64\Release\vxliclib.dll
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\licensing\Viatronix.Licensing\obj\x64\Release\vxliclib.pdb

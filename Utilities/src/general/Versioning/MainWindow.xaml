@@ -1,0 +1,18 @@
+﻿<Window x:Class="Versioning.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Versioning" Height="618" Width="1011">
+
+  <DockPanel Height="587" Width="1003">
+    <Grid >
+      <Label Content="Release:" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="80"/>
+      <ComboBox HorizontalAlignment="Left" Margin="126,20,0,0" VerticalAlignment="Top" Width="374"/>
+      <Label Content="Description:" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.079,-2.923" Width="104"/>
+      <TextBox HorizontalAlignment="Left" Height="23" Margin="126,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="658" />
+      <DockPanel HorizontalAlignment="Left" Height="462" LastChildFill="False" Margin="10,115,0,0" VerticalAlignment="Top" Width="983">
+        <DataGrid x:Name="projectList"  Height="462" VerticalAlignment="Top" Width="983" AutoGenerateColumns="True" />
+      </DockPanel>
+    </Grid>
+  </DockPanel>
+
+</Window>

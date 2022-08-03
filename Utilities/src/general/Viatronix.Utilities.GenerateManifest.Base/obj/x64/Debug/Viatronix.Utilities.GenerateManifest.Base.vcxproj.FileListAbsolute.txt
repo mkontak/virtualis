@@ -1,0 +1,1 @@
+D:\Source\viatronix\viatronix\Utilities\src\general\Viatronix.Utilities.GenerateManifest.Base\obj\x64\Debug\Viatronix.Utilities.GenerateManifest.Base.vcxproj.AssemblyReference.cache

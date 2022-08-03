@@ -1,0 +1,156 @@
+﻿<UserControl x:Class="Viatronix.Utilities.Dicom.Viewer.View.HeaderView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:Viatronix.Utilities.Dicom.Viewer.ViewModel"
+             DataContext="vm:HeaderViewModel"
+             FontSize="13" 
+             FontFamily="Verdana"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+  
+  <UserControl.Resources>
+    
+  </UserControl.Resources>
+
+  <DockPanel >
+
+     <Grid>
+       
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="80"/>
+        <ColumnDefinition Width="100"/>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+
+      <TextBlock Grid.Row="0" Grid.Column="0" Foreground="DarkBlue" FontSize="12" FontWeight="Bold" Text="Tag" HorizontalAlignment="Center"/>
+      <TextBlock Grid.Row="0" Grid.Column="1" Foreground="DarkBlue" FontSize="12" FontWeight="Bold" Text="Name" HorizontalAlignment="Center"/>
+      <TextBlock Grid.Row="0" Grid.Column="2" Foreground="DarkBlue" FontSize="12" FontWeight="Bold" Text="Value" HorizontalAlignment="Center"/>
+
+      <TreeView Grid.Row="1" Grid.ColumnSpan="3"  ItemsSource="{Binding Elements}" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" Height="Auto">
+
+         <TreeView.Resources>
+          <SolidColorBrush Color="LightBlue" x:Key="{x:Static SystemColors.HighlightBrushKey}"/>
+        </TreeView.Resources>
+
+        <TreeView.ItemContainerStyle>
+
+          <Style TargetType="{x:Type TreeViewItem}">
+
+            <Style.Triggers>
+
+              <DataTrigger Binding="{Binding GroupId }" Value="0000">
+                <Setter Property="ItemsControl.Foreground" Value="Crimson" />
+              </DataTrigger>
+
+
+              <DataTrigger Binding="{Binding GroupId }" >
+                <DataTrigger.Value>0008</DataTrigger.Value>
+                <Setter Property="ItemsControl.Foreground" Value="Blue" />
+              </DataTrigger>
+
+              <DataTrigger Binding="{Binding GroupId }" >
+                <DataTrigger.Value>0010</DataTrigger.Value>
+                <Setter Property="ItemsControl.Foreground" Value="DarkOrange" />
+              </DataTrigger>
+
+
+              <DataTrigger Binding="{Binding GroupId }" >
+                <DataTrigger.Value>0018</DataTrigger.Value>
+                <Setter Property="ItemsControl.Foreground" Value="DarkRed" />
+              </DataTrigger>
+
+              <DataTrigger Binding="{Binding GroupId }">
+                <DataTrigger.Value>0020</DataTrigger.Value>
+                <Setter Property="ItemsControl.Foreground" Value="MediumPurple" />
+              </DataTrigger>
+
+
+              <DataTrigger Binding="{Binding GroupId }" >
+                <DataTrigger.Value>0028</DataTrigger.Value>
+                <Setter Property="ItemsControl.Foreground" Value="DarkGreen" />
+              </DataTrigger>
+
+              <DataTrigger Binding="{Binding GroupId }" >
+                <DataTrigger.Value>0032</DataTrigger.Value>
+                <Setter Property="ItemsControl.Foreground" Value="BlueViolet" />
+              </DataTrigger>
+
+
+              <DataTrigger Binding="{Binding GroupId }" >
+                <DataTrigger.Value>0038</DataTrigger.Value>
+                <Setter Property="ItemsControl.Foreground" Value="SlateGray" />
+              </DataTrigger>
+
+              <DataTrigger Binding="{Binding GroupId }">
+                <DataTrigger.Value>0050</DataTrigger.Value>
+                <Setter Property="ItemsControl.Foreground" Value="DeepSkyBlue" />
+              </DataTrigger>
+
+
+              <DataTrigger Binding="{Binding GroupId }" >
+                <DataTrigger.Value>0060</DataTrigger.Value>
+                <Setter Property="ItemsControl.Foreground" Value="RosyBrown" />
+              </DataTrigger>
+
+              <DataTrigger Binding="{Binding GroupId }" >
+                <DataTrigger.Value>5400</DataTrigger.Value>
+                <Setter Property="ItemsControl.Foreground" Value="DarkOliveGreen" />
+              </DataTrigger>
+
+              <DataTrigger Binding="{Binding GroupId }" >
+                <DataTrigger.Value>003A</DataTrigger.Value>
+                <Setter Property="ItemsControl.Foreground" Value="Peru" />
+              </DataTrigger>
+
+              <Trigger Property="IsSelected" Value="True">
+                <Setter Property="FontWeight" Value="Bold" />
+              </Trigger>
+
+
+            </Style.Triggers>
+
+
+
+          </Style>
+
+
+        </TreeView.ItemContainerStyle>
+
+        <TreeView.ItemTemplate>
+
+
+          <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+
+            <StackPanel Orientation="Horizontal">
+
+              <Grid>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="100" />
+                  <ColumnDefinition Width="200"/>
+                  <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding Id}" HorizontalAlignment="Left"/>
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Name}" HorizontalAlignment="Left"/>
+                <TextBlock Grid.Row="0" Grid.Column="2" Text="{Binding Value}" HorizontalAlignment="Stretch" ClipToBounds="True"/>
+
+              </Grid>
+
+            </StackPanel>
+
+          </HierarchicalDataTemplate>
+        </TreeView.ItemTemplate>
+
+      </TreeView>
+    </Grid>
+
+  </DockPanel>
+
+</UserControl>

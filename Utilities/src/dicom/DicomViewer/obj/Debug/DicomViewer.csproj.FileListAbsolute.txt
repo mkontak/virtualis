@@ -1,0 +1,8 @@
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomViewer\obj\Debug\DicomViewer.csprojAssemblyReference.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomViewer\obj\Debug\Views\SixImageView.g.cs
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomViewer\obj\Debug\Views\ImageView.g.cs
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomViewer\obj\Debug\Views\FourImageView.g.cs
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomViewer\obj\Debug\Views\SingleImageView.g.cs
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomViewer\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomViewer\obj\Debug\DicomViewer_MarkupCompile.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomViewer\obj\Debug\DicomViewer_MarkupCompile.lref

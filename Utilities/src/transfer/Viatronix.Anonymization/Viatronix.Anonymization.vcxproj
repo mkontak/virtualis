@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{683A176F-B991-40D2-B9DA-331FDD22D961}</ProjectGuid>
+    <RootNamespace>ViatronixV3DAnonymzn</RootNamespace>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <ProjectName>Viatronix.Anonymization</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">v3danon</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">v3danon</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\Libraries\libiconv\include;..\..\..\..\Libraries\libxml\include;..\..\..\..\Libraries\vx\include\vxLogger;..\..\..\..\Libraries\vx\include\vxBase;..\..\..\..\Libraries\vx\include\vxBlockVolume;..\..\..\..\Libraries\libs\minilzo\include;..\..\..\...\Libraries\libs\wmsdk\include;..\..\..\...\Libraries\libs\zlib\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4018;4244;4231;4267;4661;4273;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\vxBase\lib;..\vxBlockVolume\lib;..\vxLogger\lib;..\..\libs\WMSDK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\..\Libraries\libiconv\include;..\..\..\..\Libraries\libxml\include;..\..\..\..\Libraries\vx\include\vxLogger;..\..\..\..\Libraries\vx\include\vxBase;..\..\..\..\Libraries\vx\include\vxBlockVolume;..\..\..\..\Libraries\libs\minilzo\include;..\..\..\...\Libraries\libs\wmsdk\include;..\..\..\...\Libraries\libs\zlib\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN64;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\vxBase\lib;..\vxBlockVolume\lib;..\vxLogger\lib;..\..\libs\WMSDK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WPF45">
+      <HintPath>..\..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.Extras.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF45">
+      <HintPath>..\..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnonymizationEventArgs.cpp" />
+    <ClCompile Include="AnonymizationHelper.cpp" />
+    <ClCompile Include="AnonymizationInformation.cpp" />
+    <ClCompile Include="Anonymizer.cpp" />
+    <ClCompile Include="AnonymizerDicom.cpp" />
+    <ClCompile Include="AnonymizerDummyFile.cpp" />
+    <ClCompile Include="AnonymizerImage.cpp" />
+    <ClCompile Include="AnonymizerPatient.cpp" />
+    <ClCompile Include="AnonymizerSeries.cpp" />
+    <ClCompile Include="AnonymizerStudy.cpp" />
+    <ClCompile Include="AnonymizerTextFile.cpp" />
+    <ClCompile Include="AnonymizerVolume.cpp" />
+    <ClCompile Include="AnonymizerVrx.cpp" />
+    <ClCompile Include="AnonymizerWizard.cpp" />
+    <ClCompile Include="Exceptions.cpp" />
+    <ClCompile Include="ImportedLibraries.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="AnonymizerUtilities.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnonymizationEventArgs.h" />
+    <ClInclude Include="AnonymizationHelper.h" />
+    <ClInclude Include="AnonymizationInformation.h" />
+    <ClInclude Include="Anonymizer.h" />
+    <ClInclude Include="AnonymizerDicom.h" />
+    <ClInclude Include="AnonymizerDummyFile.h" />
+    <ClInclude Include="AnonymizerImage.h" />
+    <ClInclude Include="AnonymizerPatient.h" />
+    <ClInclude Include="AnonymizerSeries.h" />
+    <ClInclude Include="AnonymizerStudy.h" />
+    <ClInclude Include="AnonymizerTextFile.h" />
+    <ClInclude Include="AnonymizerVolume.h" />
+    <ClInclude Include="AnonymizerVrx.h" />
+    <ClInclude Include="AnonymizerWizard.h" />
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SearchAndReplace.h" />
+    <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="AnonymizerUtlities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BuildNumber.ver" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Console\src\Viatronix.Console.Core\Viatronix.Console.Core.csproj">
+      <Project>{14478e29-6ba1-495f-b9c6-848aea880fc6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Dicom\Viatronix.Dicom.vcxproj">
+      <Project>{28b5550d-628e-4755-afa6-32a9f04951f9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Encryption\Viatronix.Encryption.csproj">
+      <Project>{ed270924-47cb-4d77-88c3-3f89cadc3491}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Enterprise\Viatronix.Enterprise.csproj">
+      <Project>{2c472d70-da70-47d7-bbd4-af591fae0d1d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Logging\Viatronix.Logging.vcxproj">
+      <Project>{eb450513-1b40-4e1f-9d8b-25266dc31efb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Messaging\Viatronix.Messaging.vcxproj">
+      <Project>{b2a224ad-1b7f-47f6-82f0-21d365058df6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.UI\Viatronix.UI.csproj">
+      <Project>{cf5f8616-ea2b-4ac9-a514-e46cd6c5595e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Core\src\v3d\Viatronix.Utilities\Viatronix.Utilities.vcxproj">
+      <Project>{1767198d-43d8-44e0-908f-28db9a16a8e6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Viatronix.Anonymization.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

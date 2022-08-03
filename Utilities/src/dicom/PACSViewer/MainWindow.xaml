@@ -1,0 +1,72 @@
+﻿<Window x:Class="Viatronix.Utilities.Dicom.PACSViewer.MainWindow" 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+  Title="PACS Viewer" Width="900" Height="418" MinWidth="900" MinHeight="418">
+  <Grid Background="LightSteelBlue">
+
+    <Label Content="Server:" Margin="3, 3, 0, 0"  Foreground="DarkBlue" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" />
+    <ComboBox ItemsSource="{Binding Servers, Mode=OneWay}" SelectedItem="{Binding SelectedConnection, Mode=TwoWay}" IsEnabled="{Binding NotActive}" Height="23" Margin="99,43,0,0" Foreground="DarkBlue" FontWeight="Bold" HorizontalAlignment="Left" Width="214" VerticalAlignment="Top" />
+
+    <GroupBox Header="Patient Fields:" Height="84" Margin="6,76,0,0" VerticalAlignment="Top" Foreground="DarkBlue" FontWeight="Bold" HorizontalAlignment="Left" Width="307">
+      <Grid>
+        <Label Content="Patient Name:" Height="28" HorizontalAlignment="Left" Margin="3,3,0,0" VerticalAlignment="Top" Foreground="DarkBlue" FontWeight="Bold" />
+        <TextBox Text="{Binding Parameters.PatientName, Mode=TwoWay}" IsEnabled="{Binding NotActive}" Height="23" Margin="99,3,3,0" VerticalAlignment="Top" />
+
+        <Label Content="Medical Id:" Height="28" HorizontalAlignment="Left" Margin="3,34,0,0" Name="label7" VerticalAlignment="Top" Foreground="DarkBlue" FontWeight="Bold" />
+        <TextBox Text="{Binding Parameters.MedicalId, Mode=TwoWay}" IsEnabled="{Binding NotActive}" Height="23" Margin="99,34,3,0" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+      </Grid>
+    </GroupBox>
+
+    <GroupBox Header="Study Fields:" Foreground="DarkBlue" FontWeight="Bold" Height="117" Margin="6,166,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="307">
+      <Grid>
+        <Label Content="Study Date:" FontWeight="Bold" Foreground="DarkBlue" Height="28" HorizontalAlignment="Left" Margin="3,3,0,0" VerticalAlignment="Top" Width="86" />
+        <DatePicker SelectedDate="{Binding Parameters.StudyDateFrom, Mode=TwoWay}" IsEnabled="{Binding NotActive}" Height="25" Margin="99,3,3,0" VerticalAlignment="Top" />
+        <DatePicker SelectedDate="{Binding Parameters.StudyDateTo, Mode=TwoWay}" IsEnabled="{Binding NotActive}" Height="25" Margin="99,33,3,0" VerticalAlignment="Top" />
+        <Label Content="Study Id:" Height="28" HorizontalAlignment="Left" Margin="3,66,0,0" Name="label8" VerticalAlignment="Top" Foreground="DarkBlue" FontWeight="Bold" />
+        <TextBox Text="{Binding Parameters.StudyId, Mode=TwoWay}" IsEnabled="{Binding NotActive}" Height="23" Margin="99,68,3,0" VerticalAlignment="Top" />
+      </Grid>
+    </GroupBox>
+
+    <GroupBox Header="Series Fields:" Height="52" Margin="6,290,0,0" VerticalAlignment="Top" Foreground="DarkBlue" FontWeight="Bold" HorizontalAlignment="Left" Width="307">
+      <Grid>
+        <Label Content="Modality:" Height="28" HorizontalAlignment="Left" Margin="3,3,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="DarkBlue" />
+        <ComboBox SelectedItem="{Binding Parameters.SelectedModality}" ItemsSource="{Binding Parameters.Modalities}" IsEnabled="{Binding NotActive}" Height="23" Margin="99,3,3,0" Name="comboBox1" VerticalAlignment="Top" />
+      </Grid>
+    </GroupBox>
+
+    <!-- Type -->
+    <Label Content="Type:" Height="28" HorizontalAlignment="Left" Margin="3,39,0,0" VerticalAlignment="Top" Foreground="DarkBlue" FontWeight="Bold" />
+    <ComboBox ItemsSource="{Binding Parameters.SearchTypes, Mode=OneWay}" SelectedItem="{Binding Parameters.SelectedType, Mode=TwoWay}" IsEnabled="{Binding NotActive}" Height="23" Margin="99,7,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="214" />
+
+    <!-- The list view for displaying the results of the search. -->
+    <ListView Margin="320,5,5,37" ItemsSource="{Binding Records}">
+      <ListView.View>
+        <GridView>
+          <GridView.Columns>
+            <GridViewColumn Header="RetrievalAETitle" DisplayMemberBinding="{Binding RetrievalAETitle}" />
+            <GridViewColumn Header="Patient Name" DisplayMemberBinding="{Binding Name}" />
+            <GridViewColumn Header="Medical Id" DisplayMemberBinding="{Binding MedicalId}" />
+            <GridViewColumn Header="Birth Date" DisplayMemberBinding="{Binding BirthDate}" />
+            <GridViewColumn Header="Study Uid" DisplayMemberBinding="{Binding StudyUid}" />
+            <GridViewColumn Header="Study Date" DisplayMemberBinding="{Binding StudyDate}" />
+            <GridViewColumn Header="Physician" DisplayMemberBinding="{Binding Physician}" />
+            <GridViewColumn Header="Study Description" DisplayMemberBinding="{Binding StudyDescription}" />
+            <GridViewColumn Header="Study Id" DisplayMemberBinding="{Binding StudyId}" />
+            <GridViewColumn Header="Series Uid" DisplayMemberBinding="{Binding SeriesUid}" />
+            <GridViewColumn Header="Series Date" DisplayMemberBinding="{Binding SeriesDate}" />
+            <GridViewColumn Header="Modality" DisplayMemberBinding="{Binding Modality}" />
+          </GridView.Columns>
+        </GridView>
+      </ListView.View>
+    </ListView>
+
+    <!-- Number of results found. -->
+    <Label Content="Results Count:" HorizontalAlignment="Left" Margin="320,0,0,2" Foreground="DarkBlue" FontWeight="Bold" Height="28" VerticalAlignment="Bottom" Grid.Column="1" />
+    <Label Content="{Binding Records.Count}" Height="23" Margin="420,0,0,7" VerticalAlignment="Bottom" HorizontalAlignment="Left" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Width="58" />
+
+    <!-- Search and clear buttons -->
+    <Button Content="Search" Command="{Binding StandardQueryCommand}" IsEnabled="{Binding Active}" HorizontalAlignment="Right" Margin="0,0,86,6" Width="75" Foreground="DarkBlue" FontWeight="Bold" Height="23" VerticalAlignment="Bottom" Grid.Column="1" />
+    <Button Content="Clear" Command="{Binding Parameters.ClearCommand}" IsEnabled="{Binding NotActive}" Height="23" HorizontalAlignment="Right" Margin="0,0,5,6" VerticalAlignment="Bottom" Width="75" Foreground="DarkBlue" FontWeight="Bold" Grid.Column="1" />
+
+  </Grid>
+</Window>

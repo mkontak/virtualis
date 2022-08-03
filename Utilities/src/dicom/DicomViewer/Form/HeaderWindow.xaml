@@ -1,0 +1,11 @@
+﻿<Window x:Class="Viatronix.Utilities.Dicom.Viewer.HeaderDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:Viatronix.Utilities.Dicom.Viewer.ViewModel"
+        xmlns:vw="clr-namespace:Viatronix.Utilities.Dicom.Viewer.View"
+        DataContext="{Binding}"
+        Title="Window1" Height="300" Width="300">
+    <Grid>
+    <vw:HeaderView></vw:HeaderView>
+  </Grid>
+</Window>

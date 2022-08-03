@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace Viatronix.Utilities.Dicom.PACSViewer
+{
+  /// <summary>
+  /// Interaction logic for ServiceWindow.xaml
+  /// </summary>
+  public partial class ServiceWindow : Window
+  {
+
+    #region construction
+
+    /// <summary>
+    /// Constructor.
+    /// </summary>
+    public ServiceWindow()
+    {
+      InitializeComponent();
+      DataContext = new ViewModels.PacsQueryViewModel();
+    } // ServiceWindow()
+
+    #endregion
+
+  } // class ServiceWindow
+} // namespace Viatronix.Utilities.Dicom.PACSViewer

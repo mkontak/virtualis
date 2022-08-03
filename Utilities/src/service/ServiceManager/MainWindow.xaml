@@ -1,0 +1,322 @@
+﻿<Window x:Class="Viatronix.Utilities.Service.ServiceManager.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:documents="clr-namespace:System.Windows.Documents;assembly=PresentationCore"
+  xmlns:viewmodels="clr-namespace:Viatronix.Utilities.Service.ServiceManager.ViewModels"
+  xmlns:interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+  xmlns:command="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WPF45"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" 
+  Title="Service Manager" Height="691" Width="965" WindowStartupLocation="CenterScreen">
+  <Window.Resources>
+    <Style x:Key="JobNumberStyleButton" TargetType="{x:Type Button}">
+      <Setter Property="Cursor" Value="Hand"/>
+      <Setter Property="Background" Value="Transparent"/>
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="Button">
+            <TextBlock>
+            <ContentPresenter
+              Margin="0,0,0,0"
+              ContentTemplate="{TemplateBinding ContentTemplate}"
+              Content="{TemplateBinding Content}"
+              ContentStringFormat="{TemplateBinding ContentStringFormat}"
+              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+              RecognizesAccessKey="False"
+              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+            </TextBlock>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+      <Style.Triggers>
+        <Trigger Property="IsMouseOver" Value="True">
+          <Setter Property="Template">
+            <Setter.Value>
+              <ControlTemplate TargetType="Button">
+                <TextBlock Padding="0,0,0,0" Margin="0,0,0,0">
+                  <Underline>
+                    <ContentPresenter
+                      Margin="0,0,0,0"
+                      ContentTemplate="{TemplateBinding ContentTemplate}"
+                      Content="{TemplateBinding Content}"
+                      ContentStringFormat="{TemplateBinding ContentStringFormat}"
+                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                      RecognizesAccessKey="False"
+                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                  </Underline>
+                </TextBlock>
+              </ControlTemplate>
+            </Setter.Value>
+          </Setter>
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+  </Window.Resources>
+  
+  <interactivity:Interaction.Triggers>
+    <interactivity:EventTrigger EventName="Loaded">
+      <command:EventToCommand Command="{Binding InitializeCommand}" />
+    </interactivity:EventTrigger>
+    <interactivity:EventTrigger EventName="Closing">
+      <command:EventToCommand Command="{Binding WindowClosingCommand}" PassEventArgsToCommand="True" />
+    </interactivity:EventTrigger>
+    <interactivity:EventTrigger EventName="Closed">
+      <command:EventToCommand Command="{Binding FinalizeCommand}" />
+    </interactivity:EventTrigger>
+  </interactivity:Interaction.Triggers>
+  <Grid>
+    <DockPanel>
+
+      <!-- Bottom docking panel contains the menu bar  -->
+      <DockPanel  DockPanel.Dock="Bottom"  HorizontalAlignment="Stretch"  VerticalAlignment="Bottom" >
+        <Border Margin="2"  Style="{StaticResource BorderStyle}" HorizontalAlignment="Stretch" VerticalAlignment="Center" >
+          <TextBlock Margin="2" Text="{Binding Status}" Foreground="DarkBlue" Background="LightGray" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+        </Border>
+      </DockPanel>
+
+      <DockPanel HorizontalAlignment="Stretch">
+
+        <TabControl TabIndex="0">
+
+          <TabItem Header="Database" DataContext="{Binding DatabaseViewModel}">
+            <Grid Background="#FFE5E5E5">
+              <Label Content="Database:" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Foreground="#FF0F0F44"/>
+
+              <ComboBox x:Name="databases"  HorizontalAlignment="Left" Margin="84,10,0,0" VerticalAlignment="Top" MinWidth="149"  
+								ItemsSource="{Binding Databases, Mode=OneWay}" Foreground="#FF0F0F44"  >
+                <interactivity:Interaction.Triggers>
+                  <interactivity:EventTrigger EventName="SelectionChanged">
+                    <command:EventToCommand Command="{Binding SelectedDatabaseChangedCommand}" CommandParameter="{Binding SelectedItem, ElementName=database}" />
+                  </interactivity:EventTrigger>
+                </interactivity:Interaction.Triggers>
+                <ComboBox.ToolTip>
+                  <ToolTip DataContext="{Binding PlacementTarget, RelativeSource={RelativeSource Self}}">
+                    <TextBlock Text="{Binding SelectionBoxItem.Description}" Foreground="Green"/>
+                  </ToolTip>
+                </ComboBox.ToolTip>
+              </ComboBox>
+
+              <TextBlock x:Name="databaseDescription" HorizontalAlignment="Left" Margin="249,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="500" Height="22" 
+								Text="{Binding SelectedItem.Description, ElementName=databases}" Foreground="#FF0F0F44" 
+								ToolTip="Contains the selected databases description"/>
+
+              <Label Content="Tables:" HorizontalAlignment="Left" Margin="1,50,0,0" VerticalAlignment="Top" Foreground="#FF0F0F44"/>
+
+              <ComboBox x:Name="tables" HorizontalAlignment="Left" Margin="85,50,0,0" VerticalAlignment="Top" MinWidth="148" 
+								ItemsSource="{Binding SelectedItem.Tables, ElementName=databases, Mode=OneWay}" Foreground="#FF0F0F44"  >
+                <interactivity:Interaction.Triggers>
+                  <interactivity:EventTrigger EventName="SelectionChanged">
+                    <command:EventToCommand Command="{Binding SelectedTableChangedCommand}" CommandParameter="{Binding SelectedItem, ElementName=tables}" />
+                  </interactivity:EventTrigger>
+                </interactivity:Interaction.Triggers>
+
+                <ComboBox.ToolTip>
+                  <ToolTip DataContext="{Binding PlacementTarget, RelativeSource={RelativeSource Self}}">
+                    <TextBlock Text="{Binding SelectionBoxItem.Description}" Foreground="Green"/>
+                  </ToolTip>
+                </ComboBox.ToolTip>
+              </ComboBox>
+
+              <TextBlock x:Name="tableDescription" HorizontalAlignment="Left" Margin="249,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" MinWidth="500" Height="22" 
+								Foreground="#FF0F0F44" Text="{Binding SelectedItem.Description, ElementName=tables}" ToolTip="The selected tables description"/>
+
+              <DockPanel Margin="4,126,6,-1"  HorizontalAlignment="Stretch">
+
+                <!--<ScrollViewer  DockPanel.Dock="Left,Top,Right"
+                                ScrollViewer.CanContentScroll="True"
+                                ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                                ScrollViewer.VerticalScrollBarVisibility="Auto"
+                                Margin="0,126,0,184">-->
+
+                <DataGrid x:Name="tableDataGrid"
+									ItemsSource="{Binding Entities, Mode=TwoWay}" AutoGenerateColumns="True" SelectionMode="Extended" SelectionUnit="FullRow" 
+									CanUserAddRows="{Binding AllowInsert}"  CanUserDeleteRows="{Binding AllowDelete}"/>
+
+
+              </DockPanel>
+
+
+              <DockPanel Margin="0,78,10,482"  HorizontalAlignment="Right" Width="264">
+
+                <Button Content="Refresh" HorizontalAlignment="Left" Margin="6,5,5,6"
+									VerticalAlignment="Top" Width="75" Command="{Binding RefreshCommand}" IsEnabled="{Binding CanRefresh}"
+									RenderTransformOrigin="-0.788,0.071"/>
+                <Button Content="Update" HorizontalAlignment="Left" Margin="6,5,5,6"
+									VerticalAlignment="Top" Width="75" Command="{Binding UpdateCommand}" IsEnabled="{Binding CanUpdate}"/>
+                <Button Content="Delete" HorizontalAlignment="Left" Margin="6,5,5,5"
+									VerticalAlignment="Top" Width="75" Command="{Binding DeleteCommand}" IsEnabled="{Binding CanDelete}" />
+
+              </DockPanel>
+
+              <CheckBox Content="Delete" HorizontalAlignment="Left" Margin="86,94,0,0" VerticalAlignment="Top" Height="27" 
+								IsChecked="{Binding AllowDelete, Mode=OneWay}" IsEnabled="False" ToolTip="If checked you may delete entries in the grid below"/>
+              <CheckBox Content="Insert" HorizontalAlignment="Left" Margin="155,94,0,0" VerticalAlignment="Top" Height="27" 
+								IsChecked="{Binding AllowInsert, Mode=OneWay}" IsEnabled="False" ToolTip="If checked you may insert entries in the grid below"/>
+              <CheckBox Content="Update" HorizontalAlignment="Left" Margin="225,93,0,0" VerticalAlignment="Top" Height="27" 
+								IsChecked="{Binding AllowUpdate, Mode=OneWay}" IsEnabled="False" ToolTip="If checked you may update entries in the grid below"/>
+              <TextBlock HorizontalAlignment="Left" Margin="7,93,0,0" TextWrapping="Wrap" Text="Permissions:" VerticalAlignment="Top" Width="71"/>
+            </Grid>
+          </TabItem>
+
+          <TabItem Header="Dicom Hosts" DataContext="{Binding DicomHostsViewModel}">
+            <Grid Background="#FFE5E5E5">
+
+              <!-- Add Dicom Hosts GUI Here -->
+
+              <Grid Height="25" VerticalAlignment="Top" Margin="18,17,26,0">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition />
+                  <ColumnDefinition />
+                  <ColumnDefinition />
+                  <ColumnDefinition />
+                  <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Name" TextAlignment="Center" Grid.Column="0" />
+                <TextBlock Text="Server" TextAlignment="Center" Grid.Column="1" />
+                <TextBlock Text="AETitle" TextAlignment="Center" Grid.Column="2" />
+                <TextBlock Text="Port" TextAlignment="Center" Grid.Column="3" />
+                <TextBlock Text="Has Attributes?" TextAlignment="Center" Grid.Column="4" />
+              </Grid>
+
+              <ListBox ItemsSource="{Binding DicomHosts, Mode=OneWay}" SelectedItem="{Binding SelectedDicomHost, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="18,42,26,62">
+                <ListBox.ItemTemplate>
+                  <DataTemplate>
+                    <StackPanel Width="{Binding ViewportWidth, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ScrollViewer}}}">
+                      <Border BorderBrush="#0088FF" BorderThickness="2" Margin="3,3,3,3">
+                        <Grid Margin="3,3,3,3">
+                          <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                          </Grid.ColumnDefinitions>
+
+                          <TextBlock Text="{Binding Name, Mode=OneWay}" TextAlignment="Center" Grid.Column="0" />
+                          <TextBlock Text="{Binding Server, Mode=OneWay}" TextAlignment="Center" Grid.Column="1" />
+                          <TextBlock Text="{Binding AETitle, Mode=OneWay}" TextAlignment="Center" Grid.Column="2" />
+                          <TextBlock Text="{Binding Port, Mode=OneWay}" TextAlignment="Center" Grid.Column="3" />
+                          <TextBlock Text="{Binding HasAttributes, Mode=OneWay}" TextAlignment="Center" Grid.Column="4" />
+                        </Grid>
+                      </Border>
+                    </StackPanel>
+                  </DataTemplate>
+                </ListBox.ItemTemplate>
+              </ListBox>
+
+              <Button Content="Add" Command="{Binding AddDicomHostCommand}" HorizontalAlignment="Right" Margin="0,0,186,26" VerticalAlignment="Bottom" Width="75"/>
+              <Button Content="Modify" Command="{Binding ModifyDicomHostCommand}" IsEnabled="{Binding IsDicomHostSelected, Mode=OneWay}" HorizontalAlignment="Right" Margin="0,0,106,26" VerticalAlignment="Bottom" Width="75"/>
+              <Button Content="Delete" Command="{Binding DeleteDicomHostCommand}" IsEnabled="{Binding IsDicomHostSelected, Mode=OneWay}" HorizontalAlignment="Right" Margin="0,0,26,26" Width="75" Height="22" VerticalAlignment="Bottom"/>
+            </Grid>
+          </TabItem>
+
+          <TabItem Header="Configuration Files" DataContext="{Binding ConfigurationFilesViewModel}">
+            <Grid Background="#FFE5E5E5">
+
+              <Grid HorizontalAlignment="Left" Height="21" Margin="20,14,0,0" VerticalAlignment="Top" Width="904">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition />
+                  <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Name" TextAlignment="Center" Grid.Column="0" />
+                <TextBlock Text="Filename" TextAlignment="Center" Grid.Column="1" />
+              </Grid>
+
+              <ListBox ItemsSource="{Binding ConfigurationFiles, Mode=OneWay}" Height="548" Margin="20,35,23,0" VerticalAlignment="Top">
+                <ListBox.ItemTemplate>
+                  <DataTemplate>
+
+                    <StackPanel Width="{Binding ViewportWidth, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ScrollViewer}}}">
+                      <Border BorderBrush="#0088FF" BorderThickness="2" Margin="3,3,5,3" Padding="3,0,3,3">
+                        <Grid>
+                          <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="15" />
+                            <ColumnDefinition Width="Auto" />
+                          </Grid.ColumnDefinitions>
+
+                          <Button Content="{Binding Name, Mode=OneWay}" Command="{Binding EditDocumentCommand}" Margin="1,0,0,0" Style="{StaticResource ResourceKey=JobNumberStyleButton}" Foreground="#0044CC" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="0" />
+                          <TextBlock Text="{Binding Filename, Mode=OneWay}" Grid.Column="1" />
+                        </Grid>
+                      </Border>
+                    </StackPanel>
+
+                  </DataTemplate>
+                </ListBox.ItemTemplate>
+              </ListBox>
+
+            </Grid>
+          </TabItem>
+
+          <TabItem Header="Agent Jobs" DataContext="{Binding AgentJobsViewModel}">
+            <Grid Background="#FFE5E5E5">
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="43*"/>
+                <ColumnDefinition Width="267*"/>
+              </Grid.ColumnDefinitions>
+              <DataGrid x:Name="agentJobsGrid"
+								ItemsSource="{Binding Jobs, Mode=TwoWay}" AutoGenerateColumns="True" SelectionMode="Single" SelectionUnit="FullRow" 
+								Grid.ColumnSpan="3" Margin="7,290,0,0"  CanUserDeleteRows="False" CanUserAddRows="False"  >
+                <interactivity:Interaction.Triggers>
+                  <interactivity:EventTrigger EventName="SelectionChanged">
+                    <command:EventToCommand Command="{Binding SelectionChangedCommand}" CommandParameter="{Binding SelectedItem, ElementName=agentJobsGrid}" />
+                  </interactivity:EventTrigger>
+                </interactivity:Interaction.Triggers>
+              </DataGrid>
+              <Label Content="Name:" Grid.Column="1" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top"/>
+              <TextBox x:Name="textBoxName" Text="{Binding SelectedJob.Name}" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="0,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" ToolTip="Enter the agent job name"/>
+              <Label Content="Description:" Grid.Column="1" HorizontalAlignment="Left" Margin="0,68,0,0" VerticalAlignment="Top"/>
+              <TextBox x:Name="textBoxDesc" Text="{Binding SelectedJob.Description}" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="0,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" ToolTip="Enter the agent jobs description"/>
+              <Label Content="Procedures:" Grid.Column="1" HorizontalAlignment="Left" Margin="0,113,0,0" VerticalAlignment="Top"/>
+              <TextBox x:Name="textBoxProc" Text="{Binding SelectedJob.Procedure}" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="0,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" ToolTip="Enter the procedure [Database].[v3d].[StoredProcedure] or C:\Programs\Proecdure.exe"/>
+              <Label Content="Parameters:" Grid.Column="1" HorizontalAlignment="Left" Margin="0,159,0,0" VerticalAlignment="Top"/>
+              <TextBox x:Name="textBoxParams" Text="{Binding SelectedJob.Parameters}" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="0,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" ToolTip="Enter any parameters "/>
+              <CheckBox Content="Enabled" Grid.Column="2" IsChecked="{Binding SelectedJob.IsEnabled}" HorizontalAlignment="Left" Margin="654,251,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.823,6.067" ToolTip="Check ti enable this job"/>
+              <CheckBox Content="Require Context" Grid.Column="2" IsChecked="{Binding Selectedjob.RequireContext}" HorizontalAlignment="Left" Margin="488,251,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5"/>
+              <ComboBox Grid.Column="2"  ItemsSource="{Binding Frequencies, Mode=OneWay}" SelectedItem="{Binding SelectedJob.Frequency}" HorizontalAlignment="Left" Margin="0,199,0,0" VerticalAlignment="Top" Width="120"/>
+              <Label Content="Frequency:" Grid.Column="1" HorizontalAlignment="Left" Margin="0,199,0,0" VerticalAlignment="Top"/>
+              <Label Content="Frequency Number:" Grid.Column="1" HorizontalAlignment="Left" Margin="0,245,0,0" VerticalAlignment="Top"/>
+              <TextBox x:Name="textBoxFreqNumber" Text="{Binding SelectedJob.FrequencyNumber}" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="0,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="Enter the frequence number"/>
+              <Label Content="Time:" Grid.Column="2" HorizontalAlignment="Left" Margin="426,113,0,0" VerticalAlignment="Top"/>
+              <Label Content="User" Grid.Column="2" HorizontalAlignment="Left" Margin="426,162,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.368,0.5" />
+              <TextBox x:Name="textBoxUser" Text="{Binding SelectedJob.User}" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="486,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="Enter the user you want to run the job as"/>
+              <Label Content="Password:" Grid.Column="2" HorizontalAlignment="Left" Margin="410,199,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.974,0.385"/>
+              <DatePicker Grid.Column="2" Text="{Binding SelectedJob.Time}" HorizontalAlignment="Left" Margin="486,112,0,0" VerticalAlignment="Top"/>
+              <PasswordBox x:Name="passwordBox"  Grid.Column="2" HorizontalAlignment="Left" Margin="486,203,0,0" VerticalAlignment="Top" Width="120"/>
+              <GroupBox Grid.Column="2" Header="Days" HorizontalAlignment="Left" Margin="426,23,0,0" VerticalAlignment="Top" Width="338" Height="77">
+                <Grid>
+                  <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                  </Grid.ColumnDefinitions>
+                  <CheckBox Grid.Row="0" Grid.Column="0" Content="Sunday" HorizontalAlignment="Left" Margin="0,10,0,0" Height="17" VerticalAlignment="Top"/>
+                  <CheckBox Grid.Row="0" Grid.Column="1" Content="Monday" HorizontalAlignment="Left" Margin="0,10,0,0" Height="17" VerticalAlignment="Top"/>
+                  <CheckBox Grid.Row="0" Grid.Column="2" Content="Tuesday" HorizontalAlignment="Left" Margin="0,10,0,0" Height="17" VerticalAlignment="Top"/>
+                  <CheckBox Grid.Row="0" Grid.Column="3" Content="Wednesday" HorizontalAlignment="Left" Margin="0,10,0,0" Height="17" VerticalAlignment="Top"/>
+                  <CheckBox Grid.Row="1" Grid.Column="0" Content="Thurday" HorizontalAlignment="Left" Margin="0,8,0,0" Height="17" VerticalAlignment="Top"/>
+                  <CheckBox Grid.Row="1" Grid.Column="1" Content="Friday" HorizontalAlignment="Left" Margin="0,8,0,0" Height="17" VerticalAlignment="Top"/>
+                  <CheckBox Grid.Row="1" Grid.Column="2" Content="Saturday" HorizontalAlignment="Left" Margin="0,8,0,0" Height="17" VerticalAlignment="Top"/>
+                </Grid>
+              </GroupBox>
+            </Grid>
+          </TabItem>
+
+        </TabControl>
+
+      </DockPanel>
+
+    </DockPanel>
+
+  </Grid>
+</Window>

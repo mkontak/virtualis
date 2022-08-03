@@ -1,0 +1,128 @@
+﻿<Window x:Class="Viatronix.Utilities.Dicom.DicomSend.MainWindow" 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Dicom Send" Width="609" MinWidth="609" Height="436" MinHeight="436" Background="LightSteelBlue" Closing="OnFormClosingHandler">
+  <Grid>
+    <Label Content="Directory:" Foreground="DarkBlue" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="15,13,0,0"  VerticalAlignment="Top" />
+    <TextBox x:Name="m_directoryText" Text="{Binding Directory, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding IsNotActive, Mode=OneWay}" Height="23" Margin="159,15,60,0" VerticalAlignment="Top" TabIndex="1" ToolTip="Specifies the directory to be transferred." />
+    <Button Content="..." Command="{Binding DirectorySelectionCommand}" Height="23" HorizontalAlignment="Right" Margin="0,15,15,0" VerticalAlignment="Top" Width="31" Foreground="DarkBlue" FontWeight="Bold" TabIndex="2" ToolTip="Displays a dialog to assist in picking a directory for transfer." />
+
+    <Label Content="Filter:" Foreground="DarkBlue" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="15,48,0,0" VerticalAlignment="Top" />
+    <TextBox x:Name="m_filterText" Text="{Binding Filter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding IsNotActive, Mode=OneWay}" Height="23" Margin="159,50,15,0" VerticalAlignment="Top" TabIndex="3" ToolTip="Determines what files to send." />
+
+    <Label Content="Application AE Title:" Foreground="DarkBlue" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="15,83,0,0" Name="label1" VerticalAlignment="Top" />
+    <TextBox x:Name="m_applicationAETitle" Text="{Binding AETitle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding IsNotActive, Mode=OneWay}" Height="23" Margin="159,85,15,0" VerticalAlignment="Top" TabIndex="5" ToolTip="AETitle of the DICOM device performing the transfer." />
+
+    <Label Content="Transfer Syntax:" Foreground="DarkBlue" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="15,118,0,0" VerticalAlignment="Top" />
+    <ComboBox Text="{Binding TransferSyntax, Mode=TwoWay}" IsEnabled="{Binding IsNotActive, Mode=OneWay}" Height="23" Margin="159,120,15,0" VerticalAlignment="Top" TabIndex="6" ToolTip="The mode of transfer.">
+      <ComboBox.Items>
+        <ComboBoxItem Content="Both" />
+        <ComboBoxItem Content="Implicit" />
+        <ComboBoxItem Content="Explicit" />
+      </ComboBox.Items>
+    </ComboBox>
+
+    <Label Content="Destination Server:" Foreground="DarkBlue" FontWeight="Bold" Margin="15,158,0,0" HorizontalAlignment="Left" Width="117" Height="24" VerticalAlignment="Top" />
+    <TextBox x:Name="m_destinationServerText" Text="{Binding Server, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding IsNotActive, Mode=OneWay}" Height="23" Margin="159,160,15,0" VerticalAlignment="Top" TabIndex="7" ToolTip="Specifies the destination of the transfer." />
+
+    <Label Content="Destination Port:" Foreground="DarkBlue" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="15,193,0,0" VerticalAlignment="Top" />
+    <TextBox x:Name="m_destinationPortText" Text="{Binding Port, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding IsNotActive, Mode=OneWay}" Height="23" Margin="159,195,15,0" VerticalAlignment="Top" TabIndex="8" ToolTip="Destination DICOM Receiver Port." />
+
+    <Label Content="Destination AE Title:" Foreground="DarkBlue" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="15,228,0,0" VerticalAlignment="Top" />
+    <TextBox x:Name="m_destinationAETitleText" Text="{Binding CallingAETitle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding IsNotActive, Mode=OneWay}" Height="23" Margin="159,230,15,0" VerticalAlignment="Top" TabIndex="9" ToolTip="AETitle of the DICOM device accepting delivery of the transfer." />
+
+    <!--
+      <CheckBox Content="Send As Multiple Associations" IsChecked="{Binding IsStoreAsMultiAssoc, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding IsNotActive}" FontWeight="Bold" Foreground="DarkBlue" HorizontalAlignment="Left" Margin="145,279,0,0" VerticalAlignment="Top" />
+      <Label Content="Thread Count:" Foreground="DarkBlue" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="347,275,0,0" Name="label4" VerticalAlignment="Top" />
+      <TextBox x:Name="m_threadCountText" Text="{Binding MultiAssocThreadCount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding IsMultiAssocAndNotActive}" Height="23" Margin="0,275,15,0" VerticalAlignment="Top" TabIndex="4" ToolTip="The number of simultaneous operations." HorizontalAlignment="Right" Width="135" />
+    -->
+
+    <ListBox x:Name="m_threadsListBox" Margin="15,273,15,59" ItemsSource="{Binding Senders}" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" TabIndex="10" ToolTip="Current status of the transfer operation.">
+      <ListBox.ItemTemplate>
+        <DataTemplate>
+          <StackPanel Width="{Binding ViewportWidth, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ScrollViewer}}}">
+            <Border BorderBrush="CornflowerBlue" BorderThickness="2" Margin="3,3,3,3">
+              <Grid Margin="3,3,3,3">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition />
+                  <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                  <RowDefinition />
+                  <RowDefinition Height="3" />
+                  <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="{Binding ID, Mode=OneWay}" Grid.Row="0" Grid.Column="0" />
+
+                <ProgressBar Minimum="0" Maximum="100" Height="15" Value="{Binding Progress, Mode=OneWay}" Grid.Row="0" Grid.Column="1">
+                  <ProgressBar.Style>
+                    <Style>
+                      <Style.Triggers>
+                        <DataTrigger Binding="{Binding Status}" Value="Completed">
+                          <Setter Property="ProgressBar.Visibility" Value="Hidden" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status}" Value="Failed">
+                          <Setter Property="ProgressBar.Visibility" Value="Hidden" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status}" Value="Pending">
+                          <Setter Property="ProgressBar.Visibility" Value="Visible" />
+                        </DataTrigger>
+                      </Style.Triggers>
+                    </Style>
+                  </ProgressBar.Style>
+                </ProgressBar>
+
+                <TextBlock Text="{Binding Directory, Mode=OneWay}" Grid.Row="2" Grid.Column="0" />
+
+                <TextBlock x:Name="m_statusText" Grid.Row="0" Grid.Column="1" TextAlignment="Right" FontWeight="Bold">
+                  <TextBlock.Style>
+                    <Style>
+                      <Style.Triggers>
+                        <DataTrigger Binding="{Binding Status}" Value="Completed">
+                          <Setter Property="TextBlock.Visibility" Value="Visible" />
+                          <Setter Property="TextBlock.Text" Value="Completed Successfully." />
+                          <Setter Property="TextBlock.Foreground" Value="#00a900" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status}" Value="Failed">
+                          <Setter Property="TextBlock.Visibility" Value="Visible" />
+                          <Setter Property="TextBlock.Text" Value="Send Failed.  Please see log for details." />
+                          <Setter Property="TextBlock.Foreground" Value="#e90000" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status}" Value="Pending">
+                          <Setter Property="TextBlock.Visibility" Value="Hidden" />
+                        </DataTrigger>
+                      </Style.Triggers>
+                    </Style>
+                  </TextBlock.Style>
+                </TextBlock>
+
+                <TextBlock x:Name="m_messageText" Text="{Binding Message, Mode=OneWay}" Grid.Row="2" Grid.Column="1" TextAlignment="Right">
+                  <TextBlock.Style>
+                    <Style>
+                      <Style.Triggers>
+                        <DataTrigger Binding="{Binding Status, Mode=OneWay}" Value="Failed">
+                          <Setter Property="TextBlock.Foreground" Value="#e90000" />
+                          <Setter Property="TextBlock.FontWeight" Value="Bold" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status, Mode=OneWay}" Value="Pending">
+                          <Setter Property="TextBlock.Foreground" Value="#000000" />
+                          <Setter Property="TextBlock.FontWeight" Value="Normal" />
+                        </DataTrigger>
+                      </Style.Triggers>
+                    </Style>
+                  </TextBlock.Style>
+                </TextBlock>
+
+              </Grid>
+            </Border>
+          </StackPanel>
+        </DataTemplate>
+      </ListBox.ItemTemplate>
+    </ListBox>
+
+    <Button Content="Start" Command="{Binding StartCommand}" Foreground="DarkBlue" FontWeight="Bold" Margin="0,0,85,20" HorizontalAlignment="Right" Width="65" IsDefault="True" TabIndex="11" Height="25" VerticalAlignment="Bottom" />
+    <Button Content="Cancel" Command="{Binding AbortCommand}" Foreground="DarkBlue" FontWeight="Bold" HorizontalAlignment="Right" Margin="0,0,15,20" Width="65" IsCancel="True" TabIndex="12" Height="25" VerticalAlignment="Bottom" />
+
+  </Grid>
+</Window>

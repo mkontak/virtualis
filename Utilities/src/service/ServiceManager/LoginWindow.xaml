@@ -1,0 +1,15 @@
+﻿<Window x:Class="Viatronix.Utilities.Service.ServiceManager.LoginWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Login To Use This Application" WindowStyle="ToolWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="176.667" Width="344.667">
+  <Grid>
+    <Label Content="Username:" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.371,0.808"/>
+    <TextBox x:Name="m_usernameTextBox" HorizontalAlignment="Left" Height="23" Margin="97,26,0,0" VerticalAlignment="Top" Width="216"/>
+
+    <Label Content="Password:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+    <PasswordBox x:Name="m_passwordTextBox" PasswordChar="*" HorizontalAlignment="Left" Height="23" Margin="97,60,0,0" VerticalAlignment="Top" Width="216"/>
+
+    <Button Content="OK" Click="OnOKClickHandler" IsDefault="True" HorizontalAlignment="Left" Margin="158,104,0,0" VerticalAlignment="Top" Width="75"/>
+    <Button Content="Cancel" Click="OnCancelClickHandler" IsCancel="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="238,104,0,0"/>
+  </Grid>
+</Window>

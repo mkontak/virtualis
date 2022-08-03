@@ -1,0 +1,15 @@
+E:\TFS\Branches\mkontak\Viatronix\Utilities\Dicom\SendImage.exe.config
+E:\TFS\Branches\mkontak\Viatronix\Utilities\Dicom\SendImage.exe
+E:\TFS\Branches\mkontak\Viatronix\Utilities\Dicom\SendImage.pdb
+E:\TFS\Branches\mkontak\Utilities\src\dicom\SendImage\obj\x64\Debug\SendImage.csprojResolveAssemblyReference.cache
+E:\TFS\Branches\mkontak\Utilities\src\dicom\SendImage\obj\x64\Debug\SendImage.exe
+E:\TFS\Branches\mkontak\Utilities\src\dicom\SendImage\obj\x64\Debug\SendImage.pdb
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\SendImage\obj\x64\Debug\SendImage.csprojAssemblyReference.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\SendImage\obj\x64\Debug\SendImage.csproj.CoreCompileInputs.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\SendImage\obj\x64\Debug\SendImage.exe
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\SendImage\obj\x64\Debug\SendImage.pdb
+D:\Source\viatronix\viatronix\Utilities\src\dicom\SendImage\obj\x64\Debug\SendImage.csproj.AssemblyReference.cache
+D:\Source\viatronix\viatronix\Utilities\src\dicom\SendImage\obj\x64\Debug\SendImage.csproj.SuggestedBindingRedirects.cache
+D:\Source\viatronix\viatronix\Utilities\src\dicom\SendImage\obj\x64\Debug\SendImage.csproj.CoreCompileInputs.cache
+D:\Source\viatronix\viatronix\Utilities\src\dicom\SendImage\obj\x64\Debug\SendImage.exe
+D:\Source\viatronix\viatronix\Utilities\src\dicom\SendImage\obj\x64\Debug\SendImage.pdb

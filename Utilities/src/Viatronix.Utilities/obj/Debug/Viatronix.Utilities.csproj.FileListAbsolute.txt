@@ -1,0 +1,11 @@
+E:\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\Viatronix.Utilities\bin\Debug\utilslib.dll
+E:\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\Viatronix.Utilities\bin\Debug\utilslib.pdb
+E:\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\Viatronix.Utilities\obj\Debug\Viatronix.Utilities.csprojResolveAssemblyReference.cache
+E:\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\Viatronix.Utilities\obj\Debug\utilslib.dll
+E:\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\Viatronix.Utilities\obj\Debug\utilslib.pdb
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\Viatronix.Utilities\bin\Debug\utilslib.dll
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\Viatronix.Utilities\bin\Debug\utilslib.pdb
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\Viatronix.Utilities\obj\Debug\Viatronix.Utilities.csprojAssemblyReference.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\Viatronix.Utilities\obj\Debug\Viatronix.Utilities.csproj.CoreCompileInputs.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\Viatronix.Utilities\obj\Debug\utilslib.dll
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\Viatronix.Utilities\obj\Debug\utilslib.pdb

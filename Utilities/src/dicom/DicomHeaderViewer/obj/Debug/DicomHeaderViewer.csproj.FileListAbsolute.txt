@@ -1,0 +1,3 @@
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomHeaderViewer\obj\Debug\DicomHeaderViewer.csprojAssemblyReference.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomHeaderViewer\obj\Debug\Skins\MainSkin.baml
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomHeaderViewer\obj\Debug\DicomHeaderViewer_MarkupCompile.cache

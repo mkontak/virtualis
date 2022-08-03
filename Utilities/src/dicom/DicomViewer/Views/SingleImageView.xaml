@@ -1,0 +1,147 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:gala="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WPF45" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:gest="clr-namespace:Viatronix.UI.Gestures;assembly=v3dwpfui" 
+             xmlns:vm="clr-namespace:Viatronix.Dicom.MVVM.ViewModels;assembly=v3ddcmmvvm"
+             xmlns:view="clr-namespace:DicomViewer.Views"
+             x:Class="DicomViewer.Views.SingleImageView"
+             mc:Ignorable="d" 
+             DataContext="vm::ImageViewModel"
+             Background="Black"
+             d:DesignHeight="300" 
+             d:DesignWidth="300">
+
+  <UserControl.Resources>
+
+    <SolidColorBrush x:Key="ImageViewTextColorBrush" Color="Cornsilk"/>
+
+    <Style x:Key="ImageViewTextStyle" TargetType="{x:Type TextBlock}">
+      <Setter Property="Foreground" Value="{StaticResource ImageViewTextColorBrush}"/>
+      <Setter Property="TextAlignment" Value="Center"/>
+      <Setter Property="FontWeight" Value="Medium" />
+      <Setter Property="FontFamily" Value="Arial"/>
+      <Setter Property="FontSize" Value="12" />
+      <Setter Property="Background" Value="Transparent"/>
+    </Style>
+
+  </UserControl.Resources>
+
+
+  <Grid  x:Name="SingleImageGird" Cursor="{Binding CurrentAction, Converter={StaticResource imageViewCursorConverter}}" DataContext="{Binding }" >
+
+
+
+    <DockPanel x:Name="imagePanel" Background="Black">
+      
+ 
+
+      <Image Grid.Column="0" 
+              Margin="20"
+              x:Name="dicomImage" 
+              HorizontalAlignment="Center" 
+              VerticalAlignment="Center" 
+              Source="{Binding Image, Converter={StaticResource bitmapConverter}}" >
+
+
+        <i:Interaction.Triggers>
+          <i:EventTrigger EventName="KeyDown">
+            <gala:EventToCommand Command="{Binding KeyDownCommand}"  PassEventArgsToCommand="True" />
+          </i:EventTrigger>
+          <i:EventTrigger EventName="KeyUp">
+            <gala:EventToCommand Command="{Binding KeyUpCommand}"  PassEventArgsToCommand="True" />
+          </i:EventTrigger>
+          <i:EventTrigger EventName="MouseMove">
+            <gala:EventToCommand Command="{Binding MouseMoveCommand}" CommandParameter="{Binding ElementName=dicomImage}" />
+          </i:EventTrigger>
+          <i:EventTrigger EventName="MouseDown">
+            <gala:EventToCommand Command="{Binding MouseDownCommand}" PassEventArgsToCommand="True" />
+          </i:EventTrigger>
+          <i:EventTrigger EventName="MouseUp">
+            <gala:EventToCommand Command="{Binding MouseUpCommand}" PassEventArgsToCommand="True"/>
+          </i:EventTrigger>
+          <i:EventTrigger EventName="MouseLeave">
+            <gala:EventToCommand Command="{Binding MouseLeaveCommand}" />
+          </i:EventTrigger>
+          <i:EventTrigger EventName="MouseLeftButtonDown" >
+            <gala:EventToCommand Command="{Binding DoubleClickCommand}" PassEventArgsToCommand="True"/>
+          </i:EventTrigger>
+        </i:Interaction.Triggers>
+      </Image>
+
+    </DockPanel>
+
+
+    <Grid Margin="2" >
+
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+
+   
+      <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left"  VerticalAlignment="Top" Style="{StaticResource ImageViewTextStyle}"  >
+        <TextBlock.Text>
+          <Binding Path="PatientName"/>
+        </TextBlock.Text>
+      </TextBlock>
+
+
+
+      <TextBlock Grid.Row="0" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource ImageViewTextStyle}" >
+        <TextBlock.Text>
+          <MultiBinding StringFormat="{}X:  {0}  Y:  {1}">
+            <Binding Path="PixelPosition.X"/>
+            <Binding Path="PixelPosition.Y" />
+          </MultiBinding>
+        </TextBlock.Text>
+      </TextBlock>
+      
+      <TextBlock Grid.Row="1" Grid.Column="0"  HorizontalAlignment="Left" VerticalAlignment="Top"  Style="{StaticResource ImageViewTextStyle}" >
+        <TextBlock.Text>
+          <Binding StringFormat="{}Zoom: {0}%" Path="Zoom"/>
+        </TextBlock.Text>
+      </TextBlock>
+
+      <TextBlock Grid.Row="1" Grid.Column="2"  HorizontalAlignment="Right"  VerticalAlignment="Top"  Style="{StaticResource ImageViewTextStyle}" >
+        <TextBlock.Text>
+          <Binding StringFormat="{}Value: {0}" Path="PixelValue"/>
+        </TextBlock.Text>
+      </TextBlock>
+
+      <TextBlock Grid.Row="2" Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{StaticResource ImageViewTextStyle}" >
+        <TextBlock.Text>
+          <MultiBinding StringFormat="{}{0}/{1}">
+            <Binding Path="ImageIndex"/>
+            <Binding Path="ImageCount" />
+          </MultiBinding>
+        </TextBlock.Text>
+      </TextBlock>
+
+
+      <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Style="{StaticResource ImageViewTextStyle}" >
+        <TextBlock.Text>
+          <MultiBinding StringFormat="{}W: {0}  C: {1}">
+            <Binding Path="WindowLevel.Width"/>
+            <Binding Path="WindowLevel.Center" />
+          </MultiBinding>
+        </TextBlock.Text>
+      </TextBlock>
+ 
+    </Grid>
+
+  </Grid>
+
+
+
+</UserControl>

@@ -1,0 +1,139 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:Viatronix.Utilities.Dicom.Viewer.ViewModel"
+             xmlns:conv="clr-namespace:Viatronix.Utilities.Dicom.Viewer.Converter"
+             xmlns:behavior="clr-namespace:Viatronix.Utilities.Dicom.Viewer.Behavior"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:gala="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WPF4" 
+             x:Class="Viatronix.Utilities.Dicom.Viewer.View.ImageView"
+             DataContext="vm:ImageViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" 
+             d:DesignWidth="300">
+
+  <UserControl.Resources>
+
+    <conv:FormatConverter x:Key="formatConverter"/>
+    
+    <Style x:Key="imageViewTextStyle" TargetType="{x:Type TextBlock}">
+      <Setter Property="Foreground" Value="CornflowerBlue"/>
+      <Setter Property="TextAlignment" Value="Center"/>
+      <Setter Property="FontWeight" Value="Medium" />
+      <Setter Property="FontFamily" Value="Arial"/>
+      <Setter Property="FontSize" Value="10" />
+      <Setter Property="Background" Value="Transparent"/>
+    </Style>
+    
+  </UserControl.Resources>
+
+
+  <Grid  x:Name="imageGrid" Cursor="{Binding Cursor}"  >
+
+
+
+    <DockPanel x:Name="imagePanel" Background="Black">
+
+
+      <Image Grid.Column="0" 
+             Margin="20"
+             x:Name="dicomImage" 
+             HorizontalAlignment="Center" 
+             VerticalAlignment="Center" 
+             Source="{Binding Image, Converter={StaticResource bitmapConverter}}" >
+        
+        
+
+        <i:Interaction.Triggers>
+          <i:EventTrigger EventName="MouseMove">
+    			  <gala:EventToCommand Command="{Binding MouseMoveCommand}" CommandParameter="{Binding ElementName=dicomImage}" />
+    		  </i:EventTrigger>
+          <i:EventTrigger EventName="MouseDown">
+            <gala:EventToCommand Command="{Binding MouseDownCommand}" PassEventArgsToCommand="True" />
+          </i:EventTrigger>
+          <i:EventTrigger EventName="MouseUp">
+            <gala:EventToCommand Command="{Binding MouseUpCommand}" PassEventArgsToCommand="True"/>
+          </i:EventTrigger>
+           <i:EventTrigger EventName="MouseLeave">
+            <gala:EventToCommand Command="{Binding MouseLeaveCommand}" />
+          </i:EventTrigger>
+          <i:EventTrigger EventName="MouseLeftButtonDown" >
+            <gala:EventToCommand Command="{Binding DoubleClickCommand}" PassEventArgsToCommand="True"/>
+          </i:EventTrigger>
+
+        </i:Interaction.Triggers>
+		  </Image>
+      
+    </DockPanel>
+
+
+    <Grid Margin="2" Height="Auto" Width="Auto">
+      
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*" />
+       </Grid.RowDefinitions>
+
+      <TextBlock Grid.Column="0" 
+                 Grid.Row="0" 
+                 Text="{Binding PatientName}" 
+                 HorizontalAlignment="Left" 
+                 Style="{StaticResource imageViewTextStyle}" />
+  
+      <TextBlock Grid.Column="0" 
+                 Grid.Row="1" 
+                 HorizontalAlignment="Left"        
+                 Style="{StaticResource imageViewTextStyle}" >
+
+        <TextBlock.Text>
+           <Binding Path="ZoomFactor" Converter="{StaticResource formatConverter}"  ConverterParameter="Zoom: {0}" />         
+        </TextBlock.Text>
+            
+         
+      </TextBlock>
+
+
+      <TextBlock Grid.Column="2" 
+                 Grid.Row="0" 
+                 Text="{Binding PixelPosition}"  
+                 HorizontalAlignment="Right"                 
+                 Foreground="CornflowerBlue"
+                 Style="{StaticResource imageViewTextStyle}" />
+
+      <TextBlock Grid.Column="2" 
+                 Grid.Row="1" 
+                 HorizontalAlignment="Right"                 
+                 Style="{StaticResource imageViewTextStyle}" >
+        
+        <TextBlock.Text>
+           <Binding Path="PixelValue" Converter="{StaticResource formatConverter}"  ConverterParameter="HU: {0}" />         
+        </TextBlock.Text>
+
+      </TextBlock>
+
+
+      <TextBlock Grid.Column="2"
+                 Grid.Row="4" 
+                 Text="{Binding ImageInfo}"  
+                 HorizontalAlignment="Right" 
+                 VerticalAlignment="Bottom"                
+                Style="{StaticResource imageViewTextStyle}" />
+
+
+
+
+
+    </Grid>
+ 
+  </Grid>
+
+</UserControl>

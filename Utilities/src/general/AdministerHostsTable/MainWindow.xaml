@@ -1,0 +1,240 @@
+﻿<Window x:Class="Viatronix.Utilities.General.AdministerHostsTable.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Loaded="OnWindowLoadedHandler" Closing="OnWindowClosingHandler" Background="LightSteelBlue" ResizeMode="CanMinimize" Width="525" Height="242">
+  <Window.Style>
+    <Style TargetType="Window">
+      <Style.Triggers>
+        <DataTrigger Binding="{Binding Modified}" Value="True">
+          <Setter Property="Title" Value="Administer Hosts Table - MODIFIED" />
+        </DataTrigger>
+        <DataTrigger Binding="{Binding Modified}" Value="False">
+          <Setter Property="Title" Value="Administer Hosts Table" />
+        </DataTrigger>
+      </Style.Triggers>
+    </Style>
+  </Window.Style>
+  <Grid>
+    <ListBox x:Name="m_hostsListBox" Margin="12,35,12,0" ItemsSource="{Binding Hosts}" SelectedItem="{Binding SelectedHost, Mode=TwoWay}" IsEnabled="{Binding NotEditing, Mode=OneWay}" TabIndex="0" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="135" VerticalAlignment="Top">
+      <ListBox.ItemTemplate>
+        <DataTemplate>
+          <StackPanel Width="{Binding ViewportWidth, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ScrollViewer}}}">
+            <Border BorderBrush="LightSteelBlue" BorderThickness="2" Margin="3,3,3,3">
+              <Grid Margin="3,3,3,3">
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition />
+                  <ColumnDefinition />
+                  <ColumnDefinition />
+                  <ColumnDefinition />
+                  <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{Binding Name, Mode=OneWay}" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="DarkBlue" FontWeight="Bold" />
+                <TextBlock Text="{Binding Server, Mode=OneWay}" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="DarkBlue" FontWeight="Bold" />
+                <TextBlock Text="{Binding AETitle, Mode=OneWay}" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="DarkBlue" FontWeight="Bold" />
+                <TextBlock Text="{Binding Port, Mode=OneWay}" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="DarkBlue" FontWeight="Bold" />
+                <CheckBox IsChecked="{Binding HasAttributes, Mode=OneWay}" HorizontalAlignment="Center" VerticalAlignment="Center" IsEnabled="False" Grid.Column="4" Foreground="DarkBlue" FontWeight="Bold" />
+              </Grid>
+            </Border>
+          </StackPanel>
+        </DataTemplate>
+      </ListBox.ItemTemplate>
+    </ListBox>
+
+    <!-- The hosts list box -->
+    <Grid Height="26" Margin="25,12,40,0" VerticalAlignment="Top">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+
+      <TextBlock Text="Name" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontWeight="ExtraBold" />
+      <TextBlock Text="Server" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontWeight="ExtraBold" />
+      <TextBlock Text="AETitle" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontWeight="ExtraBold" />
+      <TextBlock Text="Port" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontWeight="ExtraBold" />
+      <TextBlock Text="Has Attributes" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black" FontWeight="ExtraBold" />
+    </Grid>
+    <Button Content="Add" Command="{Binding AddHostCommand}" TabIndex="1" Foreground="DarkBlue" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="12,176,0,0" VerticalAlignment="Top" Width="65">
+      <Button.Style>
+        <Style TargetType="Button">
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding Editing, Mode=OneWay}" Value="True">
+              <Setter Property="Visibility" Value="Hidden" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Editing, Mode=OneWay}" Value="False">
+              <Setter Property="Visibility" Value="Visible" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </Button.Style>
+    </Button>
+
+    <Button Content="Modify" Command="{Binding ModifyHostCommand}" IsEnabled="{Binding IsHostSelected, Mode=OneWay}" TabIndex="2" Foreground="DarkBlue" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="83,176,0,0" VerticalAlignment="Top" Width="75">
+      <Button.Style>
+        <Style TargetType="Button">
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding IsHostSelected, Mode=OneWay}" Value="True">
+              <Setter Property="IsEnabled" Value="True" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsHostSelected, Mode=OneWay}" Value="False">
+              <Setter Property="IsEnabled" Value="False" />
+            </DataTrigger>
+
+            <DataTrigger Binding="{Binding Editing, Mode=OneWay}" Value="True">
+              <Setter Property="Visibility" Value="Hidden" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Editing, Mode=OneWay}" Value="False">
+              <Setter Property="Visibility" Value="Visible" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </Button.Style>
+    </Button>
+
+    <Button Content="Delete" Command="{Binding DeleteHostCommand}" IsEnabled="{Binding IsHostSelected, Mode=OneWay}" TabIndex="3" Foreground="DarkBlue" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="164,176,0,0" VerticalAlignment="Top" Width="75">
+      <Button.Style>
+        <Style TargetType="Button">
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding Editing, Mode=OneWay}" Value="True">
+              <Setter Property="Visibility" Value="Hidden" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Editing, Mode=OneWay}" Value="False">
+              <Setter Property="Visibility" Value="Visible" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </Button.Style>
+    </Button>
+
+    <Button Content="Save" Command="{Binding SaveCommand}" IsEnabled="{Binding NotEditing, Mode=OneWay}" TabIndex="4" Foreground="DarkBlue" FontWeight="Bold" Height="23" HorizontalAlignment="Right" Margin="0,176,93,0" VerticalAlignment="Top" Width="75">
+      <Button.Style>
+        <Style TargetType="Button">
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding Editing, Mode=OneWay}" Value="True">
+              <Setter Property="Visibility" Value="Hidden" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Editing, Mode=OneWay}" Value="False">
+              <Setter Property="Visibility" Value="Visible" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </Button.Style>
+    </Button>
+    
+    <Button Content="Reload" Command="{Binding ReloadCommand}" IsEnabled="{Binding NotEditing, Mode=OneWay}" TabIndex="5" Foreground="DarkBlue" FontWeight="Bold" Height="23" HorizontalAlignment="Right" Margin="0,176,12,0" VerticalAlignment="Top" Width="75">
+      <Button.Style>
+        <Style TargetType="Button">
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding Editing, Mode=OneWay}" Value="True">
+              <Setter Property="Visibility" Value="Hidden" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Editing, Mode=OneWay}" Value="False">
+              <Setter Property="Visibility" Value="Visible" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </Button.Style>
+    </Button>
+
+    <GroupBox Header="Host Details:" Foreground="DarkBlue" FontWeight="Bold" Height="299" VerticalAlignment="Top">
+      <GroupBox.Style>
+        <Style TargetType="GroupBox">
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding Editing}" Value="True">
+              <Setter Property="Margin" Value="14,179,12,0" />
+              <Setter Property="Visibility" Value="Visible" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Editing}" Value="False">
+              <Setter Property="Margin" Value="14,213,12,0" />
+              <Setter Property="Visibility" Value="Hidden" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </GroupBox.Style>
+      <Grid>
+        <ListBox ItemsSource="{Binding TemporaryHost.Attributes, Mode=OneWay}" IsEnabled="{Binding Editing}" SelectedItem="{Binding SelectedAttribute, Mode=TwoWay}" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" TabIndex="10" Height="118" HorizontalAlignment="Left" Margin="85,82,0,0" VerticalAlignment="Top" Width="373">
+          <ListBox.ItemTemplate>
+            <DataTemplate>
+              <StackPanel Width="{Binding ViewportWidth, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ScrollViewer}}}">
+                <Border BorderBrush="LightSteelBlue" BorderThickness="2" Margin="3,3,3,3">
+                  <Grid Margin="3,3,3,3">
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition />
+                      <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="{Binding Name, Mode=OneWay}" Foreground="DarkBlue" FontWeight="Bold" Grid.Column="0" />
+                    <TextBlock Text="{Binding Value, Mode=OneWay}" Foreground="DarkBlue" FontWeight="Bold" Grid.Column="1" />
+                  </Grid>
+                </Border>
+              </StackPanel>
+            </DataTemplate>
+          </ListBox.ItemTemplate>
+        </ListBox>
+        <Label Content="Name:" Foreground="DarkBlue" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0" VerticalAlignment="Top" />
+        <TextBox Text="{Binding TemporaryHost.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding Editing}" TabIndex="6" Height="23" Margin="89,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="144" />
+        
+        <Label Content="Server:" Foreground="DarkBlue" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="249,6,0,0" VerticalAlignment="Top" />
+        <TextBox Text="{Binding TemporaryHost.Server, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding Editing}" TabIndex="7" Height="23" Margin="317,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="142" />
+
+        <Label Content="AETitle:" Foreground="DarkBlue" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="6,42,0,0" VerticalAlignment="Top" />
+        <TextBox Text="{Binding TemporaryHost.AETitle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding Editing}" TabIndex="8" Height="23" HorizontalAlignment="Left" Margin="89,42,0,0" VerticalAlignment="Top" Width="144" />
+
+        <Label Content="Port:" Foreground="DarkBlue" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="249,39,0,0" VerticalAlignment="Top" />
+        <TextBox Text="{Binding TemporaryHost.Port, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding Editing}" TabIndex="9" Height="23" HorizontalAlignment="Left" Margin="317,42,0,0" VerticalAlignment="Top" Width="141" />
+
+        <Label Content="Attributes:" Foreground="DarkBlue" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="6,76,0,0" VerticalAlignment="Top" />
+        <CheckBox IsChecked="{Binding CanQuery, Mode=TwoWay}" Content="Query" Foreground="DarkBlue" FontWeight="Bold" Height="16" Margin="6,252,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="65" />
+        <CheckBox IsChecked="{Binding CanRetrieve, Mode=TwoWay}" Content="Retrieve" Foreground="DarkBlue" FontWeight="Bold" Height="16" Margin="85,252,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="65" />
+        <CheckBox IsChecked="{Binding CanStore, Mode=TwoWay}" Content="Store" Foreground="DarkBlue" FontWeight="Bold" Height="16" Margin="168,253,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="65" />
+
+        <Button Content="Add" Command="{Binding AddAttributeCommand}" IsEnabled="{Binding Editing}" TabIndex="11" Foreground="DarkBlue" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="218,213,0,0" VerticalAlignment="Top" Width="75" />
+        <Button Content="Modify" Command="{Binding ModifyAttributeCommand}" TabIndex="12" Foreground="DarkBlue" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="302,213,0,0" VerticalAlignment="Top" Width="75">
+          <Button.Style>
+            <Style>
+              <Style.Triggers>
+                <DataTrigger Binding="{Binding Editing}" Value="True">
+                  <Setter Property="Button.IsEnabled" Value="True" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding IsAttributeSelected}" Value="True">
+                  <Setter Property="Button.IsEnabled" Value="True" />
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Editing}" Value="False">
+                  <Setter Property="Button.IsEnabled" Value="False" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding IsAttributeSelected}" Value="False">
+                  <Setter Property="Button.IsEnabled" Value="False" />
+                </DataTrigger>
+              </Style.Triggers>
+            </Style>
+          </Button.Style>
+        </Button>
+        <Button Content="Delete" Command="{Binding DeleteAttributeCommand}" TabIndex="13" Foreground="DarkBlue" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="383,213,0,0" VerticalAlignment="Top" Width="75">
+          <Button.Style>
+            <Style>
+              <Style.Triggers>
+                <DataTrigger Binding="{Binding Editing}" Value="True">
+                  <Setter Property="Button.IsEnabled" Value="True" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding IsAttributeSelected}" Value="True">
+                  <Setter Property="Button.IsEnabled" Value="True" />
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding Editing}" Value="False">
+                  <Setter Property="Button.IsEnabled" Value="False" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding IsAttributeSelected}" Value="False">
+                  <Setter Property="Button.IsEnabled" Value="False" />
+                </DataTrigger>
+              </Style.Triggers>
+            </Style>
+          </Button.Style>
+        </Button>
+        <Button Content="OK"     Command="{Binding OKCommand}"     IsDefault="True" IsEnabled="{Binding Editing}" TabIndex="17" Foreground="DarkBlue" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="302,248,0,0" VerticalAlignment="Top" Width="75" />
+        <Button Content="Cancel" Command="{Binding CancelCommand}" IsCancel="True"  IsEnabled="{Binding Editing}" TabIndex="18" Foreground="DarkBlue" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="383,248,0,0" VerticalAlignment="Top" Width="75" />
+      </Grid>
+    </GroupBox>
+  </Grid>
+</Window>

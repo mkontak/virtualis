@@ -1,0 +1,15 @@
+E:\TFS\Branches\mkontak\Viatronix\Utilities\Dicom\Push.exe.config
+E:\TFS\Branches\mkontak\Viatronix\Utilities\Dicom\Push.exe
+E:\TFS\Branches\mkontak\Viatronix\Utilities\Dicom\Push.pdb
+E:\TFS\Branches\mkontak\Utilities\src\dicom\Push\obj\x64\Debug\Push.exe
+E:\TFS\Branches\mkontak\Utilities\src\dicom\Push\obj\x64\Debug\Push.pdb
+E:\TFS\Branches\mkontak\Utilities\src\dicom\Push\obj\x64\Debug\Push.csprojResolveAssemblyReference.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\Push\obj\x64\Debug\Push.csprojAssemblyReference.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\Push\obj\x64\Debug\Push.csproj.CoreCompileInputs.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\Push\obj\x64\Debug\Push.exe
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\Push\obj\x64\Debug\Push.pdb
+D:\Source\viatronix\viatronix\Utilities\src\dicom\Push\obj\x64\Debug\Push.csproj.AssemblyReference.cache
+D:\Source\viatronix\viatronix\Utilities\src\dicom\Push\obj\x64\Debug\Push.csproj.SuggestedBindingRedirects.cache
+D:\Source\viatronix\viatronix\Utilities\src\dicom\Push\obj\x64\Debug\Push.csproj.CoreCompileInputs.cache
+D:\Source\viatronix\viatronix\Utilities\src\dicom\Push\obj\x64\Debug\Push.exe
+D:\Source\viatronix\viatronix\Utilities\src\dicom\Push\obj\x64\Debug\Push.pdb

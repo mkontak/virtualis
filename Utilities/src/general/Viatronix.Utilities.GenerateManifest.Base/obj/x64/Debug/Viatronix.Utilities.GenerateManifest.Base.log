@@ -1,0 +1,10 @@
+﻿  Stdafx.cpp
+  AssemblyInfo.cpp
+D:\Source\viatronix\viatronix\Utilities\src\general\Viatronix.Utilities.GenerateManifest.Base\AssemblyInfo.cpp(40,29): warning C4947: 'System::Security::Permissions::SecurityAction::RequestMinimum': marked as obsolete
+D:\Source\viatronix\viatronix\Utilities\src\general\Viatronix.Utilities.GenerateManifest.Base\AssemblyInfo.cpp(40,29): message : Message: 'Assembly level declarative security is obsolete and is no longer enforced by the CLR by default. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.'
+  VersionInfo.cpp
+  ImportedLibraries.cpp
+  Generating Code...
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Viatronix.Utilities.GenerateManifest.Base.vcxproj -> D:\Source\viatronix\viatronix\Utilities\src\general\Viatronix.Utilities.GenerateManifest.Base\bin\x64\Debug\vxmanifestlib.dll

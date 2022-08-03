@@ -1,0 +1,83 @@
+﻿<navigation:Page xmlns:my="clr-namespace:DicomRIAService.Controls"  x:Class="DicomRIAService.Views.BrowserView" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:dg="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:ria="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.DomainServices"
+           xmlns:ds="clr-namespace:DicomRIAService.Web.Services"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="Browse"
+           DataContext="{Binding Source={StaticResource Locator}, Path=BrowserViewModel}">
+ 
+  
+  <Grid x:Name="LayoutRoot">
+    
+    <Grid.RowDefinitions>
+      <RowDefinition Height="auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+   
+    <ScrollViewer Grid.Row="0"  BorderThickness="0" VerticalScrollBarVisibility="Auto" Padding="10,0,10,0">
+      <StackPanel Orientation="Vertical">
+        <TextBlock Text="Datasets" Style="{StaticResource HeaderTextStyle}" />
+        <dg:DataGrid x:Name="DatasetsGrid" ItemsSource="{Binding Datasets, Mode=TwoWay}" SelectedItem="{Binding SelectedDataset, Mode=TwoWay}" MinHeight="100" IsReadOnly="True" AutoGenerateColumns="False" SelectionMode="Single" >
+          <dg:DataGrid.Columns>
+            <dg:DataGridCheckBoxColumn Binding="{Binding IsSelected}" Width="30"/>              
+            <dg:DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+            <dg:DataGridTextColumn Header="Modality" Binding="{Binding Modality}" />
+            <dg:DataGridTextColumn Header="Orientation" Binding="{Binding Orientation}" />
+            <dg:DataGridTextColumn Header="Manufacturer" Binding="{Binding Manufacturer}" />
+            <dg:DataGridTextColumn Header="Model" Binding="{Binding Model}" />
+            <dg:DataGridTextColumn Header="Image Count" Binding="{Binding ImageCount}" />
+            <dg:DataGridTextColumn Header="Application" Binding="{Binding Application}" />
+            <dg:DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="*"/>
+          </dg:DataGrid.Columns>
+        </dg:DataGrid>
+
+        <dg:DataPager x:Name="DatasetsPager" PageSize="15" Margin="0,-1,0,0" Source="{Binding Datasets}" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0">
+          <Button x:Name="SendButton" Content="Send" Width="100" Command="{Binding SendCommand, Mode=TwoWay}" />
+        </StackPanel>
+      </StackPanel>
+    </ScrollViewer>
+
+    <ScrollViewer Grid.Row="1" BorderThickness="0" VerticalScrollBarVisibility="Auto" Padding="10,0,10,0">
+      <StackPanel Orientation="Vertical">
+        <TextBlock Text="Progress" Style="{StaticResource HeaderTextStyle}" />
+        <dg:DataGrid x:Name="ProgressGrid" ItemsSource="{Binding Progress, Mode=TwoWay}" MinHeight="100" IsReadOnly="True" AutoGenerateColumns="False" >
+          <dg:DataGrid.Columns>   
+            <dg:DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+            <dg:DataGridTextColumn Header="UID" Binding="{Binding UID}" />
+            <dg:DataGridTextColumn Header="AETitle" Binding="{Binding AETitle}" />
+            <dg:DataGridTextColumn Header="Server" Binding="{Binding Server}" />
+            <dg:DataGridTextColumn Header="Port" Binding="{Binding Port}" />
+            <dg:DataGridTextColumn Header="Date" Binding="{Binding Date}" />
+            <dg:DataGridTextColumn Header="Message" Binding="{Binding Message}" Width="*" />
+            <dg:DataGridTemplateColumn Width="200" Header="Progress">
+              <dg:DataGridTemplateColumn.CellTemplate>
+                <DataTemplate>
+                  <Grid HorizontalAlignment="Stretch">
+                    <ProgressBar Maximum="{Binding Total}" Value="{Binding Progress}" Minimum="0" />
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                      <TextBlock Text="{Binding Progress}" />
+                      <TextBlock Text=" of " />
+                      <TextBlock Text="{Binding Total}" />
+                    </StackPanel>
+                  </Grid>
+                </DataTemplate>
+              </dg:DataGridTemplateColumn.CellTemplate>
+            </dg:DataGridTemplateColumn>
+          </dg:DataGrid.Columns>
+        </dg:DataGrid>
+        
+        <!--StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,0">
+          <Button x:Name="DeleteButton" Content="Delete" Width="100" Command="{Binding DeleteCommand, Mode=TwoWay}" />
+        </StackPanel-->
+      </StackPanel>
+    </ScrollViewer>
+    
+  </Grid>
+</navigation:Page>

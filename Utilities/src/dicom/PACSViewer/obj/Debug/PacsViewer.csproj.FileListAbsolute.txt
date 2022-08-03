@@ -1,0 +1,11 @@
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\PacsViewer\obj\Debug\PacsViewer.csprojAssemblyReference.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\PacsViewer\obj\Debug\MainWindow.baml
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\PacsViewer\obj\Debug\ServiceWindow.baml
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\PacsViewer\obj\Debug\MainWindow.g.cs
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\PacsViewer\obj\Debug\ServiceWindow.g.cs
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\PacsViewer\obj\Debug\App.g.cs
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\PacsViewer\obj\Debug\PACSViewer_MarkupCompile.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\PacsViewer\obj\Debug\PACSViewer.g.resources
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\PacsViewer\obj\Debug\Viatronix.Utilities.Dicom.PACSViewer.Properties.Resources.resources
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\PacsViewer\obj\Debug\PacsViewer.csproj.GenerateResource.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\PacsViewer\obj\Debug\PacsViewer.csproj.CoreCompileInputs.cache

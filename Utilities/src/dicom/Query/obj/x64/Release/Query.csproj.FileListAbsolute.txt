@@ -1,0 +1,2 @@
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\Query\obj\x64\Release\Query.csprojAssemblyReference.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\Query\obj\x64\Release\Query.csproj.CoreCompileInputs.cache

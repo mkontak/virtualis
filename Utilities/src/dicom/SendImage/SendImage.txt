@@ -1,0 +1,54 @@
+﻿
+
+Application:  SendImage       
+
+Description:  Send 1 or more dicom images to a specified dicom server.
+
+Files:        SendImage.exe.config
+  
+  This file contains the default settings that the SendImage will use if no overrides are contains in the arguement list. 
+  
+  appSettings    
+
+    Contains global application settings
+
+    <appSettings>
+      <add key="verbose" value="true"/>
+      <add key="enterToContinue" value="true"/>
+    </appSettings>
+
+    verbose             Indicates that logging will be verbose
+    enterToContinue     Forces the console application to wait for user input before continuing.
+
+  client
+
+    This section  contains the deafault client setting to be used in the connection to the server. Allows for drag and
+    drop to be used.
+
+    <client aetitle="DICOM_SCU" callingAETitle="V3D" port="104" networkTimeout="-1" server="localhost">
+      <abstractSyntaxes/>
+      <transferSyntaxes />
+    </client>
+
+    aeTitle           AE Title fo the client
+    callingAETitle    AE title of the DICOM server
+    port              Port the server is listening on.
+    networkTimeout    -1 is disabled
+    servr             Server the DICOM server is running on
+    abstractSyntaxes  Implicit/Explicit/Verification are the defaults but this section
+                      allows for customization.
+    transferSyntaxes  BigEdian/LittleEdian are the defaults but this section allows for
+                      customization.
+
+Parameters:
+  
+    -a      AETitle of the client
+    -c      Calling AE Title ( Servers AE Title )
+    -n      Network Timeout
+    -p      Port
+    -s      DICOM server
+    -v      Verbose
+    -e      Enter to continue 
+    -f      Pattern match for files (deafult is *.dcm)
+
+    All remaining arguements are considered files and/r directories. 

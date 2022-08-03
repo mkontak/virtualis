@@ -1,0 +1,2 @@
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\SendImage\obj\x64\Release\SendImage.csprojAssemblyReference.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\SendImage\obj\x64\Release\SendImage.csproj.CoreCompileInputs.cache

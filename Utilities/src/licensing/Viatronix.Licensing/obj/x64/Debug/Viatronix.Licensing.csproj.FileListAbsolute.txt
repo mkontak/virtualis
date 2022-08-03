@@ -1,0 +1,11 @@
+E:\TFS\Branches\mkontak\Utilities\src\licensing\Viatronix.Licensing\bin\x64\Debug\vxliclib.dll
+E:\TFS\Branches\mkontak\Utilities\src\licensing\Viatronix.Licensing\bin\x64\Debug\vxliclib.pdb
+E:\TFS\Branches\mkontak\Utilities\src\licensing\Viatronix.Licensing\obj\x64\Debug\Viatronix.Licensing.csprojResolveAssemblyReference.cache
+E:\TFS\Branches\mkontak\Utilities\src\licensing\Viatronix.Licensing\obj\x64\Debug\vxliclib.dll
+E:\TFS\Branches\mkontak\Utilities\src\licensing\Viatronix.Licensing\obj\x64\Debug\vxliclib.pdb
+D:\Source\viatronix\viatronix\Utilities\src\licensing\Viatronix.Licensing\bin\x64\Debug\vxliclib.dll
+D:\Source\viatronix\viatronix\Utilities\src\licensing\Viatronix.Licensing\bin\x64\Debug\vxliclib.pdb
+D:\Source\viatronix\viatronix\Utilities\src\licensing\Viatronix.Licensing\obj\x64\Debug\Viatronix.Licensing.csproj.AssemblyReference.cache
+D:\Source\viatronix\viatronix\Utilities\src\licensing\Viatronix.Licensing\obj\x64\Debug\Viatronix.Licensing.csproj.CoreCompileInputs.cache
+D:\Source\viatronix\viatronix\Utilities\src\licensing\Viatronix.Licensing\obj\x64\Debug\vxliclib.dll
+D:\Source\viatronix\viatronix\Utilities\src\licensing\Viatronix.Licensing\obj\x64\Debug\vxliclib.pdb

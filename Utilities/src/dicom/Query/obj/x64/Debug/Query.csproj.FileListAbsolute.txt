@@ -1,0 +1,15 @@
+E:\TFS\Branches\mkontak\Viatronix\Utilities\Dicom\Query.exe.config
+E:\TFS\Branches\mkontak\Viatronix\Utilities\Dicom\Query.exe
+E:\TFS\Branches\mkontak\Viatronix\Utilities\Dicom\Query.pdb
+E:\TFS\Branches\mkontak\Utilities\src\dicom\Query\obj\x64\Debug\Query.csprojResolveAssemblyReference.cache
+E:\TFS\Branches\mkontak\Utilities\src\dicom\Query\obj\x64\Debug\Query.exe
+E:\TFS\Branches\mkontak\Utilities\src\dicom\Query\obj\x64\Debug\Query.pdb
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\Query\obj\x64\Debug\Query.csprojAssemblyReference.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\Query\obj\x64\Debug\Query.csproj.CoreCompileInputs.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\Query\obj\x64\Debug\Query.exe
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\Query\obj\x64\Debug\Query.pdb
+D:\Source\viatronix\viatronix\Utilities\src\dicom\Query\obj\x64\Debug\Query.csproj.AssemblyReference.cache
+D:\Source\viatronix\viatronix\Utilities\src\dicom\Query\obj\x64\Debug\Query.csproj.SuggestedBindingRedirects.cache
+D:\Source\viatronix\viatronix\Utilities\src\dicom\Query\obj\x64\Debug\Query.csproj.CoreCompileInputs.cache
+D:\Source\viatronix\viatronix\Utilities\src\dicom\Query\obj\x64\Debug\Query.exe
+D:\Source\viatronix\viatronix\Utilities\src\dicom\Query\obj\x64\Debug\Query.pdb

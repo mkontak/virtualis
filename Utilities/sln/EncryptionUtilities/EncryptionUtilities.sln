@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto", "..\..\src\encryption\Crypto\Crypto.csproj", "{09F2A64C-65F1-44CB-AE48-A6823281135F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viatronix.Encryption", "..\..\..\Codebase\src\v3d\Viatronix.Encryption\Viatronix.Encryption.csproj", "{ED270924-47CB-4D77-88C3-3F89CADC3491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viatronix.UI.WPF", "..\..\..\Codebase\src\v3d\Viatronix.UI.WPF\Viatronix.UI.WPF.csproj", "{486539FC-40C1-4E58-BA64-332DBC576AC6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Viatronix.Logging", "..\..\..\Codebase\src\v3d\Viatronix.Logging\Viatronix.Logging.vcxproj", "{EB450513-1B40-4E1F-9D8B-25266DC31EFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09F2A64C-65F1-44CB-AE48-A6823281135F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{09F2A64C-65F1-44CB-AE48-A6823281135F}.Debug|Win32.ActiveCfg = Debug|x86
+		{09F2A64C-65F1-44CB-AE48-A6823281135F}.Debug|Win32.Build.0 = Debug|x86
+		{09F2A64C-65F1-44CB-AE48-A6823281135F}.Debug|x64.ActiveCfg = Debug|x64
+		{09F2A64C-65F1-44CB-AE48-A6823281135F}.Debug|x64.Build.0 = Debug|x64
+		{09F2A64C-65F1-44CB-AE48-A6823281135F}.Release|Any CPU.ActiveCfg = Release|x86
+		{09F2A64C-65F1-44CB-AE48-A6823281135F}.Release|Win32.ActiveCfg = Release|x86
+		{09F2A64C-65F1-44CB-AE48-A6823281135F}.Release|Win32.Build.0 = Release|x86
+		{09F2A64C-65F1-44CB-AE48-A6823281135F}.Release|x64.ActiveCfg = Release|x64
+		{09F2A64C-65F1-44CB-AE48-A6823281135F}.Release|x64.Build.0 = Release|x64
+		{ED270924-47CB-4D77-88C3-3F89CADC3491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED270924-47CB-4D77-88C3-3F89CADC3491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED270924-47CB-4D77-88C3-3F89CADC3491}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{ED270924-47CB-4D77-88C3-3F89CADC3491}.Debug|x64.ActiveCfg = Debug|x64
+		{ED270924-47CB-4D77-88C3-3F89CADC3491}.Debug|x64.Build.0 = Debug|x64
+		{ED270924-47CB-4D77-88C3-3F89CADC3491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED270924-47CB-4D77-88C3-3F89CADC3491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED270924-47CB-4D77-88C3-3F89CADC3491}.Release|Win32.ActiveCfg = Release|Any CPU
+		{ED270924-47CB-4D77-88C3-3F89CADC3491}.Release|x64.ActiveCfg = Release|x64
+		{ED270924-47CB-4D77-88C3-3F89CADC3491}.Release|x64.Build.0 = Release|x64
+		{486539FC-40C1-4E58-BA64-332DBC576AC6}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{486539FC-40C1-4E58-BA64-332DBC576AC6}.Debug|Win32.ActiveCfg = Debug|x64
+		{486539FC-40C1-4E58-BA64-332DBC576AC6}.Debug|x64.ActiveCfg = Debug|x64
+		{486539FC-40C1-4E58-BA64-332DBC576AC6}.Debug|x64.Build.0 = Debug|x64
+		{486539FC-40C1-4E58-BA64-332DBC576AC6}.Release|Any CPU.ActiveCfg = Release|x64
+		{486539FC-40C1-4E58-BA64-332DBC576AC6}.Release|Win32.ActiveCfg = Release|x64
+		{486539FC-40C1-4E58-BA64-332DBC576AC6}.Release|x64.ActiveCfg = Release|x64
+		{486539FC-40C1-4E58-BA64-332DBC576AC6}.Release|x64.Build.0 = Release|x64
+		{EB450513-1B40-4E1F-9D8B-25266DC31EFB}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{EB450513-1B40-4E1F-9D8B-25266DC31EFB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EB450513-1B40-4E1F-9D8B-25266DC31EFB}.Debug|Win32.Build.0 = Debug|Win32
+		{EB450513-1B40-4E1F-9D8B-25266DC31EFB}.Debug|x64.ActiveCfg = Debug|x64
+		{EB450513-1B40-4E1F-9D8B-25266DC31EFB}.Debug|x64.Build.0 = Debug|x64
+		{EB450513-1B40-4E1F-9D8B-25266DC31EFB}.Release|Any CPU.ActiveCfg = Release|Win32
+		{EB450513-1B40-4E1F-9D8B-25266DC31EFB}.Release|Win32.ActiveCfg = Release|Win32
+		{EB450513-1B40-4E1F-9D8B-25266DC31EFB}.Release|Win32.Build.0 = Release|Win32
+		{EB450513-1B40-4E1F-9D8B-25266DC31EFB}.Release|x64.ActiveCfg = Release|x64
+		{EB450513-1B40-4E1F-9D8B-25266DC31EFB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{87de12f9-f22a-4a7d-b1cf-d365520a553d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exe">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BuildNumber.ver">
+      <Filter>exe</Filter>
+    </None>
+    <None Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>exe</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>exe</Filter>
+    </ClInclude>
+    <ClInclude Include="FileVersionReader.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Program.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>exe</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>exe</Filter>
+    </ClCompile>
+    <ClCompile Include="FileVersionReader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ImportedLibraries.cpp">
+      <Filter>exe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GenerateManifest.rc">
+      <Filter>exe</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

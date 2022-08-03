@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AnonymizationEventArgs.cpp" />
+    <ClCompile Include="AnonymizationHelper.cpp" />
+    <ClCompile Include="AnonymizationInformation.cpp" />
+    <ClCompile Include="Exceptions.cpp" />
+    <ClCompile Include="ImportedLibraries.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="AnonymizerVrx.cpp">
+      <Filter>Anonymizers</Filter>
+    </ClCompile>
+    <ClCompile Include="AnonymizerVolume.cpp">
+      <Filter>Anonymizers</Filter>
+    </ClCompile>
+    <ClCompile Include="AnonymizerTextFile.cpp">
+      <Filter>Anonymizers</Filter>
+    </ClCompile>
+    <ClCompile Include="AnonymizerStudy.cpp">
+      <Filter>Anonymizers</Filter>
+    </ClCompile>
+    <ClCompile Include="AnonymizerSeries.cpp">
+      <Filter>Anonymizers</Filter>
+    </ClCompile>
+    <ClCompile Include="AnonymizerPatient.cpp">
+      <Filter>Anonymizers</Filter>
+    </ClCompile>
+    <ClCompile Include="AnonymizerImage.cpp">
+      <Filter>Anonymizers</Filter>
+    </ClCompile>
+    <ClCompile Include="AnonymizerDummyFile.cpp">
+      <Filter>Anonymizers</Filter>
+    </ClCompile>
+    <ClCompile Include="AnonymizerDicom.cpp">
+      <Filter>Anonymizers</Filter>
+    </ClCompile>
+    <ClCompile Include="Anonymizer.cpp">
+      <Filter>Anonymizers</Filter>
+    </ClCompile>
+    <ClCompile Include="AnonymizerWizard.cpp" />
+    <ClCompile Include="AnonymizerUtilities.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnonymizationEventArgs.h" />
+    <ClInclude Include="AnonymizationHelper.h" />
+    <ClInclude Include="AnonymizationInformation.h" />
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="SearchAndReplace.h" />
+    <ClInclude Include="resource.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="Stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="AnonymizerVrx.h">
+      <Filter>Anonymizers</Filter>
+    </ClInclude>
+    <ClInclude Include="AnonymizerVolume.h">
+      <Filter>Anonymizers</Filter>
+    </ClInclude>
+    <ClInclude Include="AnonymizerTextFile.h">
+      <Filter>Anonymizers</Filter>
+    </ClInclude>
+    <ClInclude Include="AnonymizerStudy.h">
+      <Filter>Anonymizers</Filter>
+    </ClInclude>
+    <ClInclude Include="AnonymizerSeries.h">
+      <Filter>Anonymizers</Filter>
+    </ClInclude>
+    <ClInclude Include="AnonymizerPatient.h">
+      <Filter>Anonymizers</Filter>
+    </ClInclude>
+    <ClInclude Include="AnonymizerImage.h">
+      <Filter>Anonymizers</Filter>
+    </ClInclude>
+    <ClInclude Include="AnonymizerDummyFile.h">
+      <Filter>Anonymizers</Filter>
+    </ClInclude>
+    <ClInclude Include="AnonymizerDicom.h">
+      <Filter>Anonymizers</Filter>
+    </ClInclude>
+    <ClInclude Include="Anonymizer.h">
+      <Filter>Anonymizers</Filter>
+    </ClInclude>
+    <ClInclude Include="AnonymizerWizard.h" />
+    <ClInclude Include="AnonymizerUtlities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{482e2cf5-829d-41c2-aad3-f3a7c8e005e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Anonymizers">
+      <UniqueIdentifier>{02df66d0-d4a5-4124-b98d-35acd633597d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BuildNumber.ver">
+      <Filter>dll</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Viatronix.Anonymization.rc">
+      <Filter>dll</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

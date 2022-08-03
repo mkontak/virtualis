@@ -1,0 +1,204 @@
+﻿<Window x:Class="Viatronix.Utilities.Transfer.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+  xmlns:command="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WPF45"
+  xmlns:viewmodels="clr-namespace:Viatronix.Utilities.Transfer.ViewModels"
+  Title="Transfer" IsEnabled="{Binding IsNotActive, Mode=OneWay}" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Background="LightSteelBlue" Height="357.667" Width="471" >
+  <interactivity:Interaction.Triggers>
+    <interactivity:EventTrigger EventName="Loaded">
+      <command:EventToCommand Command="{Binding InitializeCommand}" />
+    </interactivity:EventTrigger>
+    <interactivity:EventTrigger EventName="Closing">
+      <command:EventToCommand Command="{Binding WindowClosingCommand}" PassEventArgsToCommand="True" />
+    </interactivity:EventTrigger>
+    <interactivity:EventTrigger EventName="Closed">
+      <command:EventToCommand Command="{Binding FinalizeCommand}" />
+    </interactivity:EventTrigger>
+  </interactivity:Interaction.Triggers>
+  <Window.Resources>
+    <HierarchicalDataTemplate x:Key="SeriesTemplate" DataType="x:Type viewmodels:SeriesViewModel">
+      <TextBlock Text="{Binding Type, Mode=OneWay}" />
+    </HierarchicalDataTemplate>
+
+    <HierarchicalDataTemplate x:Key="StudiesTemplate"  DataType="x:Type viewmodels:StudyViewModel" ItemsSource="{Binding Series}" ItemTemplate="{StaticResource ResourceKey=SeriesTemplate}">
+      <TextBlock Text="{Binding Name, Mode=OneWay}" />
+    </HierarchicalDataTemplate>
+  </Window.Resources>
+  <Grid>
+    <Label Content="Transfer Mode:" Foreground="DarkBlue" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top" />
+    <ComboBox ItemsSource="{Binding TransferProviders, Mode=OneWay}" SelectedItem="{Binding SelectedTransferProvider, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Foreground="DarkBlue" FontWeight="Bold" Margin="116,16,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="156">
+      <ComboBox.ItemTemplate>
+        <DataTemplate>
+          <TextBlock Text="{Binding Name, Mode=OneWay}" ToolTip="{Binding Tooltip, Mode=OneWay}" />
+        </DataTemplate>
+      </ComboBox.ItemTemplate>
+    </ComboBox>
+    <CheckBox Content="Anonymize" IsChecked="{Binding IsAnonymizeChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding SelectedTransferProvider.IsAnonymizeEnabled}" Foreground="DarkBlue" FontWeight="Bold" HorizontalAlignment="Left" Margin="365,18,0,0" VerticalAlignment="Top">
+      <CheckBox.Style>
+        <Style>
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="PACS">
+              <Setter Property="Grid.Visibility" Value="Hidden" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="Patient Disc">
+              <Setter Property="Grid.Visibility" Value="Hidden" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="Archival Disc">
+              <Setter Property="Grid.Visibility" Value="Visible" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="File System Archival">
+              <Setter Property="Grid.Visibility" Value="Visible" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </CheckBox.Style>
+    </CheckBox>
+
+    <!-- PACS Transfer. -->
+    <Grid x:Name="m_pacsTransferGrid" HorizontalAlignment="Left" Height="28" Margin="10,48,0,0" VerticalAlignment="Top" Width="435">
+      <Grid.Style>
+        <Style>
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="PACS">
+              <Setter Property="Grid.Visibility" Value="Visible" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="Patient Disc">
+              <Setter Property="Grid.Visibility" Value="Hidden" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="Archival Disc">
+              <Setter Property="Grid.Visibility" Value="Hidden" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="File System Archival">
+              <Setter Property="Grid.Visibility" Value="Hidden" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </Grid.Style>
+
+      <Label Content="PACS Host:" Foreground="DarkBlue" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+      <ComboBox ItemsSource="{Binding Hosts, Mode=OneWay}" SelectedItem="{Binding TransferArgs, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="106,4,0,0" VerticalAlignment="Top" Width="156"/>
+    </Grid>
+
+
+    <!-- Disc Transfers -->
+    <Grid x:Name="m_discTransferGrid" HorizontalAlignment="Left" Height="28" Margin="10,48,0,0" VerticalAlignment="Top" Width="435">
+      <Grid.Style>
+        <Style>
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="PACS">
+              <Setter Property="Grid.Visibility" Value="Hidden" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="Patient Disc">
+              <Setter Property="Grid.Visibility" Value="Visible" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="Archival Disc">
+              <Setter Property="Grid.Visibility" Value="Visible" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="File System Archival">
+              <Setter Property="Grid.Visibility" Value="Hidden" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </Grid.Style>
+
+      <Label Content="Disc Drive:" Foreground="DarkBlue" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+      <ComboBox ItemsSource="{Binding Devices, Mode=OneWay}" SelectedItem="{Binding TransferArgs, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="106,4,0,0" VerticalAlignment="Top" Width="329">
+        <ComboBox.ItemTemplate>
+          <DataTemplate>
+            <TextBlock Text="{Binding Description, Mode=OneWay}" />
+          </DataTemplate>
+        </ComboBox.ItemTemplate>
+      </ComboBox>
+    </Grid>
+
+    <!-- File System Transfer. -->
+    <Grid x:Name="m_fileSystemTransferGrid" HorizontalAlignment="Left" Height="28" Margin="10,48,0,0" VerticalAlignment="Top" Width="435">
+      <Grid.Style>
+        <Style>
+          <Style.Triggers>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="PACS">
+              <Setter Property="Grid.Visibility" Value="Hidden" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="Patient Disc">
+              <Setter Property="Grid.Visibility" Value="Hidden" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="Archival Disc">
+              <Setter Property="Grid.Visibility" Value="Hidden" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding SelectedTransferProvider.Name, Mode=OneWay}" Value="File System Archival">
+              <Setter Property="Grid.Visibility" Value="Visible" />
+            </DataTrigger>
+          </Style.Triggers>
+        </Style>
+      </Grid.Style>
+
+      <Label Content="Directory:" Foreground="DarkBlue" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+      <TextBox Text="{Binding TransferArgs, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Margin="106,4,0,0"/>
+      <Button Content="..." Command="{Binding BrowseCommand, Mode=OneWay}" Foreground="DarkBlue" FontWeight="Bold" HorizontalAlignment="Left" Margin="410,4,0,0" VerticalAlignment="Top" Width="25"/>
+    </Grid>
+
+    <GroupBox Header="Series To Transfer:" Foreground="DarkBlue" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top" Height="192" Width="435">
+      <Grid>
+
+        <TreeView ItemsSource="{Binding Studies}" ItemTemplate="{StaticResource ResourceKey=StudiesTemplate}" Foreground="Black" FontWeight="Normal" HorizontalAlignment="Left" Height="150" Margin="10,10,0,0" VerticalAlignment="Top" Width="211">
+          <interactivity:Interaction.Triggers>
+            <interactivity:EventTrigger EventName="SelectedItemChanged">
+              <command:EventToCommand Command="{Binding SelectedItemChangedCommand}" PassEventArgsToCommand="True" />
+            </interactivity:EventTrigger>
+          </interactivity:Interaction.Triggers>
+          <TreeView.ItemContainerStyle>
+            <Style TargetType="TreeViewItem">
+              <Setter Property="IsExpanded" Value="True" />
+            </Style>
+          </TreeView.ItemContainerStyle>
+        </TreeView>
+
+        <ListBox ItemsSource="{Binding TransferItems, Mode=OneWay}" IsEnabled="{Binding SelectedTransferProvider.CanChangeTransferContents, Mode=OneWay}" HorizontalAlignment="Left" Height="150" Margin="226,10,0,0" VerticalAlignment="Top" Width="187">
+          <ListBox.ItemTemplate>
+            <DataTemplate>
+              <StackPanel>
+                <CheckBox Content="{Binding Name, Mode=OneWay}" IsChecked="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Foreground="DarkBlue" FontWeight="Bold">
+                  <interactivity:Interaction.Triggers>
+                    <interactivity:EventTrigger EventName="AnonymizeChanged">
+                      <command:EventToCommand Command="{Binding InitializeCommand}" />
+                    </interactivity:EventTrigger>
+                  </interactivity:Interaction.Triggers>
+
+                  <CheckBox.Style>
+                    <Style>
+                      <Style.Triggers>
+                        <MultiDataTrigger>
+                          <MultiDataTrigger.Conditions>
+                            <Condition Binding="{Binding DataContext.IsAnonymizeChecked, RelativeSource={RelativeSource AncestorType={x:Type Window}, Mode=FindAncestor}}" Value="True" />
+                            <Condition Binding="{Binding IsDisabledAnonymization}" Value="True" />
+                          </MultiDataTrigger.Conditions>
+
+                          <MultiDataTrigger.Setters>
+                            <Setter Property="CheckBox.IsEnabled" Value="False" />
+                          </MultiDataTrigger.Setters>
+                        </MultiDataTrigger>
+
+                        <DataTrigger Binding="{Binding DataContext.IsAnonymizeChecked, RelativeSource={RelativeSource AncestorType={x:Type Window}, Mode=FindAncestor}}" Value="False">
+                          <Setter Property="CheckBox.IsEnabled" Value="True" />
+                        </DataTrigger>
+
+                        <DataTrigger Binding="{Binding IsDisabledAnonymization}" Value="False">
+                          <Setter Property="CheckBox.IsEnabled" Value="True" />
+                        </DataTrigger>
+                      </Style.Triggers>
+                    </Style>
+                  </CheckBox.Style>
+                </CheckBox>
+              </StackPanel>
+            </DataTemplate>
+          </ListBox.ItemTemplate>
+        </ListBox>
+
+      </Grid>
+    </GroupBox>
+
+    <Button Content="Start" Command="{Binding StartTransferCommand, Mode=OneWay}" IsEnabled="{Binding IsNotActive, Mode=OneWay}" Foreground="DarkBlue" FontWeight="Bold" HorizontalAlignment="Left" Margin="353,292,0,0" VerticalAlignment="Top" Width="92" />
+
+  </Grid>
+</Window>

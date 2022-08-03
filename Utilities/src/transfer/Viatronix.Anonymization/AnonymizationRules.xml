@@ -1,0 +1,36 @@
+<Anonymization version="1.0">
+  <!--Anonymization Rules -->
+ <Rules>
+  <global>
+    <files>
+        <file pattern="*.vol,*.mkvl" anonymizer="Viatronix.v3D.AnonymizerVolume" />
+        <file pattern="*.ct8,*.dif,*.ins,*.seg" anonymizer="Viatronix.v3D.AnonymizerVolume" />
+        <file pattern="*.txt"   anonymizer="Viatronix.v3D.Anonymization.AnonymizerTextFile"/>
+        <file pattern="*.vrx"   anonymizer="Viatronix.v3D.Anonymization.AnonymizerVrx" />
+        <file pattern="*.dcm"   anonymizer="Viatronix.v3D.Anonymization.AnonymizerDicom" />
+        <file pattern="*.vol"   anonymizer="Viatronix.v3D.Anonymization.AnonymizerVolume" />
+        <file pattern="*.ecv"   anonymizer="Viatronix.v3D.Anonymization.AnonymizerVolume" />
+        <file pattern="*.jpeg,*.png" anonymizer="Viatronix.v3D.Anonymization.AnonymizerImage" />
+        <file pattern="*.avi,*.wmv"  anonymizer="Viatronix.v3D.MovieAnonymizer" />
+    </files>
+     <exclusions>
+ 	    <!--exclusion pattern="*.txt" /-->
+     </exclusions>
+  </global>
+  
+  <overrides>
+   <series type="pre-proc" subtype="VC" version="1.0" >
+     <files>
+      <file pattern="*.mkvl" anonymizer="Viatronix.v3D.VcVolumeAnonymizer" />
+      <file pattern="*.ecv1"  anonymizer="Viatronix.v3D.VcEcvAnonymizer" />
+      <file pattern="*.ecv2"  anonymizer="Viatronix.v3D.VcEcvAnonymizer" />
+      <file pattern="*.ecv3"  anonymizer="Viatronix.v3D.VcEcvAnonymizer" />
+      <file pattern="*.ecv4"  anonymizer="Viatronix.v3D.VcEcvAnonymizer" />
+     </files>
+    <exclusions>
+      <!--exclusion pattern="*.jpeg" /-->
+    </exclusions>
+   </series>
+   </overrides>
+ </Rules>
+</Anonymization >

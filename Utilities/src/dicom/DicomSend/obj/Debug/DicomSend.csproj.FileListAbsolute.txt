@@ -1,0 +1,9 @@
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomSend\obj\Debug\DicomSend.csprojAssemblyReference.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomSend\obj\Debug\MainWindow.baml
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomSend\obj\Debug\MainWindow.g.cs
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomSend\obj\Debug\App.g.cs
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomSend\obj\Debug\DicomSend_MarkupCompile.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomSend\obj\Debug\DicomSend.g.resources
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomSend\obj\Debug\Viatronix.Utilities.Dicom.DicomSend.Properties.Resources.resources
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomSend\obj\Debug\DicomSend.csproj.GenerateResource.cache
+D:\Source\viatronix\TFS-Viatronix\Branches\mkontak\Utilities\src\dicom\DicomSend\obj\Debug\DicomSend.csproj.CoreCompileInputs.cache

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DatasetsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="DatasetsModelStoreContainer">
+          <EntitySet Name="Datasets" EntityType="DatasetsModel.Store.Datasets" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Images" EntityType="DatasetsModel.Store.Images" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Progress" EntityType="DatasetsModel.Store.Progress" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Datasets">
+          <Key>
+            <PropertyRef Name="uid" />
+          </Key>
+          <Property Name="uid" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="mod" Type="nvarchar" Nullable="false" MaxLength="4" />
+          <Property Name="man" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="model" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="ort" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="pln" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="qa" Type="bit" Nullable="false" />
+          <Property Name="cpd" Type="bit" Nullable="false" />
+          <Property Name="desc" Type="nvarchar" Nullable="false" MaxLength="1000" />
+          <Property Name="icnt" Type="int" Nullable="false" />
+          <Property Name="app" Type="nvarchar" Nullable="false" MaxLength="6" />
+          <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="64" />
+        </EntityType>
+        <EntityType Name="Images">
+          <Key>
+            <PropertyRef Name="suid" />
+            <PropertyRef Name="uid" />
+          </Key>
+          <Property Name="suid" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="uid" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="file" Type="nvarchar" Nullable="false" MaxLength="512" />
+        </EntityType>
+        <EntityType Name="Progress">
+          <Key>
+            <PropertyRef Name="uid" />
+            <PropertyRef Name="aetitle" />
+            <PropertyRef Name="server" />
+            <PropertyRef Name="port" />
+            <PropertyRef Name="date" />
+          </Key>
+          <Property Name="uid" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="aetitle" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="server" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="port" Type="int" Nullable="false" />
+          <Property Name="date" Type="datetime" Nullable="false" />
+          <Property Name="state" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="progress" Type="int" Nullable="false" />
+          <Property Name="total" Type="int" Nullable="false" />
+          <Property Name="message" Type="nvarchar" Nullable="false" MaxLength="512" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DatasetsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="DatasetsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Datasets" EntityType="DatasetsModel.Dataset" />
+          <EntitySet Name="Progresses" EntityType="DatasetsModel.Progress" />
+          <EntitySet Name="Images" EntityType="DatasetsModel.Image" />
+        </EntityContainer>
+        <EntityType Name="Dataset">
+          <Key>
+            <PropertyRef Name="uid" />
+          </Key>
+          <Property Name="uid" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="mod" Type="String" Nullable="false" MaxLength="4" Unicode="true" FixedLength="false" />
+          <Property Name="man" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="model" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="ort" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="qa" Type="Boolean" Nullable="false" />
+          <Property Name="cpd" Type="Boolean" Nullable="false" />
+          <Property Name="desc" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" Nullable="false" />
+          <Property Name="icnt" Type="Int32" Nullable="false" />
+          <Property Name="app" Type="String" Nullable="false" MaxLength="6" Unicode="true" FixedLength="false" />
+          <Property Name="type" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Type="String" Name="pln" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Progress">
+          <Key>
+            <PropertyRef Name="uid" />
+            <PropertyRef Name="aetitle" />
+            <PropertyRef Name="port" />
+            <PropertyRef Name="server" />
+            <PropertyRef Name="date" />
+          </Key>
+          <Property Name="uid" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="aetitle" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="port" Type="Int32" Nullable="false" />
+          <Property Name="progress1" Type="Int32" Nullable="false" />
+          <Property Name="total" Type="Int32" Nullable="false" />
+          <Property Type="String" Name="server" Nullable="false" MaxLength="64" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="message" MaxLength="512" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="date" Nullable="false" />
+          <Property Type="String" Name="state" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Image">
+          <Key>
+            <PropertyRef Name="suid" />
+            <PropertyRef Name="uid" />
+          </Key>
+          <Property Type="String" Name="suid" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="uid" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="file" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DatasetsModelStoreContainer" CdmEntityContainer="DatasetsEntities">
+          <EntitySetMapping Name="Datasets"><EntityTypeMapping TypeName="DatasetsModel.Dataset"><MappingFragment StoreEntitySet="Datasets">
+            <ScalarProperty Name="pln" ColumnName="pln" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="mod" ColumnName="mod" />
+            <ScalarProperty Name="man" ColumnName="man" />
+            <ScalarProperty Name="model" ColumnName="model" />
+            <ScalarProperty Name="ort" ColumnName="ort" />
+            <ScalarProperty Name="qa" ColumnName="qa" />
+            <ScalarProperty Name="cpd" ColumnName="cpd" />
+            <ScalarProperty Name="desc" ColumnName="desc" />
+            <ScalarProperty Name="icnt" ColumnName="icnt" />
+            <ScalarProperty Name="app" ColumnName="app" />
+            <ScalarProperty Name="type" ColumnName="type" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Progresses"><EntityTypeMapping TypeName="DatasetsModel.Progress"><MappingFragment StoreEntitySet="Progress">
+            <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="message" ColumnName="message" />
+                <ScalarProperty Name="server" ColumnName="server" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+            <ScalarProperty Name="aetitle" ColumnName="aetitle" />
+            <ScalarProperty Name="port" ColumnName="port" />
+            <ScalarProperty Name="progress1" ColumnName="progress" />
+            <ScalarProperty Name="total" ColumnName="total" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Images">
+            <EntityTypeMapping TypeName="DatasetsModel.Image">
+              <MappingFragment StoreEntitySet="Images">
+                <ScalarProperty Name="file" ColumnName="file" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="suid" ColumnName="suid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="DatasetsModel">
+        <EntityTypeShape EntityType="DatasetsModel.Dataset" Width="1.5" PointX="0.75" PointY="0.75" Height="3.3263964843749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatasetsModel.Progress" Width="1.5" PointX="2.75" PointY="0.75" Height="1.9802864583333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatasetsModel.Image" Width="1.5" PointX="3.375" PointY="4.75" Height="1.5956835937499996" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
