@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{55addb0d-7803-4edc-9e8d-2b42da8a3db0}</UniqueIdentifier>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{793c308c-ee4a-40c2-b027-a128bfd2eb2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="animation">
+      <UniqueIdentifier>{7bd714b0-7e9b-4cbc-b785-edb0e397dc44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="viewer">
+      <UniqueIdentifier>{820ee34c-bd9f-41f9-9c38-6dd90c09592c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graph">
+      <UniqueIdentifier>{66130740-2771-4f50-9a5b-ca608a5fced3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportedLibraries.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="vxBase.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Annotations.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_CadFindings.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Camera.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_CameraFlySettings.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Cine.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Colormap.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Components.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_ContourList.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Controllers.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_CpuInfo.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_CropBox.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Cursor3d.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_CycleSettings.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_DataAnnotationCreate.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_DataColormapEditor.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_DataPlaneObliqueCreate.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Dataset.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Elements.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Environment.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_EnvironmentList.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_EventArgs.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Events.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_EventTimer.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Exception.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_FontInfo.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_FullScreen.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_ID.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_IntensityConverter.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Manipulators.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_ModifiedQueue.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Momentum.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_PlaneCurved.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_PlaneOblique.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_PlaneOrtho.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Preset.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_PresetAdjuster.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_PresetAdjusterMR.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_PresetAdjusterPET.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Renderers.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_RenderingMode.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_RenderingModeAttribute.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Segmentation.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_SegmentationPreset.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_SegmentationPresetCollection.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_SelfadaptiveMRWindowLevel.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_SelfadaptivePTWindowLevel.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_SimpleTypes.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_SyncData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_ThreadAffinities.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_TimeVolume.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Triplet.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_UndoActionStack.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Utils.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Vessel.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_VesselPreferences.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_ViewerTypes.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_ViewObliqueData.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_VisualizationPreferencesSectionHandler.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_VisualizationPreset.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Volume.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_VolumeHeader.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_WindowLevel.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_ZoomFactor.cpp">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_AnimationAction.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_AnimationAction3DPath.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_AnimationActionOblique.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_AnimationActionPlaneOrtho.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_AnimationActionRotate3D.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_AnimationActionVesselDetail.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_AnimationCapture.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_AnimationCaptureMovie.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_AnimationCaptureMovieAVI.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_AnimationCaptureMovieAviImpl.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Animator.cpp">
+      <Filter>animation</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Viewer.cpp">
+      <Filter>viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Viewerbar.cpp">
+      <Filter>viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_ViewerbarButton.cpp">
+      <Filter>viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_ViewerbarButtonCollection.cpp">
+      <Filter>viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="vxInputAdapter.cpp">
+      <Filter>viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="vxInteractingMonitor.C">
+      <Filter>viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_GraphTimerEx.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_NodeDatasets.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_NodeGlobalController.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_NodeIDs.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_NodeRendering.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_Nodes.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_RenderingNodePlugin.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="v3D_VisualizationGraph.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ExplorerPlugin.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ExplorerPlugin2.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="Stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="vxBase.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Annotations.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_CadFindings.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Camera.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_CameraFlySettings.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Cine.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Colormap.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Components.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_ContourList.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Controllers.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_CpuInfo.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_CropBox.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Cursor3d.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_CycleSettings.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_DataAnnotationCreate.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_DataColormapEditor.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_DataPlaneObliqueCreate.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Dataset.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Elements.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Enums.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Environment.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_EnvironmentList.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_EventArgs.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Events.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_EventTimer.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Exception.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_FontInfo.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_FullScreen.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_ID.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_IntensityConverter.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Interfaces.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Manipulators.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_ModifiedQueue.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Momentum.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_PlaneCurved.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_PlaneOblique.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_PlaneOrtho.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Preset.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_PresetAdjuster.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_PresetAdjusterMR.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_PresetAdjusterPET.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Renderers.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_RenderingMode.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_RenderingModeAttribute.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Segmentation.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_SegmentationPreset.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_SegmentationPresetCollection.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_SelfadaptiveMRWindowLevel.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_SelfadaptivePTWindowLevel.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_SimpleTypes.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_SyncData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_TimeVolume.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Triplet.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_UndoActionStack.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Utils.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Vessel.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_VesselPreferences.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_ViewerTypes.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_ViewObliqueData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_VisualizationPreferencesSectionHandler.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_VisualizationPreset.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Volume.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_VolumeHeader.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_WindowLevel.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_ZoomFactor.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="vxManagedObserver.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_AnimationAction.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_AnimationAction3DPath.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_AnimationActionOblique.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_AnimationActionPlaneOrtho.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_AnimationActionRotate3D.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_AnimationActionVesselDetail.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_AnimationCapture.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_AnimationCaptureMovie.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_AnimationCaptureMovieAVI.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_AnimationCaptureMovieAviImpl.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Animator.h">
+      <Filter>animation</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Viewer.h">
+      <Filter>viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Viewerbar.h">
+      <Filter>viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_ViewerbarButton.h">
+      <Filter>viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_ViewerbarButtonCollection.h">
+      <Filter>viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="vxInputAdapter.h">
+      <Filter>viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="vxInteractingMonitor.h">
+      <Filter>viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_GraphTimerEx.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_NodeDatasets.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_NodeGlobalController.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_NodeIDs.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_NodeRendering.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_Nodes.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_RenderingNodePlugin.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="v3D_VisualizationGraph.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\cameraClick.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\3dwwe.cur" />
+    <None Include="res\hourglass_arrow.cur" />
+    <None Include="res\vol-measure_arrow.cur" />
+    <None Include="res\tfunc.cur" />
+    <None Include="res\square_arrow.cur" />
+    <None Include="res\roi_arrow.cur" />
+    <None Include="res\region-grow_arrow.cur" />
+    <None Include="res\region-grow_red_arrow.cur" />
+    <None Include="res\point_arrow.cur" />
+    <None Include="res\3dwnwse.cur" />
+    <None Include="res\3dwns.cur" />
+    <None Include="res\no_arrow1.cur" />
+    <None Include="res\3dwnesw.cur" />
+    <None Include="res\3dwmove.cur" />
+    <None Include="res\linear_arrow.cur" />
+    <None Include="res\lasso_arrow.cur" />
+    <None Include="res\hand_open.cur" />
+    <None Include="res\hand_closed.cur" />
+    <None Include="res\arrow_arrow.cur" />
+    <None Include="res\angle_arrow.cur" />
+    <None Include="res\adjust_arrow.cur" />
+    <None Include="res\point-1_arrow.cur" />
+    <None Include="res\point-2_arrow.cur" />
+    <None Include="res\restrictive_lasso_arrow.cur" />
+    <None Include="res\sculpt.cur" />
+    <None Include="res\sculpt_cut.cur" />
+    <None Include="res\plane_oblique_create.cur" />
+    <None Include="res\plane_oblique_create_disabled.cur" />
+    <None Include="res\sliceShadow_rotate.cur" />
+    <None Include="res\Cursor_Curved_MPR.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\cube_S.png" />
+    <Image Include="res\cube_R.png" />
+    <Image Include="res\cube_P.png" />
+    <Image Include="res\cube_L.png" />
+    <Image Include="res\cube_I.png" />
+    <Image Include="res\cube_A.png" />
+    <Image Include="res\colormap.png" />
+    <Image Include="res\AP_point-20x20.png" />
+    <Image Include="res\annotation_arrow.gif" />
+    <Image Include="res\Ap_distance20x20.png" />
+    <Image Include="res\AP_angle-20x20.png" />
+    <Image Include="res\annotation_ellipse.gif" />
+    <Image Include="res\annotation_square.png" />
+    <Image Include="res\annotation_component.png" />
+    <Image Include="res\viatronix_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="v3dvis.rc">
+      <Filter>dll</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

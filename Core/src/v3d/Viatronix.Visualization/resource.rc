@@ -1,0 +1,127 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+CAMERACLICK             WAVE                    "res\\cameraClick.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+CURSOR_WE               CURSOR                  "res\\3dwwe.cur"
+CURSOR_WAIT             CURSOR                  "res\\hourglass_arrow.cur"
+CURSOR_VOLUME_MEASURE   CURSOR                  "res\\vol-measure_arrow.cur"
+CURSOR_TFUNC            CURSOR                  "res\\tfunc.cur"
+CURSOR_SQUARE           CURSOR                  "res\\square_arrow.cur"
+CURSOR_ROI              CURSOR                  "res\\roi_arrow.cur"
+CURSOR_REGION_GROW      CURSOR                  "res\\region-grow_arrow.cur"
+CURSOR_REGION_GROW_RED  CURSOR                  "res\\region-grow_red_arrow.cur"
+CURSOR_POINT            CURSOR                  "res\\point_arrow.cur"
+CURSOR_NWSE             CURSOR                  "res\\3dwnwse.cur"
+CURSOR_NS               CURSOR                  "res\\3dwns.cur"
+CURSOR_NO               CURSOR                  "res\\no_arrow1.cur"
+CURSOR_NESW             CURSOR                  "res\\3dwnesw.cur"
+CURSOR_MOVE             CURSOR                  "res\\3dwmove.cur"
+CURSOR_LINEAR           CURSOR                  "res\\linear_arrow.cur"
+CURSOR_LASSO            CURSOR                  "res\\lasso_arrow.cur"
+CURSOR_HAND_OPEN        CURSOR                  "res\\hand_open.cur"
+CURSOR_HAND_CLOSED      CURSOR                  "res\\hand_closed.cur"
+CURSOR_ARROW            CURSOR                  "res\\arrow_arrow.cur"
+CURSOR_ANGLE            CURSOR                  "res\\angle_arrow.cur"
+CURSOR_ADJUST           CURSOR                  "res\\adjust_arrow.cur"
+CURSOR_POINT_1          CURSOR                  "res\\point-1_arrow.cur"
+CURSOR_POINT_2          CURSOR                  "res\\point-2_arrow.cur"
+CURSOR_RESTRICTIVE_LASSO CURSOR                  "res\\restrictive_lasso_arrow.cur"
+CURSOR_SCULPT           CURSOR                  "res\\sculpt.cur"
+CURSOR_SCULPT_CUT       CURSOR                  "res\\sculpt_cut.cur"
+CURSOR_PLANE_OBLIQUE_CREATE CURSOR                  "res\\plane_oblique_create.cur"
+CURSOR_PLANE_OBLIQUE_CREATE_DISABLED CURSOR                  "res\\plane_oblique_create_disabled.cur"
+CURSOR_SLICESHADOW_ROTATE CURSOR                  "res\\sliceShadow_rotate.cur"
+CURSOR_CURVED_MPR       CURSOR                  "res\\Cursor_Curved_MPR.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+CUBE_S                  PNG                     "res\\cube_S.png"
+CUBE_R                  PNG                     "res\\cube_R.png"
+CUBE_P                  PNG                     "res\\cube_P.png"
+CUBE_L                  PNG                     "res\\cube_L.png"
+CUBE_I                  PNG                     "res\\cube_I.png"
+CUBE_A                  PNG                     "res\\cube_A.png"
+COLORMAP                PNG                     "res\\colormap.png"
+ANNOTATION_POINT        PNG                     "res\\AP_point-20x20.png"
+ANNOTATION_ARROW        PNG                     "res\\annotation_arrow.gif"
+ANNOTATION_DISTANCE     PNG                     "res\\Ap_distance20x20.png"
+ANNOTATION_ANGLE        PNG                     "res\\AP_angle-20x20.png"
+ANNOTATION_ELLIPSE      PNG                     "res\\annotation_ellipse.gif"
+ANNOTATION_SQUARE       PNG                     "res\\annotation_square.png"
+ANNOTATION_COMPONENT    PNG                     "res\\annotation_component.png"
+LOGO                    PNG                     "res\\viatronix_logo.png"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{98da74a0-3ce1-4121-93ec-41a1c85bbc0f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="scoped_ptr.h" />
+    <ClInclude Include="MessagingManager.h" />
+    <ClInclude Include="IMessage.h" />
+    <ClInclude Include="ProcessingMessage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ImportedLibraries.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="MessagingManager.cpp" />
+    <ClCompile Include="ProcessingMessage.cpp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBed", "TestBed.csproj", "{F0B87154-22E9-4BBB-8F09-B8CCFFAAA1CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viatronix.v3D.UI", "..\Viatronix.v3D.UI.csproj", "{2DCE045C-DE23-4B33-9F18-665D9BBC7712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viatronix.v3D.Utilties", "..\..\Viatronix.v3D.Utilities\Viatronix.v3D.Utilties.csproj", "{B2AE258E-B529-45B4-BD00-D2F18D938862}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F0B87154-22E9-4BBB-8F09-B8CCFFAAA1CE}.Debug.ActiveCfg = Debug|.NET
+		{F0B87154-22E9-4BBB-8F09-B8CCFFAAA1CE}.Debug.Build.0 = Debug|.NET
+		{F0B87154-22E9-4BBB-8F09-B8CCFFAAA1CE}.Release.ActiveCfg = Release|.NET
+		{F0B87154-22E9-4BBB-8F09-B8CCFFAAA1CE}.Release.Build.0 = Release|.NET
+		{2DCE045C-DE23-4B33-9F18-665D9BBC7712}.Debug.ActiveCfg = Debug|.NET
+		{2DCE045C-DE23-4B33-9F18-665D9BBC7712}.Debug.Build.0 = Debug|.NET
+		{2DCE045C-DE23-4B33-9F18-665D9BBC7712}.Release.ActiveCfg = Release|.NET
+		{2DCE045C-DE23-4B33-9F18-665D9BBC7712}.Release.Build.0 = Release|.NET
+		{B2AE258E-B529-45B4-BD00-D2F18D938862}.Debug.ActiveCfg = Debug|.NET
+		{B2AE258E-B529-45B4-BD00-D2F18D938862}.Debug.Build.0 = Debug|.NET
+		{B2AE258E-B529-45B4-BD00-D2F18D938862}.Release.ActiveCfg = Release|.NET
+		{B2AE258E-B529-45B4-BD00-D2F18D938862}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

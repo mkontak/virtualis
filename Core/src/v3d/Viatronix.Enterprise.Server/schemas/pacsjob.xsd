@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+
+  <xs:element name="pacsjob" id="pacsjob">
+    <xs:complexType>
+
+      <xs:attribute name="is" type="xs:int" use="optional" />
+      <xs:attribute name="uid" type="xs:string" use="optional" />
+      <xs:attribute name="suid" type="xs:string" use="optional" />
+      <xs:attribute name="type" type="xs:string" use="optional" />
+      <xs:attribute name="operation" type="xs:string" use="optional" />
+      <xs:attribute name="dest" type="xs:string" use="optional" />
+      <xs:attribute name="host" type="xs:string" use="optional" />
+      <xs:attribute name="prog" type="xs:int" use="optional" />
+      <xs:attribute name="ver" type="xs:string" use="required" />
+
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

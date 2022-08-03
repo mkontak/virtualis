@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{4e46cccb-3916-45bf-b4e1-62e4013d7f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{97bed829-b177-43cb-ad72-292686ccc3c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="registry">
+      <UniqueIdentifier>{b2dbe49b-506e-4a09-8fda-84fd5d28f027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="movies">
+      <UniqueIdentifier>{72719aac-e3fa-41db-80b1-245a25dc5779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pipelining">
+      <UniqueIdentifier>{77cde312-28ec-4728-bd00-a07581fd8924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timers">
+      <UniqueIdentifier>{75357354-a5d1-40fb-aacd-92cc4f16c63f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportedLibraries.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandLineArguments.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Convert.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Descriptions.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="PathUtilities.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemInfo.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemSetting.cpp">
+      <Filter>registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Movies.cpp">
+      <Filter>movies</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusMessage.cpp">
+      <Filter>pipelining</Filter>
+    </ClCompile>
+    <ClCompile Include="SoftwareRegistry.cpp">
+      <Filter>registry</Filter>
+    </ClCompile>
+    <ClCompile Include="V3DSystemSettings.cpp">
+      <Filter>registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Registry.cpp">
+      <Filter>registry</Filter>
+    </ClCompile>
+    <ClCompile Include="DNSRegistry.cpp">
+      <Filter>registry</Filter>
+    </ClCompile>
+    <ClCompile Include="PerfTimer.cpp">
+      <Filter>timers</Filter>
+    </ClCompile>
+    <ClCompile Include="MovieExtracter.cpp">
+      <Filter>movies</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandLineArguments.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Convert.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Descriptions.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="FileExtensions.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="PathUtilities.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemInfo.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilityEnums.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemSettings.h">
+      <Filter>registry</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemSettingsSectionHandler.h">
+      <Filter>registry</Filter>
+    </ClInclude>
+    <ClInclude Include="Movies.h">
+      <Filter>movies</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusMessage.h">
+      <Filter>pipelining</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamReaderThread.h">
+      <Filter>pipelining</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SoftwareRegistry.h">
+      <Filter>registry</Filter>
+    </ClInclude>
+    <ClInclude Include="V3DSystemSettings.h">
+      <Filter>registry</Filter>
+    </ClInclude>
+    <ClInclude Include="Registry.h">
+      <Filter>registry</Filter>
+    </ClInclude>
+    <ClInclude Include="DNSRegistry.h">
+      <Filter>registry</Filter>
+    </ClInclude>
+    <ClInclude Include="PerfTimer.h">
+      <Filter>timers</Filter>
+    </ClInclude>
+    <ClInclude Include="MovieExtracter.h">
+      <Filter>movies</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BuildNumber.ver">
+      <Filter>dll</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="v3dutil.rc" />
+  </ItemGroup>
+</Project>

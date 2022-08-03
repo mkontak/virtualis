@@ -1,0 +1,309 @@
+// $Id: v3D_Interfaces.cpp_template,v 1.1.1.1 2004/03/02 03:58:39 geconomos Exp $
+//
+// Copyright © 2002, Viatronix Inc., All Rights Reserved.
+//
+// This is PROPRIETARY SOURCE CODE of Viatronix Inc. The contents of this file
+// may not be disclosed to third parties, copied or duplicated in any form, 
+// in whole or in part, without the prior written permission of Viatronix Inc. 
+//
+// Author: George Economos (mailto:george@viatronix.com)
+
+// pragmas
+#pragma once
+
+/// includes
+#include "v3D_Interfaces.h"
+
+
+/**
+ * IManipulatorFactory
+ */
+public __gc __interface IManipulatorFactory
+{
+  /**
+   * Creates a vxManipulator.
+   *
+   * @param env vxEnvionment pointer as System::IntPtr.
+   * @return Unmanaged vxManipulator pointer as System::IntPtr.
+   */
+  System::IntPtr CreateManipulator( System::IntPtr env );
+
+}; // interface IManipulatorFactory  
+
+
+
+/**
+ * IRendererFactory           
+ */
+public __gc __interface IRendererFactory
+{
+  /**
+   * Creates a vxRenderer.
+   *
+   * @param env vxEnvionment pointer as System::IntPtr.
+   * @return Unmanaged vxRenderer pointer as System::IntPtr.
+   */
+  System::IntPtr CreateRenderer( System::IntPtr env );
+
+}; // interface IRenderer  
+
+
+
+/**
+ * IAnnotationFactory
+ */
+public __gc __interface IAnnotationFactory
+{
+  /**
+   * Creates a vxAnnotation.
+   *
+   * @return Unmanaged vxAnnotation pointer as System::IntPtr.
+   */
+  System::IntPtr CreateAnnotation();
+
+}; // interface IManipulatorFactory  
+
+
+
+/**
+ * IElement
+ */
+public __gc __interface IElement
+{
+  /**
+   * Returns an unmanaged pointer to implementing type.
+   *
+   * @return Implementiing type pointer as System::IntPtr.
+   */
+  System::IntPtr GetElementPtr();
+
+  
+  /**
+   * Connects to the specified observer.
+   *
+   * @param observer Unmanaged vxObserver pointer as System::IntPtr.
+   */
+  void Connect( System::IntPtr observer );
+
+  
+  /**
+   * Disconnects from the specified observer.
+   *
+   * @param observer Unmanaged vxObserver pointer as System::IntPtr.
+   */
+  void Disconnect( System::IntPtr );
+
+}; // interface IElement  
+
+
+/**
+ * IObserver
+ */
+public __gc __interface IObserver
+{
+  
+  /**
+   * Processes modified queue events.
+   *
+   * @param modifiedList vxModifiedInfoList as System::IntPtr.
+   */
+  void Modified( System::IntPtr modifiedList ) ;        
+
+}; // IObserver
+
+
+/**
+ * IViewerType
+ */
+public __gc __interface IViewerType
+{
+  
+  /**
+   * Gets the implementing vxViewerType pointer.
+   *
+   * @return vxViewerType pointer as System::IntPtr.
+   */
+  System::IntPtr GetViewerTypePtr();
+
+  /**
+   * Gets if the viewer is 2D.
+   *
+   * @return True if vieer is 2D; false otherwise.
+   */
+  __property bool get_Is2D();
+
+
+  /**
+   * Gets if the viewer is 3D.
+   *
+   * @return True if vieer is 3D; false otherwise.
+   */
+  __property bool get_Is3D();
+
+}; // IViewerType
+
+
+/**
+ * IDropSource
+ */
+public __gc __interface IDropSource
+{
+  /**
+   * Gets the drop's data type.
+   *
+   * @return DropType value.
+   */
+  __property Viatronix::v3D::Visualization::DropType get_DropType();
+
+
+  /**
+   * Called when drop occurs on a viewer.
+   *
+   * @param mpViewer Viewer object that received the Drop event.
+   * @param bCopy Trueif data is to be copied; false to link.
+   */
+  void Drop( Viatronix::v3D::Visualization::Viewer * mpViewer, bool bCopy  );
+
+}; // IDropSource
+
+
+/**
+ * IViewerbarButton
+ */
+public __gc __interface IViewerbarButton
+{
+  /**
+   * Gets the button's image
+   *
+   * @return Button image.
+   */
+  __property System::Drawing::Bitmap * get_Image();
+
+  
+  /**
+   *  Gets the tooltip text
+   *
+   * @return Button tooltp text.
+   */
+  __property System::String * get_Tooltip();
+
+  
+  /**
+   * Gets the IDropSource interface.
+   *
+   * @return Button's IDropSource interface.
+   */
+  __property IDropSource * get_DropSource();
+
+  
+  /**
+   * Gets an array of PopupMenu items.
+   *
+   * @return Array of PopupMenu item objects.
+   */
+  __property Viatronix::v3D::UI::PopupItem * get_PopupItems()[];
+  
+  
+  /**
+   * Sets the associated Viewer object.
+   *
+   * @param mpViewer Associated Viewer object.
+   */
+  __property void set_Viewer( Viatronix::v3D::Visualization::Viewer * mpViewer );
+  
+  
+  /**
+   * Called when the toolbar needs to be updated.
+   */
+  void Update();
+  
+  
+  /**
+   * Called when the state of the popup items need to be updated.
+   */
+  void UpdatePopupItems();
+  
+  
+  /**
+   * Called when the button is clicked.
+   *
+   * @param button Indicates hiwch button was clicked.
+   */
+  void Click( System::Windows::Forms::MouseButtons button );
+  
+}; // IToolbarButton
+
+   
+CLOSE_VISUALIZATION_NS
+
+// $Log: v3D_Interfaces.cpp_template,v $
+// Revision 1.1.1.1  2004/03/02 03:58:39  geconomos
+// Moved and restructured code from the old xp module. This helps 
+// recompiling everything in one go and also reduces the compile
+// time for the individual projects due to the new library structure.
+//
+// Revision 1.2  2003/08/20 14:31:11  michael
+// added "mailto:"
+//
+// Revision 1.1  2003/05/13 12:04:50  michael
+// inserted template file
+//
+// Revision 1.30  2003/05/06 18:51:41  geconomos
+// Coding standards
+//
+// Revision 1.29  2003/04/16 18:50:22  geconomos
+// Issue #3110:  Buttons not refreshing after drop event.
+//
+// Revision 1.28  2003/04/08 14:54:52  geconomos
+// Issue #2398: Tooltips are now available for viewerbar buttons.
+//
+// Revision 1.27  2003/03/20 13:44:06  geconomos
+// Removed inclusion of v3D_Viewer.h
+//
+// Revision 1.26  2003/03/17 19:48:01  geconomos
+// Issue #2914. Implemented DropType property from vxViewer.
+//
+// Revision 1.25  2003/03/06 16:01:57  frank
+// Moved Is2D and Is3D to vxViewerType
+//
+// Revision 1.24  2003/01/13 14:46:12  geconomos
+// Added IAnnotationFactory interface.
+//
+// Revision 1.23  2002/12/18 15:46:11  geconomos
+// added IViewerType interface
+//
+// Revision 1.22  2002/11/20 13:48:01  geconomos
+// implemented click on IViewerbarButton
+//
+// Revision 1.21  2002/11/18 20:39:40  geconomos
+// New viewerbar implementation
+//
+// Revision 1.20  2002/11/12 21:31:19  geconomos
+// Removed IPlane.
+//
+// Revision 1.19  2002/11/11 19:19:07  geconomos
+// Reworked serialization.
+//
+// Revision 1.18  2002/11/06 23:44:10  geconomos
+// Cahnged IToolbarButton to have a MenuItem[] instead of ContextMenu
+//
+// Revision 1.17  2002/11/06 15:01:06  geconomos
+// Changed definition of IToolbarButton
+//
+// Revision 1.16  2002/11/05 23:17:05  ingmar
+// removed obsolete include
+//
+// Revision 1.15  2002/11/05 20:50:42  geconomos
+// Added methods to IToolbarButton and added IDropSource.
+//
+// Revision 1.14  2002/11/04 14:30:36  geconomos
+// new toolbar class.
+//
+// Revision 1.13  2002/10/07 15:20:33  geconomos
+// Merged Volume_Int2 and Volume_uint2 into Volume.
+//
+// Revision 1.12  2002/09/24 18:17:54  geconomos
+// Exception handling and formatting.
+//
+// $Header: /CVS/cvsRepository/V3D/src/Viatronix.v3D.Visualization/v3D_Interfaces.cpp_template,v 1.1.1.1 2004/03/02 03:58:39 geconomos Exp $
+// $Id: v3D_Interfaces.cpp_template,v 1.1.1.1 2004/03/02 03:58:39 geconomos Exp $

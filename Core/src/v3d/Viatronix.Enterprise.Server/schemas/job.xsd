@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:include schemaLocation=".\sdk.xsd" />
+
+  <xs:element name="job">
+    <xs:complexType>
+
+      <xs:attribute name="id" type="xs:string" use="optional" />
+      <xs:attribute name="app" type="xs:string" use="optional" />
+      <xs:attribute name="login" type="xs:string" use="optional" />
+      <xs:attribute name="src" type="xs:string" use="optional" />
+      <xs:attribute name="dst" type="xs:string" use="optional" />
+      <xs:attribute name="stage" type="xs:string" use="optional" />
+      <xs:attribute name="tid" type="xs:string" use="optional" />
+      <xs:attribute name="vol" type="xs:string" use="optional" />
+      <xs:attribute name="desc" type="xs:string" use="optional" />
+      <xs:attribute name="mod" type="xs:string" use="optional" />
+      <xs:attribute name="sdate" type="xs:dateTime" use="optional" />
+      <xs:attribute name="cdate" type="xs:dateTime" use="optional" />
+      <xs:attribute name="task" type="xs:string" use="optional" />
+      <xs:attribute name="state" type="xs:int" use="optional" />
+      <xs:attribute name="prog" type="xs:float" use="optional" />
+      <xs:attribute name="name" type="xs:string" use="optional" />
+      <xs:attribute name="ort" type="xs:string" use="optional" />
+      <xs:attribute name="sys" type="xs:string" use="optional" />
+      <xs:attribute name="icnt" type="xs:int" use="optional" />
+      <xs:attribute name="msg" type="xs:string" use="optional" />      
+      <xs:attribute name="ver" type="xs:string" use="required" />
+
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

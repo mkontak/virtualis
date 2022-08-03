@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:include schemaLocation=".\sdk.xsd" />
+
+  <xs:element name="study">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dob" type="dateRangeType" minOccurs="0" />
+        <xs:element name="wgt" type="intRangeType" minOccurs="0" />
+        <xs:element name="date" type="dateTimeRangeType" minOccurs="0" />
+      </xs:sequence>
+
+      <xs:attribute name="name" type="xs:string" use="optional" />
+      <xs:attribute name="mid" type="xs:string" use="optional" />
+      <xs:attribute name="sex"  use="optional">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:pattern value="M|F|O|" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+
+      <xs:attribute name="wgt" type="xs:int" use="optional" />
+      <xs:attribute name="dob" type="xs:date" use="optional" />
+      <xs:attribute name="date" type="xs:dateTime" use="optional" />
+      <xs:attribute name="id" type="xs:string" use="optional" />
+      <xs:attribute name="an" type="xs:string" use="optional" />
+      <xs:attribute name="apps" type="xs:string" use="optional" />
+      <xs:attribute name="mods" type="xs:string" use="optional" />
+      <xs:attribute name="phys" type="xs:string" use="optional" />
+      <xs:attribute name="dir" type="xs:string" use="optional" />
+      <xs:attribute name="url" type="xs:string" use="optional" />
+      <xs:attribute name="desc" type="xs:string" use="optional" />
+      <xs:attribute name="uid" type="xs:string" use="optional" />
+      <xs:attribute name="grp" type="xs:string" use="optional" />
+      <xs:attribute name="state" type="xs:long" use="optional" />
+      <xs:attribute name="ver" type="xs:string" use="required" />
+
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

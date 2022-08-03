@@ -1,0 +1,718 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF5F8616-EA2B-4AC9-A514-E46CD6C5595E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>v3dui</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Viatronix.UI</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType />
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WPF45">
+      <HintPath>..\..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.Extras.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF45">
+      <HintPath>..\..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="core\dialogs\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutoResizeDataGridTableStyle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonImagesEditor.cs" />
+    <Compile Include="CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ColorAdjustor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="core\dialogs\FormAbout.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormAbout.resx</DependentUpon>
+    </Compile>
+    <Compile Include="core\ControllerHotKeys.cs" />
+    <Compile Include="core\ControllerMenus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="core\ControllerPanes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="core\ControllerToolbars.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="core\ControllerViews.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="core\dialogs\ConsoleDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="core\dialogs\FormChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="core\dialogs\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="core\dialogs\FormLogin.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormLogin.resx</DependentUpon>
+    </Compile>
+    <Compile Include="core\dialogs\FormLoginTimeout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="core\dialogs\Frame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="core\dialogs\Frame.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Frame.resx</DependentUpon>
+    </Compile>
+    <Compile Include="core\FrameHotKey.cs" />
+    <Compile Include="core\FrameMenu.cs" />
+    <Compile Include="core\interfaces\IPersistable.cs" />
+    <Compile Include="core\interfaces\IToolbar.cs" />
+    <Compile Include="core\interfaces\IView.cs" />
+    <Compile Include="core\NamedEvent.cs" />
+    <Compile Include="core\TemplatePane.cs" />
+    <Compile Include="core\TemplateToolbar.cs" />
+    <Compile Include="core\TemplateView.cs" />
+    <Compile Include="core\WorkflowStage.cs" />
+    <Compile Include="DataGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridCheckboxColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataGridImageColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DateChooser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Delegates.cs" />
+    <Compile Include="Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicListView\DynamicColumnHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DynamicListView\DynamicDataSetColumnHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DynamicListView\DynamicListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DynamicListView\DynamicObjectColumnHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FileSystemListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FolderBrowser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FolderBrowser2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GroupListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImageListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImageListView.Designer.cs">
+      <DependentUpon>ImageListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="core\interfaces\IPane.cs" />
+    <Compile Include="ListBox.cs" />
+    <Compile Include="MainMenu.cs" />
+    <Compile Include="MainMenu2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MenuItemEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MessageBox.cs" />
+    <Compile Include="NumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PopupWindow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PopupWindowHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProgressBar2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RangeSlider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rebar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rollout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ScrollableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shapes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Slider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SoftwareAgreementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemImageManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SystemMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Theme.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThumbnailViewer.cs" />
+    <Compile Include="Toolbar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeListView\Forms\TreeListViewItemsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeListView\ITreeListViewItemComparer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeListView\SelectedTreeListViewItemCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeListView\TreeListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeListView\TreeListViewEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeListView\TreeListViewItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeListView\TreeListViewItemCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeListView\TreeListViewSubItemEdit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="win32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="AutoResizeDataGridTableStyle.resx">
+      <DependentUpon>AutoResizeDataGridTableStyle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Button.resx">
+      <DependentUpon>Button.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButtonImagesEditor.resx">
+      <DependentUpon>ButtonImagesEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorAdjustor.resx">
+      <DependentUpon>ColorAdjustor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContextMenu.resx">
+      <DependentUpon>ContextMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="core\dialogs\FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FormAbout.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="core\ControllerMenus.resx" />
+    <EmbeddedResource Include="core\ControllerPanes.resx" />
+    <EmbeddedResource Include="core\ControllerViews.resx" />
+    <EmbeddedResource Include="core\dialogs\FormChangePassword.resx">
+      <DependentUpon>FormChangePassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="core\dialogs\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FormLogin.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="core\dialogs\FormLoginTimeout.resx">
+      <DependentUpon>FormLoginTimeout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="core\dialogs\Frame.resx">
+      <DependentUpon>Frame.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Frame.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGrid.resx">
+      <DependentUpon>DataGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateChooser.resx">
+      <DependentUpon>DateChooser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog.resx">
+      <DependentUpon>Dialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderBrowser.resx">
+      <DependentUpon>FolderBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupBox.resx">
+      <DependentUpon>GroupBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBox.resx">
+      <DependentUpon>ListBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBox.resx">
+      <DependentUpon>MessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PictureBox.resx">
+      <DependentUpon>PictureBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupMenu.resx">
+      <DependentUpon>PopupMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBar.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBar2.resx">
+      <DependentUpon>ProgressBar2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RangeSlider.resx">
+      <DependentUpon>RangeSlider.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rebar.resx">
+      <DependentUpon>Rebar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\bkgnd-corner-bottom-left.png" />
+    <EmbeddedResource Include="res\bkgnd-corner-bottom-right.png" />
+    <EmbeddedResource Include="res\bkgnd-corner-top-left.png" />
+    <EmbeddedResource Include="res\bkgnd-side-bottom-purple.png" />
+    <EmbeddedResource Include="res\bkgnd-side-bottom-red.png" />
+    <EmbeddedResource Include="res\bkgnd-side-bottom-yellow.png" />
+    <EmbeddedResource Include="res\bkgnd-side-left-purple.png" />
+    <EmbeddedResource Include="res\bkgnd-side-left-red.png" />
+    <EmbeddedResource Include="res\bkgnd-side-left-yellow.png" />
+    <EmbeddedResource Include="res\bkgnd-side-right.png" />
+    <EmbeddedResource Include="res\button-down-left.png" />
+    <EmbeddedResource Include="res\button-down-middle.png" />
+    <EmbeddedResource Include="res\button-down-right.png" />
+    <EmbeddedResource Include="res\button-hover-left.png" />
+    <EmbeddedResource Include="res\button-hover-middle.png" />
+    <EmbeddedResource Include="res\button-hover-right.png" />
+    <EmbeddedResource Include="res\button-up-left.png" />
+    <EmbeddedResource Include="res\button-up-middle.png" />
+    <EmbeddedResource Include="res\button-up-right.png" />
+    <EmbeddedResource Include="res\checkbox_off.png" />
+    <EmbeddedResource Include="res\checkbox_on.png" />
+    <EmbeddedResource Include="res\close-hover.png" />
+    <EmbeddedResource Include="res\close_down.png" />
+    <EmbeddedResource Include="res\close_enable.png" />
+    <EmbeddedResource Include="res\fill_button.png" />
+    <EmbeddedResource Include="res\form-bottom-middle-purple.png" />
+    <EmbeddedResource Include="res\form-bottom-middle-red.png" />
+    <EmbeddedResource Include="res\form-corner-bottom-left-purple.png" />
+    <EmbeddedResource Include="res\form-corner-bottom-left-red.png" />
+    <EmbeddedResource Include="res\form-corner-bottom-right-purple.png" />
+    <EmbeddedResource Include="res\form-corner-bottom-right-red.png" />
+    <EmbeddedResource Include="res\form-corner-top-left-purple.png" />
+    <EmbeddedResource Include="res\form-corner-top-left-red.png" />
+    <EmbeddedResource Include="res\form-corner-top-right-purple.png" />
+    <EmbeddedResource Include="res\form-corner-top-right-red.png" />
+    <EmbeddedResource Include="res\form-side-left-purple.png" />
+    <EmbeddedResource Include="res\form-side-left-red.png" />
+    <EmbeddedResource Include="res\form-top-middle-purple.png" />
+    <EmbeddedResource Include="res\form-top-middle-red.png" />
+    <EmbeddedResource Include="res\logo_icon.png" />
+    <EmbeddedResource Include="res\mb_error.png" />
+    <EmbeddedResource Include="res\mb_information.png" />
+    <EmbeddedResource Include="res\mb_question.png" />
+    <EmbeddedResource Include="res\mb_warning.png" />
+    <EmbeddedResource Include="res\menu-purple-left.png" />
+    <EmbeddedResource Include="res\menu-purple-middle.png" />
+    <EmbeddedResource Include="res\menu-purple-right.png" />
+    <EmbeddedResource Include="res\menu-red-left.png" />
+    <EmbeddedResource Include="res\menu-red-middle.png" />
+    <EmbeddedResource Include="res\menu-red-right.png" />
+    <EmbeddedResource Include="res\menu-yellow-left.png" />
+    <EmbeddedResource Include="res\menu-yellow-middle.png" />
+    <EmbeddedResource Include="res\menu-yellow-right.png" />
+    <EmbeddedResource Include="res\pane-collapsed-left.png" />
+    <EmbeddedResource Include="res\pane-collapsed-middle.png" />
+    <EmbeddedResource Include="res\pane-collapsed-right.png" />
+    <EmbeddedResource Include="res\pane-expanded-left.png" />
+    <EmbeddedResource Include="res\pane-expanded-middle.png" />
+    <EmbeddedResource Include="res\pane-expanded-right.png" />
+    <EmbeddedResource Include="res\progressbar-horz-fill.bmp" />
+    <EmbeddedResource Include="res\progressbar-horz-track.bmp" />
+    <EmbeddedResource Include="res\radiobutton_off.png" />
+    <EmbeddedResource Include="res\radiobutton_on.png" />
+    <EmbeddedResource Include="res\side-tab-active-end.png" />
+    <EmbeddedResource Include="res\side-tab-active-left.png" />
+    <EmbeddedResource Include="res\side-tab-active-middle.png" />
+    <EmbeddedResource Include="res\side-tab-active-right.png" />
+    <EmbeddedResource Include="res\side-tab-inactive-end.png" />
+    <EmbeddedResource Include="res\side-tab-inactive-left.png" />
+    <EmbeddedResource Include="res\side-tab-inactive-middle.png" />
+    <EmbeddedResource Include="res\side-tab-inactive-right.png" />
+    <EmbeddedResource Include="res\sm_arrow.png" />
+    <EmbeddedResource Include="res\sort-down.png" />
+    <EmbeddedResource Include="res\sort-up.png" />
+    <EmbeddedResource Include="res\sysmenu-buttons-close.png" />
+    <EmbeddedResource Include="res\sysmenu-buttons-purple.png" />
+    <EmbeddedResource Include="res\sysmenu-buttons-red.png" />
+    <EmbeddedResource Include="res\sysmenu-buttons-yellow.png" />
+    <EmbeddedResource Include="res\sysmenu-glyphs-close.png" />
+    <EmbeddedResource Include="res\sysmenu-glyphs-maximize.png" />
+    <EmbeddedResource Include="res\sysmenu-glyphs-minimize.png" />
+    <EmbeddedResource Include="res\sysmenu-glyphs-restore.png" />
+    <EmbeddedResource Include="res\tab-active-end.png" />
+    <EmbeddedResource Include="res\tab-active-left.png" />
+    <EmbeddedResource Include="res\tab-active-middle.png" />
+    <EmbeddedResource Include="res\tab-active-right.png" />
+    <EmbeddedResource Include="res\tab-inactive-end.png" />
+    <EmbeddedResource Include="res\tab-inactive-left.png" />
+    <EmbeddedResource Include="res\tab-inactive-middle.png" />
+    <EmbeddedResource Include="res\tab-inactive-right.png" />
+    <EmbeddedResource Include="res\toolbar-left.png" />
+    <EmbeddedResource Include="res\toolbar-middle.png" />
+    <EmbeddedResource Include="res\toolbar-right.png" />
+    <EmbeddedResource Include="res\transparent_button.png" />
+    <EmbeddedResource Include="res\transparent_button_down.png" />
+    <EmbeddedResource Include="res\v3D_Image.bmp" />
+    <EmbeddedResource Include="Rollout.resx">
+      <DependentUpon>Rollout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrollableControl.resx">
+      <DependentUpon>ScrollableControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Slider.resx">
+      <DependentUpon>Slider.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoftwareAgreementForm.resx">
+      <DependentUpon>SoftwareAgreementForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControl.resx">
+      <DependentUpon>TabControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPage.resx">
+      <DependentUpon>TabPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabStrip.resx">
+      <DependentUpon>TabStrip.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThumbnailViewer.resx">
+      <DependentUpon>ThumbnailViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeListView\Forms\TreeListViewItemsEditor.resx">
+      <DependentUpon>TreeListViewItemsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeListView\TreeListView.resx">
+      <DependentUpon>TreeListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeListView\TreeListViewSubItemEdit.resx">
+      <DependentUpon>TreeListViewSubItemEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VScrollBar.resx">
+      <DependentUpon>VScrollBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard.resx">
+      <DependentUpon>Wizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\Minus.gif" />
+    <EmbeddedResource Include="res\Plus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImageListView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageListView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\leftarrow.png" />
+    <EmbeddedResource Include="res\rightarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\downarrow.png" />
+    <EmbeddedResource Include="res\uparrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\disabled_downarrow.png" />
+    <EmbeddedResource Include="res\disabled_leftarrow.png" />
+    <EmbeddedResource Include="res\disabled_rightarrow.png" />
+    <EmbeddedResource Include="res\disabled_uparrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\selected_downarrow.png" />
+    <EmbeddedResource Include="res\selected_leftarrow.png" />
+    <EmbeddedResource Include="res\selected_rightarrow.png" />
+    <EmbeddedResource Include="res\selected_uparrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\logo-viatronix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="core\about\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Viatronix.Enterprise.Client\Viatronix.Enterprise.Client.csproj">
+      <Project>{2dfb236a-1c27-412b-a969-69aa3be167b2}</Project>
+      <Name>Viatronix.Enterprise.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.Enterprise\Viatronix.Enterprise.csproj">
+      <Project>{2c472d70-da70-47d7-bbd4-af591fae0d1d}</Project>
+      <Name>Viatronix.Enterprise</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.Logging\Viatronix.Logging.vcxproj">
+      <Project>{eb450513-1b40-4e1f-9d8b-25266dc31efb}</Project>
+      <Name>Viatronix.Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if $(ConfigurationName) == Release $(ProjectDir)..\..\..\..\Libraries\utilities\Versioning  -c "$(ConfigurationName)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</PreBuildEvent>
+    <PostBuildEvent>echo Post Build
+
+echo - Copying binaries 
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\v3d\bin" mkdir "$(ProjectDir)..\..\..\..\Libraries\v3d\bin"
+xcopy /Y /R  "$(ProjectDir)$(OutDir)$(TargetName).dll" "$(ProjectDir)..\..\..\..\Libraries\v3d\bin"
+
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

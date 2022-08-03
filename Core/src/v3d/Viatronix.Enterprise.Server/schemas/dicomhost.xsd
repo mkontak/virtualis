@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  
+
+  <xs:element name="dicomhost" id="dicomhost">
+    <xs:complexType>
+
+      <xs:attribute name="name" type="xs:string" use="optional" />
+      <xs:attribute name="server" type="xs:string" use="optional" />
+      <xs:attribute name="aetitle" type="xs:string" use="optional" />
+      <xs:attribute name="desc" type="xs:string" use="optional" />
+      <xs:attribute name="port" type="xs:integer" use="optional" />
+
+      <xs:attribute name="ver" type="xs:string" use="required" />
+
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

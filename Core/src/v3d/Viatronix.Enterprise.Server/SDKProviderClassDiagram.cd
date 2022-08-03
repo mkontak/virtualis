@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Viatronix.Enterprise.SDK.Providers.RestDataProvider" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAQAAEIBWSGAQEXQYAIQGAAgAAEYEFAYoEAACAgAEAg=</HashCode>
+      <FileName>sdk\providers\data\RestDataProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Viatronix.Enterprise.SDK.Providers.DatabaseDataProvider" Collapsed="true">
+    <Position X="2.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAQAAEIBUSGAQEXQYAIQGAAgAAEYEFAYIEAACIgAEAg=</HashCode>
+      <FileName>sdk\providers\data\DatabaseDataProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Viatronix.Enterprise.SDK.Providers.DatabaseSecurityProvider" Collapsed="true">
+    <Position X="9.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBCEmIAmgkgJAQEAAAhEIgBAEAABAAEAQQAIAAAAg=</HashCode>
+      <FileName>sdk\providers\security\DatabaseSecurityProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Viatronix.Enterprise.SDK.Providers.RestSecurityProvider" Collapsed="true">
+    <Position X="7.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBCEmICmgkgJhQEAAAhEIgBAEAAFAAEAQQAAAAAAg=</HashCode>
+      <FileName>sdk\providers\security\RestSecurityProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Viatronix.Enterprise.SDK.Providers.DirectPacsProvider" Collapsed="true">
+    <Position X="4.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAMCiAAGBAAAIAAIAgAAEAABAgAAAACgAAUAA=</HashCode>
+      <FileName>sdk\providers\pacs\DirectPacsProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Viatronix.Enterprise.SDK.Providers.ProviderBase" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MABAAAAAAgACAAAAAAAAAIQgAAAAAAAAAAAIAIAwAAA=</HashCode>
+      <FileName>sdk\providers\ProviderBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Viatronix.Enterprise.SDK.Providers.ProviderEventArgs" Collapsed="true">
+    <Position X="13" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAIAAAwACAAAAAAAAAAAgAAAAAAAEAIAAAAAA=</HashCode>
+      <FileName>sdk\providers\interfaces\IAsynchronousProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Viatronix.Enterprise.SDK.Providers.AsynchronousProviderBase" Collapsed="true">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAARDACCAACFCIAAAAAAhCAABIAAAAIIBAAAAAACgA=</HashCode>
+      <FileName>sdk\providers\AsynchronousProviderBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Viatronix.Enterprise.SDK.Providers.IDataProvider" Collapsed="true">
+    <Position X="4.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAEIBQSEAQASAYAAQGAAAAAEYEEAYIEAAAAgAEAg=</HashCode>
+      <FileName>sdk\providers\interfaces\IDataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Viatronix.Enterprise.SDK.Providers.IProvider" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAgACAAAAAAAAAAQAAAAAAAAAAAAIAIAQAAA=</HashCode>
+      <FileName>sdk\providers\interfaces\IProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Viatronix.Enterprise.SDK.Providers.IBrowserProvider" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAIAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>sdk\providers\interfaces\IBrowserProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Viatronix.Enterprise.SDK.Providers.ISecurityProvider" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQBCEkAAkAAgIAAAAAAhEIgAAEAAAAAEAAQAAAAAAg=</HashCode>
+      <FileName>sdk\providers\interfaces\ISecurityProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Viatronix.Enterprise.SDK.Providers.IPacsProvider" Collapsed="true">
+    <Position X="8.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>sdk\providers\interfaces\IPacsProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Viatronix.Enterprise.SDK.Providers.IServiceProvider" Collapsed="true">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>sdk\providers\interfaces\IServiceProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Viatronix.Enterprise.SDK.Providers.IAsynchronousProvider" Collapsed="true">
+    <Position X="11" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAACIAAAAAAAAAAAAAAAAAABAAAAAAAgA=</HashCode>
+      <FileName>sdk\providers\interfaces\IAsynchronousProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Viatronix.Enterprise.SDK.Providers.IAsynchronousBrowserProvider" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>sdk\providers\interfaces\IAsynchronousBrowserProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Viatronix.Enterprise.SDK.Providers.IAsynchronousDataProvider" Collapsed="true">
+    <Position X="6.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>sdk\providers\interfaces\IAsynchronousDataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Delegate Name="Viatronix.Enterprise.SDK.Providers.GetMethodDelegate" Collapsed="true">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>sdk\providers\AsynchronousProviderBase.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Viatronix.Enterprise.SDK.Providers.ProviderEventHandler" Collapsed="true">
+    <Position X="9.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>sdk\providers\AsynchronousProviderBase.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

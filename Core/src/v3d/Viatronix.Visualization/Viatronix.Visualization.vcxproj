@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1E7C9E02-006F-42BA-B917-A7B53123C7F7}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>Viatronix.Visualization</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>v3dvis</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>v3dvis</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>v3dvis</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>v3dvis</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/TP /Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.\include;..\..\vx\vxBase\include;..\..\vx\vxBlockVolume\include;..\..\vx\vxViewer\include;..\..\vx\vxCAD\include;..\..\vx\vxLogger\include;..\..\..\..\Libraries\libiconv\include;..\..\..\..\Libraries\xerces\include;..\..\..\..\Libraries\libpng\include;..\..\..\..\Libraries\nvidia\include;..\..\..\..\Libraries\libxml\include;..\..\..\..\Libraries\libxml\include\libxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4290;4018;4244;4231;4267;4661;4273;4947;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedUsingFiles>%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <EmbedManagedResourceFile>Viatronix.Visualization.resources;%(EmbedManagedResourceFile)</EmbedManagedResourceFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ImportLibrary>
+      </ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo Post Build
+
+echo - Copying binaries 
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\v3d\bin" mkdir "$(ProjectDir)..\..\..\..\Libraries\v3d\bin"
+xcopy /Y /R  "$(OutDir)$(TargetName).dll" "$(ProjectDir)..\..\..\..\Libraries\v3d\bin"
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\..\Libraries\utilities\Versioning "$(Configuration)" "$(TargetName)" "$(ProjectPath)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/TP /Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.\include;..\..\vx\vxBase\include;..\..\vx\vxBlockVolume\include;..\..\vx\vxViewer\include;..\..\vx\vxCAD\include;..\..\vx\vxLogger\include;..\..\..\..\Libraries\libiconv\include;..\..\..\..\Libraries\xerces\include;..\..\..\..\Libraries\libpng\include;..\..\..\..\Libraries\nvidia\include;..\..\..\..\Libraries\libxml\include;..\..\..\..\Libraries\libxml\include\libxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4290;4018;4244;4231;4267;4661;4273;4947;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedUsingFiles>%(ForcedUsingFiles)</ForcedUsingFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_USERDLL;VXBUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <EmbedManagedResourceFile>$(ProjectDir)/Viatronix.Visualization.resources;%(EmbedManagedResourceFile)</EmbedManagedResourceFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ImportLibrary>
+      </ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LinkErrorReporting>PromptImmediately</LinkErrorReporting>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo Post Build
+
+echo - Copying binaries 
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\v3d\bin" mkdir "$(ProjectDir)..\..\..\..\Libraries\v3d\bin"
+xcopy /Y /R  "$(TargetPath)" "$(ProjectDir)..\..\..\..\Libraries\v3d\bin"
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/TP /Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>.\include;..\..\vx\vxBase\include;..\..\vx\vxBlockVolume\include;..\..\vx\vxViewer\include;..\..\vx\vxCAD\include;..\..\vx\vxLogger\include;..\..\..\..\Libraries\libiconv\include;..\..\..\..\Libraries\xerces\include;..\..\..\..\Libraries\libpng\include;..\..\..\..\Libraries\nvidia\include;..\..\..\..\Libraries\libxml\include;..\..\..\..\Libraries\libxml\include\libxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;VXBUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4290;4018;4244;4231;4267;4661;4273;4251;4947;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedUsingFiles>%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <EmbedManagedResourceFile>$(ProjectDir)/Viatronix.Visualization.resources;%(EmbedManagedResourceFile)</EmbedManagedResourceFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ImportLibrary>
+      </ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir $(ProjectDir)..\..\..\..\Libraries\v3d\bin
+xcopy /Y /R $(OutDir)$(TargetName).dll $(ProjectDir)..\..\..\..\Libraries\v3d\bin</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/TP /Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>.\include;..\..\vx\vxBase\include;..\..\vx\vxBlockVolume\include;..\..\vx\vxViewer\include;..\..\vx\vxCAD\include;..\..\vx\vxLogger\include;..\..\..\..\Libraries\libiconv\include;..\..\..\..\Libraries\xerces\include;..\..\..\..\Libraries\libpng\include;..\..\..\..\Libraries\nvidia\include;..\..\..\..\Libraries\libxml\include;..\..\..\..\Libraries\libxml\include\libxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;VXBUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4290;4018;4244;4231;4267;4661;4273;4947;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ForcedUsingFiles>%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <EmbedManagedResourceFile>$(ProjectDir)/Viatronix.Visualization.resources;%(EmbedManagedResourceFile)</EmbedManagedResourceFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <ImportLibrary>
+      </ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+      <LargeAddressAware>true</LargeAddressAware>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo Post Build
+
+echo - Copying binaries 
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\v3d\bin" mkdir "$(ProjectDir)..\..\..\..\Libraries\v3d\bin"
+xcopy /Y /R  "$(TargetPath)" "$(ProjectDir)..\..\..\..\Libraries\v3d\bin"
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>E:\TFS\Enterprise\Libraries\microsoft\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Design">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="ImportedLibraries.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vxBase.cpp" />
+    <ClCompile Include="v3D_Annotations.cpp" />
+    <ClCompile Include="v3D_CadFindings.cpp" />
+    <ClCompile Include="v3D_Camera.cpp" />
+    <ClCompile Include="v3D_CameraFlySettings.cpp" />
+    <ClCompile Include="v3D_Cine.cpp" />
+    <ClCompile Include="v3D_Colormap.cpp" />
+    <ClCompile Include="v3D_Components.cpp" />
+    <ClCompile Include="v3D_ContourList.cpp" />
+    <ClCompile Include="v3D_Controllers.cpp" />
+    <ClCompile Include="v3D_CpuInfo.cpp" />
+    <ClCompile Include="v3D_CropBox.cpp" />
+    <ClCompile Include="v3D_Cursor3d.cpp" />
+    <ClCompile Include="v3D_CycleSettings.cpp" />
+    <ClCompile Include="v3D_DataAnnotationCreate.cpp" />
+    <ClCompile Include="v3D_DataColormapEditor.cpp" />
+    <ClCompile Include="v3D_DataPlaneObliqueCreate.cpp" />
+    <ClCompile Include="v3D_Dataset.cpp" />
+    <ClCompile Include="v3D_Elements.cpp" />
+    <ClCompile Include="v3D_Environment.cpp" />
+    <ClCompile Include="v3D_EnvironmentList.cpp" />
+    <ClCompile Include="v3D_EventArgs.cpp" />
+    <ClCompile Include="v3D_Events.cpp" />
+    <ClCompile Include="v3D_EventTimer.cpp" />
+    <ClCompile Include="v3D_Exception.cpp" />
+    <ClCompile Include="v3D_FontInfo.cpp" />
+    <ClCompile Include="v3D_FullScreen.cpp" />
+    <ClCompile Include="v3D_ID.cpp" />
+    <ClCompile Include="v3D_IntensityConverter.cpp" />
+    <ClCompile Include="v3D_Manipulators.cpp" />
+    <ClCompile Include="v3D_ModifiedQueue.cpp" />
+    <ClCompile Include="v3D_Momentum.cpp" />
+    <ClCompile Include="v3D_PlaneCurved.cpp" />
+    <ClCompile Include="v3D_PlaneOblique.cpp" />
+    <ClCompile Include="v3D_PlaneOrtho.cpp" />
+    <ClCompile Include="v3D_Preset.cpp" />
+    <ClCompile Include="v3D_PresetAdjuster.cpp" />
+    <ClCompile Include="v3D_PresetAdjusterMR.cpp" />
+    <ClCompile Include="v3D_PresetAdjusterPET.cpp" />
+    <ClCompile Include="v3D_Renderers.cpp" />
+    <ClCompile Include="v3D_RenderingMode.cpp" />
+    <ClCompile Include="v3D_RenderingModeAttribute.cpp" />
+    <ClCompile Include="v3D_Segmentation.cpp" />
+    <ClCompile Include="v3D_SegmentationPreset.cpp" />
+    <ClCompile Include="v3D_SegmentationPresetCollection.cpp" />
+    <ClCompile Include="v3D_SelfadaptiveMRWindowLevel.cpp" />
+    <ClCompile Include="v3D_SelfadaptivePTWindowLevel.cpp" />
+    <ClCompile Include="v3D_SimpleTypes.cpp" />
+    <ClCompile Include="v3D_SyncData.cpp" />
+    <ClCompile Include="v3D_ThreadAffinities.cpp" />
+    <ClCompile Include="v3D_TimeVolume.cpp" />
+    <ClCompile Include="v3D_Triplet.cpp" />
+    <ClCompile Include="v3D_UndoActionStack.cpp" />
+    <ClCompile Include="v3D_Utils.cpp" />
+    <ClCompile Include="v3D_Vessel.cpp" />
+    <ClCompile Include="v3D_VesselPreferences.cpp" />
+    <ClCompile Include="v3D_ViewerTypes.cpp" />
+    <ClCompile Include="v3D_ViewObliqueData.cpp" />
+    <ClCompile Include="v3D_VisualizationPreferencesSectionHandler.cpp" />
+    <ClCompile Include="v3D_VisualizationPreset.cpp" />
+    <ClCompile Include="v3D_Volume.cpp" />
+    <ClCompile Include="v3D_VolumeHeader.cpp" />
+    <ClCompile Include="v3D_WindowLevel.cpp" />
+    <ClCompile Include="v3D_ZoomFactor.cpp" />
+    <ClCompile Include="v3D_AnimationAction.cpp" />
+    <ClCompile Include="v3D_AnimationAction3DPath.cpp" />
+    <ClCompile Include="v3D_AnimationActionOblique.cpp" />
+    <ClCompile Include="v3D_AnimationActionPlaneOrtho.cpp" />
+    <ClCompile Include="v3D_AnimationActionRotate3D.cpp" />
+    <ClCompile Include="v3D_AnimationActionVesselDetail.cpp" />
+    <ClCompile Include="v3D_AnimationCapture.cpp" />
+    <ClCompile Include="v3D_AnimationCaptureMovie.cpp" />
+    <ClCompile Include="v3D_AnimationCaptureMovieAVI.cpp" />
+    <ClCompile Include="v3D_AnimationCaptureMovieAviImpl.cpp" />
+    <ClCompile Include="v3D_Animator.cpp" />
+    <ClCompile Include="v3D_Viewer.cpp" />
+    <ClCompile Include="v3D_Viewerbar.cpp" />
+    <ClCompile Include="v3D_ViewerbarButton.cpp" />
+    <ClCompile Include="v3D_ViewerbarButtonCollection.cpp" />
+    <ClCompile Include="vxInputAdapter.cpp" />
+    <ClCompile Include="vxInteractingMonitor.C" />
+    <ClCompile Include="v3D_GraphTimerEx.cpp" />
+    <ClCompile Include="v3D_NodeDatasets.cpp" />
+    <ClCompile Include="v3D_NodeGlobalController.cpp" />
+    <ClCompile Include="v3D_NodeIDs.cpp" />
+    <ClCompile Include="v3D_NodeRendering.cpp" />
+    <ClCompile Include="v3D_Nodes.cpp" />
+    <ClCompile Include="v3D_RenderingNodePlugin.cpp" />
+    <ClCompile Include="v3D_VisualizationGraph.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ExplorerPlugin.h" />
+    <ClInclude Include="include\ExplorerPlugin2.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="vxBase.h" />
+    <ClInclude Include="v3D_Annotations.h" />
+    <ClInclude Include="v3D_CadFindings.h" />
+    <ClInclude Include="v3D_Camera.h" />
+    <ClInclude Include="v3D_CameraFlySettings.h" />
+    <ClInclude Include="v3D_Cine.h" />
+    <ClInclude Include="v3D_Colormap.h" />
+    <ClInclude Include="v3D_Components.h" />
+    <ClInclude Include="v3D_ContourList.h" />
+    <ClInclude Include="v3D_Controllers.h" />
+    <ClInclude Include="v3D_CpuInfo.h" />
+    <ClInclude Include="v3D_CropBox.h" />
+    <ClInclude Include="v3D_Cursor3d.h" />
+    <ClInclude Include="v3D_CycleSettings.h" />
+    <ClInclude Include="v3D_DataAnnotationCreate.h" />
+    <ClInclude Include="v3D_DataColormapEditor.h" />
+    <ClInclude Include="v3D_DataPlaneObliqueCreate.h" />
+    <ClInclude Include="v3D_Dataset.h" />
+    <ClInclude Include="v3D_Elements.h" />
+    <ClInclude Include="v3D_Enums.h" />
+    <ClInclude Include="v3D_Environment.h" />
+    <ClInclude Include="v3D_EnvironmentList.h" />
+    <ClInclude Include="v3D_EventArgs.h" />
+    <ClInclude Include="v3D_Events.h" />
+    <ClInclude Include="v3D_EventTimer.h" />
+    <ClInclude Include="v3D_Exception.h" />
+    <ClInclude Include="v3D_FontInfo.h" />
+    <ClInclude Include="v3D_FullScreen.h" />
+    <ClInclude Include="v3D_ID.h" />
+    <ClInclude Include="v3D_IntensityConverter.h" />
+    <ClInclude Include="v3D_Interfaces.h" />
+    <ClInclude Include="v3D_Manipulators.h" />
+    <ClInclude Include="v3D_ModifiedQueue.h" />
+    <ClInclude Include="v3D_Momentum.h" />
+    <ClInclude Include="v3D_PlaneCurved.h" />
+    <ClInclude Include="v3D_PlaneOblique.h" />
+    <ClInclude Include="v3D_PlaneOrtho.h" />
+    <ClInclude Include="v3D_Preset.h" />
+    <ClInclude Include="v3D_PresetAdjuster.h" />
+    <ClInclude Include="v3D_PresetAdjusterMR.h" />
+    <ClInclude Include="v3D_PresetAdjusterPET.h" />
+    <ClInclude Include="v3D_Renderers.h" />
+    <ClInclude Include="v3D_RenderingMode.h" />
+    <ClInclude Include="v3D_RenderingModeAttribute.h" />
+    <ClInclude Include="v3D_Segmentation.h" />
+    <ClInclude Include="v3D_SegmentationPreset.h" />
+    <ClInclude Include="v3D_SegmentationPresetCollection.h" />
+    <ClInclude Include="v3D_SelfadaptiveMRWindowLevel.h" />
+    <ClInclude Include="v3D_SelfadaptivePTWindowLevel.h" />
+    <ClInclude Include="v3D_SimpleTypes.h" />
+    <ClInclude Include="v3D_SyncData.h" />
+    <ClInclude Include="v3D_TimeVolume.h" />
+    <ClInclude Include="v3D_Triplet.h" />
+    <ClInclude Include="v3D_UndoActionStack.h" />
+    <ClInclude Include="v3D_Utils.h" />
+    <ClInclude Include="v3D_Vessel.h" />
+    <ClInclude Include="v3D_VesselPreferences.h" />
+    <ClInclude Include="v3D_ViewerTypes.h" />
+    <ClInclude Include="v3D_ViewObliqueData.h" />
+    <ClInclude Include="v3D_VisualizationPreferencesSectionHandler.h" />
+    <ClInclude Include="v3D_VisualizationPreset.h" />
+    <ClInclude Include="v3D_Volume.h" />
+    <ClInclude Include="v3D_VolumeHeader.h" />
+    <ClInclude Include="v3D_WindowLevel.h" />
+    <ClInclude Include="v3D_ZoomFactor.h" />
+    <ClInclude Include="vxManagedObserver.h" />
+    <ClInclude Include="v3D_AnimationAction.h" />
+    <ClInclude Include="v3D_AnimationAction3DPath.h" />
+    <ClInclude Include="v3D_AnimationActionOblique.h" />
+    <ClInclude Include="v3D_AnimationActionPlaneOrtho.h" />
+    <ClInclude Include="v3D_AnimationActionRotate3D.h" />
+    <ClInclude Include="v3D_AnimationActionVesselDetail.h" />
+    <ClInclude Include="v3D_AnimationCapture.h" />
+    <ClInclude Include="v3D_AnimationCaptureMovie.h" />
+    <ClInclude Include="v3D_AnimationCaptureMovieAVI.h" />
+    <ClInclude Include="v3D_AnimationCaptureMovieAviImpl.h" />
+    <ClInclude Include="v3D_Animator.h" />
+    <ClInclude Include="v3D_Viewer.h" />
+    <ClInclude Include="v3D_Viewerbar.h" />
+    <ClInclude Include="v3D_ViewerbarButton.h" />
+    <ClInclude Include="v3D_ViewerbarButtonCollection.h" />
+    <ClInclude Include="vxInputAdapter.h" />
+    <ClInclude Include="vxInteractingMonitor.h" />
+    <ClInclude Include="v3D_GraphTimerEx.h" />
+    <ClInclude Include="v3D_NodeDatasets.h" />
+    <ClInclude Include="v3D_NodeGlobalController.h" />
+    <ClInclude Include="v3D_NodeIDs.h" />
+    <ClInclude Include="v3D_NodeRendering.h" />
+    <ClInclude Include="v3D_Nodes.h" />
+    <ClInclude Include="v3D_RenderingNodePlugin.h" />
+    <ClInclude Include="v3D_VisualizationGraph.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="v3dvis.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Viatronix.Logging\Viatronix.Logging.vcxproj">
+      <Project>{eb450513-1b40-4e1f-9d8b-25266dc31efb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.UI\Viatronix.UI.csproj">
+      <Project>{cf5f8616-ea2b-4ac9-a514-e46cd6c5595e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.Utilities\Viatronix.Utilities.vcxproj">
+      <Project>{1767198d-43d8-44e0-908f-28db9a16a8e6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\cameraClick.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\3dwmove.cur" />
+    <None Include="res\3dwnesw.cur" />
+    <None Include="res\3dwns.cur" />
+    <None Include="res\3dwnwse.cur" />
+    <None Include="res\3dwwe.cur" />
+    <None Include="res\adjust_arrow.cur" />
+    <None Include="res\angle_arrow.cur" />
+    <None Include="res\arrow_arrow.cur" />
+    <None Include="res\Cursor_Curved_MPR.cur" />
+    <None Include="res\hand_closed.cur" />
+    <None Include="res\hand_open.cur" />
+    <None Include="res\hourglass_arrow.cur" />
+    <None Include="res\lasso_arrow.cur" />
+    <None Include="res\linear_arrow.cur" />
+    <None Include="res\no_arrow1.cur" />
+    <None Include="res\plane_oblique_create.cur" />
+    <None Include="res\plane_oblique_create_disabled.cur" />
+    <None Include="res\point-1_arrow.cur" />
+    <None Include="res\point-2_arrow.cur" />
+    <None Include="res\point_arrow.cur" />
+    <None Include="res\region-grow_arrow.cur" />
+    <None Include="res\region-grow_red_arrow.cur" />
+    <None Include="res\restrictive_lasso_arrow.cur" />
+    <None Include="res\roi_arrow.cur" />
+    <None Include="res\sculpt.cur" />
+    <None Include="res\sculpt_cut.cur" />
+    <None Include="res\sliceShadow_rotate.cur" />
+    <None Include="res\square_arrow.cur" />
+    <None Include="res\tfunc.cur" />
+    <None Include="res\vol-measure_arrow.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\annotation_arrow.gif" />
+    <Image Include="res\annotation_component.png" />
+    <Image Include="res\annotation_ellipse.gif" />
+    <Image Include="res\annotation_square.png" />
+    <Image Include="res\AP_angle-20x20.png" />
+    <Image Include="res\Ap_distance20x20.png" />
+    <Image Include="res\AP_point-20x20.png" />
+    <Image Include="res\colormap.png" />
+    <Image Include="res\cube_A.png" />
+    <Image Include="res\cube_I.png" />
+    <Image Include="res\cube_L.png" />
+    <Image Include="res\cube_P.png" />
+    <Image Include="res\cube_R.png" />
+    <Image Include="res\cube_S.png" />
+    <Image Include="res\viatronix_logo.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="FileServer.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportedLibrarues.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="TransportLayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FileServer.h" />
+    <ClInclude Include="scoped_ptr.h" />
+    <ClInclude Include="Stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="TransportLayer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{aa68a630-1a73-42bb-b776-e46979937493}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

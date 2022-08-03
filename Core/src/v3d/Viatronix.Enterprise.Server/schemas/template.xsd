@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:include schemaLocation=".\sdk.xsd" />
+
+  <xs:element name="template">
+    <xs:complexType>
+
+      <xs:attribute name="app" type="xs:string" use="optional" />
+      <xs:attribute name="mod" type="xs:string" use="optional" />
+      <xs:attribute name="default" type="xs:boolean" use="optional" />
+      <xs:attribute name="tasks" type="xs:string" use="optional" />
+      <xs:attribute name="desc" type="xs:string" use="optional" />
+      <xs:attribute name="ver" type="xs:string" use="required" />
+
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

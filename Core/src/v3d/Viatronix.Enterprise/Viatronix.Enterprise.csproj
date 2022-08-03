@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C472D70-DA70-47D7-BBD4-AF591FAE0D1D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Viatronix.Enterprise</RootNamespace>
+    <AssemblyName>v3dent</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\vxentlib.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\vxentlib.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight.Extras.WPF45">
+      <HintPath>..\..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.Extras.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF45">
+      <HintPath>..\..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\GalaSoft.MvvmLight.WPF45.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Libraries\microsoft\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Libraries\microsoft\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Libraries\microsoft\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Libraries\microsoft\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Libraries\microsoft\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Libraries\MvvmLight\MvvmLightLibs.4.1.27.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="configuration\XmlConfigSectionHandler.cs" />
+    <Compile Include="configuration\XmlSerializerSectionHandler.cs" />
+    <Compile Include="database\AuditingGateway.cs" />
+    <Compile Include="database\DatabaseConnectionStrings.cs" />
+    <Compile Include="database\DatabaseFactory.cs" />
+    <Compile Include="database\DatabaseGateway.cs" />
+    <Compile Include="database\LicensingGateway.cs" />
+    <Compile Include="database\SystemGateway.cs" />
+    <Compile Include="entities\auditing\AgentJobHistory.cs" />
+    <Compile Include="entities\auditing\ProcessingHistory.cs" />
+    <Compile Include="entities\auditing\ReceivingHistory.cs" />
+    <Compile Include="entities\auditing\StudyHistory.cs" />
+    <Compile Include="entities\auditing\UserHistory.cs" />
+    <Compile Include="entities\base\IProcessEntity.cs" />
+    <Compile Include="entities\controls\EntityDataRow.cs" />
+    <Compile Include="entities\controls\EntityDataTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="entities\licensing\License.cs" />
+    <Compile Include="entities\licensing\LicenseSetting.cs" />
+    <Compile Include="entities\licensing\LicenseState.cs" />
+    <Compile Include="entities\licensing\RegisteredServer.cs" />
+    <Compile Include="entities\licensing\RegistrationHistory.cs" />
+    <Compile Include="entities\security\AuthenticationType.cs" />
+    <Compile Include="entities\base\Entity.cs" />
+    <Compile Include="entities\base\EntityCollection.cs" />
+    <Compile Include="entities\base\EntityFactory.cs" />
+    <Compile Include="entities\base\ExtendedEntity.cs" />
+    <Compile Include="entities\base\IEntity.cs" />
+    <Compile Include="entities\base\IExtendedEntity.cs" />
+    <Compile Include="entities\security\Context.cs" />
+    <Compile Include="entities\security\PasswordHint.cs" />
+    <Compile Include="entities\security\PasswordTemplate.cs" />
+    <Compile Include="entities\security\UserPassword.cs" />
+    <Compile Include="entities\security\UserState.cs" />
+    <Compile Include="entities\State.cs" />
+    <Compile Include="entities\storage\DeletePath.cs" />
+    <Compile Include="entities\storage\SerializeError.cs" />
+    <Compile Include="entities\storage\SeriesReference.cs" />
+    <Compile Include="entities\storage\TransferList.cs" />
+    <Compile Include="entities\storage\VolumeReference.cs" />
+    <Compile Include="entities\system\AgentJob.cs" />
+    <Compile Include="entities\system\DicomHost.cs" />
+    <Compile Include="entities\system\SystemConfig.cs" />
+    <Compile Include="entities\storage\DicomServer.cs" />
+    <Compile Include="entities\storage\DirectoryError.cs" />
+    <Compile Include="entities\Enumerations.cs" />
+    <Compile Include="entities\ErrorMessage.cs" />
+    <Compile Include="entities\Install.cs" />
+    <Compile Include="entities\storage\Job.cs" />
+    <Compile Include="entities\storage\Lock.cs" />
+    <Compile Include="entities\system\Mask.cs" />
+    <Compile Include="entities\storage\Message.cs" />
+    <Compile Include="entities\system\Modality.cs" />
+    <Compile Include="entities\storage\PacsJob.cs" />
+    <Compile Include="entities\Parameter.cs" />
+    <Compile Include="entities\PersonAge.cs" />
+    <Compile Include="entities\PersonName.cs" />
+    <Compile Include="entities\system\Application.cs" />
+    <Compile Include="entities\storage\Receiver.cs" />
+    <Compile Include="entities\security\Right.cs" />
+    <Compile Include="entities\security\Role.cs" />
+    <Compile Include="entities\storage\Series.cs" />
+    <Compile Include="entities\service\Column.cs" />
+    <Compile Include="entities\service\Database.cs" />
+    <Compile Include="entities\service\Table.cs" />
+    <Compile Include="entities\Setting.cs" />
+    <Compile Include="entities\system\Site.cs" />
+    <Compile Include="entities\system\Store.cs" />
+    <Compile Include="entities\storage\Study.cs" />
+    <Compile Include="entities\system\StudyGroups.cs" />
+    <Compile Include="entities\storage\Task.cs" />
+    <Compile Include="entities\system\SystemSetting.cs" />
+    <Compile Include="entities\system\Template.cs" />
+    <Compile Include="entities\security\User.cs" />
+    <Compile Include="entities\security\UserProfile.cs" />
+    <Compile Include="entities\Version.cs" />
+    <Compile Include="entities\storage\Volume.cs" />
+    <Compile Include="exceptions\CoreExceptions.cs" />
+    <Compile Include="exceptions\EntityException.cs" />
+    <Compile Include="exceptions\ExceptionFactory.cs" />
+    <Compile Include="exceptions\LicensingExceptions.cs" />
+    <Compile Include="exceptions\MiscExceptions.cs" />
+    <Compile Include="exceptions\SecurityExceptions.cs" />
+    <Compile Include="exceptions\StorageExceptions.cs" />
+    <Compile Include="exceptions\SystemExceptions.cs" />
+    <Compile Include="exceptions\ViatronixException.cs" />
+    <Compile Include="logging\Log.cs" />
+    <Compile Include="logging\Logger.cs" />
+    <Compile Include="logging\LogWriterTraceListener.cs" />
+    <Compile Include="logging\Sample_Log.cs" />
+    <Compile Include="exceptions\ErrorCodes.cs" />
+    <Compile Include="database\DatabaseExtensionMethods.cs" />
+    <Compile Include="messages\parameters\Parameters.cs" />
+    <Compile Include="messages\parameters\Range.cs" />
+    <Compile Include="messages\RequestMessage.cs" />
+    <Compile Include="messages\ResponseMessage.cs" />
+    <Compile Include="misc\Helper.cs" />
+    <Compile Include="misc\XmlBuilder.cs" />
+    <Compile Include="configuration\TypeConfigurationConverter.cs" />
+    <Compile Include="database\SecurityGateway.cs" />
+    <Compile Include="database\StorageGateway.cs" />
+    <Compile Include="misc\EventArgs.cs" />
+    <Compile Include="misc\ExtensionMethods.cs" />
+    <Compile Include="misc\Schema.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="res\client.pfx" />
+    <EmbeddedResource Include="res\webservice.data" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Viatronix.Dicom.Imaging\Viatronix.Dicom.Imaging.vcxproj">
+      <Project>{b56b7e17-153b-4b81-9db7-a28b3e5611d6}</Project>
+      <Name>Viatronix.Dicom.Imaging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.Dicom\Viatronix.Dicom.vcxproj">
+      <Project>{28b5550d-628e-4755-afa6-32a9f04951f9}</Project>
+      <Name>Viatronix.Dicom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.Encryption\Viatronix.Encryption.csproj">
+      <Project>{ed270924-47cb-4d77-88c3-3f89cadc3491}</Project>
+      <Name>Viatronix.Encryption</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.Logging\Viatronix.Logging.vcxproj">
+      <Project>{eb450513-1b40-4e1f-9d8b-25266dc31efb}</Project>
+      <Name>Viatronix.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Viatronix.Messaging\Viatronix.Messaging.vcxproj">
+      <Project>{b2a224ad-1b7f-47f6-82f0-21d365058df6}</Project>
+      <Name>Viatronix.Messaging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo Post-Build
+
+echo - Copying binaries 
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\v3d\bin" mkdir "$(ProjectDir)..\..\..\..\Libraries\v3d\bin"
+xcopy /Y /R  "$(TargetDir)$(TargetFileName)" "$(ProjectDir)..\..\..\..\Libraries\v3d\bin"
+
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>echo Pre-Build
+
+if $(ConfigurationName) == Release $(ProjectDir)..\..\..\..\Libraries\utilities\Versioning  -c "$(ConfigurationName)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

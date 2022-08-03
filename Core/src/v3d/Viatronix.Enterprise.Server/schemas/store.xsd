@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:include schemaLocation=".\sdk.xsd" />
+
+  <xs:element name="store">
+
+    <xs:complexType>
+      
+      <xs:attribute name="name" type="xs:string" use="optional" />
+      <xs:attribute name="local" type="xs:string" use="optional" />
+      <xs:attribute name="remote" type="xs:string" use="optional" />
+      <xs:attribute name="server" type="xs:string" use="optional" />
+      <xs:attribute name="priority" type="xs:int" use="optional" />
+      <xs:attribute name="enabled" type="xs:boolean" use="optional" />
+      <xs:attribute name="cap" type="xs:long" use="optional" />
+      <xs:attribute name="used" type="xs:long" use="optional" />
+      <xs:attribute name="avail" type="xs:long" use="optional" />
+      <xs:attribute name="msg" type="xs:string" use="optional" />
+      <xs:attribute name="ver" type="xs:string" use="required" />
+
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

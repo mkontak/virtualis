@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{bbba8154-66eb-4d14-8146-0b6f3912bc06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h" />
+    <ClInclude Include="FileConverter.h" />
+    <ClInclude Include="ConversionModel.h" />
+    <ClInclude Include="scoped_ptr.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="PipelineEventArgsFactory.h" />
+    <ClInclude Include="IConverter.h" />
+    <ClInclude Include="SubVolumeInfo.h" />
+    <ClInclude Include="SubVolumeInfoCollection.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportedLibraries.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="FileConverter.cpp" />
+    <ClCompile Include="ConversionModel.cpp" />
+    <ClCompile Include="PipelineEventArgsFactory.cpp" />
+    <ClCompile Include="IConverter.cpp" />
+    <ClCompile Include="SubVolumeInfo.cpp" />
+    <ClCompile Include="SubVolumeInfoCollection.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="BuildNumber.ver">
+      <Filter>dll</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="v3dconv.rc">
+      <Filter>dll</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

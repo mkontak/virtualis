@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:include schemaLocation=".\sdk.xsd" />
+
+  <xs:element name="user" id="user" >
+
+    <xs:complexType>
+      
+      <xs:sequence>
+        <xs:element name="add" type="dateRangeType" minOccurs="0" />
+        <xs:element name="exp" type="dateRangeType" minOccurs="0" />
+      </xs:sequence>
+
+      <xs:attribute name="add"    type="xs:dateTime"  use="optional" />
+      <xs:attribute name="exp"    type="xs:dateTime"  use="optional" />
+      <xs:attribute name="name"   type="xs:string"    use="optional" />
+      <xs:attribute name="pwd"    type="xs:string"    use="optional" />
+      <xs:attribute name="login"  type="xs:string"    use="optional" />
+      <xs:attribute name="state"  type="xs:int"       use="optional" />
+      <xs:attribute name="auth"   type="xs:string"    use="optional" />
+      <xs:attribute name="dom"    type="xs:string"    use="optional" />
+      <xs:attribute name="apps"   type="xs:string"    use="optional" />
+      <xs:attribute name="ttl"    type="xs:int"       use="optional" />
+      <xs:attribute name="role"   type="xs:string"    use="optional" />
+      <xs:attribute name="perm"   type="xs:int"       use="optional" />
+      <xs:attribute name="ctx"    type="xs:string"    use="optional" />
+      <xs:attribute name="ptmp"   type="xs:string"    use="optional" />
+      <xs:attribute name="set"    type="xs:int"       use="optional" />
+      <xs:attribute name="ver"    type="xs:string"    use="required" />
+
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

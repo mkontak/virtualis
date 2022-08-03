@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+  <xs:include schemaLocation=".\dicomhost.xsd" />
+  <xs:include schemaLocation=".\study.xsd" />
+  <xs:include schemaLocation=".\series.xsd" />
+  <xs:include schemaLocation=".\context.xsd" />
+  <xs:include schemaLocation=".\user.xsd" />
+  <xs:include schemaLocation=".\test.xsd" />
+  <xs:include schemaLocation=".\right.xsd" />
+  <xs:include schemaLocation=".\role.xsd" />
+  <xs:include schemaLocation=".\dicomheader.xsd" />
+  <xs:include schemaLocation=".\reference.xsd" />
+  <xs:include schemaLocation=".\dependent.xsd" />
+  <xs:include schemaLocation=".\preview.xsd" />
+  <xs:include schemaLocation=".\filelist.xsd" />
+  <xs:include schemaLocation=".\studygroup.xsd" />
+  <xs:include schemaLocation=".\site.xsd" />
+  <xs:include schemaLocation=".\application.xsd" />
+  <xs:include schemaLocation=".\store.xsd" />
+  <xs:include schemaLocation=".\setting.xsd" />
+  <xs:include schemaLocation=".\domain.xsd" />
+  <xs:include schemaLocation=".\dicomserver.xsd" />
+  <xs:include schemaLocation=".\job.xsd" />
+  <xs:include schemaLocation=".\task.xsd" />
+  <xs:include schemaLocation=".\receiver.xsd" />
+  <xs:include schemaLocation=".\message.xsd" />
+  <xs:include schemaLocation=".\date.xsd" />
+  <xs:include schemaLocation=".\pacsjob.xsd" />
+  <xs:include schemaLocation=".\lock.xsd" />
+  <xs:include schemaLocation=".\template.xsd" />
+  <xs:include schemaLocation=".\seriespath.xsd" />
+  <xs:include schemaLocation=".\userprofile.xsd" />
+  <xs:include schemaLocation=".\launchlist.xsd" />
+  <xs:include schemaLocation=".\session.xsd" />
+  <xs:include schemaLocation=".\userprofile.xsd" />
+  <xs:include schemaLocation=".\systemconfig.xsd" />
+  <xs:include schemaLocation=".\server.xsd" />
+  <xs:include schemaLocation=".\authenticationtype.xsd" />
+  <xs:include schemaLocation=".\fileserver.xsd" />
+  <xs:include schemaLocation=".\modality.xsd" />
+  <xs:include schemaLocation=".\database.xsd" />
+  <xs:include schemaLocation=".\service.xsd" />
+  <xs:include schemaLocation=".\systemsetting.xsd" />
+
+  <xs:element name="rq" id="rq" >
+    
+    <xs:complexType>
+
+      <xs:sequence>
+        <xs:element ref="dicomhost"           minOccurs="0" maxOccurs="1"/> 
+        <xs:element ref="study"               minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="series"              minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="context"             minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="user"                minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="test"                minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="right"               minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="role"                minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="reference"           minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="dependent"           minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="preview"             minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="dicomheader"         minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="studygroup"          minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="filelist"            minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="site"                minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="application"         minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="store"               minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="systemsetting"       minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="domain"              minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="dicomserver"         minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="job"                 minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="task"                minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="date"                minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="receiver"            minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="message"             minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="pacsjob"             minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="lock"                minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="template"            minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="seriespath"          minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="userprofile"         minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="launchlist"          minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="session"             minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="systemconfig"        minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="server"              minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="fileserver"          minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="authenticationtype"  minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="modality"            minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="database"            minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="service"             minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+
+      <xs:attribute name="cid"  type="xs:string"  use="required"/>
+      <xs:attribute name="op"   type="xs:string"  use="required" />
+      <xs:attribute name="src"  type="xs:string"  use="required" />
+      <xs:attribute name="sys"  type="xs:string"  use="required" />
+      <xs:attribute name="app"  type="xs:string"  use="required" />
+      <xs:attribute name="enc"  type="xs:int"     use="required" />
+      <xs:attribute name="ver"  type="xs:string"  use="required" />
+
+    </xs:complexType>
+    
+  </xs:element>
+  
+</xs:schema>

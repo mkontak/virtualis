@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:include schemaLocation=".\sdk.xsd" />
+
+  <xs:element name="task">
+    <xs:complexType>
+
+      <xs:attribute name="jid" type="xs:string" use="optional" />
+      <xs:attribute name="name" type="xs:string" use="optional" />
+      <xs:attribute name="idx" type="xs:int" use="optional" />
+      <xs:attribute name="uid" type="xs:string" use="optional" />
+      <xs:attribute name="exe" type="xs:string" use="optional" />
+      <xs:attribute name="type" type="xs:string" use="optional" />
+      <xs:attribute name="log" type="xs:int" use="optional" />
+      <xs:attribute name="date" type="xs:dateTime" use="optional" />
+      <xs:attribute name="sc" type="xs:int" use="optional" />
+      <xs:attribute name="state" type="xs:int" use="optional" />
+      <xs:attribute name="prog" type="xs:float" use="optional" />
+      <xs:attribute name="msg" type="xs:string" use="optional" />
+      <xs:attribute name="params" type="xs:string" use="optional" />
+      <xs:attribute name="ver" type="xs:string" use="required" />
+
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

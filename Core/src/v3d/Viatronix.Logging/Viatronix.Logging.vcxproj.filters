@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{0b1420e9-0a14-43b3-aa68-85440a388ef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{875a99ac-1ed7-4ac4-9103-1c989630a52d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggerElementCollection.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggerElement.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggersSection.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="LogEnums.h" />
+    <ClInclude Include="scoped_ptr.h" />
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="resource2.h" />
+    <ClInclude Include="resource3.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ImportedLibraries.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggerElementCollection.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggersSection.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="Server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="v3dlog.rc" />
+  </ItemGroup>
+</Project>

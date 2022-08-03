@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:include schemaLocation=".\sdk.xsd" />
+
+  <xs:element name="series">
+    
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="icnt" type="intRangeType" minOccurs="0" />
+        <xs:element name="date" type="dateTimeRangeType" minOccurs="0" />
+        <xs:element name="rcv" type="dateTimeRangeType" minOccurs="0" />
+      </xs:sequence>
+      
+      <xs:attribute name="num"    type="xs:string"  use="optional" />
+      <xs:attribute name="ort"    type="xs:string"  use="optional" />
+      <xs:attribute name="pln"    type="xs:int"     use="optional" />
+      <xs:attribute name="state"  type="xs:int"     use="optional" />
+      <xs:attribute name="mod"    type="xs:string"  use="optional" />
+      <xs:attribute name="type"   type="xs:int"  use="optional" />
+      <xs:attribute name="app"    type="xs:string"  use="optional" />
+      <xs:attribute name="suid"   type="xs:string"  use="optional" />
+      <xs:attribute name="dir"    type="xs:string"  use="optional" />
+      <xs:attribute name="url"    type="xs:string"  use="optional" />
+      <xs:attribute name="src"    type="xs:string"  use="optional" />
+      <xs:attribute name="desc"   type="xs:string"  use="optional" />
+      <xs:attribute name="uid"    type="xs:string"  use="optional" />
+      <xs:attribute name="grp"    type="xs:string"  use="optional" />
+      <xs:attribute name="ver"    type="xs:string"  use="required" />
+
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
