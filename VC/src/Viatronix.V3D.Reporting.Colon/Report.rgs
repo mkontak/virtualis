@@ -1,0 +1,26 @@
+HKCR
+{
+	Viatronix.Report.1 = s 'Report Class'
+	{
+		CLSID = s '{5A98EEB3-0CCF-4FBF-826C-4E3500A35A9B}'
+	}
+	Viatronix.Report = s 'Report Class'
+	{
+		CLSID = s '{5A98EEB3-0CCF-4FBF-826C-4E3500A35A9B}'
+		CurVer = s 'Viatronix.Report.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {5A98EEB3-0CCF-4FBF-826C-4E3500A35A9B} = s 'Report Class'
+		{
+			ProgID = s 'Viatronix.Report.1'
+			VersionIndependentProgID = s 'Viatronix.Report'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{B2F4E03E-1935-414E-B01E-5950B2B4964F}'
+		}
+	}
+}

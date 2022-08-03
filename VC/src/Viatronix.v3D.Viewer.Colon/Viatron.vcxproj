@@ -1,0 +1,1767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug-Release|Win32">
+      <Configuration>Debug-Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-Release|x64">
+      <Configuration>Debug-Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWS|Win32">
+      <Configuration>DebugWS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugWS|x64">
+      <Configuration>DebugWS</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWS|Win32">
+      <Configuration>ReleaseWS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseWS|x64">
+      <Configuration>ReleaseWS</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|x64">
+      <Configuration>Template</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Viatronix.v3D.Viewer.Colon</ProjectName>
+    <ProjectGuid>{F3089252-9C88-4201-A5EF-0EF46E4CB4E4}</ProjectGuid>
+    <RootNamespace>Viatron</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-French|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|x64'">
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-French|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32' And '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32' And '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32' And '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32' And '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64' And '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64' And '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64' And '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64' And '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Viewers\VC\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32' And '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32' And '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32' And '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32' And '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64' And '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64' And '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64' And '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64' And '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Viewers\VC\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64'">false</LinkIncremental>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32'">true</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64'">true</PostBuildEventUseInBuild>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32' And '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32' And '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64' And '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64' And '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Viewers\VC\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32' And '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32' And '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release-French|x64' And '$(TeamBuildOutDir)'=='' ">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release-French|x64' And '$(TeamBuildOUtDir)'!='' ">$(TeamBuildOutDir)\Viatronix\Viewers\VC\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release-French|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release-French|x64'">false</LinkIncremental>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32'">true</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release-French|x64'">true</PostBuildEventUseInBuild>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release-French|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release-French|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release-French|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|x64'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">V3DViewerColond</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64'">V3DViewerColond</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">V3DViewerColon</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64'">V3DViewerColon</TargetName>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Template|x64'">..\..\..\Viatronix\Viewers\VC\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Template|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">V3DViewerColond</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32'">V3DViewerColond</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">V3DViewerColon</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32'">V3DViewerColon</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>$(ProjectName)_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>$(ProjectName)_i.c</InterfaceIdentifierFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/I /Zm150 /TP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\vxColon\include;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\dcmtk\include;..\..\..\Libraries\vx\include\vxPdf;..\..\..\Libraries\vx\include\vxPacs;..\..\..\Libraries\vx\include\vxDicom;..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NO_WARN_MBCS_MFC_DEPRECATION ;_DEBUG;WIN32;_WINDOWS;_ATL_ATTRIBUTES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreEmbeddedIDL>true</IgnoreEmbeddedIDL>
+      <MergedIDLBaseFileName>
+      </MergedIDLBaseFileName>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)V3DViewerColond.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>5000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxLoggerd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBased.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBlockVolumed.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxViewerd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxPacds.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxDicomd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\com\ReportLibd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\pdf\bin\quick_pdf64.dll $(TargetDir) /Y
+xcopy $(ProjectDir)config "$(TargetDir)config" /Y /E /I
+copy $(ProjectDir)app.config "$(TargetDir) $(TargetFileName).config" /Y
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>$(ProjectName)_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>$(ProjectName)_i.c</InterfaceIdentifierFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/I /Zm150 /TP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\vxColon\include;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\dcmtk\include;..\..\..\Libraries\vx\include\vxPdf;..\..\..\Libraries\vx\include\vxPacs;..\..\..\Libraries\vx\include\vxDicom;..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NO_WARN_MBCS_MFC_DEPRECATION ;_DEBUG;WIN32;_WINDOWS;_ATL_ATTRIBUTES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreEmbeddedIDL>true</IgnoreEmbeddedIDL>
+      <MergedIDLBaseFileName>
+      </MergedIDLBaseFileName>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)V3DViewerColond.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>5000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxLoggerd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBased.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBlockVolumed.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxViewerd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxPacds.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxDicomd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\com\ReportLibd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\pdf\bin\quick_pdf64.dll $(TargetDir) /Y
+xcopy $(ProjectDir)config "$(TargetDir)config" /Y /E /I
+copy $(ProjectDir)app.config "$(TargetDir) $(TargetFileName).config" /Y
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>$(ProjectName)_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>$(ProjectName)_i.c</InterfaceIdentifierFileName>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/I /Zm150 /TP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\vxColon\include;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\dcmtk\include;..\..\..\Libraries\vx\include\vxPdf;..\..\..\Libraries\vx\include\vxPacs;..\..\..\Libraries\vx\include\vxDicom;..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NO_WARN_MBCS_MFC_DEPRECATION ;SKIP_EXT_DEBUGGER;_DEBUG;WIN64;_WINDOWS;_ATL_ATTRIBUTES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreEmbeddedIDL>true</IgnoreEmbeddedIDL>
+      <MergedIDLBaseFileName>
+      </MergedIDLBaseFileName>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)V3DViewerColond.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>
+      </StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxLoggerd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBased.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBlockVolumed.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxViewerd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxPacsd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxDicomd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\com\ReportLibd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\pdf\bin\quick_pdf64.dll $(TargetDir) /Y
+copy $(ProjectDir)app.config "$(TargetDir)$(TargetFileName).config" /Y
+xcopy $(ProjectDir)config "$(TargetDir)config" /Y /E /I
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>$(ProjectName)_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>$(ProjectName)_i.c</InterfaceIdentifierFileName>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/I /Zm150 /TP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\vxColon\include;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\dcmtk\include;..\..\..\Libraries\vx\include\vxPdf;..\..\..\Libraries\vx\include\vxPacs;..\..\..\Libraries\vx\include\vxDicom;..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NO_WARN_MBCS_MFC_DEPRECATION ;SKIP_EXT_DEBUGGER;_DEBUG;WIN64;_WINDOWS;_ATL_ATTRIBUTES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <IgnoreEmbeddedIDL>true</IgnoreEmbeddedIDL>
+      <MergedIDLBaseFileName>
+      </MergedIDLBaseFileName>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)V3DViewerColond.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>
+      </StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxLoggerd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBased.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBlockVolumed.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxViewerd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxPacds.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxDicomd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\com\ReportLibd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\pdf\bin\quick_pdf64.dll $(TargetDir) /Y
+xcopy $(ProjectDir)config "$(TargetDir)config" /Y /E /I
+copy $(ProjectDir)app.config "$(TargetDir) $(TargetFileName).config" /Y
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CustomBuildStep>
+      <Outputs>%(OutDir)\regsvr32.trg</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>Viatron_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>Viatron_i.c</InterfaceIdentifierFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm150  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\vxColon\include;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\dcmtk\include;..\..\..\Libraries\vx\include\vxPdf;..\..\..\Libraries\vx\include\vxPacs;..\..\..\Libraries\vx\include\vxDicom;..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NO_WARN_MBCS_MFC_DEPRECATION ;NDEBUG;FINAL_RELEASE;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <MergedIDLBaseFileName>_viatron.idl</MergedIDLBaseFileName>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)V3DViewerColon.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>5000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxLogger.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBase.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBlockVolume.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxViewer.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxPacs.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxDicom.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\com\ReportLib.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\pdf\bin\quick_pdf64.dll $(TargetDir) /Y
+xcopy $(ProjectDir)config "$(TargetDir)config" /Y /E /I
+copy $(ProjectDir)app.config "$(TargetDir) $(TargetFileName).config" /Y
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32'">
+    <CustomBuildStep>
+      <Outputs>%(OutDir)\regsvr32.trg</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>Viatron_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>Viatron_i.c</InterfaceIdentifierFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm150  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\vxColon\include;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\dcmtk\include;..\..\..\Libraries\vx\include\vxPdf;..\..\..\Libraries\vx\include\vxPacs;..\..\..\Libraries\vx\include\vxDicom;..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NO_WARN_MBCS_MFC_DEPRECATION ;NDEBUG;FINAL_RELEASE;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <MergedIDLBaseFileName>_viatron.idl</MergedIDLBaseFileName>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)V3DViewerColon.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>5000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxLogger.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBase.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBlockVolume.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxViewer.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxPacs.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxDicom.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\com\ReportLib.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\pdf\bin\quick_pdf64.dll $(TargetDir) /Y
+xcopy $(ProjectDir)config "$(TargetDir)config" /Y /E /I
+copy $(ProjectDir)app.config "$(TargetDir) $(TargetFileName).config" /Y
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CustomBuildStep>
+      <Outputs>%(OutDir)\regsvr32.trg</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>$(IntDir)Viatron_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>$(IntDir)Viatron_i.c</InterfaceIdentifierFileName>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm150  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\vxColon\include;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\dcmtk\include;..\..\..\Libraries\vx\include\vxPdf;..\..\..\Libraries\vx\include\vxPacs;..\..\..\Libraries\vx\include\vxDicom;..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NO_WARN_MBCS_MFC_DEPRECATION ;NDEBUG;FINAL_RELEASE;WIN64;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);$(WindowsSDK_IncludePath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowProgress>false</ShowProgress>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <MergedIDLBaseFileName>_viatron.idl</MergedIDLBaseFileName>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>5000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo Post-Build
+
+echo Copying dll's to target directory
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxLogger.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBase.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBlockVolume.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxViewer.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxPacs.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxDicom.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\com\ReportLib.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\pdf\bin\quick_pdf64.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\lang\vc\*.dll $(TargetDir) /Y
+xcopy $(ProjectDir)config "$(TargetDir)config" /Y /E /I
+
+echo Copying application config
+copy $(ProjectDir)app.config "$(TargetDir)$(TargetFileName).config" /Y
+
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64'">
+    <CustomBuildStep>
+      <Outputs>%(OutDir)\regsvr32.trg</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>Viatron_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>Viatron_i.c</InterfaceIdentifierFileName>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm150  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\vxColon\include;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\dcmtk\include;..\..\..\Libraries\vx\include\vxPdf;..\..\..\Libraries\vx\include\vxPacs;..\..\..\Libraries\vx\include\vxDicom;..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NO_WARN_MBCS_MFC_DEPRECATION ;NDEBUG;FINAL_RELEASE;WIN64;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\libs\vx\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <MergedIDLBaseFileName>_viatron.idl</MergedIDLBaseFileName>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>5000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxLogger.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBase.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBlockVolume.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxViewer.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxPacs.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxDicom.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\com\ReportLib.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\pdf\bin\quick_pdf64.dll $(TargetDir) /Y
+xcopy $(ProjectDir)config "$(TargetDir)config" /Y /E /I
+copy $(ProjectDir)app.config "$(TargetDir) $(TargetFileName).config" /Y
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'">
+    <CustomBuildStep>
+      <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>Viatron_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>Viatron_i.c</InterfaceIdentifierFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm150  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\vxColon\include;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\dcmtk\include;..\..\..\Libraries\vx\include\vxPdf;..\..\..\Libraries\vx\include\vxPacs;..\..\..\Libraries\vx\include\vxDicom;..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NO_WARN_MBCS_MFC_DEPRECATION ;NDEBUG;WIN32;_WINDOWS;_ATL_ATTRIBUTES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <MergedIDLBaseFileName>_Viatron.idl</MergedIDLBaseFileName>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)V3DViewerColondr.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>5000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxLogger.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBase.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBlockVolume.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxViewer.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxPacs.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxDicom.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\com\ReportLib.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\pdf\bin\quick_pdf64.dll $(TargetDir) /Y
+xcopy $(ProjectDir)config "$(TargetDir)config" /Y /E /I
+copy $(ProjectDir)app.config "$(TargetDir) $(TargetFileName).config" /Y
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'">
+    <CustomBuildStep>
+      <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>Viatron_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>Viatron_i.c</InterfaceIdentifierFileName>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm150  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\vxColon\include;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\dcmtk\include;..\..\..\Libraries\vx\include\vxPdf;..\..\..\Libraries\vx\include\vxPacs;..\..\..\Libraries\vx\include\vxDicom;..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NO_WARN_MBCS_MFC_DEPRECATION ;NDEBUG;WIN32;_WINDOWS;_ATL_ATTRIBUTES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <MergedIDLBaseFileName>_Viatron.idl</MergedIDLBaseFileName>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)V3DViewerColondr.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>5000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxLogger.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBase.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBlockVolume.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxViewer.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxPacs.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxDicom.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\com\ReportLib.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\pdf\bin\quick_pdf64.dll $(TargetDir) /Y
+xcopy $(ProjectDir)config "$(TargetDir)config" /Y /E /I
+copy $(ProjectDir)app.config "$(TargetDir) $(TargetFileName).config" /Y
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32'">
+    <CustomBuildStep>
+      <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>Viatron_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>Viatron_i.c</InterfaceIdentifierFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm150  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\src\vx\vxCAD\include;..\..\src\vx\vxBase\include;..\..\src\vx\vxBlockVolume\include;..\..\src\vx\vxColon\include;..\..\src\vx\vxViewer\include;..\..\src\vx\vxLogger\include;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;FINAL_RELEASE;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;VTX_LANGUAGE_FRENCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <MergedIDLBaseFileName>_viatron.idl</MergedIDLBaseFileName>
+      <ProgramDatabaseFile>$(OutDir)V3DViewerColon.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>5000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\..\libs\vx\bin\vxLogger32.dll $(OutDir) /Y
+copy ..\..\libs\vx\bin\vxBase32.dll $(OutDir) /Y
+copy ..\..\libs\vx\bin\vxBlockVolume32.dll $(OutDir) /Y
+copy ..\..\libs\vx\bin\vxViewer32.dll $(OutDir) /Y
+D:\NightlyBuild\Stampver\StampVer -o4 -vD:\NightlyBuild\Stampver\v3DColon_4-0.inf -i4 -j4 "$(TargetPath)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-French|x64'">
+    <CustomBuildStep>
+      <Outputs>$(OutDir)regsvr32.trg;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>Viatron_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>Viatron_i.c</InterfaceIdentifierFileName>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm150  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\src\vx\vxCAD\include;..\..\src\vx\vxBase\include;..\..\src\vx\vxBlockVolume\include;..\..\src\vx\vxColon\include;..\..\src\vx\vxViewer\include;..\..\src\vx\vxLogger\include;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;FINAL_RELEASE;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;VTX_LANGUAGE_FRENCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <MergedIDLBaseFileName>_viatron.idl</MergedIDLBaseFileName>
+      <ProgramDatabaseFile>$(OutDir)V3DViewerColon.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>5000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy ..\..\libs\vx\bin\vxLogger32.dll $(OutDir) /Y
+copy ..\..\libs\vx\bin\vxBase32.dll $(OutDir) /Y
+copy ..\..\libs\vx\bin\vxBlockVolume32.dll $(OutDir) /Y
+copy ..\..\libs\vx\bin\vxViewer32.dll $(OutDir) /Y
+D:\NightlyBuild\Stampver\StampVer -o4 -vD:\NightlyBuild\Stampver\v3DColon_4-0.inf -i4 -j4 "$(TargetPath)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\vxColon\include;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\dcmtk\include;..\..\..\Libraries\vx\include\vxPdf;..\..\..\Libraries\vx\include\vxPacs;..\..\..\Libraries\vx\include\vxDicom;..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>NO_WARN_MBCS_MFC_DEPRECATION ;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxLoggerd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBased.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBlockVolumed.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxViewerd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxPacds.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxDicomd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\com\ReportLibd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\pdf\bin\quick_pdf64.dll $(TargetDir) /Y
+xcopy $(ProjectDir)config "$(TargetDir)config" /Y /E /I
+copy $(ProjectDir)app.config "$(TargetDir) $(TargetFileName).config" /Y
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\vxColon\include;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\nvidia\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\dcmtk\include;..\..\..\Libraries\vx\include\vxPdf;..\..\..\Libraries\vx\include\vxPacs;..\..\..\Libraries\vx\include\vxDicom;..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;4018;4146;4244;4251;4267;4273;4290;4661;4800;4804;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>NO_WARN_MBCS_MFC_DEPRECATION ;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <PostBuildEvent>
+      <Command>xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxLoggerd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBased.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxBlockVolumed.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxViewerd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxPacds.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\vx\bin\vxDicomd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\com\ReportLibd.dll $(TargetDir) /Y
+xcopy $(ProjectDir)..\..\..\Libraries\pdf\bin\quick_pdf64.dll $(TargetDir) /Y
+xcopy $(ProjectDir)config "$(TargetDir)config" /Y /E /I
+copy $(ProjectDir)app.config "$(TargetDir) $(TargetFileName).config" /Y
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ApplicationSettings.cpp" />
+    <ClCompile Include="BackgroundBrush.C" />
+    <ClCompile Include="CadUtils.cpp" />
+    <ClCompile Include="CadInputMonitor.cpp" />
+    <ClCompile Include="ColorProgressCtrl.C" />
+    <ClCompile Include="ColorTabCtrl.C" />
+    <ClCompile Include="Database.C" />
+    <ClCompile Include="ApplicationController.cpp" />
+    <ClCompile Include="DatabaseConfigurationService.cpp" />
+    <ClCompile Include="DatabaseExceptionFactory.cpp" />
+    <ClCompile Include="DatabaseLoader.cpp" />
+    <ClCompile Include="DatabaseLoginService.cpp" />
+    <ClCompile Include="DatabaseRetrievalService.cpp" />
+    <ClCompile Include="DatasetUtils.cpp" />
+    <ClCompile Include="Dib.C" />
+    <ClCompile Include="DicomPacsService.cpp" />
+    <ClCompile Include="FileSystemLoader.cpp" />
+    <ClCompile Include="FullScreenController.cpp" />
+    <ClCompile Include="GdiplusUtilities.C" />
+    <ClCompile Include="glComboBox.C" />
+    <ClCompile Include="Gradient.C" />
+    <ClCompile Include="GradientCtrl.C" />
+    <ClCompile Include="GradientCtrlImpl.C" />
+    <ClCompile Include="ImagingUtils.cpp" />
+    <ClCompile Include="Loader.cpp" />
+    <ClCompile Include="LoaderFactory.cpp" />
+    <ClCompile Include="ProgressDlg.cpp" />
+    <ClCompile Include="RegexUtils.cpp" />
+    <ClCompile Include="ReportingUtils.cpp" />
+    <ClCompile Include="RestConfigurationService.cpp" />
+    <ClCompile Include="RestLoginService.cpp" />
+    <ClCompile Include="RestRetrievalService.cpp" />
+    <ClCompile Include="ServiceLocator.cpp" />
+    <ClCompile Include="StudyLoadParamsEx.cpp" />
+    <ClCompile Include="LanguageSupport.cpp" />
+    <ClCompile Include="AdjustTranslucencyDlg.C" />
+    <ClCompile Include="CadResultsDlg.C" />
+    <ClCompile Include="ControlsDialog.C" />
+    <ClCompile Include="Menubar.C" />
+    <ClCompile Include="MenubarItem.C" />
+    <ClCompile Include="MenuButton.cpp" />
+    <ClCompile Include="MessageWnd.C" />
+    <ClCompile Include="MouseHelp.C" />
+    <ClCompile Include="NavigationBar.C" />
+    <ClCompile Include="NotationsDialog.C" />
+    <ClCompile Include="OverViewDlgBar.C" />
+    <ClCompile Include="PatientInfoDlg.C" />
+    <ClCompile Include="PickScreenPoint.C" />
+    <ClCompile Include="PreferencesDlg.C" />
+    <ClCompile Include="ProgressCtrl.C" />
+    <ClCompile Include="PropertySheetDlg.C" />
+    <ClCompile Include="ReportControls.C" />
+    <ClCompile Include="ReportGroupCtrl.C" />
+    <ClCompile Include="ReportSpinEdit.C" />
+    <ClCompile Include="ExeResourceSwapper.cpp" />
+    <ClCompile Include="RightBorder.C" />
+    <ClCompile Include="SelectSeriesDialog.C" />
+    <ClCompile Include="ShellTree.C" />
+    <ClCompile Include="SkinButton.cpp" />
+    <ClCompile Include="SliceScrollBar.C" />
+    <ClCompile Include="SliderButton.C" />
+    <ClCompile Include="SlidingPaneView.C" />
+    <ClCompile Include="StatusIndicator.cpp" />
+    <ClCompile Include="TabStrip.C" />
+    <ClCompile Include="TabStripItem.C" />
+    <ClCompile Include="TextPromptWnd.C" />
+    <ClCompile Include="Theme.C" />
+    <ClCompile Include="vcUtils.cpp" />
+    <ClCompile Include="ViatronSplash.C" />
+    <ClCompile Include="ComServer.C" />
+    <ClCompile Include="ChildViewFrame.C" />
+    <ClCompile Include="DrawOverView.C" />
+    <ClCompile Include="EndoAxialView.C" />
+    <ClCompile Include="FullObliqueView.C" />
+    <ClCompile Include="GLChildView.C" />
+    <ClCompile Include="GLPopupMenu.C" />
+    <ClCompile Include="GLTimer.C" />
+    <ClCompile Include="GLUpdateBuffer.C" />
+    <ClCompile Include="GLWnd.C" />
+    <ClCompile Include="LoadStudy.C" />
+    <ClCompile Include="MainAppFrame.C" />
+    <ClCompile Include="MainAppFrameBkgndProc.C" />
+    <ClCompile Include="MovieFrame.C" />
+    <ClCompile Include="MovieView.C" />
+    <ClCompile Include="NavigationView.C" />
+    <ClCompile Include="OverView.C" />
+    <ClCompile Include="RegistrationView.C" />
+    <ClCompile Include="ReportColonFindings.C" />
+    <ClCompile Include="ReportMiscellaneous.C" />
+    <ClCompile Include="reportnondistendedareas.c" />
+    <ClCompile Include="reportotherfindings.c" />
+    <ClCompile Include="ReportPreview.C" />
+    <ClCompile Include="ReportSubFinding.C" />
+    <ClCompile Include="ReportVariant.C" />
+    <ClCompile Include="ReportViewFrame.C" />
+    <ClCompile Include="ReportViewWnd.C" />
+    <ClCompile Include="ReportWndBase.C" />
+    <ClCompile Include="Segment2DChildView.C" />
+    <ClCompile Include="Segment3DChildView.C" />
+    <ClCompile Include="SegmentCylindricalChildView.C" />
+    <ClCompile Include="Segments2DView.C" />
+    <ClCompile Include="Segments3DView.C" />
+    <ClCompile Include="SegmentsCylindricalView.C" />
+    <ClCompile Include="SliceChildView.C" />
+    <ClCompile Include="SliceChildView.Input.C" />
+    <ClCompile Include="SliceChildView.Region.C" />
+    <ClCompile Include="SliceChildView.Render.C" />
+    <ClCompile Include="StandardView.C" />
+    <ClCompile Include="StudyBrowserView.C" />
+    <ClCompile Include="SupineProneViewWnd.C" />
+    <ClCompile Include="UDSegmentsChildView.C" />
+    <ClCompile Include="UDSegmentsColonWnd.C" />
+    <ClCompile Include="VCRenderUtils.C" />
+    <ClCompile Include="VerifyView.C" />
+    <ClCompile Include="VFrameManager.C" />
+    <ClCompile Include="ViatronChildView.C" />
+    <ClCompile Include="ViatronDialog.C" />
+    <ClCompile Include="ViatronixWnd.C" />
+    <ClCompile Include="ViatronMenus.C" />
+    <ClCompile Include="ViatronViewWnd.C" />
+    <ClCompile Include="AboutDlg.C" />
+    <ClCompile Include="BackgroundProcess.C" />
+    <ClCompile Include="ColonLicense.C" />
+    <ClCompile Include="CommandLineInfoEx.C" />
+    <ClCompile Include="FunctionProgress.C" />
+    <ClCompile Include="IdleManager.C" />
+    <ClCompile Include="MonitorDisplay.C" />
+    <ClCompile Include="ThinClientLoadParams.C" />
+    <ClCompile Include="User.C" />
+    <ClCompile Include="V3DAppMutex.cpp" />
+    <ClCompile Include="v3DSystemSettings.c" />
+    <ClCompile Include="VersionInfo.C" />
+    <ClCompile Include="ViatronStudy.C" />
+    <ClCompile Include="ViewSelectDlgBar.C" />
+    <ClCompile Include="VxConsole.C" />
+    <ClCompile Include="VxReportCreator.C" />
+    <ClCompile Include="VxVCReport.C" />
+    <ClCompile Include="WinGLUtils.C" />
+    <ClCompile Include="WinUtils.cpp" />
+    <ClCompile Include="WmTimer.C" />
+    <ClCompile Include="MovieCapture.C" />
+    <ClCompile Include="MovieCreateDialog.C" />
+    <ClCompile Include="MovieFormat.C" />
+    <ClCompile Include="MovieSaveStateOptions.C" />
+    <ClCompile Include="WriteAVI.C" />
+    <ClCompile Include="ImportedLibraries.C" />
+    <ClCompile Include="StdAfx.C">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release-French|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MissedRegionsDlg.C" />
+    <ClCompile Include="Viatron.C" />
+    <ClCompile Include="XmlConfigurationService.cpp" />
+    <ClCompile Include="XmlUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApplicationSettings.h" />
+    <ClInclude Include="AppSettings.h" />
+    <ClInclude Include="BackgroundBrush.h" />
+    <ClInclude Include="CadUtils.h" />
+    <ClInclude Include="CadInputMonitor.h" />
+    <ClInclude Include="ColorProgressCtrl.h" />
+    <ClInclude Include="ColorTabCtrl.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="DatabaseConfigurationService.h" />
+    <ClInclude Include="DatabaseExceptionFectory.h" />
+    <ClInclude Include="DatabaseLoader.h" />
+    <ClInclude Include="DatabaseLoginService.h" />
+    <ClInclude Include="DatabaseRetrievalService.h" />
+    <ClInclude Include="DatasetUtils.h" />
+    <ClInclude Include="DicomPacsService.h" />
+    <ClInclude Include="FileSystemLoader.h" />
+    <ClInclude Include="FullScreenController.h" />
+    <ClInclude Include="IConfigurationService.h" />
+    <ClInclude Include="ILoginService.h" />
+    <ClInclude Include="ImagingUtils.h" />
+    <ClInclude Include="IPacsService.h" />
+    <ClInclude Include="IRetrievalService.h" />
+    <ClInclude Include="Loader.h" />
+    <ClInclude Include="LoaderFactory.h" />
+    <ClInclude Include="PacsInfo.h" />
+    <ClInclude Include="ProgressDlg.h" />
+    <ClInclude Include="RegexUtils.h" />
+    <ClInclude Include="ReportingUtils.h" />
+    <ClInclude Include="RestConfigurationService.h" />
+    <ClInclude Include="RestLoginService.h" />
+    <ClInclude Include="RestRetrievalService.h" />
+    <ClInclude Include="ServiceLocator.h" />
+    <ClInclude Include="StudyLoadParamsEx.h" />
+    <ClInclude Include="vcUtils.h" />
+    <ClInclude Include="MainAppFrameStates.h" />
+    <ClInclude Include="ApplicationController.h" />
+    <ClInclude Include="Dib.h" />
+    <ClInclude Include="GdiplusUtilities.h" />
+    <ClInclude Include="glComboBox.h" />
+    <ClInclude Include="Gradient.h" />
+    <ClInclude Include="gradientctrl.h" />
+    <ClInclude Include="GradientCtrlImpl.h" />
+    <ClInclude Include="IToolTipProvider.h" />
+    <ClInclude Include="LanguageSupport.h" />
+    <ClInclude Include="AdjustTranslucencyDlg.h" />
+    <ClInclude Include="CadResultsDlg.h" />
+    <ClInclude Include="ControlsDialog.h" />
+    <ClInclude Include="Menubar.h" />
+    <ClInclude Include="MenubarItem.h" />
+    <ClInclude Include="menubutton.h" />
+    <ClInclude Include="MenuUtils.h" />
+    <ClInclude Include="MessageWnd.h" />
+    <ClInclude Include="MouseHelp.h" />
+    <ClInclude Include="NavigationBar.h" />
+    <ClInclude Include="NotationsDialog.h" />
+    <ClInclude Include="OverViewDlgBar.h" />
+    <ClInclude Include="PatientInfoDlg.h" />
+    <ClInclude Include="PickScreenPoint.h" />
+    <ClInclude Include="PreferencesDlg.h" />
+    <ClInclude Include="ProgressCtrl.h" />
+    <ClInclude Include="PropertySheetDlg.h" />
+    <ClInclude Include="ReportControls.h" />
+    <ClInclude Include="ReportGroupCtrl.h" />
+    <ClInclude Include="ReportSpinEdit.h" />
+    <ClInclude Include="ExeResourceSwapper.h" />
+    <ClInclude Include="RightBorder.h" />
+    <ClInclude Include="SelectSeriesDialog.h" />
+    <ClInclude Include="ShellTree.h" />
+    <ClInclude Include="SkinButton.h" />
+    <ClInclude Include="SliceScrollBar.h" />
+    <ClInclude Include="SliderButton.h" />
+    <ClInclude Include="SlidingPaneView.h" />
+    <ClInclude Include="StatusIndicator.h" />
+    <ClInclude Include="TabStrip.h" />
+    <ClInclude Include="TabStripItem.h" />
+    <ClInclude Include="TextPromptWnd.h" />
+    <ClInclude Include="Theme.h" />
+    <ClInclude Include="ViatronSplash.h" />
+    <ClInclude Include="ComServer.h" />
+    <ClInclude Include="ButtonMenus.h" />
+    <ClInclude Include="ChildViewFrame.h" />
+    <ClInclude Include="DrawOverView.h" />
+    <ClInclude Include="EndoAxialView.h" />
+    <ClInclude Include="FullObliqueView.h" />
+    <ClInclude Include="GLChildView.h" />
+    <ClInclude Include="GLPopupMenu.h" />
+    <ClInclude Include="GLTimer.h" />
+    <ClInclude Include="GLUpdateBuffer.h" />
+    <ClInclude Include="GLWnd.h" />
+    <ClInclude Include="MainAppFrame.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MovieFrame.h" />
+    <ClInclude Include="MovieView.h" />
+    <ClInclude Include="NavigationView.h" />
+    <ClInclude Include="OverView.h" />
+    <ClInclude Include="RegistrationView.h" />
+    <ClInclude Include="ReportColonFindings.h" />
+    <ClInclude Include="ReportMiscellaneous.h" />
+    <ClInclude Include="reportnondistendedareas.h" />
+    <ClInclude Include="reportotherfindings.h" />
+    <ClInclude Include="ReportPreview.h" />
+    <ClInclude Include="ReportSubFinding.h" />
+    <ClInclude Include="ReportVariant.h" />
+    <ClInclude Include="ReportViewFrame.h" />
+    <ClInclude Include="ReportViewWnd.h" />
+    <ClInclude Include="ReportWndBase.h" />
+    <ClInclude Include="Segment2DChildView.h" />
+    <ClInclude Include="Segment3DChildView.h" />
+    <ClInclude Include="SegmentCylindricalChildView.h" />
+    <ClInclude Include="Segments2DView.h" />
+    <ClInclude Include="Segments3DView.h" />
+    <ClInclude Include="SegmentsCylindricalView.h" />
+    <ClInclude Include="SliceChildView.h" />
+    <ClInclude Include="StandardView.h" />
+    <ClInclude Include="StudyBrowserView.h" />
+    <ClInclude Include="SupineProneViewWnd.h" />
+    <ClInclude Include="UDSegmentsChildView.h" />
+    <ClInclude Include="UDSegmentsColonWnd.h" />
+    <ClInclude Include="VCRenderUtils.h" />
+    <ClInclude Include="VerifyView.h" />
+    <ClInclude Include="VFrameManager.h" />
+    <ClInclude Include="ViatronChildView.h" />
+    <ClInclude Include="ViatronDialog.h" />
+    <ClInclude Include="ViatronixWnd.h" />
+    <ClInclude Include="ViatronViewWnd.h" />
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="BackgroundProcess.h" />
+    <ClInclude Include="ColonLicense.h" />
+    <ClInclude Include="CommandLineInfoEx.h" />
+    <ClInclude Include="FunctionProgress.h" />
+    <ClInclude Include="IdleManager.h" />
+    <ClInclude Include="MonitorDisplay.h" />
+    <ClInclude Include="ThinClientLoadParams.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="V1KMessages.h" />
+    <ClInclude Include="V3DAppMutex.h" />
+    <ClInclude Include="V3DSystemSettings.h" />
+    <ClInclude Include="VersionInfo.h" />
+    <ClInclude Include="ViatronStudy.h" />
+    <ClInclude Include="ViewSelectDlgBar.h" />
+    <ClInclude Include="VxConsole.h" />
+    <ClInclude Include="VxReportCreator.h" />
+    <ClInclude Include="VxVCReport.h" />
+    <ClInclude Include="WinGDIUtils.h" />
+    <ClInclude Include="WinGLUtils.h" />
+    <ClInclude Include="WinUtils.h" />
+    <ClInclude Include="WmTimer.h" />
+    <ClInclude Include="MovieCapture.h" />
+    <ClInclude Include="MovieCreateDialog.h" />
+    <ClInclude Include="MovieFormat.h" />
+    <ClInclude Include="MovieSaveStateOptions.h" />
+    <ClInclude Include="WriteAVI.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="VCResource.h" />
+    <ClInclude Include="MissedRegionsDlg.h" />
+    <ClInclude Include="Viatron.h" />
+    <ClInclude Include="XmlConfigurationService.h" />
+    <ClInclude Include="XmlUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BuildNumber.ver" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\arrowpaintcan_add.cur" />
+    <None Include="res\arrowpaintcan_del.cur" />
+    <None Include="res\arrowpaintcan_new.cur" />
+    <None Include="res\arrowpaintcan_remove.cur" />
+    <None Include="res\bkgnd-header-right_widescreen.png" />
+    <None Include="res\bkgnd-side-top-yellow.png" />
+    <None Include="res\buttonSmallRight.bmp" />
+    <None Include="res\checkMark.bmp" />
+    <None Include="res\dashboardbkgd.bmp" />
+    <None Include="res\linked-unlinked.bmp" />
+    <None Include="res\PatientInfoHorizBkgdHD.bmp" />
+    <None Include="res\regedit_size_btnbar.PNG" />
+    <None Include="res\regionedit_btnbar.png" />
+    <None Include="res\roi_measure.bmp" />
+    <None Include="res\slider_bkgd.bmp" />
+    <None Include="res\slider_thumb.bmp" />
+    <None Include="res\v3d_colo.bmp" />
+    <None Include="res\viatronix_logo.png" />
+    <None Include="Dialogs.inl" />
+    <None Include="OverView.inl" />
+    <None Include="ViatronStudy.inl" />
+    <None Include="res\Viatron.rc2" />
+    <None Include="res\annotation.cur" />
+    <None Include="res\annotationBtn.bmp" />
+    <None Include="res\annotationBtnSmall.bmp" />
+    <None Include="res\arrowpaintcan.cur" />
+    <None Include="res\arrowwait.cur" />
+    <None Include="res\autofly.bmp" />
+    <None Include="res\bkgnd-corner-bottom-left.png" />
+    <None Include="res\bkgnd-corner-bottom-right.png" />
+    <None Include="res\bkgnd-corner-top-left.png" />
+    <None Include="res\bkgnd-header-left.png" />
+    <None Include="res\bkgnd-header-middle.png" />
+    <None Include="res\bkgnd-header-right.png" />
+    <None Include="res\bkgnd-side-bottom-yellow.png" />
+    <None Include="res\bkgnd-side-left-yellow.png" />
+    <None Include="res\bkgnd-side-right.png" />
+    <None Include="res\bkmkDrop.wav" />
+    <None Include="res\blaster.wav" />
+    <None Include="res\bluemetalskin.bmp" />
+    <None Include="res\BookmarksBtnSmall.bmp" />
+    <None Include="res\ButtonLarge.bmp" />
+    <None Include="res\ButtonMedium.bmp" />
+    <None Include="res\ButtonSmall.bmp" />
+    <None Include="res\ButtonSquare.bmp" />
+    <None Include="res\cadres-dlgbar-bkgd.bmp" />
+    <None Include="res\camera1.bmp" />
+    <None Include="res\cameraClick.wav" />
+    <None Include="res\chain-unlink.bmp" />
+    <None Include="res\chain_link.bmp" />
+    <None Include="res\check3state.bmp" />
+    <None Include="res\ColormapSystemBtn.bmp" />
+    <None Include="res\ColormapUserBtn.bmp" />
+    <None Include="res\ComboMenuButtonMedium.bmp" />
+    <None Include="res\ConsoleBackground.bmp" />
+    <None Include="res\crossmc.cur" />
+    <None Include="res\Dataset_link.bmp" />
+    <None Include="res\dataset_link_vertical.bmp" />
+    <None Include="res\Dataset_unlink.bmp" />
+    <None Include="res\Dataset_unlink_vertical.bmp" />
+    <None Include="res\DeleteAllBtn.bmp" />
+    <None Include="res\DetectCADFindings.bmp" />
+    <None Include="res\endoview-horiz-dlgbar-bkgd.bmp" />
+    <None Include="res\endoview-vertl-dlgbar-bkgd.bmp" />
+    <None Include="res\EndoviewMarking.bmp" />
+    <None Include="res\English\Entry.bmp" />
+    <None Include="res\explosion.wav" />
+    <None Include="res\file copy from net.avi" />
+    <None Include="res\FindingAccept.png" />
+    <None Include="res\FindingReject.png" />
+    <None Include="res\FindingUndecided.png" />
+    <None Include="res\flipview.bmp" />
+    <None Include="res\grasphan.cur" />
+    <None Include="res\greyedge.bmp" />
+    <None Include="res\group24.bmp" />
+    <None Include="res\harrow.cur" />
+    <None Include="res\highlights.bmp" />
+    <None Include="res\highlights.cur" />
+    <None Include="res\leftmouse.bmp" />
+    <None Include="res\listhdrsortdn.bmp" />
+    <None Include="res\listhdrsortup.bmp" />
+    <None Include="res\logo-registration-view.png" />
+    <None Include="res\magnify.cur" />
+    <None Include="res\measure.bmp" />
+    <None Include="res\measure.cur" />
+    <None Include="res\MeasurementsBtnSmall.bmp" />
+    <None Include="res\menubar-left.png" />
+    <None Include="res\menubar-middle.png" />
+    <None Include="res\menubar-right.png" />
+    <None Include="res\metalskin.bmp" />
+    <None Include="res\midmouse.bmp" />
+    <None Include="res\MissedRegionsDetect.bmp" />
+    <None Include="res\MovieButton.bmp" />
+    <None Include="res\English\movieheader.bmp" />
+    <None Include="res\NextCADFinding.bmp" />
+    <None Include="res\NextMissedRegion.bmp" />
+    <None Include="res\NextRegionSmall.bmp" />
+    <None Include="res\overview-dlgbar-bkgd.bmp" />
+    <None Include="res\OverviewMarking.bmp" />
+    <None Include="res\PatientInfoHorizBkgd.bmp" />
+    <None Include="res\PatientInfoVertlBkgd.bmp" />
+    <None Include="res\English\PostContrastBtn.bmp" />
+    <None Include="res\English\PreContrastBtn.bmp" />
+    <None Include="res\resetoverview.bmp" />
+    <None Include="res\rightmouse.bmp" />
+    <None Include="res\scroll.cur" />
+    <None Include="res\ScrollBarRes.bmp" />
+    <None Include="res\scrolldown.cur" />
+    <None Include="res\scrollup.cur" />
+    <None Include="res\English\segdir-cecum.bmp" />
+    <None Include="res\English\segdir-rectum.bmp" />
+    <None Include="res\English\segjump-cecum-next.bmp" />
+    <None Include="res\English\segjump-cecum-prev.bmp" />
+    <None Include="res\English\segjump-rectum-next.bmp" />
+    <None Include="res\English\segjump-rectum-prev.bmp" />
+    <None Include="res\segmentationbtn.bmp" />
+    <None Include="res\ShowRegionSmall.bmp" />
+    <None Include="res\side-tab-active-end.png" />
+    <None Include="res\side-tab-active-left.png" />
+    <None Include="res\side-tab-active-middle.png" />
+    <None Include="res\side-tab-active-right.png" />
+    <None Include="res\side-tab-inactive-end.png" />
+    <None Include="res\side-tab-inactive-left.png" />
+    <None Include="res\side-tab-inactive-middle.png" />
+    <None Include="res\side-tab-inactive-right.png" />
+    <None Include="res\SliceOptions.bmp" />
+    <None Include="res\SlidingPaneHeader.bmp" />
+    <None Include="res\SlidingPaneHeaderDown.bmp" />
+    <None Include="res\snapshot.cur" />
+    <None Include="res\English\SPProneToggleBtn.bmp" />
+    <None Include="res\English\SPSupineToggleBtn.bmp" />
+    <None Include="res\tab-active-end.png" />
+    <None Include="res\tab-active-left.png" />
+    <None Include="res\tab-active-middle.png" />
+    <None Include="res\tab-active-right.png" />
+    <None Include="res\tab-inactive-end.png" />
+    <None Include="res\tab-inactive-left.png" />
+    <None Include="res\tab-inactive-middle.png" />
+    <None Include="res\tab-inactive-right.png" />
+    <None Include="res\thumbnail.cur" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="res\tools.bmp" />
+    <None Include="res\translucent.bmp" />
+    <None Include="res\TranslucentOverview.bmp" />
+    <None Include="res\English\v3D-Colon-About.bmp" />
+    <None Include="res\English\v3D-Console-About.bmp" />
+    <None Include="res\English\v3D-Console-Splash.bmp" />
+    <None Include="res\v3DButtonSquare.bmp" />
+    <None Include="res\v3dColonBackground.bmp" />
+    <None Include="res\V3DColonRegistrationBkgd.bmp" />
+    <None Include="res\Viatron.ico" />
+    <None Include="res\videocam.ico" />
+    <None Include="res\vtxcad.bmp" />
+    <None Include="res\windowlevel.cur" />
+    <None Include="WinGDIUtils.inl">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="ConsoleInterop.idl">
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'">ConsoleInterop.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'">ConsoleInterop.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'">ConsoleInterop.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'">ConsoleInterop.h</HeaderFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ConsoleInterop.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32'">ConsoleInterop.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ConsoleInterop.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64'">ConsoleInterop.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ConsoleInterop.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='DebugWS|Win32'">ConsoleInterop.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ConsoleInterop.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='DebugWS|x64'">ConsoleInterop.h</HeaderFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32'">ConsoleInterop.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release-French|x64'">ConsoleInterop.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release-French|Win32'">ConsoleInterop.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release-French|x64'">ConsoleInterop.h</HeaderFileName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ConsoleInterop.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32'">ConsoleInterop.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ConsoleInterop.tlb</TypeLibraryName>
+      <TypeLibraryName Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64'">ConsoleInterop.tlb</TypeLibraryName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ConsoleInterop.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|Win32'">ConsoleInterop.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ConsoleInterop.h</HeaderFileName>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseWS|x64'">ConsoleInterop.h</HeaderFileName>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\viatron.manifest">
+      <SubType>Designer</SubType>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Viatron.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowProgress Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ShowProgress>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Viatron.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

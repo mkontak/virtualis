@@ -1,0 +1,3558 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Viatron.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Viatron.ico"
+IDI_VIDEOCAMERA         ICON    DISCARDABLE     "res\\videocam.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_V3D_COLON_ABOUT     BITMAP  MOVEABLE PURE   "res\\Italian\\v3D-Colon-About.bmp"
+IDB_CHAIN_LINK          BITMAP  MOVEABLE PURE   "res\\chain_link.bmp"
+IDB_LEFTMOUSE           BITMAP  MOVEABLE PURE   "res\\leftmouse.bmp"
+IDB_RIGHTMOUSE          BITMAP  MOVEABLE PURE   "res\\rightmouse.bmp"
+IDB_MIDMOUSE            BITMAP  MOVEABLE PURE   "res\\midmouse.bmp"
+IDB_MEASURE             BITMAP  MOVEABLE PURE   "res\\measure.bmp"
+IDB_FLIPVIEW            BITMAP  MOVEABLE PURE   "res\\flipview.bmp"
+IDB_TRANSLUCENT_OVERVIEW BITMAP  MOVEABLE PURE   "res\\TranslucentOverview.bmp"
+IDB_METALSKIN           BITMAP  MOVEABLE PURE   "res\\metalskin.bmp"
+IDB_GREYEDGE            BITMAP  MOVEABLE PURE   "res\\greyedge.bmp"
+IDB_RESET_OVERVIEW      BITMAP  MOVEABLE PURE   "res\\resetoverview.bmp"
+IDB_HIGHLIGHTS          BITMAP  MOVEABLE PURE   "res\\highlights.bmp"
+IDB_AUTOFLY             BITMAP  MOVEABLE PURE   "res\\autofly.bmp"
+IDB_TRANSPARENT_VIEW    BITMAP  MOVEABLE PURE   "res\\translucent.bmp"
+IDB_TOOLS               BITMAP  MOVEABLE PURE   "res\\tools.bmp"
+IDB_TO_RECTUM_ARROW     BITMAP  MOVEABLE PURE   "res\\Italian\\segdir-rectum.bmp"
+IDB_TO_CECUM_ARROW      BITMAP  MOVEABLE PURE   "res\\Italian\\segdir-cecum.bmp"
+IDB_BLUEMETAL           BITMAP  MOVEABLE PURE   "res\\bluemetalskin.bmp"
+IDB_RPT_LIST            BITMAP  MOVEABLE PURE   "res\\Italian\\Entry.bmp"
+IDB_RPT_GROUP_24        BITMAP  MOVEABLE PURE   "res\\group24.bmp"
+IDB_SEGJUMP_CECUM_PREV  BITMAP  MOVEABLE PURE   "res\\Italian\\segjump-cecum-prev.bmp"
+IDB_SEGJUMP_CECUM_NEXT  BITMAP  MOVEABLE PURE   "res\\Italian\\segjump-cecum-next.bmp"
+IDB_SEGJUMP_RECTUM_PREV BITMAP  MOVEABLE PURE   "res\\Italian\\segjump-rectum-prev.bmp"
+IDB_SEGJUMP_RECTUM_NEXT BITMAP  MOVEABLE PURE   "res\\Italian\\segjump-rectum-next.bmp"
+IDB_LISTHDR_SORTUP      BITMAP  MOVEABLE PURE   "res\\listhdrsortup.bmp"
+IDB_LISTHDR_SORTDN      BITMAP  MOVEABLE PURE   "res\\listhdrsortdn.bmp"
+IDB_CAMERA              BITMAP  MOVEABLE PURE   "res\\camera1.bmp"
+IDB_V3DCOLON_BACKGROUND BITMAP  MOVEABLE PURE   "res\\v3dColonBackground.bmp"
+IDB_OVERVIEW_DLGBAR     BITMAP  MOVEABLE PURE   "res\\overview-dlgbar-bkgd.bmp"
+IDB_ENDOVIEW_HORIZ_DLGBAR BITMAP  MOVEABLE PURE   "res\\endoview-horiz-dlgbar-bkgd.bmp"
+IDB_PATIENTINFO_HORIZ_BKGD BITMAP  MOVEABLE PURE   "res\\PatientInfoHorizBkgd.bmp"
+IDB_BUTTON_SQUARE       BITMAP  MOVEABLE PURE   "res\\ButtonSquare.bmp"
+IDB_MISSEDREGIONS_NEXT  BITMAP  MOVEABLE PURE   "res\\NextMissedRegion.bmp"
+IDB_OVERVIEW_MARKING    BITMAP  MOVEABLE PURE   "res\\OverviewMarking.bmp"
+IDB_ENDOVIEW_MARKING    BITMAP  MOVEABLE PURE   "res\\EndoviewMarking.bmp"
+IDB_MISSEDREGIONS_DETECT BITMAP  MOVEABLE PURE   "res\\MissedRegionsDetect.bmp"
+IDB_SCROLLBARIMAGES     BITMAP  MOVEABLE PURE   "res\\ScrollBarRes.bmp"
+IDB_ENDOVIEW_VERT_DLGBAR BITMAP  MOVEABLE PURE   "res\\endoview-vertl-dlgbar-bkgd.bmp"
+IDB_PATIENTINFO_VERT_BKGD BITMAP  MOVEABLE PURE   "res\\PatientInfoVertlBkgd.bmp"
+IDB_V3DCOLON_REGISTRATION_BACKGROUND BITMAP  MOVEABLE PURE   "res\\V3DColonRegistrationBkgd.bmp"
+IDB_SLICEOPTIONS        BITMAP  MOVEABLE PURE   "res\\SliceOptions.bmp"
+IDB_BUTTON_LARGE        BITMAP  MOVEABLE PURE   "res\\ButtonLarge.bmp"
+IDB_BUTTON_MEDIUM       BITMAP  MOVEABLE PURE   "res\\ButtonMedium.bmp"
+IDB_BUTTON_SMALL        BITMAP  MOVEABLE PURE   "res\\ButtonSmall.bmp"
+IDB_MOVIEHEADER         BITMAP  MOVEABLE PURE   "res\\Italian\\movieheader.bmp"
+IDB_CONSOLE_BKGD        BITMAP  MOVEABLE PURE   "res\\ConsoleBackground.bmp"
+IDR_TOOLBAR1            BITMAP  MOVEABLE PURE   "res\\toolbar1.bmp"
+IDB_MOVIE_BUTTON        BITMAP  MOVEABLE PURE   "res\\MovieButton.bmp"
+IDB_V3D_CONSOLE_SPLASH  BITMAP  MOVEABLE PURE   "res\\Italian\\v3D-Console-Splash.bmp"
+IDB_V3D_CONSOLE_ABOUT   BITMAP  MOVEABLE PURE   "res\\Italian\\v3D-Console-About.bmp"
+IDB_V3DAPP_BUTTON       BITMAP  MOVEABLE PURE   "res\\v3DButtonSquare.bmp"
+IDB_COMBOBUTTON_MEDIUM  BITMAP  MOVEABLE PURE   "res\\ComboMenuButtonMedium.bmp"
+IDB_ANNOTATIONS_BUTTON  BITMAP  MOVEABLE PURE   "res\\annotationBtn.bmp"
+IDB_SLIDINGPANEHEADER_UP BITMAP  MOVEABLE PURE   "res\\SlidingPaneHeader.bmp"
+IDB_DATASET_LINK        BITMAP  MOVEABLE PURE   "res\\Dataset_link.bmp"
+IDB_SP_SUPINE_BUTTON    BITMAP  MOVEABLE PURE   "res\\Italian\\SPSupineToggleBtn.bmp"
+IDB_SP_PRONE_BUTTON     BITMAP  MOVEABLE PURE   "res\\Italian\\SPProneToggleBtn.bmp"
+IDB_SLIDINGPANEHEADER_DN BITMAP  MOVEABLE PURE   "res\\SlidingPaneHeaderDown.bmp"
+IDB_DELETEALL_BUTTON    BITMAP  MOVEABLE PURE   "res\\DeleteAllBtn.bmp"
+IDB_ANNOTATIONS_BUTTON_SMALL BITMAP  MOVEABLE PURE   "res\\annotationBtnSmall.bmp"
+IDB_BOOKMARKS_BUTTON_SMALL BITMAP  MOVEABLE PURE   "res\\BookmarksBtnSmall.bmp"
+IDB_MEASUREMENTS_BUTTON_SMALL BITMAP  MOVEABLE PURE   "res\\MeasurementsBtnSmall.bmp"
+IDB_COLORMAP_RESET_SYSTEM BITMAP  MOVEABLE PURE   "res\\ColormapSystemBtn.bmp"
+IDB_COLORMAP_RESET_USER BITMAP  MOVEABLE PURE   "res\\ColormapUserBtn.bmp"
+IDB_PREPOST_POSTCONTRAST_BTN BITMAP  DISCARDABLE     "res\\Italian\\PostContrastBtn.bmp"
+IDB_PREPOST_PRECONTRAST_BTN BITMAP  DISCARDABLE     "res\\Italian\\PreContrastBtn.bmp"
+IDB_SEGMENT_POLYP       BITMAP  MOVEABLE PURE   "res\\segmentationbtn.bmp"
+IDB_BUTTON_XLARGE       BITMAP  MOVEABLE PURE   "res\\ButtonXLarge.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_VIEW_WINDOW MENU DISCARDABLE 
+BEGIN
+    POPUP "&Visualizza Finestra"
+    BEGIN
+        MENUITEM "Finestra &Principale",        IDM_VIEWWINDOW_MAINWINDOW
+        MENUITEM SEPARATOR
+    END
+END
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&Programma"
+    BEGIN
+        MENUITEM "&Preferenze...",              IDM_PROGRAM_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "&Esci",                       ID_APP_EXIT
+    END
+    POPUP "&Opzioni"
+    BEGIN
+        MENUITEM "Mostra Velocità del &Render", ID_OPTIONS_DISPLAYRENDERSPEED
+
+        POPUP "Opzioni &Display 2D"
+        BEGIN
+            MENUITEM "Mostra Profili &Misurazione", IDM_OPTIONS_SHOWMEASUREMENTPROFILES
+
+            MENUITEM "&Display Pseudo-Colore",      ID_VIEWWINDOW_PSEUDOCOLORDISPLAY
+
+            MENUITEM "Mostra Non &Pulito",          ID_VIEWWINDOW_SHOWCLEANSED
+
+        END
+        POPUP "Opzioni &Perlustrazione 2D"
+        BEGIN
+            MENUITEM "&Ingrandisci Centro Sezione", ID_VIEWWINDOW_ARROWINSLICECENTER
+
+            MENUITEM "&Aggiorna Veduta di Navigazione", 
+                                                    ID_VIEWWINDOW_UPDATENAVIGATIONVIEW
+
+            MENUITEM "&Perlustra Lungo la Linea Centrale", 
+                                                    ID_VIEWWINDOW_FLIGHTALONGCENTERLINE
+
+            MENUITEM "&Cambia Direzione di Perlustrazione", 
+                                                    ID_VIEWWINDOW_SWITCHFLIGHTDIRECTION
+
+        END
+        POPUP "Schema &Colori"
+        BEGIN
+            MENUITEM "&Rosa-Verde",                 IDM_OPTIONS_COLORSCHEME_1
+
+            MENUITEM "&Giallo-Blu",                 IDM_OPTIONS_COLORSCHEME_2
+
+        END
+        POPUP "Controllare l'&Imbottitura"
+        BEGIN
+            MENUITEM "Controlli &Direzionali",      ID_OPTIONS_CONTROLPAD_FLIGHTCONTROLS
+
+            MENUITEM "Regolare la &Traslucidità",   ID_OPTIONS_CONTROLPAD_ADJUSTTRANSLUCENCY
+
+        END
+    END
+    POPUP "&Notazioni"
+    BEGIN
+        POPUP "&Preferiti"
+        BEGIN
+            MENUITEM "Lista Preferiti",             IDM_BOOKMARKS_BOOKMARK_LIST
+
+            MENUITEM SEPARATOR
+            MENUITEM "&Aggiungi Preferito \t F2",   IDM_BOOKMARKS_ADDBOOKMARK
+
+            MENUITEM SEPARATOR
+            MENUITEM "Elimina Tutti i Preferiti",   IDM_BOOKMARKS_DELETEALLBOOKMARKS
+
+        END
+        POPUP "Misurazioni 3D"
+        BEGIN
+            MENUITEM "Elimina Tutte le Misurazioni", 
+                                                    IDM_MEASUREMENTS_DELETEALL
+
+        END
+        POPUP "Annotazioni 2D"
+        BEGIN
+            MENUITEM "&Lista Annotazioni",          IDM_NOTATIONS_ANNOTATION_LIST_FIRST
+
+            MENUITEM SEPARATOR
+            MENUITEM "&Elimina Tutte le Annotazioni", 
+                                                    IDM_NOTATIONS_ANNOTATIONS_DELETEALLANNOTATIONS
+
+        END
+    END
+    POPUP "&Rapporto"
+    BEGIN
+        MENUITEM "&Aggiungi Istantanea \t F3",  IDM_REPORT_ADDSNAPSHOT
+        MENUITEM SEPARATOR
+        MENUITEM "&Segna Come Completo",        ID_REPORT_MARKCOMPLETE
+    END
+    POPUP "&Aiuto"
+    BEGIN
+        MENUITEM "&Contenuti...",               ID_HELP_CONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Informazioni su V3D Viewer", ID_APP_ABOUT
+    END
+END
+
+IDM_WLPRESETS MENU DISCARDABLE 
+BEGIN
+    POPUP "&Finestra/Livello"
+    BEGIN
+        MENUITEM "&Addome",                     ID_WINDOWLEVEL_ABDOMEN
+        MENUITEM "Addome &2",                   ID_WINDOWLEVEL_ABDOMEN2
+        MENUITEM "&Polmone",                    ID_WINDOWLEVEL_LUNG
+        MENUITEM "&Osso",                       ID_WINDOWLEVEL_BONE
+        MENUITEM "&Fegato",                     ID_WINDOWLEVEL_LIVER
+        MENUITEM SEPARATOR
+        MENUITEM "&Resetta",                    ID_WINDOWLEVEL_RESET
+    END
+END
+
+IDM_BOOKMARK_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "&Preferito"
+    BEGIN
+        MENUITEM "&Elimina",                    ID_BOOKMARKS_DELETE
+        MENUITEM SEPARATOR
+        POPUP "&Priorità"
+        BEGIN
+            MENUITEM "&Alta",                       ID_BOOKMARKS_LEVEL_HIGH
+            MENUITEM "&Media ",                     ID_BOOKMARKS_LEVEL_MEDIUM
+
+            MENUITEM "&Bassa",                      ID_BOOKMARKS_LEVEL_LOW
+        END
+        MENUITEM "&Vai a ",                     ID_BOOKMARKS_GOTO
+    END
+END
+
+IDM_REPORT_ENTRY_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "Inserimento &Rapporto"
+    BEGIN
+        MENUITEM "&Vai a Inserimento",          ID_REPORTENTRY_GOTOENTRY
+        MENUITEM SEPARATOR
+        MENUITEM "&Elimina",                    ID_REPORTENTRY_DELETE
+    END
+END
+
+IDM_SLICE_VIEW_WINDOW MENU DISCARDABLE 
+BEGIN
+    POPUP "Veduta &Sezione"
+    BEGIN
+        MENUITEM "Finestra &Principale",        IDM_VIEWWINDOW_MAINWINDOW
+        MENUITEM "&Resetta a Posizione Iniziale di Veduta", 
+                                                ID_VIEWWINDOW_JUMPTOVIEWPOSITION
+
+        MENUITEM SEPARATOR
+        POPUP "&Strumenti di Misurazione"
+        BEGIN
+            MENUITEM "Misurazione &Lineare",        ID_VIEWWINDOW_LINEMEASUREMENT
+
+            MENUITEM "Misurazione &ROI",            ID_VIEWWINDOW_ROIMEASUREMENT
+
+        END
+        POPUP "&Mostra Opzioni"
+        BEGIN
+            MENUITEM "Visualizzare Pseudo-Colore",  ID_VIEWWINDOW_PSEUDOCOLORDISPLAY
+
+            MENUITEM "Mostra &Versione da Ripulire", 
+                                                    ID_VIEWWINDOW_SHOWCLEANSED
+
+            MENUITEM "Mostra &Posizione",           ID_VIEWWINDOW_SHOWPOSITION
+
+            MENUITEM SEPARATOR
+            MENUITEM "Sezione &Bidimensionale",     ID_VIEWWINDOW_2DSLICE
+            MENUITEM "Lamiera &Sottile",            ID_VIEWWINDOW_THINSLAB
+            MENUITEM "&MIP",                        ID_VIEWWINDOW_MIP
+            MENUITEM SEPARATOR
+            MENUITEM "Mostrare le Coordinate &Della Massa", 
+                                                    ID_VIEWWINDOW_SHOWVOLUMECOORDINATES
+
+            MENUITEM "Mostrare le Coordinate &Complete", 
+                                                    ID_VIEWWINDOW_SHOWWORLDCOORDINATES
+
+        END
+        POPUP "Opzioni di &Perlustrazione"
+        BEGIN
+            MENUITEM "&Ingrandisci Centro Sezione", ID_VIEWWINDOW_ARROWINSLICECENTER
+
+            MENUITEM "&Aggiorna Veduta Navigazione", 
+                                                    ID_VIEWWINDOW_UPDATENAVIGATIONVIEW
+
+            MENUITEM "&Perlustra Lungo Linea Centrale", 
+                                                    ID_VIEWWINDOW_FLIGHTALONGCENTERLINE
+
+            MENUITEM "&Cambia Direzione Perlustrazione", 
+                                                    ID_VIEWWINDOW_SWITCHFLIGHTDIRECTION
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Aggiungi &Istantanea",        ID_VIEWWINDOW_SNAPSHOT
+        MENUITEM "Aggiungi &Annotazione",       ID_VIEWWINDOW_MEASUREMENTOPTIONS_ADDANNOTATION
+
+    END
+END
+
+IDM_SLICE_ORIENTATION MENU DISCARDABLE 
+BEGIN
+    POPUP "&Orientamento Sezione"
+    BEGIN
+        MENUITEM "&Assiale",                    ID_SLICEORIENTATION_AXIAL
+        MENUITEM "&Sagittale",                  ID_SLICEORIENTATION_SAGITTAL
+        MENUITEM "&Coronale",                   ID_SLICEORIENTATION_CORONAL
+        MENUITEM "Sezioni &Incrociate",         ID_SLICEORIENTATION_CROSSSECTIONAL
+
+        MENUITEM "&Visualizza Direzione",       ID_SLICEORIENTATION_VIEWDIRECTION
+
+    END
+END
+
+IDM_SLICE_ZOOM MENU DISCARDABLE 
+BEGIN
+    POPUP "Zoom"
+    BEGIN
+        MENUITEM "&100%",                       ID_SLICEZOOM_100
+    END
+END
+
+IDM_OVERVIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "Veduta &Generale"
+    BEGIN
+        MENUITEM "Finestra &Principale",        IDM_VIEWWINDOW_MAINWINDOW
+        MENUITEM "&Resetta Display",            ID_OVERVIEW_RESETDISPLAY
+        MENUITEM SEPARATOR
+        POPUP "Indicatori &Sezione"
+        BEGIN
+            MENUITEM "&Assiale",                    ID_OVERVIEW_SLICEINDICATORS_AXIAL
+            , CHECKED
+            MENUITEM "&Sagittale",                  ID_OVERVIEW_SLICEINDICATORS_SAGITTAL
+            , CHECKED
+            MENUITEM "&Coronale",                   ID_OVERVIEW_SLICEINDICATORS_CORONAL
+            , CHECKED
+            MENUITEM "&Sezioni Incrociate",         ID_OVERVIEW_SLICEINDICATORS_CROSSSECTIONAL
+            , CHECKED
+        END
+        POPUP "Mostra &Opzioni"
+        BEGIN
+            MENUITEM "&Linea Centrale",             ID_OVERVIEW_OPTIONS_CENTERLINE
+            , CHECKED
+            MENUITEM "&Trasparente",                ID_OVERVIEW_OPTIONS_TRANSPARENT
+            , CHECKED
+            MENUITEM "&Evidenziatura",              ID_OVERVIEW_DISPLAYOPTIONS_MARKING
+
+        END
+        POPUP "Opzioni di &Registrazione"
+        BEGIN
+            MENUITEM "Mostrare Tutte le &Funzioni", ID_OVERVIEW_REGISTRATIONOPTIONS_ALLFEATURES
+
+            MENUITEM "Mostrare Tutte le Funzioni &Adattate", 
+                                                    ID_OVERVIEW_REGISTRATIONOPTIONS_MATCHEDFEATURES
+
+            MENUITEM SEPARATOR
+            MENUITEM "Mostrare le &Informazioni Della Funzione", 
+                                                    ID_OVERVIEW_REGISTRATIONOPTIONS_FEATUREINFO
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Elimina Tutti i Preferiti",  IDM_BOOKMARKS_DELETEALLBOOKMARKS
+
+    END
+END
+
+IDM_REPORT_POPUPS MENU DISCARDABLE 
+BEGIN
+    POPUP "<<Inserimenti>>"
+    BEGIN
+        MENUITEM "Elimina Risultato",           IDM_RPT_DELETE_ENTRY
+        MENUITEM "Distanza Incerta",            IDM_RPT_DISTANCE_UNCERTAIN
+        MENUITEM SEPARATOR
+        MENUITEM "Elimina TUTTI i Risultati",   IDM_RPT_DELETE_ALL_FINDINGS
+    END
+    POPUP "<<Immagini>>"
+    BEGIN
+        MENUITEM "Elimina Immagine",            IDM_RPT_DELETE_IMAGE
+    END
+    POPUP "<<Altro Risultato>>"
+    BEGIN
+        MENUITEM "Elimina Risultato",           IDM_RPT_DELETE_ENTRY
+        MENUITEM SEPARATOR
+        MENUITEM "Elimina TUTTI i Risultati",   IDM_RPT_DELETE_ALL_ENTRIES
+    END
+    POPUP "<<Aree Non Esaminate>>"
+    BEGIN
+        MENUITEM "Elimina area Non Esaminata",  IDM_RPT_DELETE_NONDISTENDED
+        MENUITEM "Elimina TUTTE aree Non Esaminate", 
+                                                IDM_RPT_DELETE_ALL_NONDISTENDED
+
+        MENUITEM "Ricarica Aree Non Esaminate", IDM_RPT_RELOAD_NONDISTENDED
+        MENUITEM SEPARATOR
+        MENUITEM "Area Incerta",                IDM_RPT_NONDISTENDED_UNCERTAIN
+
+    END
+    POPUP "<<PLACEHOLDER>>"
+    BEGIN
+        MENUITEM "Risultati Colon",             IDM_RPT_COLON_FINDINGS
+        MENUITEM "Non Esaminata",               IDM_RPT_NON_DISTENDED
+        MENUITEM "Altri Risultati",             IDM_RPT_OTHER_FINDINGS
+        MENUITEM "Raccomandazioni",             IDM_RPT_RECOMMENDATIONS
+        MENUITEM "Varie",                       IDM_RPT_MISCELLANEOUS
+        MENUITEM "Salva",                       IDM_RPT_SAVE
+        MENUITEM "Anteprima",                   IDM_RPT_PREVIEW
+    END
+END
+
+IDM_SLICE_CROSS_SECTION_ORIENTATION MENU DISCARDABLE 
+BEGIN
+    POPUP "&Orientamento Sezione"
+    BEGIN
+        MENUITEM "Sezioni &Incrociate",         ID_SLICEORIENTATION_CROSSSECTIONAL
+
+        MENUITEM "&Visualizza Direzione",       ID_SLICEORIENTATION_VIEWDIRECTION
+
+    END
+END
+
+IDM_STUDYBROWSER_ITEM MENU DISCARDABLE 
+BEGIN
+    POPUP "&Elemento del Browser Studio"
+    BEGIN
+        MENUITEM "Apri &Studio",                ID_STUDYBROWSERITEM_OPENSTUDY
+
+        POPUP "Aprire &Con"
+        BEGIN
+            MENUITEM "&Report Viewer",              ID_STUDYBROWSERITEM_OPENREPORT
+
+            MENUITEM "v3D &Explorer",               ID_STUDYBROWSERITEM_OPENWITH_EXPLORER
+
+        END
+        MENUITEM "&Info Studio...",             ID_STUDYBROWSERITEM_STUDYINFO
+
+        MENUITEM "Apri &Cartella...",           ID_STUDYBROWSERITEM_OPENCONTAININGFOLDER
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Trasferisci...",             ID_STUDYBROWSERITEM_TRANSFER
+        MENUITEM "&Elimina",                    ID_STUDYBROWSERITEM_DELETE
+    END
+END
+
+IDM_DATABASE_LOCATIONS MENU DISCARDABLE 
+BEGIN
+    POPUP "Ubicazioni Database"
+    BEGIN
+        MENUITEM "V3D Viewer Locale",           IDM_SOPEN_V1K
+        MENUITEM "Processore di Rete",          IDM_SOPEN_V2K
+        MENUITEM "CD",                          IDM_SOPEN_CD
+        MENUITEM "PACS",                        IDM_SOPEN_PACS
+        MENUITEM "File",                        IDM_SOPEN_FILE
+    END
+END
+
+IDM_V3DCONSOLE MENU DISCARDABLE 
+BEGIN
+    POPUP "&Programma"
+    BEGIN
+        MENUITEM "&Preferenze...",              IDM_PROGRAM_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "Opzioni &Utente...",          IDM_USERS
+        MENUITEM "&Logout",                     IDM_USR_LOGOUT
+        MENUITEM "Cambia Password...",          IDM_USR_PASSCHANGE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Esci",                       ID_APP_EXIT
+    END
+    POPUP "&Studio"
+    BEGIN
+        MENUITEM "Studi Recenti",               ID_FILE_MRU_FILE1, GRAYED
+    END
+    POPUP "&Opzioni"
+    BEGIN
+        MENUITEM "&Mostra Studi Eliminati",     IDM_OPTIONS_SHOWDELETEDSTUDIES
+
+    END
+    POPUP "&Aiuto"
+    BEGIN
+        MENUITEM "&Contenuti...",               ID_HELP_CONTENTS
+        MENUITEM "&Tutorial...",                ID_HELP_TUTORIAL
+        MENUITEM "&Informazioni su V3D Console", ID_APP_ABOUT
+    END
+END
+
+IDM_STUDYINFO_ITEM MENU DISCARDABLE 
+BEGIN
+    POPUP "&Study Info Item"
+    BEGIN
+        MENUITEM "Open With v3D &Explorer",     ID_STUDYBROWSERITEM_OPENWITH_EXPLORER
+
+        MENUITEM "&Open Item",                  IDC_DBI_OPENSTUDY
+    END
+END
+
+IDM_TOOLS MENU DISCARDABLE 
+BEGIN
+    POPUP "&Strumenti"
+    BEGIN
+        MENUITEM "Misura &Lineare",             ID_ENDOSCOPICVIEW_CURRENTMODE_LINEMEASURE
+
+        MENUITEM "&Display Traslucido",         ID_ENDOSCOPICVIEW_OPTIONS_TRANSLUCENT_DISPLAY
+
+        MENUITEM "&Luminosità",                 ID_ENDOSCOPICVIEW_CURRENTMODE_LIGHTING
+
+        MENUITEM "Misura &ROI",                 ID_ENDOSCOPICVIEW_CURRENTMODE_ROIMEASURE
+
+        MENUITEM "Aggiungi &Annotazione",       ID_VIEWWINDOW_MEASUREMENTOPTIONS_ADDANNOTATION
+
+    END
+END
+
+IDM_OVERVIEW_INDICATORS MENU DISCARDABLE 
+BEGIN
+    POPUP "Indicatori Veduta Generale"
+    BEGIN
+        MENUITEM "Linea Centrale",              ID_OVERVIEW_OPTIONS_CENTERLINE
+        , CHECKED
+        MENUITEM "Assiale",                     ID_OVERVIEW_SLICEINDICATORS_AXIAL
+
+        MENUITEM "Sagittale",                   ID_OVERVIEW_SLICEINDICATORS_SAGITTAL
+
+        MENUITEM "Coronale",                    ID_OVERVIEW_SLICEINDICATORS_CORONAL
+
+        MENUITEM "Sezioni Incrociate",          ID_OVERVIEW_SLICEINDICATORS_CROSSSECTIONAL
+
+    END
+END
+
+IDM_ENDOVIEW_INDICATORS MENU DISCARDABLE 
+BEGIN
+    POPUP "Indicatori &Endoscopici"
+    BEGIN
+        MENUITEM "Linea Centrale",              ID_ENDOSCOPICVIEW_OPTIONS_CENTERLINE
+        , CHECKED
+        MENUITEM "Assiale",                     ID_ENDOSCOPICVIEW_SLICEINDICATORS_AXIAL
+
+        MENUITEM "Sagittale",                   ID_ENDOSCOPICVIEW_SLICEINDICATORS_SAGITTAL
+
+        MENUITEM "Coronale",                    ID_ENDOSCOPICVIEW_SLICEINDICATORS_CORONAL
+
+        MENUITEM "Sezioni Incrociate",          ID_ENDOSCOPICVIEW_SLICEINDICATORS_CROSSSECTIONAL
+
+    END
+END
+
+IDM_ANNOTATION_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "&Annotazione"
+    BEGIN
+        MENUITEM "&Revisiona Testo...",         ID_ANNOTATION_EDITTEXT
+        MENUITEM "&Mostra Testo",               ID_ANNOTATION_SHOWTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Elimina",                    ID_ANNOTATION_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Vai a ",                     ID_ANNOTATION_GOTO
+    END
+END
+
+IDM_USERREGISTRATION_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "&Registrazione dell'Utilizzatore"
+    BEGIN
+        MENUITEM "Cancellare la Funzione &Attuale", 
+                                                ID_USERREGISTRATION_DELETE
+        MENUITEM "Cancellare Tutte le Funzioni dell'&Utilizzatore", 
+                                                ID_USERREGISTRATION_CLEARALLUSERFEATURES
+
+    END
+END
+
+IDM_TOOLS_PLUS MENU DISCARDABLE 
+BEGIN
+    POPUP "&Strumenti"
+    BEGIN
+        MENUITEM "Misura &Lineare",             ID_ENDOSCOPICVIEW_CURRENTMODE_LINEMEASURE
+
+        MENUITEM "&Display Traslucido",         ID_ENDOSCOPICVIEW_OPTIONS_TRANSLUCENT_DISPLAY
+
+        MENUITEM "&Luminosità",                 ID_ENDOSCOPICVIEW_CURRENTMODE_LIGHTING
+
+        MENUITEM "Misura &ROI",                 ID_ENDOSCOPICVIEW_CURRENTMODE_ROIMEASURE
+
+        MENUITEM "Aggiungi &Annotazione",       ID_VIEWWINDOW_MEASUREMENTOPTIONS_ADDANNOTATION
+
+        MENUITEM "ROI Analysis",               ID_ENDOSCOPICVIEW_CURRENTMODE_SEGMENTPOLYP
+
+    END
+END
+
+IDR_MAINFRAME_CONSOLE MENU DISCARDABLE 
+BEGIN
+    POPUP "&Program"
+    BEGIN
+        MENUITEM "&Preferences...",             IDM_PROGRAM_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "&User Management...",         IDM_USERS
+        MENUITEM "&Logout",                     IDM_USR_LOGOUT
+        MENUITEM "&Change Password...",         IDM_USR_PASSCHANGE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Study"
+    BEGIN
+        MENUITEM "Recent Studies",              ID_FILE_MRU_FILE1
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Show &Deleted Studies",       IDM_OPTIONS_SHOWDELETEDSTUDIES
+
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents...",                ID_HELP_CONTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "&About V3D Viewer",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONTROLS_HORIZONTAL DIALOGEX 0, 0, 387, 48
+STYLE WS_CHILD | WS_VISIBLE
+FONT 14, "Tahoma", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_CDB_MISSEDRGN_LIST,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,2,3,128,42
+    CONTROL         "Individua Mancanti",IDC_CDB_DETECTMISSEDRGNS_BTN,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_GROUP,132,5,21,18
+    CONTROL         "Prossimo Mancante",IDC_CDB_NEXTMISSEDRGN_BTN,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_GROUP,132,26,21,18
+    CONTROL         "Perlustrazione Automatica",IDC_CDB_AUTOFLY,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_GROUP,176,5,21,18
+    CONTROL         "Radio1",IDC_CDB_FLIPVIEW_BTN,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | BS_PUSHLIKE | WS_GROUP,214,5,21,18
+    PUSHBUTTON      "Salto di Segmento",IDC_CDB_SEGMENT_JUMP_CONTROL,160,26,
+                    91,18,NOT WS_VISIBLE
+    CONTROL         "Istantanea",IDC_CDB_SNAPSHOT,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | WS_GROUP,283,5,21,18
+    CONTROL         "Strumenti",IDC_CDB_TOOLS,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | WS_GROUP,259,5,21,18
+    CONTROL         "Ombre Ortogonali",IDC_CDB_ORTHOGONAL_SHADOWS,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_GROUP,331,5,21,18
+    CONTROL         "Colorare",IDC_CDB_PAINTING,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | WS_GROUP,355,5,21,18
+    CONTROL         "Slider1",IDC_CTRLS_SPEED_SLIDER,"msctls_trackbar32",
+                    WS_TABSTOP,294,30,81,10,WS_EX_TRANSPARENT
+    CTEXT           "100",IDC_CTRLS_SLIDER_VALUE_DISP,327,37,14,8,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Velocità:",IDC_STATIC,266,31,28,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,155,3,1,44
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,254,3,1,44
+    CONTROL         "Registra Film",IDC_CDB_MOVIE,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | WS_GROUP,307,5,21,18
+    CONTROL         "",IDC_CTRLS_PERCEIVED_SPEED_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,257,31,8,8
+END
+
+IDR_MAINFRAME DIALOG DISCARDABLE  0, 0, 330, 16
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,44,3,157,11,ES_AUTOHSCROLL
+END
+
+IDD_VIEW_SELECT DIALOGEX 0, 0, 644, 11
+STYLE WS_CHILD
+FONT 10, "Verdana", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_VIEW_SELECT_TABCTRL,"SysTabControl32",
+                    TCS_BOTTOM | TCS_OWNERDRAWFIXED | TCS_FOCUSNEVER,0,1,238,
+                    10
+    CONTROL         "Progress1",IDC_VSD_PROGRESS,"msctls_progress32",
+                    WS_BORDER,253,1,111,9
+    CONTROL         160,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,372,0,15,
+                    11
+    LTEXT           "Mouse Sinistra",IDC_VSD_LEFTBUTTON_TEXT,387,1,55,9,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         162,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,443,0,15,
+                    11
+    LTEXT           "Mouse Centro",IDC_VSD_MIDBUTTON_TEXT,458,1,55,9,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         161,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,514,0,15,
+                    11
+    LTEXT           "Mouse Destra",IDC_VSD_RIGHTBUTTON_TEXT,529,1,55,9,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "CTRL",IDC_VSD_CTRL,585,1,24,9,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "SHIFT",IDC_VSD_SHIFT,610,1,26,9,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+IDDB_OVERVIEW DIALOG DISCARDABLE  0, 0, 115, 22
+STYLE WS_CHILD | WS_VISIBLE
+FONT 14, "Tahoma"
+BEGIN
+    RTEXT           "nnn.n",IDC_ODB_LOCATION_DISPLAY,1,0,22,8,NOT WS_VISIBLE
+    CONTROL         "Resetta Veduta Generale",IDC_ODB_RESET_OVERVIEW,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,5,1,21,18
+    CONTROL         "Indicatori Vista Sezione",IDC_ODB_SLICE_INDICATORS,
+                    "Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,31,1,21,
+                    18
+    CONTROL         "Opzioni Visualizzazione",IDC_ODB_TRANSLUCENT,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,57,1,21,18
+    CONTROL         "Aggiorna Mancanti",IDC_ODB_TOGGLE_OVERVIEW_MARKING,
+                    "Button",BS_OWNERDRAW | BS_BITMAP | WS_GROUP,84,1,21,18
+    CONTROL         "",IDC_ODB_SHOWHIDE,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    NOT WS_VISIBLE | WS_TABSTOP,108,1,6,18
+    LTEXT           "cm. dal Asse Anale",IDC_STATIC,27,0,57,8,NOT WS_VISIBLE
+END
+
+IDD_PATIENT_INFO_HORIZONTAL DIALOGEX 0, 0, 494, 27
+STYLE WS_CHILD
+FONT 14, "Tahoma", 0, 0, 0x1
+BEGIN
+    LTEXT           "Harold J. XXXXX",IDC_PID_PATIENTNAME,142,4,91,8
+    CTEXT           "University Medical Center at Stony Brook",
+                    IDC_PID_EXAMSITE,234,5,87,18
+    RTEXT           "Dr. Michael S. XXXXXX",IDC_PID_PHYSICIANNAME,322,4,86,8
+    CONTROL         "Supino/Prono",IDC_PID_SUPINEPRONE_BTN,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_GROUP,142,12,21,12
+    LTEXT           "M150",IDC_PID_PATIENTDATA,215,15,21,8
+    RTEXT           "Oct 5, 2000  14:55",IDC_PID_EXAMTIME,326,15,82,8
+    GROUPBOX        "",IDC_STATIC,138,-2,275,27
+    CONTROL         234,IDC_STATIC,"Static",SS_BITMAP | NOT WS_VISIBLE,0,0,
+                    20,20,WS_EX_TRANSPARENT
+    LTEXT           "982-34-3154",IDC_PID_PATIENTID,173,15,42,8,NOT 
+                    WS_VISIBLE,WS_EX_TRANSPARENT
+END
+
+IDD_DBSEARCH DIALOGEX 0, 0, 494, 397
+STYLE DS_MODALFRAME | WS_CHILD | WS_VISIBLE
+MENU IDM_V3DCONSOLE
+FONT 12, "Verdana", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_DBS_LASTNAMETEXT,45,94,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DBS_FIRSTNAMETEXT,136,94,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DBS_IDTEXT,228,94,62,12,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DBS_DATEPICKER,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | WS_TABSTOP,304,94,61,12
+    EDITTEXT        IDC_DBS_REFERTEXT,382,94,68,12,ES_AUTOHSCROLL
+    CONTROL         "Clear Search Criteria",IDC_DBS_CLEARSEARCH,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,359,113,80,14
+    PUSHBUTTON      "<",IDC_DBS_PREVRESULTS,232,135,10,12,NOT WS_VISIBLE
+    PUSHBUTTON      ">",IDC_DBS_NEXTRESULTS,245,135,10,12,NOT WS_VISIBLE
+    COMBOBOX        IDC_DBS_STUDYTYPECOMBO,273,136,99,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Show Only Unread",IDC_DBS_CHKDBUNREAD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,378,137,72,10
+    CONTROL         "List1",IDC_DBS_RESLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,42,150,409,230
+    CONTROL         "Apri Studio",IDC_DBS_OPENSTUDY,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,170,382,47,14
+    CONTROL         "Apri Rapporto",IDC_DBS_OPENREPORT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,222,382,47,14
+    CONTROL         "Info Studio...",IDC_DBS_INFO,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,273,382,47,14
+    CONTROL         "Trasferisci...",IDC_DBS_TRANSFER,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,348,382,47,14
+    CONTROL         "Elimina",IDC_DBS_DELETE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,400,382,47,14
+    COMBOBOX        IDC_DBS_LOCATIONCOMBO,402,65,48,213,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    CONTROL         "v3D App",IDC_DBS_SWITCHTOAPP,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | WS_DISABLED | WS_TABSTOP,462,46,21,23,
+                    WS_EX_TRANSPARENT
+    CONTROL         257,IDC_STATIC,"Static",SS_BITMAP | NOT WS_VISIBLE,0,0,
+                    494,410,WS_EX_TRANSPARENT
+    LTEXT           "Search Criteria:",IDC_DBS_SEARCHTEXT,44,68,85,8
+    LTEXT           "Last Name",IDC_STATIC,45,84,69,8
+    LTEXT           "First Name",IDC_STATIC,136,84,63,8
+    LTEXT           "Patient ID",IDC_STATIC,228,84,45,8
+    LTEXT           "Scan Date",IDC_STATIC,305,84,53,8
+    LTEXT           "Referring Physician",IDC_STATIC,382,84,63,8
+    LTEXT           "Search Results:",IDC_DBS_SEARCHRESTEXT,42,137,187,10
+    LTEXT           "Location:",IDC_STATIC,370,66,31,10,SS_CENTERIMAGE
+    RTEXT           "database location",IDC_DBS_LOCATION_DISPLAY,303,66,64,
+                    10,SS_CENTERIMAGE
+    CTEXT           "Status Messages",IDC_DBS_STATUSMESSAGES,47,50,400,9,
+                    SS_CENTERIMAGE
+END
+
+IDD_DBINFO DIALOG DISCARDABLE  0, 0, 296, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Informazioni Studio"
+FONT 12, "Verdana"
+BEGIN
+    LTEXT           "Study Information for...",IDC_DBI_SINFO_TITLE,7,13,201,
+                    9
+    CONTROL         "List1",IDC_DBI_RESLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,58,282,124
+    CONTROL         "Apri",IDC_DBI_OPENSTUDY,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,7,200,47,14
+    CONTROL         "Delete",IDC_DBI_DELETE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,124,200,47,14
+    CONTROL         "Disk Transfer",IDC_DBI_TRANSFER,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,65,200,47,14
+    CONTROL         "Close Window",IDC_DBI_IDONE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,209,200,80,14
+    LTEXT           "Situato in:",IDC_DBI_SINFO_LOCATIONS,7,28,282,22
+    CONTROL         "Annulla Trasferimento",IDC_DBI_CANCEL_TRANSFER,"Button",
+                    BS_OWNERDRAW | NOT WS_VISIBLE | WS_TABSTOP,108,184,80,14
+END
+
+IDDB_NAVIGATION DIALOG DISCARDABLE  0, 0, 11, 393
+STYLE WS_CHILD
+FONT 10, "Verdana"
+BEGIN
+    CONTROL         "Tab1",IDC_NDB_TAB,"SysTabControl32",TCS_VERTICAL,0,0,16,
+                    379
+END
+
+IDD_USR_ACCOUNTMANAGER DIALOG DISCARDABLE  0, 0, 236, 234
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "v3D Console Gestore Account Utente"
+FONT 14, "Verdana"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,121,213,50,
+                    14
+    CONTROL         "Annulla",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    179,213,50,14
+    CONTROL         "Aggiungi...",IDC_USR_ADD,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,17,163,41,14
+    CONTROL         "Rimuovi",IDC_USR_REMOVE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,89,163,42,14
+    CONTROL         "Proprietà...",IDC_USR_PROPS,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,154,163,67,14
+    CONTROL         "List1",IDC_USR_USERLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,17,50,204,90
+    LTEXT           "Gestione Account Utente",IDC_STATIC,75,20,86,8
+    CONTROL         "Attiva Controllo Utente al Login",IDC_USR_ENABLED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,192,138,10
+END
+
+IDD_USR_EDITACCOUNT DIALOGEX 0, 0, 186, 204
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Crea/Modifica Account"
+FONT 14, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "Nome Login:",IDC_STATIC,7,22,42,8
+    EDITTEXT        IDC_USR_EDNAME,91,19,74,14,ES_AUTOHSCROLL
+    LTEXT           "Nome Completo:",IDC_STATIC,7,46,55,8
+    EDITTEXT        IDC_USR_EDFULLNAME,91,43,74,14,ES_AUTOHSCROLL
+    LTEXT           "Vecchia Password:",IDC_USR_OLDPASSWORDSTATIC,7,74,61,8
+    EDITTEXT        IDC_USR_EDOLDPASS,91,71,74,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "New Password:",IDC_USR_PASSWORDSTATIC,17,98,50,8
+    EDITTEXT        IDC_USR_EDPASS,91,95,74,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Reset Account Password",IDC_USR_RESET_PASSWORD_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,60,107,8
+    LTEXT           "Verify New Password:",IDC_USR_VERIFYSTATIC,17,122,71,8
+    EDITTEXT        IDC_USR_EDPASSV,91,119,74,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Access Group:",IDC_USR_ACCESSSTATIC,17,111,48,8
+    COMBOBOX        IDC_USR_ACCESSTYPE,91,109,80,66,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,32,183,50,
+                    14
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,104,
+                    183,50,14
+    CTEXT           "Please inform user that he/she must use the default password at their next login, and that they will be required at that time to change the password.",
+                    IDC_USR_MUST_CHANGE_PASS_STATIC,7,145,172,25,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "",IDC_USR_MUST_CHANGE_PASS_FRAME,"Static",
+                    SS_ETCHEDFRAME,6,141,174,33
+    CONTROL         "Allow v3D Applications to be Minimized",
+                    IDC_USR_ALLOWMINIMIZE_CHECK,"Button",BS_AUTO3STATE | 
+                    WS_TABSTOP,16,85,149,8
+END
+
+IDP_PREFS_NETWORK DIALOG DISCARDABLE  0, 0, 153, 163
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Rete"
+FONT 14, "Verdana"
+BEGIN
+    GROUPBOX        "Impostazioni PACS",IDC_STATIC,7,7,139,144,WS_DISABLED
+    LTEXT           "Nome Server:",IDC_STATIC,10,20,45,8,WS_DISABLED
+    EDITTEXT        IDC_PREFS_PACSNAME,63,19,62,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Numero Porta:",IDC_STATIC,10,43,47,8,WS_DISABLED
+    EDITTEXT        IDC_PREFS_PACSPORT,63,41,62,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Titolo AE:",IDC_STATIC,10,67,34,8,WS_DISABLED
+    EDITTEXT        IDC_PREFS_AETITLE,63,65,62,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+END
+
+IDP_PREFS_GENERAL DIALOG DISCARDABLE  0, 0, 282, 176
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Generale"
+FONT 14, "Verdana"
+BEGIN
+    LTEXT           "Provider Database:",IDC_STATIC,12,12,73,8
+    COMBOBOX        IDC_GENERALPAGE_DSNCOMBO,96,11,74,57,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Livello di Entrata:",IDC_STATIC,12,36,76,8
+    COMBOBOX        IDC_GENERALPAGE_LOGLEVELCOMBO,96,35,74,57,
+                    CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Testare il Collegamento...",
+                    IDC_GENERALPAGE_TESTCONNECTION,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,179,11,96,12
+END
+
+IDP_PREFS_REPORT DIALOGEX 0, 0, 186, 173
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Rapporto"
+FONT 14, "Verdana"
+BEGIN
+    GROUPBOX        "Margini",IDC_STATIC,7,7,85,49
+    LTEXT           "&Inizio",IDC_STATIC,13,21,21,11
+    CONTROL         "",IDC_REPORTPAGE_TOP_MARGIN,"Static",SS_BLACKFRAME,49,
+                    20,37,10
+    LTEXT           "&Fondo",IDC_STATIC,13,39,26,11
+    CONTROL         "",IDC_REPORTPAGE_BOTTOM_MARGIN,"Static",SS_BLACKFRAME,
+                    49,39,37,10
+    GROUPBOX        "Numerazione Pagine",IDC_STATIC,95,7,84,49
+    CONTROL         "&Nessuno",IDC_REPORTPAGE_PAGE_NUM_NONE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,106,20,42,10
+    CONTROL         "&Fondo",IDC_REPORTPAGE_PAGE_BOTTOM,"Button",
+                    BS_AUTORADIOBUTTON,106,33,32,13
+    GROUPBOX        "Impostazioni Testata",IDC_STATIC,7,60,172,103
+    CONTROL         "N&essuno",IDC_REPORTPAGE_HEADER_NONE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,15,73,36,10
+    CONTROL         "&Immagine",IDC_REPORTPAGE_HEADER_BITMAP,"Button",
+                    BS_AUTORADIOBUTTON,15,88,43,10
+    CONTROL         "&Trasferimento dal Disco",IDC_REPORTPAGE_TRANSFER,
+                    "Button",BS_OWNERDRAW | WS_TABSTOP,65,87,95,13
+    CONTROL         "Testo Intestazione &Definito dall'Utente",
+                    IDC_REPORTPAGE_HEADER_DEFINED,"Button",
+                    BS_AUTORADIOBUTTON,15,103,138,10,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_REPORTPAGE_HEADERTEXT,13,114,159,44,ES_CENTER | 
+                    ES_MULTILINE | ES_WANTRETURN,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,9,107,167,55,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_RPT_COLON_FINDINGS DIALOG DISCARDABLE  0, 0, 821, 400
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_ENTRIES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,5,5,166,387
+    LTEXT           "",IDC_ENTRY_NAME,178,5,641,22
+    CONTROL         "",IDC_LINE,"Static",SS_GRAYRECT,178,32,641,1
+    GROUPBOX        "Risultato",IDC_STATIC,175,35,94,170
+    GROUPBOX        "Ubicazione",IDC_RCF_LOCATIONGROUPBOX,270,35,128,170
+    GROUPBOX        "Commenti",IDC_STATIC,400,35,210,107
+    EDITTEXT        IDC_OTHER_COMMENTS,410,50,190,87,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Misura (mm)",IDC_STATIC_SIZE,400,144,150,60
+    LTEXT           "Massimo",IDC_STATIC_SIZE_LABEL1,415,164,61,11
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,485,159,50,19
+    LTEXT           "Perpendicolare",IDC_STATIC_SIZE_LABEL2,415,184,65,11
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME,485,179,50,19
+    GROUPBOX        "Forma",IDC_STATIC_SHAPE,555,144,261,60
+    CONTROL         "List1",IDC_GROUP_SHAPE,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,560,157,
+                    251,42
+    GROUPBOX        "Caratteristiche Traslucide",IDC_STATIC_TRANSLUCENCY,615,
+                    35,199,107
+    CONTROL         "List1",IDC_GROUP_FEATURES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,621,47,
+                    189,91
+    CONTROL         "List1",IDC_IMAGES,"SysListView32",LVS_SINGLESEL | 
+                    LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | LVS_AUTOARRANGE | 
+                    WS_BORDER | WS_TABSTOP,175,208,641,184
+    CONTROL         "Normale",IDC_FINDING_NORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,181,50,63,10
+    CONTROL         "Polipo",IDC_FINDING_POLYP,"Button",BS_AUTORADIOBUTTON,
+                    190,93,49,13
+    CONTROL         "Diverticolo",IDC_FINDING_DIVERTCULUM,"Button",
+                    BS_AUTORADIOBUTTON,190,110,70,13
+    CONTROL         "Stenosi",IDC_FINDING_STENOSIS,"Button",
+                    BS_AUTORADIOBUTTON,190,128,60,13
+    CONTROL         "Altro",IDC_FIDNING_OTHER,"Button",BS_AUTORADIOBUTTON,
+                    190,146,61,13
+    CONTROL         "Extra-Colonico",IDC_FINDING_EXTRA_COLONIC,"Button",
+                    BS_AUTORADIOBUTTON,181,183,86,10
+    LTEXT           "Colonico",IDC_STATIC,181,78,70,10
+    CONTROL         "",IDC_GROUP_LOCATION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,275,48,
+                    117,153
+END
+
+IDD_RPT_OTHER_FINDINGS DIALOGEX 0, 0, 473, 357
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,280,5,178,
+                    342,WS_EX_TRANSPARENT
+    LTEXT           "Polmone",IDC_STATIC_LUNG,16,15,95,19
+    LTEXT           "Nodulo",IDM_LUNG_NODULE,31,34,95,19,SS_CENTERIMAGE
+    LTEXT           "Granuloma",IDM_LUNG_GRANULOMA,31,52,95,19,
+                    SS_CENTERIMAGE
+    LTEXT           "Pneumotoracico",IDM_LUNG_PNEUMOTHORAX,31,71,95,19,
+                    SS_CENTERIMAGE
+    LTEXT           "Fegato",IDC_STATIC_LIVER,16,93,95,19,SS_CENTERIMAGE
+    LTEXT           "Massa",IDM_LIVER_MASS,31,112,95,19,SS_CENTERIMAGE
+    LTEXT           "Ciste",IDM_LIVER_CYST,31,130,95,19,SS_CENTERIMAGE
+    LTEXT           "Calcolo Biliare",IDM_LIVER_GALLSTONES,31,149,95,19,
+                    SS_CENTERIMAGE
+    LTEXT           "Fegato Grasso",IDM_LIVER_FATTY,31,169,95,19,
+                    SS_CENTERIMAGE
+    LTEXT           "Surrenale",IDC_STATIC_ADRENAL,16,190,95,19,
+                    SS_CENTERIMAGE
+    LTEXT           "Massa",IDM_ADRENAL_MASS,31,209,95,19,SS_CENTERIMAGE
+    LTEXT           "Renale",IDC_STATIC_RENAL,16,232,95,19,SS_CENTERIMAGE
+    LTEXT           "Massa",IDM_RENAL_MASS,31,251,95,19,SS_CENTERIMAGE
+    LTEXT           "Ciste",IDM_RENAL_CYST,31,269,95,19,SS_CENTERIMAGE
+    LTEXT           "Calcolo",IDM_RENAL_STONES,31,288,95,19,SS_CENTERIMAGE
+    LTEXT           "Cicatrice",IDM_RENAL_SCAR,31,308,95,19,SS_CENTERIMAGE
+    LTEXT           "Idronefrosi",IDM_RENAL_HYDRONEPHROSIS,31,328,95,19,
+                    SS_CENTERIMAGE
+    LTEXT           "Vascolare",IDC_STATIC_VASCULAR,137,15,95,19
+    LTEXT           "AAA",IDM_VASCULAR_AAA,153,34,95,19,SS_CENTERIMAGE
+    LTEXT           "Calcificazione Arteriosa",IDM_VASCULAR_CALCIFICATION,
+                    153,52,120,19,SS_CENTERIMAGE
+    LTEXT           "Milza",IDC_STATIC_SPLEEN,137,71,95,19,SS_CENTERIMAGE
+    LTEXT           "Massa",IDM_SPLEEN_MASS,153,93,95,19,SS_CENTERIMAGE
+    LTEXT           "Granuloma",IDM_SPLEEN_GRANULOMA,153,112,95,19,
+                    SS_CENTERIMAGE
+    LTEXT           "GI",IDC_STATIC_GI,137,130,95,19,SS_CENTERIMAGE
+    LTEXT           "Ernia Inguinale",IDM_GI_INGUINAL,153,149,95,19,
+                    SS_CENTERIMAGE
+    LTEXT           "Ernia Iatale",IDM_GI_HIATAL,153,169,95,19,
+                    SS_CENTERIMAGE
+    LTEXT           "Ginegologia",IDC_STATIC_GYNECOLOGY,137,190,95,19,
+                    SS_CENTERIMAGE
+    LTEXT           "Fibromi Uterini",IDM_GYNECOLOGY_FIBROIDS,153,209,95,19,
+                    SS_CENTERIMAGE
+    LTEXT           "Varie",IDC_STATIC_MISC,137,232,95,19,SS_CENTERIMAGE
+    LTEXT           "Altro",IDM_MISC_OTHER,153,251,95,19,SS_CENTERIMAGE
+END
+
+IDD_RPT_SUB_LUNG1 DIALOG DISCARDABLE  0, 0, 175, 275
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMMENTS,11,193,149,54,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    GROUPBOX        "Ubicazione",IDC_STATIC,7,10,158,99
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,13,26,148,
+                    77
+    GROUPBOX        "Misura (cm)",IDC_STATIC_SIZE2,7,114,158,63
+    LTEXT           "Massimo",IDC_STATIC,21,132,66,11
+    LTEXT           "Perpendicolare",IDC_STATIC,21,156,66,11
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,93,127,50,17
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME,93,153,50,17
+    GROUPBOX        "Commenti",IDC_STATIC,7,180,158,71
+END
+
+IDD_RPT_SUB_LUNG2 DIALOG DISCARDABLE  0, 0, 175, 274
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMMENTS,11,161,149,54,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    GROUPBOX        "Ubicazione",IDC_STATIC,8,11,158,53
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,19,25,137,
+                    35
+    GROUPBOX        "Misura",IDC_STATIC_SIZE,8,69,158,70
+    CONTROL         "List1",IDC_LIST_SIZE,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,17,85,140,
+                    49
+    GROUPBOX        "Commenti",IDC_STATIC,8,148,158,71
+END
+
+IDD_RPT_SUB_LIVER1 DIALOG DISCARDABLE  0, 0, 175, 275
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMMENTS,11,180,149,54,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    GROUPBOX        "Ubicazione",IDC_STATIC,8,13,158,81
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,13,25,147,
+                    63
+    GROUPBOX        "Misura (cm)",IDC_STATIC_SIZE2,8,98,158,64
+    LTEXT           "Massimo",IDC_STATIC,15,117,90,11
+    LTEXT           "Perpendicolare",IDC_STATIC,15,141,90,11
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,109,113,50,17
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME,109,138,50,17
+    GROUPBOX        "Commenti",IDC_STATIC,8,167,158,71
+END
+
+IDD_RPT_SUB_VASCULAR1 DIALOG DISCARDABLE  0, 0, 175, 275
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMMENTS,11,201,149,54,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    GROUPBOX        "Ubicazione",IDC_STATIC,8,10,157,77
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | WS_TABSTOP,13,20,146,60
+    GROUPBOX        "Trasverso (cm)",IDC_STATIC_SIZE2,7,92,158,61
+    LTEXT           "Massimo",IDC_STATIC,13,109,92,11,NOT WS_GROUP
+    LTEXT           "Perpendicolare",IDC_STATIC,13,131,92,11,NOT WS_GROUP
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,109,107,50,17
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME,109,129,50,17
+    LTEXT           "Lunghezza",IDC_STATIC,22,165,58,11
+    CONTROL         "",IDC_LENGTH_SIZE,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    93,162,50,17
+    GROUPBOX        "Commenti",IDC_STATIC,8,188,158,71
+END
+
+IDD_RPT_SUB_ADRENAL1 DIALOG DISCARDABLE  0, 0, 175, 275
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMMENTS,11,174,149,54,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    GROUPBOX        "Ubicazione",IDC_STATIC,8,24,158,52
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,21,36,134,
+                    33
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,104,106,50,17
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME,104,132,50,17
+    GROUPBOX        "Misura (cm)",IDC_STATIC_SIZE2,8,92,158,63
+    LTEXT           "Massimo",IDC_STATIC,15,111,73,11
+    LTEXT           "Perpendicolare",IDC_STATIC,15,135,76,11
+    GROUPBOX        "Commenti",IDC_STATIC,8,161,158,71
+END
+
+IDD_RPT_SUB_RENAL1 DIALOG DISCARDABLE  0, 0, 175, 275
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMMENTS,12,218,149,45,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    GROUPBOX        "Ubicazione",IDC_STATIC,8,10,158,119
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,16,22,142,
+                    100
+    GROUPBOX        "Misura (cm)",IDC_STATIC_SIZE2,8,136,158,62
+    LTEXT           "Massimo",IDC_STATIC,15,154,87,11
+    LTEXT           "Perpendicolare",IDC_STATIC,15,178,87,11
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,106,150,50,17
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME,106,175,50,17
+    GROUPBOX        "Commenti",IDC_STATIC,8,205,158,63
+END
+
+IDD_RPT_SUB_RENAL2 DIALOG DISCARDABLE  0, 0, 175, 275
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Ubicazione",IDC_STATIC,8,10,158,119
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | WS_TABSTOP,13,20,147,103
+    GROUPBOX        "Commenti",IDC_STATIC,8,136,158,71
+    EDITTEXT        IDC_COMMENTS,11,146,149,57,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+END
+
+IDD_RPT_SUB_SPLEEN1 DIALOG DISCARDABLE  0, 0, 175, 274
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMMENTS,11,168,149,58,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    GROUPBOX        "Ubicazione",IDC_STATIC,8,9,158,74
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | WS_TABSTOP,13,19,147,59
+    GROUPBOX        "Misura (cm)",IDC_STATIC_SIZE2,8,92,158,62
+    LTEXT           "Massimo",IDC_STATIC,12,111,92,11
+    LTEXT           "Perpendicolare",IDC_STATIC,12,135,93,11
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,108,106,50,17
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME,108,129,50,17
+    GROUPBOX        "Commenti",IDC_STATIC,8,159,158,71
+END
+
+IDD_RPT_SUB_VASCULAR2 DIALOG DISCARDABLE  0, 0, 175, 275
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Grado",IDC_STATIC,8,22,158,71
+    CONTROL         "List1",IDC_LIST_LEVEL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | WS_TABSTOP,12,32,150,56
+    GROUPBOX        "Commenti",IDC_STATIC,8,99,158,71
+    EDITTEXT        IDC_COMMENTS,11,109,150,57,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+END
+
+IDD_RPT_NON_DISTENDED DIALOG DISCARDABLE  0, 0, 564, 257
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_ENTRIES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,5,5,174,232
+    CONTROL         "",IDC_OVERVIEW_FRAME,"Static",SS_GRAYFRAME | SS_SUNKEN | 
+                    WS_BORDER,336,40,210,205
+    GROUPBOX        "Ubicazione",IDC_STATIC,185,45,146,145
+    CONTROL         "List1",IDC_GROUP_LOCATION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,191,57,
+                    136,128
+    LTEXT           "",IDC_ENTRY_NAME,190,5,360,22
+    CONTROL         "",IDC_LINE,"Static",SS_GRAYRECT,185,34,362,1
+END
+
+IDD_RPT_PREVIEW DIALOG DISCARDABLE  0, 0, 441, 356
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_RPT_SUB_OTHER DIALOG DISCARDABLE  0, 0, 175, 275
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Commenti",IDC_STATIC,10,9,157,71
+    EDITTEXT        IDC_COMMENTS,14,19,146,56,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+END
+
+IDD_RPT_SUB_RENAL3 DIALOG DISCARDABLE  0, 0, 175, 275
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Ubicazione",IDC_STATIC,8,10,158,54
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | WS_TABSTOP,14,19,145,39
+    GROUPBOX        "Commenti",IDC_STATIC,8,140,158,71
+    EDITTEXT        IDC_COMMENTS,11,150,149,58,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    GROUPBOX        "Grado",IDC_STATIC,8,67,158,71
+    CONTROL         "List1",IDC_LIST_LEVEL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | WS_TABSTOP,14,77,145,55
+END
+
+IDD_TRANSFER DIALOG DISCARDABLE  0, 0, 149, 159
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Study Transfer"
+FONT 14, "Verdana"
+BEGIN
+    CONTROL         "CD",IDC_TRANS_CD,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    33,29,25,10
+    CONTROL         "Local Storage",IDC_TRANS_LOCAL,"Button",
+                    BS_AUTORADIOBUTTON,33,57,60,10
+    CONTROL         "PACS System",IDC_TRANS_PACS,"Button",BS_AUTORADIOBUTTON,
+                    33,73,58,10
+    CONTROL         "Transfer",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,18,132,40,14
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,93,132,40,14
+    LTEXT           "Transfer Selected Study to:",IDC_TRANS_TITLE,8,7,122,8
+    CONTROL         "Maintain Patient Privacy",IDC_TRANS_PRIVATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,43,41,92,10
+    CONTROL         "Cancel Transfer...",IDC_TRANS_CANCELTRANSFER,"Button",
+                    BS_OWNERDRAW | NOT WS_VISIBLE | WS_GROUP | WS_TABSTOP,41,
+                    138,66,14
+    LTEXT           "",IDC_TRANS_STUDYIDEN,14,17,122,8
+    RTEXT           "100.0%",IDC_TRANS_PROGRESS_DISPLAY,61,104,27,8,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE
+    CONTROL         "Progress1",IDC_TRANS_PROGRESS,"msctls_progress32",NOT 
+                    WS_VISIBLE | WS_BORDER,31,114,86,9
+    RTEXT           "13:02",IDC_TRANS_TIME_REMAIN_DISPLAY,38,124,20,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "rimanenti",IDC_TRANS_TIME_REMAIN_STATIC,61,124,33,8,NOT 
+                    WS_VISIBLE
+    CTEXT           "Static",IDC_TRANS_FUNCTION_STATIC,16,91,117,10,
+                    SS_CENTERIMAGE
+END
+
+IDD_RPT_SUB_GI1 DIALOG DISCARDABLE  0, 0, 175, 275
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Ubicazione",-1,5,10,161,54
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | WS_TABSTOP,10,20,150,40
+    GROUPBOX        "Commenti",-1,5,73,161,71
+    EDITTEXT        IDC_COMMENTS,11,86,149,54,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+END
+
+IDD_RPT_MISC DIALOGEX 0, 0, 512, 377
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Informazioni Studio",IDC_STATIC,8,5,269,101
+    LTEXT           "Medico ",IDC_STATIC,14,27,71,18
+    EDITTEXT        IDC_PHYSICIAN,89,26,180,14,ES_AUTOHSCROLL
+    LTEXT           "Data",IDC_STATIC,14,52,71,18
+    CONTROL         "Slider1",IDC_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | 
+                    WS_TABSTOP,89,49,100,14
+    LTEXT           "Autore",IDC_STATIC,14,81,71,18
+    EDITTEXT        IDC_AUTHOR,89,77,180,14,ES_AUTOHSCROLL
+    GROUPBOX        "Informazioni Paziente",IDC_STATIC,8,110,269,93
+    LTEXT           "Nome",IDC_STATIC,14,132,71,18
+    EDITTEXT        IDC_NAME,87,131,180,14,ES_AUTOHSCROLL
+    LTEXT           "ID Paziente",IDC_STATIC,14,155,71,18
+    EDITTEXT        IDC_ID,87,155,180,14,ES_AUTOHSCROLL
+    LTEXT           "Età",IDC_STATIC,14,183,71,9
+    EDITTEXT        IDC_AGE,87,180,54,14,ES_AUTOHSCROLL
+    LTEXT           "Sesso",IDC_STATIC,162,183,31,9
+    COMBOBOX        IDC_SEX,199,181,67,45,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Raccomandazioni",IDC_STATIC,8,207,269,166
+    CONTROL         "List1",IDC_RECOMMENDATIONS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,12,229,12,
+                    12,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_TYPE,28,229,143,66,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_YEARS,176,229,21,16,ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT,198,229,59,66,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "List1",IDC_RECOMMENDATIONS2,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,12,250,
+                    212,13,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_RECOMMEND_OTHER,13,282,227,84,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Indicazione",IDC_STATIC,288,5,215,287
+    CONTROL         "List1",IDC_INDICATIONS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOCOLUMNHEADER | WS_TABSTOP,297,15,197,192,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Altra Indicazione",IDC_STATIC,295,212,85,9
+    EDITTEXT        IDC_INDICATION_OTHER,294,225,204,59,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Altre Raccomandazioni",IDC_STATIC,13,271,241,10
+    GROUPBOX        "Impressioni Generali",IDC_STATIC,288,293,215,80
+    EDITTEXT        IDC_IMPRESSION,292,305,205,61,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 292, 219
+STYLE WS_POPUP
+FONT 14, "Arial"
+BEGIN
+    CTEXT           "Versione Installata: ",IDC_V1K_VERSION_STATIC,39,33,154,
+                    8
+    CONTROL         263,IDC_STATIC,"Static",SS_BITMAP | NOT WS_VISIBLE,0,0,
+                    291,218
+END
+
+IDD_SPLASH_SCREEN DIALOGEX 0, 0, 268, 244
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE
+FONT 14, "Verdana", 0, 0, 0x1
+BEGIN
+    CTEXT           "Versione: ",IDC_VSP_VERSION,48,219,169,8
+    CONTROL         "Progress1",IDC_VSP_PROGRESS,"msctls_progress32",NOT 
+                    WS_VISIBLE | WS_BORDER,107,230,56,8
+    LTEXT           "Nome Login:",IDC_VSP_USERNAME_LABEL,199,67,42,8
+    EDITTEXT        IDC_VSP_USERNAME_EDIT,199,76,58,12,ES_AUTOHSCROLL
+    LTEXT           "Password:",IDC_VSP_PASSWORD_LABEL,199,102,34,8
+    EDITTEXT        IDC_VSP_PASSWORD_EDIT,199,112,58,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    CONTROL         "Login",IDC_VSP_LOGIN,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    199,140,57,13
+    CTEXT           "Inizializzazione...",IDC_VSP_PROGRESS_TEXT,0,230,120,8
+    LTEXT           "",IDC_VSP_CAPSLOCK_DISP,204,230,54,9,0,WS_EX_STATICEDGE
+    CONTROL         266,IDC_STATIC,"Static",SS_BITMAP | NOT WS_VISIBLE,0,0,
+                    270,209,WS_EX_TRANSPARENT
+END
+
+IDD_BLANK DIALOG DISCARDABLE  0, 0, 283, 203
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDT_REGISTRATION DIALOGEX 0, 0, 1066, 800
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registrazione"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Veduta Sezione Supina",IDC_TEMPLATE_SLICEVIEW_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.Sliceview",WS_TABSTOP,291,
+                    25,372,364
+    CONTROL         "Veduta Sezione Prona",IDC_TEMPLATE_SLICEVIEW_PRONE,
+                    "Viatronix.v3D.Colon.Controls.Sliceview",WS_TABSTOP,687,
+                    25,372,364,WS_EX_DLGMODALFRAME
+    CONTROL         "Endoscopica Supina",IDC_TEMPLATE_ENDOSCOPIC_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.EndoscopicView",WS_TABSTOP,
+                    291,404,372,380
+    CONTROL         "Endoscopica Prona",IDC_TEMPLATE_ENDOSCOPIC_PRONE,
+                    "Viatronix.v3D.Colon.Controls.EndoscopicView",WS_TABSTOP,
+                    687,404,372,380,WS_EX_DLGMODALFRAME
+    CONTROL         "Supine Scroll",IDC_CUSTOM1,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    291,390,372,12
+    CONTROL         "Prone Scroll",IDC_CUSTOM2,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    687,390,372,12,WS_EX_ACCEPTFILES
+    CTEXT           "Supino",IDC_SUPINELABEL,321,0,312,18
+    CTEXT           "Prono",IDC_PRONELABEL,717,0,312,18
+    CONTROL         "Registration Confidence",
+                    IDC_RV_PROGRESS_CTRL_REGCONFIDENCE,"msctls_progress32",
+                    PBS_VERTICAL | WS_BORDER,667,534,16,250
+    GROUPBOX        "Viatronix.v3D.Colon.Controls.SlidingPaneView",
+                    IDC_SLIDING_REGISTRATION_PANE,0,126,289,673,NOT 
+                    WS_VISIBLE
+    CONTROL         "Patient Info Header",IDC_RSP_PANEHDR_PATIENTINFO,
+                    "Viatronix.v3D.Colon.Controls.PaneHeader",0x0,0,70,286,
+                    24,WS_EX_WINDOWEDGE | WS_EX_RIGHT
+    CONTROL         "Informazioni Paziente",IDC_TEMPLATE_PATIENTINFO,
+                    "Viatronix.v3D.Colon.Controls.PatientInfo",WS_TABSTOP,0,
+                    204,286,118,WS_EX_DLGMODALFRAME | WS_EX_ACCEPTFILES | 
+                    WS_EX_WINDOWEDGE | WS_EX_RIGHT
+    CONTROL         "Primary Overview Header",
+                    IDC_RSP_PANEHDR_PRIMARYOVERVIEW,
+                    "Viatronix.v3D.Colon.Controls.PaneHeader",0x0,0,95,286,
+                    24,WS_EX_WINDOWEDGE | WS_EX_RTLREADING
+    CONTROL         "Primary Overview",IDT_PANE_OVERVIEW_PRIMARY,
+                    "Viatronix.v3D.Colon.Controls.ViatronChildWnd",
+                    WS_TABSTOP,0,217,286,212,WS_EX_TOPMOST | 
+                    WS_EX_WINDOWEDGE | WS_EX_RTLREADING
+    CONTROL         "Dual Overview Header",IDC_RSP_PANEHDR_DUALOVERVIEW,
+                    "Viatronix.v3D.Colon.Controls.PaneHeader",0x0,0,120,286,
+                    24,WS_EX_DLGMODALFRAME | WS_EX_WINDOWEDGE | WS_EX_RIGHT | 
+                    WS_EX_RTLREADING
+    CONTROL         "Dual Overview",IDT_PANE_OVERVIEW_DUAL,
+                    "Viatronix.v3D.Colon.Controls.ViatronChildWnd",
+                    WS_TABSTOP,0,235,286,424,WS_EX_DLGMODALFRAME | 
+                    WS_EX_WINDOWEDGE | WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "Controls Dialog Header",IDC_RSP_PANEHDR_CONTROLS,
+                    "Viatronix.v3D.Colon.Controls.PaneHeader",0x0,0,145,286,
+                    24,WS_EX_WINDOWEDGE | WS_EX_LEFTSCROLLBAR
+    CONTROL         "Controlli",IDC_TEMPLATE_CONTROLS,
+                    "Viatronix.v3D.Colon.Controls.ControlsDialog",WS_TABSTOP,
+                    0,333,286,338,WS_EX_DLGMODALFRAME | WS_EX_WINDOWEDGE | 
+                    WS_EX_LEFTSCROLLBAR
+    CONTROL         "Notations Dialog Header",IDC_RSP_PANEHDR_NOTATIONS,
+                    "Viatronix.v3D.Colon.Controls.PaneHeader",0x0,0,170,286,
+                    24,WS_EX_WINDOWEDGE | WS_EX_RIGHT | WS_EX_LEFTSCROLLBAR
+    CONTROL         "Notations",IDC_TEMPLATE_NOTATIONS,
+                    "Viatronix.v3D.Colon.Controls.NotationsDialog",
+                    WS_TABSTOP,0,675,286,118,WS_EX_DLGMODALFRAME | 
+                    WS_EX_ACCEPTFILES | WS_EX_WINDOWEDGE | WS_EX_RIGHT | 
+                    WS_EX_LEFTSCROLLBAR
+    CONTROL         "Collegare Vedute",IDC_TEMPLATE_LINKVIEWS,
+                    "Viatronix.v3D.Colon.Controls.Button",WS_TABSTOP,639,2,
+                    74,18,WS_EX_DLGMODALFRAME
+END
+
+IDT_STANDARDVIEW DIALOGEX 0, 0, 533, 401
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Standard View"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Primary Overview",IDC_TEMPLATE_OVERVIEW,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,3,35,
+                    122,124,WS_EX_ACCEPTFILES | 0x2L
+    CONTROL         "Primary MPR View",IDC_TEMPLATE_SLICEVIEW1,
+                    "Viatronix.v3D.Colon.Controls.Sliceview",WS_TABSTOP,2,
+                    204,122,122,WS_EX_ACCEPTFILES | WS_EX_TRANSPARENT | 0x2L
+    CONTROL         "Endoscopic View",IDC_TEMPLATE_ENDOVIEW,
+                    "Viatronix.v3D.Colon.Controls.EndoscopicView",WS_TABSTOP,
+                    130,35,285,285,0x2L
+    CONTROL         "Axial View",IDC_TEMPLATE_SLICEVIEW2,
+                    "Viatronix.v3D.Colon.Controls.Sliceview",WS_TABSTOP,420,
+                    35,110,110,0x2L
+    CONTROL         "Sagittal View",IDC_TEMPLATE_SLICEVIEW3,
+                    "Viatronix.v3D.Colon.Controls.Sliceview",WS_TABSTOP,420,
+                    158,110,110,WS_EX_ACCEPTFILES | 0x2L
+    CONTROL         "Coronal View",IDC_TEMPLATE_SLICEVIEW4,
+                    "Viatronix.v3D.Colon.Controls.Sliceview",WS_TABSTOP,420,
+                    281,110,110,WS_EX_TRANSPARENT | 0x2L
+    CONTROL         "Informazioni Paziente",IDC_TEMPLATE_PATIENTINFO,
+                    "Viatronix.v3D.Colon.Controls.PatientInfo",WS_TABSTOP,0,
+                    0,535,34,WS_EX_ACCEPTFILES
+    CONTROL         "Overview Toolbar",IDC_TEMPLATE_OVERVIEWTOOLS,
+                    "Viatronix.v3D.Colon.Controls.OverviewToolbar",
+                    WS_TABSTOP,2,175,122,27
+    CONTROL         "Controls",IDC_TEMPLATE_CONTROLS,
+                    "Viatronix.v3D.Colon.Controls.ControlsDialog",WS_TABSTOP,
+                    2,336,413,64
+    RTEXT           "100.9",IDC_TEMPLATE_DISTFROMRECTUM_DISPLAY,3,161,44,11
+    LTEXT           "cm. da Asse Anale",IDC_TEMPLATE_DISTFROMRECTUM_LABEL,51,
+                    161,75,11
+    CONTROL         "MPR Scroll",IDC_TEMPLATE_SLICESCROLL1,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    1,328,123,6,WS_EX_ACCEPTFILES
+    CONTROL         "Axial Scroll",IDC_TEMPLATE_SLICESCROLL2,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    419,147,110,6,WS_EX_ACCEPTFILES | WS_EX_TRANSPARENT
+    CONTROL         "Sagittal Scroll",IDC_TEMPLATE_SLICESCROLL3,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    419,270,112,6,WS_EX_MDICHILD
+    CONTROL         "Coronal Scroll",IDC_TEMPLATE_SLICESCROLL4,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    419,393,112,6,WS_EX_ACCEPTFILES | WS_EX_MDICHILD
+    CONTROL         "Regolare la traslucidità",
+                    IDC_TEMPLATE_ADJUSTTRANSLUCENCY,
+                    "Viatronix.v3D.Colon.Controls.AdjustTranslucencyDialog",
+                    NOT WS_VISIBLE | WS_TABSTOP,2,336,413,64
+END
+
+IDT_VERIFICATION DIALOGEX 0, 0, 1066, 800
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Verifica Veduta"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Veduta Generale Supina",IDC_TEMPLATE_OVERVIEW_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,3,134,
+                    525,525
+    CONTROL         "Veduta Generale Prona",IDC_TEMPLATE_OVERVIEW_PRONE,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,537,
+                    134,525,525,WS_EX_DLGMODALFRAME
+    CONTROL         "Informazioni Paziente",IDC_TEMPLATE_PATIENTINFO,
+                    "Viatronix.v3D.Colon.Controls.PatientInfo",WS_TABSTOP,0,
+                    0,1068,68
+    CTEXT           "Supino",IDC_VERIFY_SUPINELABEL,3,107,525,23,
+                    SS_CENTERIMAGE
+    CTEXT           "Prono",IDC_VERIFY_PRONELABEL,537,107,525,23,
+                    SS_CENTERIMAGE
+    CTEXT           "",IDC_VERIFY_SUPINEPROMPT,2,663,527,24,0,
+                    WS_EX_CLIENTEDGE
+    CTEXT           "",IDC_VERIFY_PRONEPROMPT,536,663,527,24,0,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_VERIFY_SUPINEBACK,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,179,693,173,28
+    CONTROL         "",IDC_VERIFY_PRONEBACK,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,713,693,173,28
+    CONTROL         "Fine",IDC_VERIFY_FINISH,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,589,759,101,28
+    CTEXT           "",IDC_VERIFY_FINISHPROMPT,352,730,362,24,0,
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Prossimo",IDC_VERIFY_NEXT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,369,759,174,28
+    CTEXT           "Verifica di Elenco di Segmento",IDC_VERIFY_TITLE,301,83,
+                    463,28,SS_CENTERIMAGE
+END
+
+IDT_ENDOSLICE DIALOGEX 0, 0, 533, 400
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sezione Interna"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Veduta MPR",IDC_TEMPLATE_SLICEVIEW2,
+                    "Viatronix.v3D.Colon.Controls.Sliceview",WS_TABSTOP,2,36,
+                    263,263,0x2L
+    CONTROL         "Veduta Endoscopica",IDC_TEMPLATE_ENDOVIEW,
+                    "Viatronix.v3D.Colon.Controls.EndoscopicView",WS_TABSTOP,
+                    268,36,263,263,0x2L
+    CONTROL         "Primary Overview",IDC_TEMPLATE_OVERVIEW,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,2,311,
+                    113,85,WS_EX_ACCEPTFILES | 0x2L
+    CONTROL         "Informazioni Paziente",IDC_TEMPLATE_PATIENTINFO,
+                    "Viatronix.v3D.Colon.Controls.PatientInfo",WS_TABSTOP,0,
+                    0,535,34,WS_EX_ACCEPTFILES
+    CONTROL         "Controlli",IDC_TEMPLATE_CONTROLS,
+                    "Viatronix.v3D.Colon.Controls.ControlsDialog",WS_TABSTOP,
+                    119,321,414,64
+    CONTROL         "Slice Scroll",IDC_TEMPLATE_SLICESCROLL2,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    2,301,263,6
+    CONTROL         "Regolare la Traslucidità",
+                    IDC_TEMPLATE_ADJUSTTRANSLUCENCY,
+                    "Viatronix.v3D.Colon.Controls.AdjustTranslucencyDialog",
+                    NOT WS_VISIBLE | WS_TABSTOP,119,321,413,64
+END
+
+IDD_PATIENT_INFO_VERTICAL DIALOGEX 0, 0, 127, 45
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Informazioni Paziente"
+FONT 14, "Tahoma", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_PID_PATIENTNAME,3,1,91,8,NOT WS_VISIBLE,
+                    WS_EX_TRANSPARENT
+    LTEXT           "University Medical Center at Stony Brook",
+                    IDC_PID_EXAMSITE,3,0,89,16,0,WS_EX_TRANSPARENT
+    LTEXT           "Dr. Michael S. XXXXXX",IDC_PID_PHYSICIANNAME,3,26,86,8
+    CONTROL         "Supine/Prone",IDC_PID_SUPINEPRONE_BTN,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_GROUP,103,28,20,12
+    LTEXT           "Oct 5, 2000  14:55",IDC_PID_EXAMTIME,3,35,67,8
+    LTEXT           "M150",IDC_PID_PATIENTDATA,45,17,21,8
+    LTEXT           "982-34-3154",IDC_PID_PATIENTID,3,17,42,8,NOT WS_VISIBLE
+END
+
+IDT_DUALORTHOGONAL DIALOGEX 0, 0, 533, 400
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dual Orthogonal"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Veduta Sezione Supina",IDC_TEMPLATE_SLICEVIEW_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.Sliceview",WS_TABSTOP,3,60,
+                    260,260
+    CONTROL         "Veduta Sezione Prona",IDC_TEMPLATE_SLICEVIEW_PRONE,
+                    "Viatronix.v3D.Colon.Controls.Sliceview",WS_TABSTOP,268,
+                    60,260,260,WS_EX_DLGMODALFRAME
+    CONTROL         "Informazioni Paziente",IDC_TEMPLATE_PATIENTINFO,
+                    "Viatronix.v3D.Colon.Controls.PatientInfo",WS_TABSTOP,0,
+                    0,535,34
+    CTEXT           "Supino",IDC_SUPINELABEL,18,38,230,12,SS_CENTERIMAGE
+    CTEXT           "Prono",IDC_PRONELABEL,283,38,230,12,SS_CENTERIMAGE
+    CONTROL         "Collegare Vedute",IDC_TEMPLATE_LINKVIEWS,
+                    "Viatronix.v3D.Colon.Controls.Button",WS_TABSTOP,252,36,
+                    28,22,WS_EX_DLGMODALFRAME
+    CONTROL         "Supine Scroll",IDC_CUSTOM1,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    3,322,260,6
+    CONTROL         "Prone Scroll",IDC_CUSTOM2,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    268,322,260,6,WS_EX_ACCEPTFILES
+    CONTROL         "Controls",IDC_TEMPLATE_CONTROLS,
+                    "Viatronix.v3D.Colon.Controls.ControlsDialog",WS_TABSTOP,
+                    113,333,413,64
+    CONTROL         "Picollo Veduta Generale",IDC_TEMPLATE_OVERVIEW,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,3,333,
+                    106,64,WS_EX_ACCEPTFILES | 0x2L
+END
+
+IDT_DUALOVERVIEW DIALOGEX 0, 0, 533, 400
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Veduta Generale Doppia"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Veduta Generale Supina",IDC_TEMPLATE_OVERVIEW_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,3,60,
+                    260,260
+    CONTROL         "Veduta Generale Prona",IDC_TEMPLATE_OVERVIEW_PRONE,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,268,
+                    60,260,260,WS_EX_DLGMODALFRAME
+    CONTROL         "Informazioni Paziente",IDC_TEMPLATE_PATIENTINFO,
+                    "Viatronix.v3D.Colon.Controls.PatientInfo",WS_TABSTOP,0,
+                    0,535,34
+    CTEXT           "Supino",IDC_VERIFY_SUPINELABEL,116,44,31,12,
+                    SS_CENTERIMAGE
+    CTEXT           "Prono",IDC_VERIFY_PRONELABEL,386,44,31,12,
+                    SS_CENTERIMAGE
+    CONTROL         "Collegare Vedute",IDC_TEMPLATE_LINKVIEWS,
+                    "Viatronix.v3D.Colon.Controls.Button",WS_TABSTOP,252,324,
+                    28,22,WS_EX_DLGMODALFRAME
+END
+
+IDD_TRANSFER_DEST DIALOG DISCARDABLE  0, 0, 181, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sceglere Destinazione del Trasferimento"
+FONT 12, "Verdana"
+BEGIN
+    CONTROL         "Annulla Trasferimento",IDCANCEL,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,50,75,80,14
+    CONTROL         "Floppy",IDC_TRANSDEST_FLOPPY,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,104,46,47,14
+    CONTROL         "CD",IDC_TRANSDEST_CD,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    25,46,47,14
+    CTEXT           "Scegliere una destinazione per il trasferimento.",
+                    IDC_STATIC,23,18,140,9
+END
+
+IDD_CONTROLS_VERTICAL DIALOGEX 0, 0, 132, 135
+STYLE WS_CHILD | WS_VISIBLE | WS_CAPTION
+CAPTION "Controlli"
+FONT 14, "Tahoma", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_CDB_MISSEDRGN_LIST,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,5,88,122,46
+    CONTROL         "Individua Mancanti",IDC_CDB_DETECTMISSEDRGNS_BTN,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_GROUP,30,70,21,18
+    CONTROL         "Prossimo Mancante",IDC_CDB_NEXTMISSEDRGN_BTN,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_GROUP,80,70,21,18
+    CONTROL         "Perlustrazione Automatica",IDC_CDB_AUTOFLY,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_GROUP,36,1,21,18
+    CONTROL         "Radio1",IDC_CDB_FLIPVIEW_BTN,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | BS_PUSHLIKE | WS_GROUP,77,1,21,18
+    PUSHBUTTON      "Salto di Segmento",IDC_CDB_SEGMENT_JUMP_CONTROL,22,19,
+                    91,18,NOT WS_VISIBLE
+    CONTROL         "Istantanea",IDC_CDB_SNAPSHOT,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | WS_GROUP,33,40,21,18
+    CONTROL         "Strumenti",IDC_CDB_TOOLS,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | WS_GROUP,9,40,21,18
+    CONTROL         "Ombre Ortogonali",IDC_CDB_ORTHOGONAL_SHADOWS,"Button",
+                    BS_OWNERDRAW | BS_BITMAP | WS_GROUP,81,40,21,18
+    CONTROL         "Colorare",IDC_CDB_PAINTING,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | WS_GROUP,106,40,21,18
+    CONTROL         "Slider1",IDC_CTRLS_SPEED_SLIDER,"msctls_trackbar32",
+                    WS_TABSTOP,44,58,81,10,WS_EX_TRANSPARENT
+    CTEXT           "100",IDC_CTRLS_SLIDER_VALUE_DISP,74,58,14,8,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Velocità:",IDC_STATIC,17,59,28,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,38,126,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,69,126,1
+    CONTROL         "Registra Film",IDC_CDB_MOVIE,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | WS_GROUP,57,40,21,18
+    CONTROL         "",IDC_CTRLS_PERCEIVED_SPEED_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,9,59,8,8
+END
+
+IDT_2DSEGMENTS DIALOGEX 0, 0, 533, 401
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Supine Endoscopic",IDC_TEMPLATE_ENDOSCOPIC_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.EndoscopicView",WS_TABSTOP,
+                    347,7,179,166
+    CONTROL         "Supine Overview",IDC_TEMPLATE_OVERVIEW_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,168,7,
+                    169,166
+    CONTROL         "Segment View",IDC_TEMPLATE_SLICEVIEW_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.Segment2Dview",WS_TABSTOP,
+                    3,196,526,192
+    CONTROL         "Segment View Scroll",IDC_CUSTOM1,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    3,393,526,6,WS_EX_TRANSPARENT
+    CONTROL         "Controls",IDC_TEMPLATE_CONTROLS,
+                    "Viatronix.v3D.Colon.Controls.ControlsDialog",WS_TABSTOP,
+                    0,74,140,121,WS_EX_DLGMODALFRAME | WS_EX_ACCEPTFILES
+END
+
+IDT_3DSEGMENTS DIALOGEX 0, 0, 533, 401
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Supine Endoscopic",IDC_TEMPLATE_ENDOSCOPIC_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.EndoscopicView",WS_TABSTOP,
+                    241,0,144,144
+    CONTROL         "Supine Overview",IDC_TEMPLATE_OVERVIEW_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,93,0,
+                    144,144
+    CONTROL         "Segment View",IDC_TEMPLATE_SLICEVIEW_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.Segment3Dview",WS_TABSTOP,
+                    3,156,526,238
+    CONTROL         "Segment View Scroll",IDC_CUSTOM1,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    3,395,526,6,WS_EX_TRANSPARENT
+    CONTROL         "Primary Slice View",IDC_TEMPLATE_SLICEVIEW2,
+                    "Viatronix.v3D.Colon.Controls.Sliceview",WS_TABSTOP,389,
+                    0,144,144,0x2L
+    CONTROL         "Slice Scroll",IDC_TEMPLATE_SLICESCROLL2,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    389,146,144,6,WS_EX_ACCEPTFILES | WS_EX_TRANSPARENT
+END
+
+IDT_PANE_OVERVIEW_PRIMARY DIALOGEX 0, 0, 182, 192
+STYLE DS_MODALFRAME | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Generale Primario"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Primary Overview",IDC_TEMPLATE_OVERVIEW,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,1,3,
+                    179,187,WS_EX_ACCEPTFILES | 0x2L
+END
+
+IDT_CYLINDRICAL_SEGMENTS DIALOGEX 0, 0, 533, 401
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Supine Endoscopic",IDC_TEMPLATE_ENDOSCOPIC_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.EndoscopicView",WS_TABSTOP,
+                    241,0,144,144
+    CONTROL         "Supine Overview",IDC_TEMPLATE_OVERVIEW_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,93,0,
+                    144,144
+    CONTROL         "Segment View",IDC_TEMPLATE_SLICEVIEW_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.SegmentCylindricalView",
+                    WS_TABSTOP,3,156,526,238
+    CONTROL         "Segment View Scroll",IDC_CUSTOM1,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    3,395,526,6,WS_EX_TRANSPARENT
+    CONTROL         "Primary Slice View",IDC_TEMPLATE_SLICEVIEW2,
+                    "Viatronix.v3D.Colon.Controls.Sliceview",WS_TABSTOP,389,
+                    0,144,144,0x2L
+    CONTROL         "Slice Scroll",IDC_TEMPLATE_SLICESCROLL2,
+                    "Viatronix.v3D.Colon.Controls.SliceScrollbar",WS_TABSTOP,
+                    389,146,144,6,WS_EX_ACCEPTFILES | WS_EX_TRANSPARENT
+END
+
+IDT_PANE_OVERVIEW_DUAL DIALOGEX 0, 0, 182, 384
+STYLE DS_MODALFRAME | WS_CHILD | WS_CAPTION | WS_SYSMENU
+CAPTION "Generales"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Supine Overview",IDC_TEMPLATE_OVERVIEW_SUPINE,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,1,3,
+                    179,187
+    CONTROL         "Prone Overview",IDC_TEMPLATE_OVERVIEW_PRONE,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,1,196,
+                    179,187,WS_EX_DLGMODALFRAME
+END
+
+IDD_MOVIE_CREATION DIALOGEX 0, 0, 149, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Crea Filmato"
+FONT 14, "Verdana", 0, 0, 0x1
+BEGIN
+    LTEXT           "Si desidera salvare il filmato registrato?",IDC_STATIC,
+                    7,7,134,8
+    GROUPBOX        "Formato",IDC_STATIC,14,24,120,40
+    CONTROL         "Nessuna Compressione (AVI)",IDC_MCD_FORMAT_COMPRESSNONE,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,22,
+                    33,84,8
+    CONTROL         "Compressione Bassa (WMV)",IDC_MCD_FORMAT_COMPRESSLOW,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,22,43,103,8
+    CONTROL         "Compressione Alta (WMV)",IDC_MCD_FORMAT_COMPRESSHIGH,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,22,53,92,8
+    CONTROL         "Includi Panoramica",IDC_MCD_INCLUDE_OVERVIEW_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,70,64,8
+    CONTROL         "",IDC_MCD_PREVIEW_FRAME,"Static",SS_BITMAP | 
+                    SS_CENTERIMAGE | SS_SUNKEN | NOT WS_VISIBLE,14,132,120,
+                    60
+    CONTROL         "Salva Filmato",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    7,114,80,14,WS_EX_TRANSPARENT
+    CONTROL         "Annulla",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,95,
+                    114,47,14,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,130,150,1
+    LTEXT           "",IDC_MCD_FORMAT_DESCRIPTION,0,132,149,17,0,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_MCD_FILETITLE_EDIT,17,91,114,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Nome File",IDC_STATIC,14,82,120,25
+END
+
+IDD_NOTATIONS DIALOG DISCARDABLE  0, 0, 132, 45
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Notazioni"
+FONT 14, "Tahoma"
+BEGIN
+    CONTROL         "B",IDC_NTD_BOOKMARKS_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_BITMAP | BS_PUSHLIKE | WS_GROUP,1,1,13,11
+    CONTROL         "A",IDC_NTD_ANNOTATIONS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,15,1,13,11
+    CONTROL         "M",IDC_NTD_MEASUREMENTS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,29,1,13,11
+    CONTROL         "Xx",IDC_NTD_DELETEALL_BUTTON,"Button",BS_OWNERDRAW | 
+                    BS_BITMAP | WS_GROUP | WS_TABSTOP,118,1,13,11
+    LTEXT           "Supino:",IDC_STATIC,2,18,25,8
+    LTEXT           "Prono:",IDC_STATIC,2,30,25,8
+    COMBOBOX        IDC_NTD_SUPINE_COMBO,30,17,85,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        IDC_NTD_PRONE_COMBO,30,30,85,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CHECKBOX        "X",IDC_NTD_SUPINE_DELETE_BUTTON,116,17,8,11,BS_PUSHLIKE
+    CHECKBOX        "X",IDC_NTD_PRONE_DELETE_BUTTON,116,30,8,11,BS_PUSHLIKE
+END
+
+IDD_PICKSCREENPOINT DIALOGEX 0, 0, 145, 31
+STYLE WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 14, "Tahoma", 0, 0, 0x1
+BEGIN
+    CTEXT           "il sinistro-scatto sulla veduta di registrare, fa clic col pulsante destro per annullare",
+                    IDC_STATIC,0,14,140,17
+    ICON            IDI_VIDEOCAMERA,IDC_STATIC,4,2,20,20
+END
+
+IDD_ADJUST_TRANSLUCENCY DIALOGEX 0, 0, 388, 48
+STYLE WS_CHILD
+FONT 14, "Tahoma", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_AJT_REVERT,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,360,29,21,18
+    CONTROL         "Custom1",IDC_AJT_GRADIENTCTRL,
+                    "Viatronix.v3D.Colon.Controls.CGradientCtrl",WS_GROUP | 
+                    WS_TABSTOP,7,1,374,27
+    CONTROL         "",IDC_AJT_RESETDEFAULT,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,335,29,21,18
+    LTEXT           "",IDC_AJT_PEG_VALUE_STATIC,26,37,34,9,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "HU:",IDC_STATIC,9,37,13,8
+    LTEXT           "<",IDC_STATIC,139,34,8,8
+    LTEXT           ">",IDC_STATIC,170,34,8,8
+    CONTROL         "",IDC_AJT_COLOR_BTN_PREV,"Button",BS_OWNERDRAW | 
+                    BS_FLAT | WS_TABSTOP,146,32,11,11
+    CONTROL         "",IDC_AJT_COLOR_BTN_NEXT,"Button",BS_OWNERDRAW | 
+                    BS_FLAT | WS_TABSTOP,158,32,11,11
+END
+
+IDT_MOVIEVIEW_DUAL DIALOGEX 0, 0, 533, 400
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Film di Registrazione"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Informazioni Paziente",IDC_TEMPLATE_PATIENTINFO,
+                    "Viatronix.v3D.Colon.Controls.PatientInfo",WS_TABSTOP,0,
+                    0,535,34
+    CONTROL         "Primary Overview",IDC_TEMPLATE_OVERVIEW,
+                    "Viatronix.v3D.Colon.Controls.Overview",WS_TABSTOP,7,64,
+                    230,230,WS_EX_ACCEPTFILES | 0x2L
+    CONTROL         "Primary Slice View",IDC_TEMPLATE_SLICEVIEW,
+                    "Viatronix.v3D.Colon.Controls.Sliceview",WS_TABSTOP,301,
+                    64,220,230,0x2L
+    CONTROL         "Primary Endoscopic View",IDC_TEMPLATE_ENDOVIEW,
+                    "Viatronix.v3D.Colon.Controls.EndoscopicView",WS_TABSTOP,
+                    296,64,230,230,0x2L
+    CONTROL         "Progress1",IDC_MOVIEVIEW_PROGRESS,"msctls_progress32",
+                    WS_BORDER,7,330,519,11
+    CONTROL         "Annulla",IDCANCEL,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,243,353,47,14
+    CTEXT           "Filmato in corso di registrazione...",
+                    IDC_STATIC_MOVIEVIEW_TITLE,148,46,238,13
+    RTEXT           "Tempo Rimanente:",IDC_STATIC_MOVIEVIEW_PROGRESS,193,316,
+                    74,10
+    LTEXT           "0:11:55",IDC_STATIC_MOVIEVIEW_TIMELEFT,276,316,63,10
+END
+
+IDT_MOVIEVIEW_SINGLE DIALOG DISCARDABLE  0, 0, 533, 400
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Film di Registrazione"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Informazioni Paziente",IDC_TEMPLATE_PATIENTINFO,
+                    "Viatronix.v3D.Colon.Controls.PatientInfo",WS_TABSTOP,0,
+                    0,535,34
+    CONTROL         "Primary Slice View",IDC_TEMPLATE_SLICEVIEW,
+                    "Viatronix.v3D.Colon.Controls.Sliceview",WS_TABSTOP,157,
+                    64,220,230,0x2L
+    CONTROL         "Primary Endoscopic View",IDC_TEMPLATE_ENDOVIEW,
+                    "Viatronix.v3D.Colon.Controls.EndoscopicView",WS_TABSTOP,
+                    152,64,230,230,0x2L
+    CONTROL         "Progress1",IDC_MOVIEVIEW_PROGRESS,"msctls_progress32",
+                    WS_BORDER,7,330,519,11
+    CONTROL         "Annulla",IDCANCEL,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,243,353,47,14
+    CTEXT           "Filmato in corso di registrazione...",
+                    IDC_STATIC_MOVIEVIEW_TITLE,186,46,164,11
+    RTEXT           "Tempo Rimanente:",IDC_STATIC_MOVIEVIEW_PROGRESS,193,316,
+                    74,10
+    LTEXT           "0:11:55",IDC_STATIC_MOVIEVIEW_TIMELEFT,276,316,63,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,4,0,0
+ PRODUCTVERSION 1,4,0,0
+ FILEFLAGSMASK 0x1fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Real-time interactive solutions for diagnostic examination of the colon\0"
+            VALUE "CompanyName", "Viatronix\0"
+            VALUE "FileDescription", "Viatronix v3D System\0"
+            VALUE "FileVersion", "1, 4, 0, 0\0"
+            VALUE "InternalName", "V3DViewerColon\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001-2005\0"
+            VALUE "OriginalFilename", "V3DViewerColon.exe\0"
+            VALUE "ProductName", "Viatronix v3D System\0"
+            VALUE "ProductVersion", "1.4.0.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_CONTROLS_HORIZONTAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 380
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 41
+    END
+
+    IDD_VIEW_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 637
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 4
+    END
+
+    IDDB_OVERVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 15
+    END
+
+    IDD_PATIENT_INFO_HORIZONTAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 487
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 20
+    END
+
+    IDD_DBSEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 485
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 389
+    END
+
+    IDD_DBINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDDB_NAVIGATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 4
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 386
+    END
+
+    IDD_USR_ACCOUNTMANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_USR_EDITACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDP_PREFS_NETWORK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDP_PREFS_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 12
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDP_PREFS_REPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_RPT_COLON_FINDINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 816
+        VERTGUIDE, 132
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 392
+    END
+
+    IDD_RPT_OTHER_FINDINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 468
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 352
+    END
+
+    IDD_RPT_NON_DISTENDED, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 559
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 249
+    END
+
+    IDD_RPT_PREVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 436
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 351
+    END
+
+    IDD_TRANSFER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_RPT_MISC, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 507
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 372
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+    END
+
+    IDD_SPLASH_SCREEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_BLANK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 196
+    END
+
+    IDT_REGISTRATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 1059
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 793
+    END
+
+    IDT_STANDARDVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 526
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 394
+    END
+
+    IDT_VERIFICATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 1059
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 793
+    END
+
+    IDT_ENDOSLICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 526
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 393
+    END
+
+    IDD_PATIENT_INFO_VERTICAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 119
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDT_DUALORTHOGONAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 526
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 393
+    END
+
+    IDT_DUALOVERVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 526
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 393
+    END
+
+    IDD_TRANSFER_DEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_CONTROLS_VERTICAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDT_2DSEGMENTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 526
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 394
+    END
+
+    IDT_3DSEGMENTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 526
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 394
+    END
+
+    IDT_PANE_OVERVIEW_PRIMARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDT_CYLINDRICAL_SEGMENTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 526
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 394
+    END
+
+    IDT_PANE_OVERVIEW_DUAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 377
+    END
+
+    IDD_MOVIE_CREATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_NOTATIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_PICKSCREENPOINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 24
+    END
+
+    IDD_ADJUST_TRANSLUCENCY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 381
+        TOPMARGIN, 7
+    END
+
+    IDT_MOVIEVIEW_DUAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 526
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 393
+    END
+
+    IDT_MOVIEVIEW_SINGLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 526
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 393
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HIGHLIGHTS          CURSOR  DISCARDABLE     "res\\highlights.cur"
+IDC_INDEXHAND           CURSOR  DISCARDABLE     "res\\harrow.cur"
+IDC_CROSSMC             CURSOR  DISCARDABLE     "res\\crossmc.cur"
+IDC_SCROLLUP            CURSOR  DISCARDABLE     "res\\scrollup.cur"
+IDC_SCROLLDOWN          CURSOR  DISCARDABLE     "res\\scrolldown.cur"
+IDC_SCROLL              CURSOR  DISCARDABLE     "res\\scroll.cur"
+IDC_MEASURE             CURSOR  DISCARDABLE     "res\\measure.cur"
+IDC_POINTER_WAIT        CURSOR  DISCARDABLE     "res\\arrowwait.cur"
+IDC_WINDOWLEVEL         CURSOR  DISCARDABLE     "res\\windowlevel.cur"
+IDC_MAGNIFY             CURSOR  DISCARDABLE     "res\\magnify.cur"
+IDC_PAN                 CURSOR  DISCARDABLE     "res\\grasphan.cur"
+IDC_SNAPSHOT            CURSOR  DISCARDABLE     "res\\snapshot.cur"
+IDC_THUMBNAIL           CURSOR  DISCARDABLE     "res\\thumbnail.cur"
+IDC_ANNOTATION          CURSOR  DISCARDABLE     "res\\annotation.cur"
+IDC_POINTER_PAINTCAN    CURSOR  DISCARDABLE     "res\\arrowpaintcan.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "O",            IDM_STUDY_OPEN,         VIRTKEY, CONTROL, NOINVERT
+    VK_CANCEL,      IDM_CANCEL_LOAD,        VIRTKEY, CONTROL, NOINVERT
+    VK_F10,         IDM_JUMP_PREVSEGMENT,   VIRTKEY, NOINVERT
+    VK_F11,         IDM_JUMP_NEXTSEGMENT,   VIRTKEY, NOINVERT
+    VK_F12,         IDM_NEXT_MISSED_REGION, VIRTKEY, NOINVERT
+    VK_F2,          IDM_BOOKMARKS_ADDBOOKMARK, VIRTKEY, NOINVERT
+    VK_F3,          IDM_REPORT_ADDSNAPSHOT, VIRTKEY, NOINVERT
+    VK_F4,          IDM_TOGGLE_SUPINE_PRONE, VIRTKEY, NOINVERT
+    VK_F4,          IDM_STUDY_CLOSE,        VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          IDM_TOGGLE_AUTOFLY,     VIRTKEY, NOINVERT
+    VK_F6,          ID_ENDOSCOPICVIEW_CURRENTMODE_LINEMEASURE, VIRTKEY, 
+                                                    NOINVERT
+    VK_F6,          ID_ENDOSCOPICVIEW_CURRENTMODE_ROIMEASURE, VIRTKEY, 
+                                                    CONTROL, NOINVERT
+    VK_F7,          ID_ENDOSCOPICVIEW_CURRENTMODE_LIGHTING, VIRTKEY, 
+                                                    NOINVERT
+    VK_F8,          ID_ENDOSCOPICVIEW_OPTIONS_TRANSLUCENT_DISPLAY, VIRTKEY, 
+                                                    NOINVERT
+    VK_F9,          IDM_TOGGLE_VIEW_DIRECTION, VIRTKEY, NOINVERT
+    VK_TAB,         IDM_SHOW_NEXT_VIEW,     VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDW_SNAPSHOT            WAVE    MOVEABLE PURE   "res\\cameraClick.wav"
+IDW_BLASTER             WAVE    MOVEABLE PURE   "res\\blaster.wav"
+IDW_BOOKMARK_DROP       WAVE    MOVEABLE PURE   "res\\bkmkDrop.wav"
+IDW_EXPLOSION           WAVE    MOVEABLE PURE   "res\\explosion.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDA_TRANSFER_FROM_NET   AVI     MOVEABLE PURE   "res\\file copy from net.avi"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR MOVEABLE PURE  18, 16
+BEGIN
+    BUTTON      IDC_DBS_TRANSFER
+    BUTTON      IDC_DBS_OPENMOVIE
+    BUTTON      IDC_DBS_OPENREPORT
+    BUTTON      IDC_DBS_OPENSTUDY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Viatronix v3D System"
+    AFX_IDS_IDLEMESSAGE     "Per Aiuto, premere F1"
+    AFX_IDS_HELPMODEMESSAGE "Selezionare un oggetto su cui richiedere Aiuto"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP (Maiuscole)"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL (Scorrimento)"
+    ID_INDICATOR_OVR        "OVR (Sostituisci)"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Mostra informazioni sul programma, numero versione e copyright\nSu"
+    ID_APP_EXIT             "Esce dall' applicazione\nEsci"
+    ID_HELP_INDEX           "Apre Aiuto\nArgomenti Aiuto"
+    ID_HELP_FINDER          "Elenca Argomenti Aiuto\nArgomenti Aiuto"
+    ID_HELP_USING           "Mostra istruzioni per usare help\nHelp"
+    ID_CONTEXT_HELP         "Mostra aiuto per cliccare pulsanti, menu e finestre\nAiuto"
+    ID_HELP                 "Mostra aiuto per l'attuale operazione o comando\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "<*Item_427*>"
+    ID_PREV_PANE            "<*Item_428*>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "<*Item_429*>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "<*Item_430*>"
+    ID_EDIT_CLEAR_ALL       "<*Item_431*>"
+    ID_EDIT_COPY            "<*Item_432*>"
+    ID_EDIT_CUT             "<*Item_433*>"
+    ID_EDIT_FIND            "<*Item_434*>"
+    ID_EDIT_PASTE           "<*Item_435*>"
+    ID_EDIT_REPEAT          "<*Item_436*>"
+    ID_EDIT_REPLACE         "<*Item_437*>"
+    ID_EDIT_SELECT_ALL      "<*Item_438*>"
+    ID_EDIT_UNDO            "<*Item_439*>"
+    ID_EDIT_REDO            "<*Item_440*>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "<*Item_441*>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "<*Item_442*>"
+    AFX_IDS_SCMOVE          "<*Item_443*>"
+    AFX_IDS_SCMINIMIZE      "<*Item_444*>"
+    AFX_IDS_SCMAXIMIZE      "<*Item_445*>"
+    AFX_IDS_SCNEXTWINDOW    "<*Item_446*>"
+    AFX_IDS_SCPREVWINDOW    "<*Item_447*>"
+    AFX_IDS_SCCLOSE         "<*Item_448*>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "<*Item_449*>"
+    AFX_IDS_SCTASKLIST      "<*Item_450*>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INDICATOR_STEP      "                                                           "
+    IDS_INDICATOR_FUNCTION  "                                                           "
+    IDS_INDICATOR_DATETIME  "12:43 PM"
+    IDS_INDICATOR_CAPSLOCK  "Maiuscole Inserite"
+    IDS_PICK_SEGMENT_FORMAT "Cliccare col pulsante destro sul %s segmento più vicino al retto."
+    IDS_PICK_FINISH         "Premere `Fine` per completare la verifica."
+    IDS_ROTATE_VIEW         "Ruotare Veduta"
+    IDS_ZOOM_VIEW           "Ingrandisci Veduta"
+    IDS_MOVE_VIEW           "Spostare Punto di Vista"
+    IDS_FLIGHT_FORWARD      "Avanzare"
+    IDS_SPIN_REWIND         "Girare/Arretrare"
+    IDS_FLIGHT_REVERSE      "Capovolgere"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PATIENTINFORMATION  "Informazioni Paziente"
+    IDS_STUDYLOAD_HEADER    "Caricamento Informazioni Studio"
+    IDS_STUDYLOAD_AXIAL     "Caricamento Dati Assiali"
+    IDS_STUDYLOAD_SAGITTAL  "Caricamento Dati Sagittali"
+    IDS_STUDYLOAD_CORONAL   "Caricamento Dati Coronarici"
+    IDS_STUDYLOAD_SKELETON  "Caricamento Scheletro"
+    IDS_STUDYLOAD_SEGMENTS  "Caricamento Segmenti"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STUDYLOAD_THRESHOLD "Lettura Informazioni di Soglia"
+    IDS_STUDYLOAD_VOLUME    "Caricamento Dati Volumetrici"
+    IDS_STUDYLOAD_DFS       "Caricamento Campi: DFS"
+    IDS_STUDYLOAD_DFE       "Caricamento Campi: DFE"
+    IDS_STUDYLOAD_CSI       "Caricamento Campi: CSI"
+    IDS_STUDYLOAD_SLD       "Caricamento Campi: SLD"
+    IDS_STUDYLOAD_INS       "Caricamento Campi: INS"
+    IDS_STUDYLOAD_SUBMARINE "Inizializzazione Sottomarino"
+    IDS_STUDYLOAD_BOOKMARKS "Caricamento Preferiti"
+    IDS_STUDYLOAD_PAINTING  "Inizializzazione Visualizzazione"
+    IDS_STUDYLOAD_ERROR_FORMAT 
+                            "Si è verificato un errore durante il caricamento dello studio:\n%s\nContattare il servizio di assistenza."
+    IDS_STUDYLOAD_ABORTING  "Interruzione caricamento...Prego attendere"
+    IDS_STUDYLOAD_COMPLETING "Completamento Caricamento Modello 3D..."
+    IDS_STUDY_OPEN_FILESYSTEM_FILTER 
+                            "Viatronix V3D Study Files (*.ecv)|*.ecv|All Files (*.*)|*.*||"
+    IDS_STUDY_OPEN_FILESYSTEM_TITLE "Apri uno Studio Viatronix V3D"
+    IDS_INCORRECT_FILE_EXTENSION 
+                            "Lo studio selezionato ha un'estensione sbagliata"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Apri questo studio"
+    ID_FILE_MRU_FILE2       "Apri questo studio"
+    ID_FILE_MRU_FILE3       "Apri questo studio"
+    ID_FILE_MRU_FILE4       "Apri questo studio"
+    ID_FILE_MRU_FILE5       "Apri questo studio"
+    ID_FILE_MRU_FILE6       "Apri questo studio"
+    ID_FILE_MRU_FILE7       "Apri questo studio"
+    ID_FILE_MRU_FILE8       "Apri questo studio"
+    ID_FILE_MRU_FILE9       "Apri questo studio"
+    ID_FILE_MRU_FILE10      "Apri questo studio"
+    ID_FILE_MRU_FILE11      "Apri questo studio"
+    ID_FILE_MRU_FILE12      "Apri questo studio"
+    ID_FILE_MRU_FILE13      "Apri questo studio"
+    ID_FILE_MRU_FILE14      "Apri questo studio"
+    ID_FILE_MRU_FILE15      "Apri questo studio"
+    ID_FILE_MRU_FILE16      "Apri questo studio"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CDB_MEASURE_RADIO   "Strumenti"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CDB_HIGHLIGHTS_RADIO "Sposta highlights"
+    IDC_CDB_WINDOWLEVEL_RADIO "Finestra/Livello"
+    IDC_CDB_AUTOFLY_RADIO   "Pilota Automatico"
+    IDC_CDB_FLIPVIEW_BTN    "Ruota Veduta 180°"
+    IDC_CDB_DETECTMISSEDRGNS_BTN "Individua Regioni Mancanti"
+    IDC_CDB_NEXTMISSEDRGN_BTN "Passa alla Regione Mancante Successiva   F12"
+    IDC_ODB_RESET_OVERVIEW  "Resetta Display Veduta Generale"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_SDB_RESET_WINDOW_LEVEL "Resetta Finestra/Livello"
+    IDC_SDB_WINDOWLEVEL_MODE "Modalità Finestra/Livello"
+    IDC_CDB_PAINTING        "Mostra Regioni Analizzate"
+    IDC_CDB_ORTHOGONAL_SHADOWS "Mostra Posizioni Sezione Oortogonale"
+    IDC_CDB_CROSS_SECTIONAL_SHADOW "Mostra Posizione Sezioni Incrociate"
+    IDC_ODB_SLICE_INDICATORS "Mostra Posizione Sezione Ortogonale"
+    IDC_ODB_TRANSLUCENT     "Trasparente"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_FACILITY       "Aiuto"
+    IDS_V3DEXE_DEADLOCKED_FORMAT 
+                            "Se il modulo v3D sta caricando uno studio, attendere che il caricamento sia completo oppure interromperlo.\n\nIn caso contrario il modulo si blocca e non può essere chiuso.\n"
+    IDS_COMMENTS            "Commenti"
+    IDS_2DSEGMENTS          "2D Segments"
+    IDS_3DSEGMENTS          "3D Segments"
+    IDS_CHECKING_V3DPROCESSOR_ACTIVITY "Checking v3D Processor Activity"
+    IDS_OPEN_WHILE_PROCESSING_PROMPT 
+                            "The local v3D Processor is currently processing a Colon study, which will likely cause reduced performance in viewing and diagnosing other studies.\n\nContinue?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "\nOpen Study"
+    ID_FILE_PRINT           "Print Study"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_STUDY_OPEN          "Apri uno studio esistente"
+    IDM_STUDY_CLOSE         "Chiudi lo studio in corso"
+    IDM_REPORT_ADDSNAPSHOT  "Aggiungi immagine della veduta attuale"
+    IDM_BOOKMARKS_ADDBOOKMARK 
+                            "Aggiungi nuovo preferito sulla posizione attuale"
+    IDM_PROGRAM_PREFERENCES "Imposta le preferenze specifiche per l'utente"
+    IDM_VIEWWINDOW_MAINWINDOW "Massimizza questa finestra"
+    IDT_ENDOSCOPIC_VIEW     "Veduta Endoscopica"
+    IDT_SLICE_VIEW_SAGITTAL "Veduta Sagittale"
+    IDT_SLICE_VIEW_CORONAL  "Veduta Coronale"
+    IDT_SLICE_VIEW_TRANSVERSE "Veduta Trasversale"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OVERVIEW_SLICEINDICATORS_AXIAL "Assiale"
+    ID_OVERVIEW_SLICEINDICATORS_SAGITTAL "Sagittale"
+    ID_OVERVIEW_SLICEINDICATORS_CORONAL "Coronale"
+    ID_OVERVIEW_SLICEINDICATORS_CROSSSECTIONAL "Sezioni Incrociate"
+    ID_OVERVIEW_RESETDISPLAY "Resetta Display"
+    ID_OVERVIEW_OPTIONS_CENTERLINE "Linea Centrale"
+    ID_OVERVIEW_OPTIONS_TRANSPARENT "Trasparente"
+    ID_OVERVIEW_OPTIONS_FRAMEBOX "Inquadratura"
+    ID_ENDOSCOPICVIEW_SLICEINDICATORS_AXIAL "Assiale"
+    ID_ENDOSCOPICVIEW_SLICEINDICATORS_SAGITTAL "Sagittale"
+    ID_ENDOSCOPICVIEW_SLICEINDICATORS_CORONAL "Coronale"
+    ID_ENDOSCOPICVIEW_SLICEINDICATORS_CROSSSECTIONAL "Sezioni Incrociate"
+    ID_ENDOSCOPICVIEW_OPTIONS_CENTERLINE "Linea Centrale"
+    ID_ENDOSCOPICVIEW_OPTIONS_MARKING "Colorare"
+    ID_ENDOSCOPICVIEW_OPTIONS_TRANSLUCENT_DISPLAY "Display Traslucido"
+    ID_ENDOSCOPICVIEW_CURRENTMODE_LINEMEASURE "Modalità Misurazione Lineare"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ENDOSCOPICVIEW_CURRENTMODE_LIGHTING "Modalità Illuminazione"
+    ID_ENDOSCOPICVIEW_CURRENTMODE_AUTOFLY "Modalità Perlustrazione Automatica"
+    ID_ENDOSCOPICVIEW_NAVIGATIONHEADING_TORECTUM "Al Retto"
+    ID_ENDOSCOPICVIEW_NAVIGATIONHEADING_TOCECUM "All'intestino Cieco"
+    ID_ENDOSCOPICVIEW_FLIPVIEWDIRECTION "Cambia Direzione Di Veduta"
+    ID_ORTHOGONALVIEW_RESETWL "Resetta Finestra/Livello"
+    ID_OVERVIEW_NEXTSEGMENT "Prossimo Segmento al Retto"
+    ID_OVERVIEW_PREVSEGMENT "Prossimo Segmento all'Intestino Cieco"
+    ID_ORTHOGONALVIEW_MEASUREMENT "Modalità Misurazione "
+    ID_ORTHOGONALVIEW_WLPRESET_EDITPRESETS 
+                            "Regola Caratteristiche Base Finestra/Livello"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DISCARD_CHANGES_PROMPT "Annullare tutti i cambiamenti?"
+    IDS_VERIFY_USER_OPERATION_FORMAT 
+                            "Sei sicuro di voler %s i %s selezionati?"
+    IDS_VERIFY_USER_OPERATION_ALL_FORMAT 
+                            "La sono sicuro lei vuole %s TUTTI i %s?"
+    IDS_OPERATION_SUCCESS_FORMAT "%s eseguiti."
+    IDS_BOOKMARK            "Preferito"
+    IDS_BOOKMARK_LIST       "Lista Preferiti"
+    IDS_BOOKMARK_NAME_FORMAT "Preferito at %.1f cm"
+    IDS_STUDYLOAD_SUPINE    "Caricamento Studio Supino"
+    IDS_STUDYLOAD_PRONE     "Caricamento Studio Prono"
+    IDS_SELECT_FROM_LIST_FORMAT "Scegliere %s dall'listo"
+    IDS_STUDYLOAD_VOLFIELDS "Caricamento Dei Dati Massa"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WINDOWLEVEL         "Finestra/Livello"
+    IDS_SCROLL_SLICE        "Scorri Sezione"
+    IDS_POPUP_MENU          "Menu Opzioni"
+    IDS_SEGMENT_LENGTH_WARNING 
+                            "ATTENZIONE: la somma della lunghezza dei segmenti è solo %0f centimetri.\nUn Colon normale misura tra i 120 e i 150 centimetri.\nProbabilmete porzioni significative del Colon non sono state incluse. Ricontrollare la segmentazione del Colon."
+    IDS_SELECT              "Selezionare"
+    IDS_CUSTOM              "Adattare"
+    IDS_ALIGN_CROSS_SECTIONAL "Allinea Sezioni Incrociate"
+    IDS_LUMEN_COVERAGE      "Copertura Cavità Intestinali"
+    IDS_PAN_VIEW            "Veduta Allargata"
+    IDS_PAN_REWIND          "Allarga/Arretra"
+    IDS_MEASURE             "Misura"
+    IDS_MEASURE_DELETE      "Elimina Misura"
+    IDS_MEASUREMENT_LIST    "Lista di Misurazioni"
+    IDS_MOVE_VIEW_DIRECTION "Sposta la Direzione della Veduta"
+    IDS_DETECTING_MISSED_REGIONS "Individuazione Regioni Mancanti..."
+    IDS_MOVELIGHTSOURCE     "Muovere Luce Origine"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MOVEBIOPSY          "Sposta Trasparenza"
+    IDS_VVS_TEST_VERSION    "Versione Beta (Non Autorizzata a Effettuare Esami)"
+    IDS_NON_PHYSICIAN_USER  "Utente Non-Medico (Solo Lettura)"
+    IDS_CONTACT_SERVICE     "Contattare il servizio di assistenza."
+    IDS_ABOUT_APP_FORMAT    "Su %s..."
+    IDS_ANNOTATIONS_LIST    "Lista di Annotazioni"
+    IDS_ANNOTATION          "Annotazione"
+    IDS_ANNOTATION_TEXT_PROMPT 
+                            "Inserire il testo dell' annotazione\nnello spazio sottostante."
+    IDS_EMPTY_LIST          "Vuota Lista"
+    IDS_LUMEN_COVERAGE_VALUE_FORMAT "%d%%"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LOGINNAME           "Nome Login:"
+    IDS_PERMISSIONS         "Autorizzazioni"
+    IDS_USER                "Utente"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ADMINISTRATOR       "Amministratore"
+    IDS_SERVICE             "Servizio"
+    IDS_FIRST               "Primo"
+    IDS_NEXT                "Prossimo"
+    IDS_VALUE               "Val"
+    IDS_PHYSICIANNAME       "Nome Dottore"
+    IDS_PHYSICIANPREFIX     "DR:"
+    IDS_PREFS_DLGNAME       "Preferenze di Sistema"
+    IDS_DRIVE               "Unità di Lettura"
+    IDS_SHARENAME           "Nome Parte"
+    IDS_PATIENTNAME         "Nome Paziente"
+    IDS_PATIENTID           "ID Paziente"
+    IDS_PATIENTINFO         "Informazioni Paziente"
+    IDS_SCANDATE            "Data Esame"
+    IDS_REFERRINGPHYSICIAN  "Medico di Riferimento"
+    IDS_FILETYPE            "Tipo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONTENT             "Contenuto"
+    IDS_FILENAME            "Nome File"
+    IDS_FILESTATUS          "Stato"
+    IDS_LOCATION            "Ubicazione"
+    IDS_DBDLG_INFOTITLE     "Informazioni studio per"
+    IDS_INVALID_LOGIN       "La combinazione login/password che avete inserito non è corretta."
+    IDS_ERROR_CHANGING_PASSWORD 
+                            "Si è verificato un errore durante il cambiamento della password."
+    IDS_DELETE              "Elimina"
+    IDS_TRANSFERRING        "Trasferimento Studio in Corso"
+    IDS_PASSWORD_MISMATCH   "Le Password Non Coincidono"
+    IDS_PASSWORD_CHANGE     "Cambia Password"
+    IDS_EXAMSITE            "Sito da Esaminare"
+    IDS_FIRST_PAGE_NUMBERING_FORMAT "Pagina %d"
+    IDS_PAGE_NUMBERING_FORMAT "Pagina %d di %d"
+    IDS_PATIENT             "Paziente"
+    IDS_STUDYDATE           "Data Studio"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INTRODUCTION        "Introduzione"
+    IDS_RELOAD              "Ricaricare"
+    IDS_SUPINE_ABBREV       "S (Supino)"
+    IDS_PRONE_ABBREV        "P (Prono)"
+    IDS_READ_ABBREV         "R (Read)"
+    IDS_CDRW_CREATEIMAGE    "Creazione Immagine CD ..."
+    IDS_CDRW_WRITE          "Scrittura CD ..."
+    IDS_CDRW_FINALIZING     "Completamento CD ..."
+    IDS_PHYSICIAN           "Medico "
+    IDS_UPDATE              "Aggiornamento"
+    IDS_FINISH              "Fine"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BACK                "Indietro"
+    IDS_PICK_VERIFY_FORMAT  "Premere `Aggiorna` per cambiare %s modello."
+    IDS_PICK_LENGTH_WARNING_FORMAT 
+                            "ATTENZIONE!  Le lunghezze di segmento scelte %s è risultato in una lunghezza estremamente breve totale.\n\nControllare la segmentazione."
+    IDS_THIS                "Questo"
+    IDS_SEGMENT             "Segmento"
+    IDS_ADD_USER_REGISTRATION 
+                            "Il doppio clic di aggiungere i punti, trascinare per muovere i punti."
+    IDS_VERIFYTITLE_SEGMENTS "Verifica di Lista di Segmento"
+    IDS_VERIFYTITLE_REGISTRATION "Verifica di Registrazione"
+    IDS_RECEIVED            "Ricevuto"
+    IDS_CONVERTING          "Conversione"
+    IDS_FAILEDCONVERTING    "Conversione Fallita"
+    IDS_CONVERTED           "Conversione Completa"
+    IDS_PIPELINING          "Costruzione 3D"
+    IDS_FAILEDPIPELINING    "Costruzione 3D Fallita"
+    IDS_COMPLETE            "Completo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DELETED             "Eliminato"
+    IDS_INCOMPLETE          "Incompleto"
+    IDS_INVALID             "Invalido"
+    IDS_LOGOUT_USER_FORMAT  "Logout %s"
+    IDS_TRANSFER_PROGRESS_FORMAT "Trasferimento in Corso %d di %d"
+    IDS_TRANSFER_CANCELLING "Cancellazione Trasferimento..."
+    IDS_STUDY_FILES_NOT_FOUND 
+                            "Studi non trovati o inaccessibili in questo momento.\n\nContattare il servizio di assistenza."
+    IDS_INSUFFICIENT_DISKSPACE_FORMAT 
+                            "Spazio su disco insufficiente: %s\n\nImpossibile trasferire lo studio selezionato."
+    IDS_TRANSFER_STUDY_EXISTS 
+                            "Questo studio esiste già all'interno della collocazione prescelta. \nSi desidera eliminare i dati esistenti e trasferire di nuovo lo studio?"
+    IDS_STUDY_TRANSFER_CLOSE_CURRENT_STUDY 
+                            "Lo studio attualmente aperto deve essere chiuso prima di essere trasferito su CD.\nChiudere lo studio aperto e continuare il trasferimento dello studio del paziente selezionato?"
+    IDS_MULTIPLE            "Multiplo"
+    IDS_STUDY_TRANSFER_ERROR "Lo studio non può essere trasferito"
+    IDS_DATABASE_UPDATE_ERROR 
+                            "Si è verificato un errore durante l'aggiornamento dei dati del paziente."
+    IDS_STUDY_TRANSFER_CD_OVER_CAPACITY 
+                            "Lo studio selezionato è troppo grande per essere trasferito su CD."
+    IDS_ERROR_STUDYDELETE_FILES 
+                            "Si è verificato un errore durante l'eliminazione dei files"
+    IDS_ERROR_STUDYDELETE_DATABASE 
+                            "Si è verificato un errore durante l'eliminazione degli studi dal database."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERROR_STUDYDELETE_GENERIC 
+                            "Si è verificato un errore durante l'eliminazione dello studio. "
+    IDS_DATABASE_ERROR_CONNECTIONFAILED "Impossibile connettersi al database."
+    IDS_DATABASE_SEARCH_RESULTS_LIST_TITLE_FORMAT 
+                            "Risultati Ricerca: %d Studi"
+    IDS_UNREAD_ONLY         "Solo Non Letti"
+    IDS_DATABASE_DELETING   "Eliminazione studio in corso...Attendere"
+    IDS_DATABASE_SEARCHING  "Ricerca Studi..."
+    IDS_DATABASE_CONNECTING "Connessione al Database in Corso..."
+    IDS_CONNECTION_TESTING  "Connesione..."
+    IDS_CONNECTION_TEST_SUCCESS "Il test di collegamento era di successo."
+    IDS_DATABASE_SELECT_UNAVAILABLE_PROMPT 
+                            "Il test di collegamento ha fallito.\n\nFarla desidera scegliere questo collegamento?"
+    IDS_DATABASE_SEARCH_FILESYSTEM_TOOLTIP 
+                            "File System: Trascinare gli Studi da Windows Explorer alla Lista Sottostante"
+    IDS_ERROR_STUDYDELETE_CONSTRUCTING 
+                            "Impossibile eliminare studio in costruzione."
+    IDS_STUDY_TRANSFER_INSERT_DISK_FORMAT 
+                            "Inserire nel lettore %s un disco con almeno %dKB di spazio libero."
+    IDS_DATABASE_INITIALIZING "Inizializzazione Database..."
+    IDS_APPLICATION_LOADING "Caricamento Applicazione..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BOOKMARKS_LEVEL_HIGH "Preferito ad alta priorità"
+    ID_BOOKMARKS_LEVEL_MEDIUM "Preferito a media priorità"
+    ID_BOOKMARKS_LEVEL_LOW  "Preferito a bassa priorità"
+    ID_BOOKMARKS_DELETE     "Elimina Preferito"
+    ID_BOOKMARKS_GOTO       "Sposta vista su questa preferito"
+    ID_REPORT_GENERATEREPORT "Genera un rapporto da una lista di Preferiti"
+    IDM_JUMP_PREVSEGMENT    "Passa al Prossimo Segmento in Direzione dell'Intestino Cieco"
+    IDM_JUMP_NEXTSEGMENT    "Passa al Prossimo Segmento in Direzione del Retto"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Viatronix v3D System"
+    IDS_V3DVIEWER_COLON     "v3D Viewer - Colon"
+    IDS_V3DCONSOLE          "v3D Console"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_ODB_SHOWHIDE        "Mostra/Nascondi Controlli Veduta Generale"
+    IDC_CDB_SEGMENT_JUMP_PREV 
+                            "Prossimo Segmento Verso l'Intestino Cieco   F10"
+    IDC_CDB_SEGMENT_JUMP_DIRECTION "Cambia Direzione Veduta   F9"
+    IDC_CDB_SEGMENT_JUMP_NEXT "Prossimo Segmento Verso il Retto   F11"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STANDARD            "Standard"
+    IDS_DUALORTHOGONAL      "Ortogonale Doppia"
+    IDS_ENDOSLICE           "Sezione-Linterna"
+    IDS_DUALOVERVIEW        "Supino/Prono"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LOCAL               "Locale"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NETWORK             "Rete"
+    IDS_COMPACTDISC         "CD"
+    IDS_PACS                "PACS"
+    IDS_FILESYSTEM          "File System"
+    IDS_V1000               "V1000"
+    IDS_V2000               "V2000"
+    IDS_OTHER               "Altro"
+    IDS_DIRECTORY           "Directory"
+    IDS_STUDY               "Studio"
+    IDS_DATASET             "Insieme di Dati"
+    IDS_PREVIEW             "Anteprima"
+    IDS_UNMAPPED            "Non mappato"
+    IDS_CLOSING_VIEWER_INSTANCE "Chiusura Viewer in Corso..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OTHER_FINDINGS_VASCULARAAA_ENTRY_FORMAT " %s %s %s%s"
+    IDS_OTHER_FINDINGS_RECOMMENDATIONS_FOLLOWUP_FORMAT 
+                            " - Ottenere seguito %s colonscopia in %d %s"
+    IDS_OTHER_FINDINGS_RECOMMENDATIONS_POLYP_REMOVAL 
+                            " - Ottenere colonoscopia ottica per rimozione polipo"
+    IDS_SCHEDULE_FOR_POLYP_REMOVAL "Programma per rimozione polipo"
+    IDS_RPT_NORMAL          "Normale"
+    IDS_NORMAL_FINDING      "Risultato normale nel %s a %s. %s"
+    IDS_HEADER_PROMPT       "Prego inserire un disco contenente l'immagine per la testata del rapporto nell'unità di lettura A:"
+    IDS_E_HEADER            "Si è verificato un errore durante il trasferimento dell'immagine di testata del rapporto."
+    IDS_IMPRESSION          "Impressione"
+    IDS_IMAGE_TRANSFER_SUCCESSFUL "Trasferimento immagine eseguito"
+    IDS_ERROR_CREATING_REPORT 
+                            "Si è verificato un errore durante la creazione del rapporto."
+    IDS_GENERATING_REPORT   "Creazione File Rapporto..."
+    IDS_REPORT_PDF_FILENAME "FinalReport.pdf"
+    IDS_MOVIE_STATS_FORMAT  "Lunghezza di Film: %02d:%02d (~%dMB)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_OPEN_REPORT         "Apri File Rapporto\nApri File Rapporto"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_RPT_DELETE_ENTRY    "Elimina Risultato Selezionato\nElimina Risultato Selezionato"
+    IDM_RPT_DELETE_IMAGE    "Elimina Immagine Selezionata\nElimina Immagine Selezionata"
+    IDM_RPT_JUMP            "Passa al segmento\nPassa al segmento"
+    IDM_RPT_DELETE_NONDISTENDED "\nElimina area non esaminata"
+    IDM_RPT_RELOAD_NONDISTENDED 
+                            "Recuperare tutte le aree non esaminate dallo studio\nRecuperare tutte le aree non esaminate dallo studio"
+    ID_VIEWWINDOW_JUMPTOVIEWPOSITION 
+                            "Resetta l'attuale sezione ortogonale a posizione veduta"
+    ID_ENDOSCOPICVIEW_CURRENTMODE_ROIMEASURE "Modalità Misurazione ROI"
+    IDS_CDRW_ANONYMIZING    "Protezione dati studio del paziente in corso..."
+    IDM_RPT_DELETE_ALL_FINDINGS 
+                            "Elimina tutti i risultati\nElimina tutti i risultati"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_ODB_TOGGLE_OVERVIEW_MARKING "Mostra/Nascondi Segno"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_CDB_AUTOFLY         "Alterna Perlustrazione Automatica   F5"
+    IDC_CDB_TOOLS           "Strumenti"
+    IDC_CDB_SNAPSHOT        "Aggiungi Istantanea al Rapporto   F3"
+    IDC_CDB_MOVIE           "Registra un filmato"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INDETERMINATE       "Indeterminato"
+    IDS_SIMILAR_TO_COLON_WALL "Simile alla Parete del Colon"
+    IDS_POLYP               "Polipo"
+    IDS_DIVERTICULUM        "Diverticolo"
+    IDS_STENOSIS            "Stenosi"
+    IDS_ROUND               "Rotondo"
+    IDS_OVAL                "Ovale"
+    IDS_DENSITY_CHANGE_FORMAT "%s Cambiamento di Densità"
+    IDS_SESSILE             "Sessile"
+    IDS_GRADUAL             "Graduale"
+    IDS_ABRUPT              "Interrotto"
+    IDS_INTERMEDIATE        "Intermedio"
+    IDS_IMAGE               "Immagine"
+    IDS_FINDING             "Risultato"
+    IDS_MOVE                "Muovi"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CECUM               "Intestino Cieco"
+    IDS_RECTUM              "Retto"
+    IDS_ASCENDING           "Ascendente"
+    IDS_ASCENDING_COLON     "Colon acendente"
+    IDS_HEPATIC_FLEXURE     "Curvatura Epatica"
+    IDS_TRANSVERSE          "Trasverso"
+    IDS_TRANSVERSE_COLON    "Colon trasverso"
+    IDS_SPLENIC_FLEXURE     "Curvatura Splenica"
+    IDS_DESCENDING          "Discendente"
+    IDS_DESCENDING_COLON    "Colon discendente"
+    IDS_SIGMOID             "Sigmoide"
+    IDS_COLON_FINDINGS      "Risultati Colon"
+    IDS_NON_DISTENDED_AREAS "Aree Non Esaminate"
+    IDS_OTHER_FINDINGS      "Altri Risultati"
+    IDS_MISCELLANEOUS       "Varie"
+    IDS_SCREENING           "Controllo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PERSONAL_HISTORY_OF_POLYPS "Storia personale di polipi"
+    IDS_CONSTIPATION        "Costipazione"
+    IDS_PERSONAL_HISTORY_OF_CANCER "Storia personale di cancro al Colon"
+    IDS_FAMILY_HISTORY_OF_CANCER "Precedenti familiari di cancro"
+    IDS_ANEMIA              "Anemia"
+    IDS_HEMATOCHEZIA        "Hematochezia"
+    IDS_ABNORMAL_IMAGING    "Visualizzazione Anormale"
+    IDS_ABDOMINAL_PAIN      "Dolore Addominale"
+    IDS_IBD                 "IBD"
+    IDS_DIARRHEA            "Diarrea"
+    IDS_POLYP_ON_FLEX_SIGMOID "Polipo sul Flesso/Sigmoide"
+    IDS_LUNG_NODULE         "nodulo polmonare"
+    IDS_LUNG_GRANULOMA      "granuloma polmonare"
+    IDS_PNEUMOTHORAX        "Pneumotoracico"
+    IDS_LIVER_MASS          "massa epatica"
+    IDS_LIVER_CYST          "ciste epatica"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STUDY_DESCR_FORMAT  "%s Studies"
+    IDS_STUDYTYPE_COLON     "Colonscopia"
+    IDS_STUDYTYPE_CALCIUM   "Calcium Scoring"
+    IDS_STUDYTYPE_AAA       "Aneurisma Aortico"
+    IDS_STUDYTYPE_EXPLORER  "Explorer"
+    IDS_STUDYTYPE_UNKNOWN   "Unknown"
+    IDS_STUDYABBREV_COLON   "Colon"
+    IDS_STUDYABBREV_CALCIUM "Calcium"
+    IDS_STUDYABBREV_AAA     "AAA"
+    IDS_STUDYABBREV_EXPLORER "Expl"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GALLSTONES          "Calcolo Biliare"
+    IDS_FATTY_LIVER         "Fegato Grasso"
+    IDS_ADRENAL_MASS        "massa surrenale"
+    IDS_RENAL_MASS          "massa renale"
+    IDS_RENAL_CYST          "ciste renale"
+    IDS_RENAL_STONES        "calcolo renale"
+    IDS_RENAL_SCAR          "cicatrice renale"
+    IDS_HYDRONEPHROSIS      "Idronefrosi"
+    IDS_AAA                 "AAA"
+    IDS_ARTERAL_CALCIFICATION "Calcificazione Arteriosa"
+    IDS_SPLENIC_MASS        "massa splenica"
+    IDS_SPLENIC_GRANULOMA   "granuloma splenico"
+    IDS_INGUINAL_HERNIA     "Ernia Inguinale"
+    IDS_HIATAL_HERNIA       "Ernia Iatale"
+    IDS_UTERINE_FIBROIDS    "Fibromi Uterini"
+    IDS_RIGHT_UPPER_LOBE    "lobo superiore destro"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RIGHT_MIDDLE_LOBE   "lobo medio destro"
+    IDS_RIGHT_LOWER_LOBE    "lobo inferiore destro"
+    IDS_LEFT_UPPER_LOBE     "lobo superiore sinistro"
+    IDS_LEFT_MIDDLE_LOBE    "lobo medio sinistro"
+    IDS_LEFT_LOWER_LOBE     "lobo inferiore sinistro"
+    IDS_RIGHT_LUNG          "polmone destro"
+    IDS_LEFT_LUNG           "polmone sinistro"
+    IDS_RIGHT_LOBE_ANTERIOR_SEGMENT "segmento anteriore lobo destro"
+    IDS_RIGHT_LOBE_POSTERIOR_SEGMENT "segmento posterirore lobo destro"
+    IDS_LEFT_LOBE_MEDIAL_SEGMENT "segmento mediano lobo sinistro"
+    IDS_LEFT_LOBE_LATERAL_SEGMENT "segmento laterale lobo sinistro"
+    IDS_RIGHT_LOBE_ANTERIOR "lobo destro anteriore"
+    IDS_RIGHT_LOBE_POSTERIOR "lobo destro posteriore"
+    IDS_LEFT_LOBE_MEDIAL    "lobo sinistro mediano"
+    IDS_LEFT_LOBE_LATERAL   "lobo sinistro laterale"
+    IDS_RIGHT_KIDNEY        "rene destro"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LEFT_KIDNEY         "rene sinistro"
+    IDS_RIGHT_UPPER_POLE    "polo destro superiore"
+    IDS_RIGHT_MIDDLE        "destro mediano"
+    IDS_RIGHT_LOWER_POLE    "polo destro inferiore"
+    IDS_LEFT_UPPER_POLE     "polo sinistro superiore"
+    IDS_LEFT_MIDDLE         "sinistro mediano"
+    IDS_LEFT_LOWER_POLE     "polo sinistro inferiore"
+    IDS_SUPRARENAL          "soprarenale"
+    IDS_JUXTARENAL          "juxtarenale"
+    IDS_INFRARENAL          "infrarenale"
+    IDS_MALE                "maschio "
+    IDS_FEMALE              "femmina"
+    IDS_OPTICAL             "ottico"
+    IDS_VIRTUAL             "virtuale"
+    IDS_MONTH               "mese(i)"
+    IDS_YEAR                "anno(i)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RIGHT               "destra"
+    IDS_LEFT                "sinistra"
+    IDS_SMALL               "piccolo"
+    IDS_MEDIUM              "medio"
+    IDS_LARGE               "grande"
+    IDS_MILD                "lieve"
+    IDS_MODERATE            "moderato"
+    IDS_SEVERE              "severo"
+    IDS_SUPERIOR            "superiore"
+    IDS_MIDDLE              "mediano"
+    IDS_INFERIOR            "inferiore"
+    IDS_RECOMMENDATIONS     "Raccomandazioni"
+    IDS_PERSONAL_HISTORY_OF_COLONCANCER "Storia personale di cancro al Colon"
+    IDS_VIRTUAL_COLONOSCOPY_IN " 3D CT colongrafia in"
+    IDS_OPTICAL_COLONOSCOPY_IN "colonscopia ottica in"
+    IDS_OTHER_INDICATIONS_LABEL_FULL "Indicazioni non specifiche eccetto:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OTHER_INDICATIONS_LABEL_ABBREV "Altri:"
+    IDS_SAVING_MOVIE        "Salvataggio Filmato..."
+    IDS_OTHER_LOCATION      "Pulire Posizione"
+    IDS_ALL                 "Tutto"
+    IDS_BOTH                "both"
+    IDS_MOVIE               "filmato"
+    IDS_EXTRA_COLONIC_FINDING "Risultati Extra-Colonici"
+    IDS_COLONFINDING_AREA_UNCERTAIN "Area Incerta"
+    IDS_COLONFINDING_DISTANCE_UNCERTAIN "Distanza Incerta"
+    IDS_ANNOTATIONS         "Annotazioni"
+    IDS_DISTANCE_FROM_RECTUM_UNCERTAIN "distanza incerta dal asse anale"
+    IDS_COLONFINDING_MISCELLANEOUS_OTHER_FORMAT " - Diversi altri %s"
+    IDS_EXTRA_COLONIC_FINDING_FORMAT "Risultato Extra-Colonico. %s"
+    IDS_REPORT_FOOTER_PATIENTDATA_FORMAT "%s, ID: %s , Data Esame: %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LOCATION_IN_CM      "Posizione (cm)"
+    IDS_SIZE_FORMAT         "Misura (%s)"
+    IDS_CM                  "cm."
+    IDS_MM                  "mm."
+    IDS_GOTO                "Vai a "
+    IDS_ROI_MAJOR_DIAMETER_FORMAT "Maj Radio: %d mm"
+    IDS_ROI_AREA_FORMAT     "Area: %d mm^2"
+    IDS_ROI_AVERAGE_HU_FORMAT "Media HU: %.1f"
+    IDS_ROI_MAX_HU_FORMAT   "Massima HU: %.1f"
+    IDS_ROI_STD_HU_FORMAT   "St Dev HU: %.2f"
+    IDS_DISTANCE_FROM_RECTUM_FORMAT "%.1f cm dal Asse Anale"
+    IDS_LINEMEASUREMENT_FORMAT " %.1f +/- %d%s"
+    IDS_DISPLAYING_UNCLEANSED "Mostra l'immagine Modificata"
+    IDS_DISPLAYING_UNCLEANSED_VERBOSE 
+                            "Mostra l'immagine Modificata, Scattare la Chiave 'S' Per la Prestazione Ottima."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERROR_UNSPECIFIED   "Si è verificato un errore non specificato."
+    IDS_ERROR_MEMORY_EXCEPTION 
+                            "Si è verificato un errore per mancanza di memoria disponibile."
+    IDS_ERROR_SWITCHVIEW_EXCEPTION 
+                            "Si è verificato un errore durante il passaggio alla veduta."
+    IDS_VASCULAR_FINDING_LENGTH_FORMAT "con lunghezza di %.1f cm "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STUDY_BROWSER       "Browser Studio"
+    IDS_VERIFICATION        "Verifica"
+    IDS_NAVIGATION          "Navigazione"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REPORT              "Rapporto"
+    IDS_STUDY_COMPLETE      "Studio Completo"
+    IDS_STUDY_CLOSING       "Chiusura Studio...Attendere"
+    IDS_REGISTRATION        "Registrazione"
+    IDS_NO_REPORT           "Nessun Rapporto"
+    IDS_REPORT_READ_ONLY    "Rapporto (Solo Lettura)"
+    IDS_ENDOSCOPIC          "Endoscopico"
+    IDS_SLICE               "Sezione"
+    IDS_OVERVIEW            "Generale"
+    IDS_CHILDVIEW_TITLE_VTXFMT "#<orientation> #<view>"
+    IDS_PRIMARY             "Primario"
+    IDS_SECONDARY           "Secondario"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REPORT_NOTGENERATED "Non è stato creato un rapporto per questo studio."
+    IDS_MARK                "Segno"
+    IDS_REMOVE_MARK         "Rimuovi il segno Studio Completo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STUDY_AS_COMPLETED  "Studio Come Completo"
+    IDS_ERROR_3DMODEL_INCOMPLETE 
+                            "La creazione del modello 3-D per lo studio selezionato non è riuscita."
+    IDS_DELETE_CURRENT_STUDY_PROMPT 
+                            "Lo studio è attualmente aperto nel V3D Viewer e deve essere chiuso prima della sua eliminazione."
+    IDS_ERROR_REPORT_READONLY 
+                            "Il rapporto dello studio è bloccato e non può essere modificato."
+    IDS_ERROR_NO_REPORT_OPEN 
+                            "Non c'è nessun rapporto di studio attualmente aperto."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RPTERR_FORMAT       "Errore: impossibile %s nel rapporto."
+    IDS_READ_NONDISTENDED_FINDING "Leggi Risultati Non Esaminati"
+    IDS_DELETE_COLON_FINDING "Elimina Risultato Colon"
+    IDS_READ_COLON_FINDING_ENTRY "Leggi Dati Risultato Colon"
+    IDS_ADD_REPORT_IMAGE    "Aggiungi Immagine Rapporto"
+    IDS_MOVE_IMAGE          "Sposta Immagine"
+    IDS_RETRIEVE_OTHER_FINDING "Recupera altro risultato"
+    IDS_ADD_FINDING         "Aggiungi risultato"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DELETE_FINDING      "Elimina Risultato"
+    IDS_UPDATE_FINDING      "Aggiorna risultato"
+    IDS_RETRIEVE_FINDING    "Recupera risultato"
+    IDS_RETRIEVE_STUDY_INFORMATION "Recupera Informazioni Studio"
+    IDS_ADD_NONDISTENDED_AREA "Aggiungi Aree Non Esaminate"
+    IDS_DELETE_NONDISTENDED_AREA "Elimina area Non Esaminata"
+    IDS_ADD_ENTRY           "Aggiungi dati"
+    IDS_SAVE                "Salva"
+    IDS_OPEN                "Apri"
+    IDS_TRANSFER            "Trasferisci"
+    IDS_REPORT_OPEN_FILESYSTEM_TITLE "Apri un Rapporto Viatronix V3D"
+    IDS_REPORT_OPEN_FILESYSTEM_FILTER "Rapporti Viatronix V3D |*.vrx||"
+    IDS_E_LOAD_REPORT       "Impossibile individuare rapporto."
+    IDS_REPORT_SNAPSHOT_ADDED "Istantanea Rapporto Aggiunta"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INDICATION_ELECTIVE_COLONSCOPY_FORMAT 
+                            "Un %s  di anni %s si presenta per: colongrafia TC 3D elettiva."
+    IDS_INDICATION_GENERAL_FORMAT "Un %s di anni %s si presenta con:"
+    IDS_COLONFINDING_NOTRANSLUCENCY_FORMAT 
+                            "%s%s polipo identificato nel %s a %s. %s"
+    IDS_COLONFINDING_TRANSLUCENCY_FORMAT 
+                            "%s%s polipo identificato nel %s a %s con %s caratteristiche traslucido. %s"
+    IDS_COLONFINDING_OTHER_FORMAT "%s identificato nel %s a %s. %s"
+    IDS_NONDISTENDEDAREAS_HEADING 
+                            "AREE NON ESAMINATE (distanze misurate dal retto)"
+    IDS_OTHER_FINDINGS_ENTRY_FORMAT "- %s%s %s %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OTHER_LOCATION_FORMAT 
+                            "Altri risultati identificati nel %s colon a %s. %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OVERVIEW_OPTIONS_BOOKMARK "Preferito"
+    ID_STUDY_OPTIONS_SHOWORTHOGONALHISTOGRAM 
+                            "Mostra Istogrammi Misurazione Ortogonale."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HAZARD001           "La pre-elaborazione non è stata completata correttamente."
+    IDS_HAZARD002           "Il colon era malamente gonfiato."
+    IDS_HAZARD003           "Movimento del paziente durante l'esame."
+    IDS_HAZARD004           "Fluido mancante o insufficientemente evidenziato."
+    IDS_HAZARD005           "Controllare procedure esame e impostazioni TC - pitch, KVP, spessore sezioni, etc."
+    IDS_HAZARD006           "Individuata soglia aria alta e inusuale."
+    IDS_HAZARD007           "Individuata soglia sui tessuti bassa e inusuale."
+    IDS_HAZARD008           "Individuata soglia sui tessuti alta e inusuale."
+    IDS_HAZARD009           "impossibile interpretare questo avviso di ostacolo."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HAZARD_CONTINUE     "Si desidera continuare a caricare lo studio?"
+    IDS_SUPINE_HAZARDS      "Ostacoli Studio Supino"
+    IDS_PRONE_HAZARDS       "Ostacoli Studio Prono"
+    IDS_STUDY_IN_USE_ERROR_FORMAT 
+                            "Impossibile %s lo studio selezionato perché è attualmente in uso."
+    IDS_DESTINATION_STUDY_IN_USE_ERROR_FORMAT 
+                            "Impossible %s lo studio perché di destinazione è in uso."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BOOKMARK_ADDED      "Preferito Aggiunto"
+    IDS_ERROR_CREATE_REPORT_PREVIEW 
+                            "Si è verificato un errore durante la creazione dell'anteprima del rapporto."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ADDUSER_ERR_ILLEGAL_ENTRY 
+                            "Il nome di login deve contenere solo caratteri numerici e alfabetici (lettere e numeri). Inserire un nome d login corretto."
+    IDS_ADDUSER_ERR_DUPLICATE_ENTRY 
+                            "Un altro utente ha già utilizzato questo nome. Selezionare un altro nome."
+    IDS_ADDUSER_ERR_TOOSHORT_ENTRY 
+                            "Inserire un nome login e un nome completo che abbiano almeno 4 caratteri."
+    IDS_ADDUSER_ERR_PASS_VERIFY 
+                            "Le password inserite non corrispondono. Prego re-inserire e verificare le vostre password."
+    IDS_ADDUSER_ERR_BADPASS "La password che avete inserito non è valida. Assicurarsi che la password e il nome login non siano uguali."
+    IDS_ADDUSER_ERR_TOOSHORT_PASSWORD 
+                            "Inserire una password che abbia almeno 4 caratteri."
+    IDS_DELUSER_ERR_CURRENT "Impossibile elminare l'utente attualmente collegato."
+    IDS_ULTIMATE_BAD_INTERACTION_USER_IRRITANT 
+                            "Lo studio attuale deve essere chiuso prima di mostrare il Browser Studio.\n\nQuesta operazione può essere eseguita anche selezionando la voce `Chiudi` nel menu `Studio`\n\nChiudere adesso lo studio e ritornare al Browser Studio?"
+    IDS_ERROR_GENERIC_FORMAT 
+                            "Si è verificato un errore nel corso di %s il %s selezionato.\n\nContattare il servizio di assistenza."
+    IDS_STUDY_LOCATIONS_FORMAT "Lo Studio è Situato In: %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_TEMPLATE_LINKVIEWS  "Collega Vedute Supina e Prona"
+    IDC_VERIFY_FINISH       "Completa Verifica e Ritorna alla Navigazione"
+    IDC_VERIFY_SUPINEBACK   "Aggiorna Lista Segmenti/Rimuovi Ultimo Segmento dall'Ordine"
+    IDC_VERIFY_PRONEBACK    "Aggiorna Lista Segmenti/Rimuovi Ultimo Segmento dall'Ordine"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_DBS_FIRSTNAMETEXT   "Cerca Persone Col Nome Corrispondente"
+    IDC_DBS_LASTNAMETEXT    "Cerca Persone Col Cognome Corrispondente"
+    IDC_DBS_CLEARSEARCH     "Azzera i Criteri di Ricerca e Mostra Tutti Gli Studi alla Ubicazione"
+    IDC_DBS_INFO            "Mostra Informazioni Dettagliate Sullo Studio Selezionato"
+    IDC_DBS_OPENREPORT      "Apri il Rapporto dello Studio Selezionato"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_DBS_OPENSTUDY       "Apri lo Studio Selezionato"
+    IDC_DBS_DELETE          "Elimina gli Studi Selezionat"
+    IDC_DBS_TRANSFER        "Traferisci gli Studi Selezionati tra le Posizioni Oppure al/dal CD"
+    IDC_DBI_OPENSTUDY       "Apri l'Elemento Selezionato"
+    IDC_DBI_IDONE           "Chiudi e Ritorna alla Console v3D"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_DBS_STATUSMESSAGES  "Mostra Messaggi di Stato dal Processore V3D"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_DBS_OPENMOVIE       "Apri il Rapporto dello Studio Selezionato"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SUPINE              "Supino"
+    IDS_PRONE               "Prono"
+    IDS_SCOUT               "Esploratore"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NON_CONTRAST        "Senza Contrasto"
+    IDS_IMMEDIATE_CONTRAST  "Contrasto Immediato"
+    IDS_DELAYED_CONTRAST    "Contrasto Ritardato"
+    IDS_PROSPECTIVE         "Prospettiva"
+    IDS_SUPINE_EXTRA        "(Supino)"
+    IDS_PRONE_EXTRA         "(Prono)"
+    IDS_FAMILY_HISTORY_OF_POLYPS "Precedenti familiari di polipi"
+    IDS_RETROSPECTIVE       "Retrospettiva"
+    IDS_CYLINDRICAL_SEGMENTS "Parti cilindriche"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MEDIADISK_AUTORUNINF_FORMAT 
+                            "[autorun]\nicon=V3DMediaPlay.exe,1\nlabel=V3DMovie\nopen=V3DMediaPlay.exe %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_V3DEXE_CONSOLE      "V3DConsole.exe"
+    IDS_V3DEXE_COLON        "V3DViewerColon.exe"
+    IDS_V3DEXE_DELETER      "DeleteDir.exe"
+    IDS_V3DEXE_MEDIAPLAY    "V3DMediaPlay.exe"
+    IDS_V3DEXE_LAUNCH_ERROR_FORMAT "Impossibile lanciare il Modulo %s v3D."
+    IDS_ERROR_INSUFFICIENT_RESOURCES_FOR_STUDY 
+                            "Le risorse di sistema insufficienti sono disponibili per caricare questo studio nella sua interezza.\n\nCaricare un dataset, o contattare il servizio di assistenza.."
+    IDS_PROMPT_LOAD_LARGE_STUDY 
+                            "Lo studio scelto contiene un grande numero di fette.\nLei può sperimentare il caricamento più lento ed i ritardi commutando delle vedute.\nLei desidera al contine?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OVERVIEW_REGISTRATION_ALLFEATURES "Mostrare tutte le funzioni"
+    ID_OVERVIEW_REGISTRATIONOPTIONS_SHOWMATCHEDFEATURES 
+                            "Mostrare tutte le funzioni adattate"
+    ID_STUDYBROWSERITEM_OPENWITH_EXPLORER 
+                            "Opens The Selected Item In v3D Explorer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_DBS_SWITCHTOAPP     "Switch to V3D Application"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_MCD_FORMAT_COMPRESSNONE 
+                            "Filmato AVI grande e non compresso senza linea centrale o annotazioni."
+    IDC_MCD_FORMAT_COMPRESSLOW 
+                            "Filmato Windows Media più piccolo senza linea centrale o annotazioni."
+    IDC_MCD_FORMAT_COMPRESSHIGH 
+                            "Filmato Windows Media più piccolo con linea centrale e tutte le annotazioni incluse."
+    IDC_MCD_INCLUDE_OVERVIEW_CHECK 
+                            "Aggiungere un segno di spunta a questa casella per includere una visualizzazione esterna del colon che mostri la posizione durante l’avanzamento."
+    IDC_NTD_BOOKMARKS_RADIO "Visualizzare i bookmark"
+    IDC_NTD_ANNOTATIONS_RADIO "Visualizzare gli appunti"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LUNG                "Polmone"
+    IDS_LIVER               "Epatico"
+    IDS_RENAL               "Renale"
+    IDS_ADRENAL             "Surrenale"
+    IDS_SPLEEN              "Milza"
+    IDS_GI                  "GI"
+    IDS_GYNECOLOGY          "Ginegologia"
+    IDS_VASCULAR            "Vascolare"
+    IDS_LUMEN_COVERAGE_WARNING_FORMAT 
+                            "Soltanto %d%% raggiunto.\nLo studio attuale non può essere stato completamente esaminato."
+    IDS_FINDING_DISTANCE_DEPENDS_ON_SEGMENTS 
+                            "* Distanza a asse anale basato sulla corrente di selezioni di segmento di due punti al tempo di istantanea."
+    IDS_ADJUST_THICKNESS    "Regolare lo Spessore"
+    IDS_SLAB                "Lamiera"
+    IDS_MIP                 "MIP"
+    IDS_ANAL_VERGE          "asse anale"
+    IDS_FINDING_LOC_UNKNOWN "la posizione non ha registrato per quest'entrata (la rapporto ha creato prima della versione 1.4)."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OK                  "OK"
+    IDS_CANCEL              "Annulla"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_NTD_DELETEALL_BUTTON "Cancellare tutti il da entrambi gli elenchi"
+    IDC_NTD_MEASUREMENTS_RADIO "Mostrare le Misure"
+    IDC_AJT_RESETDEFAULT    "Resetta il Sistema Predefinito"
+    IDC_AJT_REVERT          "Resetta il Precedentemente Risparmiato"
+    IDC_AJT_COLOR_BTN_PREV  "Aggiustare il colore per l'endof la gamma precedente"
+    IDC_AJT_COLOR_BTN_NEXT  "Aggiustare il colore per l'inizio di prossima gamma"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OVERVIEW_DISPLAYOPTIONS_MARKING 
+                            "Evidenziatura Panoramica delle Zone Mancanti"
+    IDM_RPT_DELETE_ALL_ENTRIES 
+                            "Elimina Tutti i Risultati\nElimina Tutti i Risultati"
+    IDS_PEDUNCULATED_STALK_SEEN "Peduncolato (Peduncolo Visibile)"
+    IDS_PEDUNCULATED_STALK_UNSEEN "Peduncolato (peduncolo non visibile)"
+    ID_OPTIONS_ADJUSTTRANSLUCENCY 
+                            "Modificare i colori utilizzati nella visualizzazione traslucida"
+    ID_VIEWWINDOW_2DSLICE   "Passare alla Visualizzazione Bidimensionale"
+    ID_VIEWWINDOW_MIP       "Passare alla Visualizzazione MIP"
+    ID_VIEWWINDOW_THINSLAB  "Passare alla Visualizzazione Tramite Lamiera Sottile"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PRECONTRAST         "Pre-Contrasto"
+    IDS_POSTCONTRAST        "Post-Contrasto"
+    IDS_SHOWSUBTRACTED      "Mostrare l'Immagine Modificata"
+    IDS_SW_LICENSE_REQUESTFAILED 
+                            "Impossibile verificare la licenza del software."
+    IDS_SW_LICENSE_REQUESTNEWPROMPT 
+                            "Impossibile rinnovare la licenza del software. Si desidera richiedere una nuova licenza?"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Viatron.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

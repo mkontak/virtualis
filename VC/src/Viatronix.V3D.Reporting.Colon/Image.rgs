@@ -1,0 +1,26 @@
+HKCR
+{
+	Viatronix.Image.1 = s 'Image Class'
+	{
+		CLSID = s '{3886F2BB-AF89-4464-86FF-9058601F5F30}'
+	}
+	Viatronix.Image = s 'Image Class'
+	{
+		CLSID = s '{3886F2BB-AF89-4464-86FF-9058601F5F30}'
+		CurVer = s 'Viatronix.Image.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {3886F2BB-AF89-4464-86FF-9058601F5F30} = s 'Image Class'
+		{
+			ProgID = s 'Viatronix.Image.1'
+			VersionIndependentProgID = s 'Viatronix.Image'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{30C679C2-163C-42A7-A6D2-E43457408304}'
+		}
+	}
+}

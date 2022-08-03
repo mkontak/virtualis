@@ -1,0 +1,1431 @@
+// $Id: ReportLib.idl,v 1.5.2.8 2010/02/05 09:44:03 dongqing Exp $
+// ReportLib.idl : IDL source for ReportLib.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ReportLib.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(4EC43105-6FAB-4AD8-BCC7-10D82FC17B0C),
+	version(1.0),
+	helpstring("ReportLib 1.0 Type Library")
+]
+library ReportLib
+{
+	importlib("stdole32.tlb");
+	interface IImage;
+
+	interface IReport;
+	interface IReportRevisions;
+	interface IReportRevision;
+	interface IReportEntries;
+	interface IReportEntry;
+	interface IReportImages;
+	interface IReportInfo;
+	interface IReportOtherFindings;
+	interface IReportOtherFinding;
+	interface IReportNonDistendedFindings;
+	interface IReportNonDistendedFinding;
+
+	typedef enum PatientSexEnum
+	{
+		Male = 0,
+		Female = 1,
+	} PatientSexEnum;
+
+	typedef enum ColonFindingEnum
+	{
+		Polyp = 0,
+		Diverticulum = 1,
+		Stenosis = 2,
+		Other_Normal = 99,
+		Other_Colonic = 100,
+		Other_Extracolonic = 101
+	} ColonFindingEnum;
+
+	typedef enum OtherFindingsEnum
+	{
+		Lung_Nodule = 0,
+		Lung_Granuloma = 1,
+		Lung_Pneomuthorax = 2,
+		Liver_Mass = 3,
+		Liver_Cyst = 4,
+		Liver_Gallstones = 5,
+		Liver_FattyLiver = 6,
+		Adrenal_Mass = 7,
+		Renal_Mass = 8,
+		Renal_Cyst = 9,
+		Renal_Stones = 10,
+		Renal_Scar = 11,
+		Renal_Hydronephrosis = 12,
+		Vascular_AAA = 13,
+		Vascular_ArteralCalcification = 14,
+		Spleen_Mass = 15,
+		Spleen_Granuloma = 16,
+		GI_InguinalHernia = 17,
+		GI_HiatalHernia = 18,
+		Gynecology_UterineFibroids = 19,
+		Misc_Other = 20,
+	} OtherFindingsEnum;
+
+	typedef enum LocationEnum
+	{
+		Cecum = 0,
+		Ascending = 1,
+		HepaticFlexure = 2,
+		Transverse = 3,
+		SplenicFlexure = 4,
+		Descending = 5,
+		Sigmoid = 6,
+		Rectum = 7,
+		NearFlexure = 16,
+	} LocationEnum;
+
+	typedef enum ShapeEnum
+	{
+		Round = 0,
+		Oval = 1,
+		Sessile = 2,
+		PedunculatedStalkSeen = 3,
+		PedunculatedStalkUnseen = 4,
+		Flat = 5
+	} ShapeEnum;
+
+	typedef enum SizeComparisonEnum
+	{
+		NoPriorStudy = 0,
+		Increase = 1,
+		Descrease = 2,
+		Same = 3,
+	} SizeComparisonEnum;
+
+	typedef enum TranslucencyEnum
+	{
+		Indeterminate = 0,
+		SimilarToColonWall = 1,
+		GradualDensityChange = 2,
+		AbruptDensityChange = 3,
+		IntermediateDensityChange = 4,
+	} TranslucencyEnum;
+
+	typedef enum LungLocationEnum
+	{
+		RightLung_UpperLobe = 0,
+		RightLung_MiddleLobe = 1,
+		RightLung_LowerLobe = 2,
+		LeftLung_UpperLobe = 3,
+		LeftLung_MiddleLobe = 4,
+		LeftLung_LowerLobe = 5,
+	} LungLocationEnum;
+
+	typedef enum LiverLocationEnum
+	{
+		RightLobe_AnteriorSegment = 0,
+		RightLobe_PosteriorSegment = 1,
+		LeftLobe_MedialSegment = 2,
+		LeftLobe_LateralSegment = 3,
+	} LiverLocationEnum;
+
+	typedef enum KidneyLocationEnum
+	{
+		RightKidney = 0,
+		LeftKidney = 1,
+	} KidneyLocationEnum;
+
+	typedef enum VascularLocationEnum
+	{
+		Suprarenal = 0,
+		Juxtarenal = 1,
+		Infrarenal = 2,
+	} VascularLocationEnum;
+
+	typedef enum SpleenLocationEnum
+	{
+		Superior = 0,
+		Middle = 1,
+		Inferior = 2,
+	} SpleenLocationEnum;
+
+	typedef enum AdrenalLocationEnum
+	{
+		Right = 0,
+		Left = 1,
+	} AdrenalLocationEnum;
+
+	typedef enum RenalLocationEnum
+	{
+		Right_UpperPole = 0,
+		Right_Middle = 1,
+		Right_LowerPole = 2,
+		Left_UpperPole = 3,
+		Left_Middle = 4,
+		Left_LowerPole = 5,
+	} RenalLocationEnum;
+
+
+	typedef enum DegreeEnum
+	{
+		Mild = 0,
+		Moderate = 1,
+		Severe = 2,
+	} DegreeEnum;
+
+
+	typedef enum PneumothoraxLocationEnum
+	{
+		RightLung = 0,
+		LeftLung = 1,
+	}
+	PneumothoraxLocation;
+
+	typedef enum PneumothoraxSizeEnum
+	{
+		Small = 0,
+		Medium = 1,
+		Large = 2,
+	} PneumothoraxSizeEnum;
+
+	typedef enum IndicationsEnum
+	{
+		Screening               = 0x0001,
+		PersonalHistoryOfPolyps = 0x0002,
+    	Constipation            = 0x0004,
+		PersonalHistoryOfCancer = 0x0008,
+		FamilyHistoryOfCancer   = 0x0010,
+		Anemia                  = 0x0020,
+		Hematochezia            = 0x0040,
+		AbnormalImaging         = 0x0080,
+	    AbdominalPain           = 0x0100,
+		IBD                     = 0x0200,
+		Diarrhea                = 0x0400,
+		PolypOnFlexSigmoid      = 0x0800,
+	    FamilyHistoryOfPolyps   = 0x1000,
+    	FailedColonoscopy       = 0x2000,
+	    HighSedationRisk        = 0x4000,
+    	IndicationsEnumLast     = 0x4000,
+	} Indications;
+
+	typedef enum ExamQualityEnum
+	{
+		FecalTagging           = 0x0001,
+		CO2                    = 0x0002,
+		RoomAir                = 0x0004,
+		Barium                 = 0x0008,
+		Iodine                 = 0x0010,
+		Glucagon               = 0x0020,
+		Buscopan               = 0x0040,
+		ExamQualityEnumLast    = 0x0040,
+	} ExamQuality;
+
+	typedef enum RecommendationsEnum
+	{
+		FollowUp = 0x0001,
+		Removal = 0x0002,
+	} RecommendationsEnum;
+
+	typedef enum RecommendationTypeEnum
+	{
+		Virtual = 0,
+		Optical = 1,
+		Standard = 2,
+	} RecommendationTypeEnum;
+
+	typedef enum RecommendationUnitEnum
+	{
+		Years = 0,
+		Months = 1,
+	} RecommendationUnitEnum;
+
+	typedef enum DatasetPositionEnumProp
+	{
+		Supine = 0,
+		Prone  = 1,
+    Decubitus = 2,
+    DecubitusLeft = 3,
+    DecubitusRight = 4,
+	} DatasetPositionEnumProp;
+
+////////////////////////////////////////////////////////////////////////////
+// IImage
+	[
+		object,
+		nonextensible,
+		uuid(DE827E70-00D9-413C-B239-B4B45B2F9803),
+		dual,
+		helpstring("IReportImage Interface"),
+		pointer_default(unique)
+	]
+	interface IImage : IDispatch
+	{
+		////////////////////////////////////////////////////////////////////////////
+		// Properties
+		[propget, id(0x60002001), helpstring("property Width")] 
+		HRESULT Width(
+			[out, retval] long *pVal
+		);
+
+		[propget, id(0x60002002), helpstring("property Height")] 
+		HRESULT Height(
+			[out, retval] long *pVal
+		);
+
+		[propget, id(0x60002003), helpstring("property BitsPerPixel")] 
+		HRESULT BitsPerPixel(
+			[out, retval] short *pVal
+		);
+
+		[propget, id(0x60002004), helpstring("property Bitmap")] 
+		HRESULT Bitmap(
+		[out, retval] long *pVal
+		);
+
+		[propget, id(0x60002005), helpstring("property ID")] 
+		HRESULT ID(
+			[out, retval] BSTR *pVal
+		);
+
+
+		[propget, id(0x60002011), helpstring("property Pixels")] 
+		HRESULT Pixels(
+			[out, retval] VARIANT *pVal
+		);
+
+		[propget, id(0x60002012), helpstring("property ImageSize")] 
+		HRESULT ImageSize(
+			[out, retval] long *pVal
+		);
+
+		////////////////////////////////////////////////////////////////////////////
+		// Methods
+
+		[id(0x60003001), helpstring("method Create")] 
+		HRESULT Create(
+			[in]long Width, 
+			[in]long Height, 
+			[in]short BitsPerPixel
+		);
+
+		[id(0x60003002), helpstring("method SetPixels")] 
+		HRESULT SetPixels(
+			[in]VARIANT Bytes
+		);
+
+		[id(0x60003003), helpstring("method Resize")] 
+		HRESULT Resize(
+			[in]long nWidth, 
+			[in]long nHeight
+		);
+	};
+
+
+////////////////////////////////////////////////////////////////////////////
+// IReport
+	[
+		object,
+		uuid(7EC556B8-05D6-46BC-AC2E-72DD8C28266D),
+		dual,
+		helpstring("IReport Interface"),
+		pointer_default(unique)
+	]
+	interface IReport : IDispatch
+	{
+		////////////////////////////////////////////////////////////////////////////
+		// Properties
+
+		[propget, id(0x60002001), helpstring("property Revisions")] 
+		HRESULT Revisions(
+			[out, retval] IReportRevisions** Revisions
+		);
+
+		////////////////////////////////////////////////////////////////////////////
+		// Methods
+		[id(0x60003001), helpstring("method Create")] 
+		HRESULT Create(
+			[in] BSTR FileName
+		);
+
+		[id(0x60003002), helpstring("method Open")] 
+		HRESULT Open(
+			[in] BSTR FileName 
+		);
+
+		[id(0x60003003), helpstring("method Close")]
+		HRESULT Close();
+	};
+
+////////////////////////////////////////////////////////////////////////////
+// IReportRevisions
+	[
+		object,
+		uuid(95B613D6-4616-47D4-8F40-588EADF3E8DD),
+		dual,
+		helpstring("IReportRevisions Interface"),
+		pointer_default(unique)
+	]
+	interface IReportRevisions : IDispatch
+	{
+		////////////////////////////////////////////////////////////////////////////
+		// Properties
+
+		[propget, id(DISPID_VALUE)] 
+		HRESULT Item(
+			[in] VARIANT Index,
+			[out, retval] IReportRevision** Info
+		);		
+
+		[propget, id(DISPID_NEWENUM), restricted] 
+		HRESULT _NewEnum(
+			[out, retval] IUnknown** Unknown
+		);		
+
+		[propget, id(0x60002001), helpstring("property Count")] 
+		HRESULT Count(
+			[out, retval] long* Count
+		);
+
+		////////////////////////////////////////////////////////////////////////////
+		// Methods
+		[id(0x60003001), helpstring("method Add")] 
+		HRESULT Add(
+			[out,retval] IReportRevision** Entry
+		);
+
+		[id(0x60003002), helpstring("method Remove")] 
+		HRESULT Remove(
+			[in]VARIANT Index
+		);
+	};
+
+
+
+////////////////////////////////////////////////////////////////////////////
+// IReporRevision
+	[
+		object,
+		nonextensible,
+		uuid(3131037F-A183-41D5-BD2B-6B8EA1659C49),
+		dual,
+		helpstring("IReportRevision Interface"),
+		pointer_default(unique)
+	]
+	interface IReportRevision : IDispatch
+	{
+		////////////////////////////////////////////////////////////////////////////
+		// Properties
+
+		[propget, id(0x60002001), helpstring("property Info")] 
+		HRESULT Info(
+			[out, retval] IReportInfo** Info
+		);
+
+		[propget, id(0x60002002), helpstring("property Entries")] 
+		HRESULT Entries(
+			[out, retval] IReportEntries** Entries
+		);
+
+		[propget, id(0x60002003), helpstring("property IsOpen")] 
+		HRESULT IsOpen(
+			[out, retval] VARIANT_BOOL *pVal
+		);
+
+		[propget, id(0x60002004), helpstring("property OtherFindings")] 
+		HRESULT OtherFindings(
+			[out, retval] IReportOtherFindings** OtherFindings
+		);
+
+		[propget, id(0x60002005), helpstring("property NonDistendedFindings")] 
+		HRESULT NonDistendedFindings(
+			[out, retval] IReportNonDistendedFindings** NonDistendedFindings
+		);
+
+		[propget, id(0x60002006), helpstring("property MajorVersion")]
+		HRESULT MajorVersion(
+			[out, retval] long *pVal
+		);
+
+		[propget, id(0x60002007), helpstring("property MinorVersion")]
+		HRESULT MinorVersion(
+			[out, retval] long *pVal
+		);
+
+		[propget, id(0x60002008), helpstring("property IsReadOnly")]
+		HRESULT IsReadOnly(
+			[out, retval] VARIANT_BOOL *pVal
+		);
+
+		[propget, id(0x60002009), helpstring("property MarkedCompleted")]
+		HRESULT MarkedCompleted(
+			[out, retval] VARIANT_BOOL *pVal
+		);
+
+    [propput, id(0x60002009), helpstring("property MarkedCompleted")]
+		HRESULT MarkedCompleted(
+			[in] VARIANT_BOOL val
+		);
+
+    ////////////////////////////////////////////////////////////////////////////
+		// Methods
+		[id(0x60003001), helpstring("method Save")]
+		HRESULT Save();
+
+		[id(0x60003002), helpstring("method Close")]
+		HRESULT Close();
+	};
+
+////////////////////////////////////////////////////////////////////////////
+// IReportEntries 
+	[
+		object, 
+		nonextensible,
+		uuid(D78AF9DD-F87F-4EE2-B12E-D4FA5F0099CA),
+		dual,
+		helpstring("IReportEntries Interface"),
+		pointer_default(unique)
+	]
+
+	interface IReportEntries : IDispatch
+	{
+		////////////////////////////////////////////////////////////////////////////
+		// Properties
+
+		[propget, id(DISPID_VALUE)] 
+		HRESULT Item(
+			[in] VARIANT Index,
+			[out, retval] IReportEntry** Info
+		);		
+
+		[propget, id(DISPID_NEWENUM), restricted] 
+		HRESULT _NewEnum(
+			[out, retval] IUnknown** Unknown
+		);		
+
+		[propget, id(0x60002001), helpstring("property Count")] 
+		HRESULT Count(
+			[out, retval] long* Count
+		);
+
+		////////////////////////////////////////////////////////////////////////////
+		// Methods
+		[id(0x60003001), helpstring("method Add")] 
+		HRESULT Add(
+			[out,retval] IReportEntry** Entry
+		);
+
+		[id(0x60003002), helpstring("method Remove")] 
+		HRESULT Remove(
+			[in]VARIANT Index
+		);
+	}; // interface IReportEntries
+
+////////////////////////////////////////////////////////////////////////////
+// IReportEntry 
+	[
+		object,
+		nonextensible,
+		uuid(0CF9B742-ECAE-423A-B347-D7CBFDA9901C),
+		dual,
+		helpstring("IReportEntry Interface"),
+		pointer_default(unique)
+	]
+
+	interface IReportEntry : IDispatch
+	{
+		////////////////////////////////////////////////////////////////////////////
+		// Properties 
+		[propget, id(0x60002001), helpstring("property EntryID")] 
+		HRESULT ID(
+			[out, retval] BSTR* EntryID
+		);
+
+		[propget, id(0x60002002), helpstring("property Name")] 
+		HRESULT Name(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x60002002), helpstring("property Name")] 
+		HRESULT Name(
+			[in] BSTR newVal
+		);
+
+
+		[propget, id(0x60002003), helpstring("property Overview")] 
+		HRESULT Images(
+			[out, retval] IReportImages** Images
+		);
+
+		[propget, id(0x60002004), helpstring("property Comments")] 
+		HRESULT Comments(
+			[out, retval] BSTR* Comments
+		);
+
+		[propput, id(0x60002004), helpstring("property Comments")] 
+		HRESULT Comments(
+			[in] BSTR Comments
+		);
+
+		[propget, id(0x60002005), helpstring("property Location")] 
+		HRESULT Location(
+			[out, retval] LocationEnum *pVal
+		);
+
+		[propput, id(0x60002005), helpstring("property Location")] 
+		HRESULT Location(
+			[in] LocationEnum newVal
+		);
+
+		[propget, id(0x60002006), helpstring("property Shape")] 
+		HRESULT Shape(
+			[out, retval] ShapeEnum *pVal
+		);
+
+		[propput, id(0x60002006), helpstring("property Shape")] 
+		HRESULT Shape(
+			[in] ShapeEnum newVal
+		);
+
+		[propget, id(0x60002007), helpstring("property SizeComparison")] 
+		HRESULT SizeComparison(
+			[out, retval] SizeComparisonEnum *pVal
+		);
+
+		[propput, id(0x60002007), helpstring("property SizeComparison")] 
+		HRESULT SizeComparison(
+			[in] SizeComparisonEnum newVal
+		);
+
+		[propget, id(0x60002008), helpstring("property Translucency")] 
+		HRESULT Translucency(
+			[out, retval] TranslucencyEnum *pVal
+		);
+
+		[propput, id(0x60002008), helpstring("property Translucency")] 
+		HRESULT Translucency(
+			[in] TranslucencyEnum newVal
+		);
+		[propget, id(0x60002009), helpstring("property Maxiumum")] 
+		HRESULT Maxiumum(
+			[out, retval] float *pVal
+		);
+
+		[propput, id(0x60002009), helpstring("property Maxiumum")] 
+		HRESULT Maxiumum(
+			[in] float newVal
+		);
+
+		[propget, id(0x6000200A), helpstring("property Perpendicular")] 
+		HRESULT Perpendicular(
+			[out, retval] float *pVal
+		);
+
+		[propput, id(0x6000200A), helpstring("property Perpendicular")] 
+		HRESULT Perpendicular(
+			[in] float newVal
+		);
+
+		[propget, id(0x6000200B), helpstring("property ColonFinding")] 
+		HRESULT ColonFinding(
+			[out, retval] ColonFindingEnum *pVal
+		);
+
+		[propput, id(0x6000200B), helpstring("property ColonFinding")] 
+		HRESULT ColonFinding(
+			[in] ColonFindingEnum newVal
+		);
+
+		[propget, id(0x6000200C), helpstring("property CameraCoordinates")] 
+		HRESULT CameraCoordinates(
+			[out, retval] VARIANT *pVal
+		);
+
+		[propput, id(0x6000200C), helpstring("property CameraCoordinates")] 
+		HRESULT CameraCoordinates(
+			[in] VARIANT newVal
+		);
+
+		[propget, id(0x6000200D), helpstring("property OrigDistanceToRectum")] 
+		HRESULT OrigDistanceToRectum(
+			[out, retval] float *pVal
+		);
+
+		[propput, id(0x6000200D), helpstring("property OrigDistanceToRectum")] 
+		HRESULT OrigDistanceToRectum(
+			[in] float newVal
+		);
+
+		[propget, id(0x6000200E), helpstring("property OtherFindingID")]
+		HRESULT OtherFindingID(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x6000200E), helpstring("property OtherFindingID")]
+		HRESULT OtherFindingID(
+			[in] BSTR newVal
+		);
+
+		[propget, id(0x6000200F), helpstring("property EntryVersion")] 
+		HRESULT Version(
+			[out, retval] int *pVal
+		);
+
+		[propput, id(0x6000200F), helpstring("property EntryVersion")] 
+		HRESULT Version(
+			[in] int newVal
+		);
+
+		////////////////////////////////////////////////////////////////////////////
+		// Methods
+	}; // interface IReportEntry
+
+	[
+		object,
+		uuid(CCA2B720-A0DF-4AE9-9D21-3A168A922938),
+		dual,
+		helpstring("IReportImages Interface"),
+		pointer_default(unique)
+	]
+	interface IReportImages : IDispatch
+	{
+		////////////////////////////////////////////////////////////////////////////
+		// Properties
+
+		[propget, id(DISPID_VALUE)] 
+		HRESULT Item(
+			[in] VARIANT Index,
+			[out, retval] IImage** Image
+		);		
+
+		[propget, id(DISPID_NEWENUM), restricted] 
+		HRESULT _NewEnum(
+			[out, retval] IUnknown** Unknown
+		);		
+
+		[propget, id(0x60002001), helpstring("property Count")] 
+		HRESULT Count(
+			[out, retval] long* Count
+		);
+
+		////////////////////////////////////////////////////////////////////////////
+		// Methods
+		[id(0x60003001), helpstring("method Add")] 
+		HRESULT Add(
+			[in] IImage* Image
+		);
+
+		[id(0x60003002), helpstring("method Remove")] 
+		HRESULT Remove(
+			[in]VARIANT Index
+		);
+	}; // interface IReportImages
+
+
+////////////////////////////////////////////////////////////////////////////
+// IReportInfo
+	[
+		object,
+		nonextensible,
+		uuid(7D7F3959-ECF1-42B7-8D82-89347D0AB381),
+		dual,
+		helpstring("IReportInfo Interface"),
+		pointer_default(unique)
+	]
+	interface IReportInfo : IDispatch
+	{
+		////////////////////////////////////////////////////////////////////////////
+		// Properties
+		[propget, id(0x60002001), helpstring("property PatientName")] 
+		HRESULT PatientName(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x60002001), helpstring("property PatientName")] 
+		HRESULT PatientName(
+			[in] BSTR newVal
+		);
+
+		[propget, id(0x60002002), helpstring("property PatientID")] 
+		HRESULT PatientID(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x60002002), helpstring("property PatientID")] 
+		HRESULT PatientID(
+			[in] BSTR newVal
+		);
+
+		[propget, id(0x60002003), helpstring("property StudyDate")] 
+		HRESULT StudyDate(
+			[out, retval] DATE *pVal
+		);
+
+		[propput, id(0x60002003), helpstring("property StudyDate")] 
+		HRESULT StudyDate(
+			[in] DATE newVal
+		);
+
+		[propget, id(0x60002004), helpstring("property Endoscopist")] 
+		HRESULT Endoscopist(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x60002004), helpstring("property Endoscopist")] 
+		HRESULT Endoscopist(
+			[in] BSTR newVal
+		);
+
+		[propget, id(0x60002005), helpstring("property ReferringDoctor")] 
+		HRESULT ReferringDoctor(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x60002005), helpstring("property ReferringDoctor")] 
+		HRESULT ReferringDoctor(
+			[in] BSTR newVal
+		);
+
+		[propget, id(0x60002006), helpstring("property PatientBirthday")]
+		 HRESULT PatientBirthday(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x60002006), helpstring("property PatientBirthday")]
+		HRESULT PatientBirthday(
+			[in] BSTR newVal
+		);
+
+		[propget, id(0x60002007), helpstring("property PatientAge")] 
+		HRESULT PatientAge(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x60002007), helpstring("property PatientAge")]
+		HRESULT PatientAge(
+			[in] BSTR newVal
+		);
+
+		[propget, id(0x60002008), helpstring("property PatientWeight")]
+		HRESULT PatientWeight(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x60002008), helpstring("property PatientWeight")]
+		HRESULT PatientWeight(
+			[in] BSTR newVal
+		);
+
+		[propget, id(0x60002009), helpstring("property PatientSex")] 
+		HRESULT PatientSex(
+			[out, retval] PatientSexEnum *pVal
+		);
+
+		[propput, id(0x60002009), helpstring("property PatientSex")] 
+		HRESULT PatientSex(
+			[in] PatientSexEnum newVal
+		);
+
+		[propget, id(0x6000200A), helpstring("property InstitutionName")] 
+		HRESULT InstitutionName(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x6000200A), helpstring("property InstitutionName")] 
+		HRESULT InstitutionName(
+			[in] BSTR newVal
+		);
+
+		[propget, id(0x6000200B), helpstring("property Indication")] 
+		HRESULT Indication(
+			[out, retval] long *pVal
+		);
+
+		[propput, id(0x6000200B), helpstring("property Indication")] 
+		HRESULT Indication(
+			[in] long newVal
+		);
+
+		[propget, id(0x6000200C), helpstring("property OtherIndication")] 
+		HRESULT OtherIndication(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x6000200C), helpstring("property OtherIndication")] 
+		HRESULT OtherIndication(
+			[in] BSTR newVal
+		);
+
+		[propget, id(0x6000200D), helpstring("property Recommendation")] 
+		HRESULT Recommendation(
+			[out, retval] long *pVal
+		);
+
+		[propput, id(0x6000200D), helpstring("property Recommendation")] 
+		HRESULT Recommendation(
+			[in] long newVal
+		);
+
+		[propget, id(0x6000200E), helpstring("property RecommendationType")] 
+		HRESULT RecommendationType(
+			[out, retval] RecommendationTypeEnum *pVal
+		);
+
+		[propput, id(0x6000200E), helpstring("property RecommendationType")] 
+		HRESULT RecommendationType(
+			[in] RecommendationTypeEnum newVal
+		);
+
+
+		[propget, id(0x6000200F), helpstring("property RecommendationUnit")] 
+		HRESULT RecommendationUnit(
+			[out, retval] RecommendationUnitEnum *pVal
+		);
+
+		[propput, id(0x6000200F), helpstring("property RecommendationUnit")] 
+		HRESULT RecommendationUnit(
+			[in] RecommendationUnitEnum newVal
+		);
+
+		[propget, id(0x60002010), helpstring("property RecommendationTime")] 
+		HRESULT RecommendationTime(
+			[out, retval] long *pVal
+		);
+
+		[propput, id(0x60002010), helpstring("property RecommendationTime")] 
+		HRESULT RecommendationTime(
+			[in] long newVal
+		);
+
+		[propget, id(0x60002011), helpstring("property OtherRecommendation")] 
+		HRESULT OtherRecommendation(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x60002011), helpstring("property OtherRecommendation")] 
+		HRESULT OtherRecommendation(
+			[in] BSTR newVal
+		);
+
+		[propget, id(0x60002012), helpstring("property Author")]
+		HRESULT Author(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x60002012), helpstring("property Author")]
+		HRESULT Author(
+			[in] BSTR newVal
+		);
+
+		[propget, id(0x60002013), helpstring("property Impression")]
+		HRESULT Impression(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x60002013), helpstring("property Impression")]
+		HRESULT Impression(
+		[in] BSTR newVal
+		);
+
+		[propget, id(0x60002014), helpstring("property CRADSCategory")]
+		HRESULT CRADSCategory(
+			[out, retval] long *pVal
+		);
+
+		[propput, id(0x60002014), helpstring("property CRADSCategory")]
+		HRESULT CRADSCategory(
+		[in] long newVal
+		);
+
+		[propget, id(0x60002015), helpstring("property ExtraColonicCRADSCategory")]
+		HRESULT ExtraColonicCRADSCategory(
+			[out, retval] long *pVal
+		);
+
+		[propget, id(0x60002016), helpstring("property ExamQuality")] 
+		HRESULT ExamQuality(
+			[out, retval] long *pVal
+		);
+
+		[propput, id(0x60002016), helpstring("property ExamQuality")] 
+		HRESULT ExamQuality(
+			[in] long newVal
+		);
+
+    ////////////////////////////////////////////////////////////////////////////
+		// Methods
+
+  }; // interface IReportInfo
+
+////////////////////////////////////////////////////////////////////////////
+// IReportOtherFindings
+	[
+		object,
+		uuid(FF2105C1-AE1C-40F7-8A6F-6E41506E585E),
+		dual,
+		helpstring("IReportOtherFindings Interface"),
+		pointer_default(unique)
+	]
+	interface IReportOtherFindings : IDispatch
+	{
+		// Properties
+
+		[propget, id(DISPID_VALUE)] 
+		HRESULT Item(
+			[in] VARIANT Index,
+			[out, retval] IReportOtherFinding** Info
+		);		
+
+		[propget, id(DISPID_NEWENUM), restricted] 
+		HRESULT _NewEnum(
+			[out, retval] IUnknown** Unknown
+		);		
+
+		[propget, id(0x60002001), helpstring("property Count")] 
+		HRESULT Count(
+			[out, retval] long* Count
+		);
+
+		////////////////////////////////////////////////////////////////////////////
+		// Methods
+		[id(0x60003001), helpstring("method Add")] 
+		HRESULT Add(
+			[out,retval] IReportOtherFinding** Entry
+		);
+
+		[id(0x60003002), helpstring("method Remove")] 
+		HRESULT Remove(
+			[in]VARIANT Index
+		);
+	}; // interface IReportOtherFindings
+
+	[
+		object,
+		uuid(C23BEF18-3DB4-43D4-B358-65DAD33B22A8),
+		dual,
+		helpstring("IReportOtherFinding Interface"),
+		pointer_default(unique)
+	]
+	interface IReportOtherFinding : IDispatch
+	{
+		[propget, id(0x60002001), helpstring("property Finding")] 
+		HRESULT Finding(
+			[out, retval] OtherFindingsEnum *pVal
+		);
+
+		[propput, id(0x60002001), helpstring("property Finding")] 
+		HRESULT Finding(
+			[in] OtherFindingsEnum newVal
+		);
+
+		[propget, id(0x60002002), helpstring("property Location")] 
+		HRESULT Location(
+			[out, retval] long *pVal
+		);
+
+		[propput, id(0x60002002), helpstring("property Location")] 
+		HRESULT Location(
+			[in] long newVal
+		);
+
+		[propget, id(0x60002003), helpstring("property MaximumSize")] 
+		HRESULT MaximumSize(
+			[out, retval] float *pVal
+		);
+
+		[propput, id(0x60002003), helpstring("property MaximumSize")] 
+		HRESULT MaximumSize(
+			[in] float newVal
+		);
+
+		[propget, id(0x60002004), helpstring("property PerpendicularSize")] 
+		HRESULT PerpendicularSize(
+			[out, retval] float *pVal
+		);
+
+		[propput, id(0x60002004), helpstring("property PerpendicularSize")] 
+		HRESULT PerpendicularSize(
+			[in] float newVal
+		);
+
+		[propget, id(0x60002005), helpstring("property Length")] 
+		HRESULT Length(
+			[out, retval] float *pVal
+		);
+
+		[propput, id(0x60002005), helpstring("property Length")] 
+		HRESULT Length(
+			[in] float newVal
+		);
+
+		[propget, id(0x60002006), helpstring("property Degree")] 
+		HRESULT Degree(
+			[out, retval] long *pVal
+		);
+
+		[propput, id(0x60002006), helpstring("property Degree")] 
+		HRESULT Degree([in] long newVal);
+
+		[propget, id(0x60002007), helpstring("property Comment")] 
+		HRESULT Comment(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x60002007), helpstring("property Comment")] 
+		HRESULT Comment(
+		[	in] BSTR newVal
+		);
+
+		[propget, id(0x60002008), helpstring("property ID")] 
+		HRESULT ID(
+			[out, retval] BSTR *pVal
+		);
+
+		[propget, id(0x60002009), helpstring("property Size")] 
+		HRESULT Size(
+			[out, retval] long *pVal
+		);
+
+		[propput, id(0x60002009), helpstring("property Size")] 
+		HRESULT Size(
+			[in] long newVal
+		);
+
+    [propget, id(0x6000200A), helpstring("property CRADSCategory")] 
+		HRESULT CRADSCategory(
+			[out, retval] long *pVal
+		);
+
+		[propput, id(0x6000200A), helpstring("property CRADSCategory")] 
+		HRESULT CRADSCategory(
+			[in] long newVal
+    );
+
+	}; // interface IReportOtherFinding
+
+////////////////////////////////////////////////////////////////////////////
+// IReportNonDistendedFindings
+	[
+		object,
+		uuid(263CE509-680C-4C74-AA77-FE0687F65EDD),
+		dual,
+		helpstring("IReportNonDistendedFindings Interface"),
+		pointer_default(unique)
+	]
+	interface IReportNonDistendedFindings : IDispatch
+	{
+		// Properties
+		[propget, id(DISPID_VALUE)] 
+		HRESULT Item(
+			[in] VARIANT Index,
+			[out, retval] IReportNonDistendedFinding** Finding
+		);		
+
+		[propget, id(DISPID_NEWENUM), restricted] 
+		HRESULT _NewEnum(
+			[out, retval] IUnknown** Unknown
+		);		
+
+		[propget, id(0x60002001), helpstring("property Count")] 
+		HRESULT Count(
+			[out, retval] long* Count
+		);
+
+		////////////////////////////////////////////////////////////////////////////
+		// Methods
+		[id(0x60003001), helpstring("method Add")] 
+		HRESULT Add(
+			[out,retval] IReportNonDistendedFinding** Finding
+		);
+
+		[id(0x60003002), helpstring("method Remove")] 
+		HRESULT Remove(
+			[in]VARIANT Index
+		);
+	}; // interface IReportNonDistendedFindings
+
+////////////////////////////////////////////////////////////////////////////
+// IReportNonDistendedFinding
+
+  [
+		object,
+		uuid(0BC74E4C-E84F-4702-8D48-26C0C7E5C91D),
+		dual,
+		helpstring("IReportNonDistendedFinding Interface"),
+		pointer_default(unique)
+	]
+	interface IReportNonDistendedFinding : IDispatch
+	{
+		[propget, id(0x60002001), helpstring("property ID")] 
+		HRESULT ID(
+			[out, retval] BSTR *pVal
+		);
+
+		[propget, id(0x60002002), helpstring("property Quaternion")] 
+		HRESULT Quaternion([out, retval] VARIANT *pVal);
+
+		[propput, id(0x60002002), helpstring("property Quaternion")] 
+		HRESULT Quaternion([in] VARIANT newVal);
+
+		[propget, id(0x60002003), helpstring("property ZoomFactor")] 
+		HRESULT ZoomFactor(
+			[out, retval] float *pVal
+		);
+
+		[propput, id(0x60002003), helpstring("property ZoomFactor")]
+		HRESULT ZoomFactor(
+			[in] float newVal
+		);
+
+		[propget, id(0x60002004), helpstring("property Text")] 
+		HRESULT Text(
+			[out, retval] BSTR *pVal
+		);
+
+		[propput, id(0x60002004), helpstring("property Text")]
+		HRESULT Text(
+			[in] BSTR newVal
+		);
+
+		[propget, id(0x60002005), helpstring("property Location")]
+		HRESULT Location(
+			[out, retval] LocationEnum *pVal
+		);
+
+		[propput, id(0x60002005), helpstring("property Location")]
+		HRESULT Location(
+			[in] LocationEnum newVal
+		);
+
+		[propget, id(0x60002006), helpstring("property RotationMatrix")] 
+		HRESULT RotationMatrix(
+			[out, retval] VARIANT *pVal
+		);
+
+		[propput, id(0x60002006), helpstring("property RotationMatrix")] 
+		HRESULT RotationMatrix(
+			[in] VARIANT newVal
+		);
+
+		[propget, id(0x60002007), helpstring("property TransferX")] 
+		HRESULT TransferX(
+			[out, retval] float *pVal
+		);
+
+		[propput, id(0x60002007), helpstring("property TransferX")] 
+		HRESULT TransferX(
+			[in] float newVal
+		);
+
+		[propget, id(0x60002008), helpstring("property TransferY")]
+		HRESULT TransferY(
+			[out, retval] float *pVal
+		);
+
+		[propput, id(0x60002008), helpstring("property TransferY")] 
+		HRESULT TransferY(
+			[in] float newVal
+		);
+
+		[propget, id(0x60002009), helpstring("property ViewMode")]
+		HRESULT ViewMode(
+			[out, retval] long *pVal
+		);
+
+		[propput, id(0x60002009), helpstring("property ViewMode")] 
+		HRESULT ViewMode(
+			[in] long newVal
+		);
+
+		[propget, id(0x6000200A), helpstring("property Image")] 
+		HRESULT Image(
+			[out, retval] IImage* *pVal
+		);
+
+		[propput, id(0x6000200A), helpstring("property Image")]
+		HRESULT Image(
+			[in] IImage* newVal
+		);
+
+		[propget, id(0x6000200B), helpstring("property DatasetPositionEnumProp")] 
+		HRESULT DatasetPositionEnumProp(
+			[out, retval] DatasetPositionEnumProp *pVal
+		);
+
+		[propput, id(0x6000200B), helpstring("property DatasetPositionEnumProp")] 
+		HRESULT DatasetPositionEnumProp(
+			[in] DatasetPositionEnumProp newVal
+		);
+
+		[propget, id(0x6000200C), helpstring("property Offset")] 
+		HRESULT Offset(
+			[out, retval] float *pVal
+		);
+
+		[propput, id(0x6000200C), helpstring("property Offset")]
+		HRESULT Offset(
+			[in] float newVal
+		);
+
+		[propget, id(0x6000200D), helpstring("property Position")] 
+		HRESULT Position(
+			[out, retval] VARIANT *pVal
+		);
+
+		[propput, id(0x6000200D), helpstring("property Position")]
+		HRESULT Position(
+			[in] VARIANT newVal
+		);
+
+		[propget, id(0x6000200E), helpstring("property Direction")]
+		HRESULT Direction(
+			[out, retval] VARIANT *pVal
+		);
+
+		[propput, id(0x6000200E), helpstring("property Direction")]
+		HRESULT Direction(
+			[in] VARIANT newVal
+		);
+
+		[propget, id(0x6000200F), helpstring("property StartPoint")]
+		HRESULT StartPoint(
+			[out, retval] VARIANT *pVal
+		);
+
+		[propput, id(0x6000200F), helpstring("property StartPoint")]
+		HRESULT StartPoint(
+			[in] VARIANT newVal
+		);
+
+		[propget, id(0x60002010), helpstring("property EndPoint")]
+		HRESULT EndPoint(
+			[out, retval] VARIANT *pVal
+		);
+
+		[propput, id(0x60002010), helpstring("property EndPoint")]
+		HRESULT EndPoint(
+			[in] VARIANT newVal
+		);
+	}; // interface IReportNonDistendedFinding
+
+////////////////////////////////////////////////////////////////////////////
+// CoClasses
+	[
+		uuid(3886F2BB-AF89-4464-86FF-9058601F5F30),
+		helpstring("Image Class")
+	]
+	coclass Image
+	{
+		[default] interface IImage;
+	};
+
+	[
+		uuid(3AF6831F-5732-4E82-A333-04654A790B85),
+		helpstring("ReportRevision Class")
+	]
+	coclass ReportRevision
+	{
+		[default] interface IReportRevision;
+	};
+
+	[
+		uuid(E579A075-8CE2-42BE-8320-1C831334706B),
+		helpstring("ReportEntries Class")
+	]
+	coclass ReportEntries
+	{
+		[default] interface IReportEntries;
+	};
+
+	[
+		uuid(D6F2B1B0-6371-4E64-B1CD-4AD6EB96FAE4),
+		helpstring("ReportEntry Class")
+	]
+	coclass ReportEntry
+	{
+		[default] interface IReportEntry;
+	};
+
+	[
+		uuid(845A2899-F269-456B-87E0-28A2F44914F6),
+		helpstring("ReportInfo Class")
+	]
+	coclass ReportInfo
+	{
+		[default] interface IReportInfo;
+	};
+
+
+	[
+		uuid(7C64E04A-F396-4BA8-89E8-06593EF4A5D9),
+		helpstring("ReportImages Class")
+	]
+	coclass ReportImages
+	{
+		[default] interface IReportImages;
+	};
+	[
+		uuid(ADAD89DF-E9EF-47B5-AF27-81CB6C67E8BB),
+		helpstring("ReportOtherFindings Class")
+	]
+	coclass ReportOtherFindings
+	{
+		[default] interface IReportOtherFindings;
+	};
+	[
+		uuid(2EF75240-6113-46F8-AD06-C4A41B1FA0E1),
+		helpstring("ReportOtherFinding Class")
+	]
+	coclass ReportOtherFinding
+	{
+		[default] interface IReportOtherFinding;
+	};
+	[
+		uuid(80DE0E55-31F5-431F-85A5-E4493701C35E),
+		helpstring("ReportNonDistendedFindings Class")
+	]
+	coclass ReportNonDistendedFindings
+	{
+		[default] interface IReportNonDistendedFindings;
+	};
+	[
+		uuid(4A9562C8-9614-4422-A815-301E480D1EA6),
+		helpstring("ReportNonDistendedFinding Class")
+	]
+	coclass ReportNonDistendedFinding
+	{
+		[default] interface IReportNonDistendedFinding;
+	};
+	[
+		uuid(5A98EEB3-0CCF-4FBF-826C-4E3500A35A9B),
+		helpstring("Report Class")
+	]
+	coclass Report
+	{
+		[default] interface IReport;
+	};
+	[
+		uuid(09A2BA0C-1336-4981-B9AD-ACA0F8A592B3),
+		helpstring("ReportRevisions Class")
+	]
+	coclass ReportRevisions
+	{
+		[default] interface IReportRevisions;
+	};
+};
+
+// $Log: ReportLib.idl,v $
+// Revision 1.5.2.8  2010/02/05 09:44:03  dongqing
+// C-RADS and Exam Quality
+// Committed on the Free edition of March Hare Software CVSNT Server.
+// Upgrade to CVS Suite for more features and support:
+// http://march-hare.com/cvsnt/
+//
+// Revision 1.5.2.7  2008/11/14 20:16:18  jmeade
+// give version info to each report entry;
+// flip camera coordinates for report entries of old prone datasets.
+//
+// Revision 1.5.2.6  2008/03/20 18:26:02  jmeade
+// moving console and vc report closer in line.
+//
+// $Id: ReportLib.idl,v 1.5.2.8 2010/02/05 09:44:03 dongqing Exp $
+// $Header: /CVS/cvsRepository/V3D/src/Viatronix.V3D.Reporting.Colon/ReportLib.idl,v 1.5.2.8 2010/02/05 09:44:03 dongqing Exp $

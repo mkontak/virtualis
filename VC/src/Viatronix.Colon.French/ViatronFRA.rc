@@ -1,0 +1,1759 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "..\Viatronix.v3D.Viewer.Colon\resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,40
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Viatronix Inc."
+            VALUE "FileDescription", "VC French TRanslation"
+            VALUE "FileVersion", "1, 0, 0, 40"
+            VALUE "InternalName", "Viatronix.Colon.French"
+            VALUE "LegalCopyright", "Copyright (C) 2011"
+            VALUE "OriginalFilename", "Viatronix.Colon.French"
+            VALUE "ProductName", "VC"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "..\\Viatronix.v3D.Viewer.Colon\\resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#include ""l.fra\\afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "// 1 TYPELIB ""ConsoleInterop.tlb""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RPT_COLON_FINDINGS DIALOGEX 0, 0, 775, 400
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_ENTRIES,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,5,5,151,387
+    LTEXT           "",IDC_ENTRY_NAME,164,5,594,22
+    CONTROL         "",IDC_LINE,"Static",SS_GRAYRECT,182,32,592,1
+    GROUPBOX        "Finding",IDC_STATIC,157,35,94,170
+    GROUPBOX        "Location",IDC_RCF_LOCATIONGROUPBOX,252,35,110,170
+    GROUPBOX        "Comments",IDC_RCF_GROUPBOX_COMMENTS,539,35,210,107
+    EDITTEXT        IDC_OTHER_COMMENTS,549,50,190,87,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Size (mm)",IDC_STATIC_SIZE,363,144,175,60
+    LTEXT           "Maximum",IDC_STATIC_SIZE_LABEL1,378,164,61,11
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,448,159,50,19
+    LTEXT           "Perpendicular",IDC_STATIC_SIZE_LABEL2,378,184,65,11
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME,448,179,50,19
+    GROUPBOX        "Morphology",IDC_STATIC_SHAPE,539,144,210,60
+    CONTROL         "List1",IDC_GROUP_SHAPE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,544,157,201,42
+    GROUPBOX        "Translucency Features",IDC_STATIC_TRANSLUCENCY,363,35,175,107
+    CONTROL         "List1",IDC_GROUP_FEATURES,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,369,47,163,91,WS_EX_TRANSPARENT
+    CONTROL         "List1",IDC_IMAGES,"SysListView32",LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,157,208,612,184
+    CONTROL         "Normal",IDC_FINDING_NORMAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,161,50,63,10
+    CONTROL         "Polyp",IDC_FINDING_POLYP,"Button",BS_AUTORADIOBUTTON,170,93,49,13
+    CONTROL         "Diverticulum",IDC_FINDING_DIVERTCULUM,"Button",BS_AUTORADIOBUTTON,170,110,70,13
+    CONTROL         "Stenosis",IDC_FINDING_STENOSIS,"Button",BS_AUTORADIOBUTTON,170,128,60,13
+    CONTROL         "Other",IDC_FIDNING_OTHER,"Button",BS_AUTORADIOBUTTON,170,146,61,13
+    CONTROL         "Extra-Colonic",IDC_FINDING_EXTRA_COLONIC,"Button",BS_AUTORADIOBUTTON,161,177,86,10
+    LTEXT           "Colonic",IDC_STATIC,161,78,70,10
+    CONTROL         "",IDC_GROUP_LOCATION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,257,48,100,104
+    CONTROL         "Near Flexure",IDC_RCF_FLEXURE_CHECK,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,259,156,100,10
+    GROUPBOX        "Organ",IDC_RCF_GROUPBOX_ORGAN,252,35,110,170,NOT WS_VISIBLE
+    CONTROL         "",IDC_RCF_GROUP_ORGAN,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | NOT WS_VISIBLE | WS_TABSTOP,257,48,100,138,WS_EX_TRANSPARENT
+    GROUPBOX        "Finding Description",IDC_RCF_GROUPBOX_FINDINGDESC,363,35,132,91,NOT WS_VISIBLE
+    CONTROL         "",IDC_RCF_GROUP_FINDINGDESC,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | NOT WS_VISIBLE | WS_TABSTOP,369,47,116,75
+END
+
+IDD_RPT_OTHER_FINDINGS DIALOGEX 0, 0, 442, 357
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_OTHERFINDING_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,253,5,178,342,WS_EX_TRANSPARENT
+    LTEXT           "Lung",IDC_STATIC_LUNG,16,15,95,19
+    LTEXT           "Nodule",IDM_LUNG_NODULE,31,34,95,19,SS_CENTERIMAGE
+    LTEXT           "Granuloma",IDM_LUNG_GRANULOMA,31,52,95,19,SS_CENTERIMAGE
+    LTEXT           "Pneumothorax",IDM_LUNG_PNEUMOTHORAX,31,71,95,19,SS_CENTERIMAGE
+    LTEXT           "Liver",IDC_STATIC_LIVER,16,93,95,19,SS_CENTERIMAGE
+    LTEXT           "Mass",IDM_LIVER_MASS,31,112,95,19,SS_CENTERIMAGE
+    LTEXT           "Cyst",IDM_LIVER_CYST,31,130,95,19,SS_CENTERIMAGE
+    LTEXT           "Gallstones",IDM_LIVER_GALLSTONES,31,149,95,19,SS_CENTERIMAGE
+    LTEXT           "Fatty Liver",IDM_LIVER_FATTY,31,169,95,19,SS_CENTERIMAGE
+    LTEXT           "Adrenal",IDC_STATIC_ADRENAL,16,190,95,19,SS_CENTERIMAGE
+    LTEXT           "Mass",IDM_ADRENAL_MASS,31,209,95,19,SS_CENTERIMAGE
+    LTEXT           "Renal",IDC_STATIC_RENAL,16,232,95,19,SS_CENTERIMAGE
+    LTEXT           "Mass",IDM_RENAL_MASS,31,251,95,19,SS_CENTERIMAGE
+    LTEXT           "Cyst",IDM_RENAL_CYST,31,269,95,19,SS_CENTERIMAGE
+    LTEXT           "Stone",IDM_RENAL_STONES,31,288,95,19,SS_CENTERIMAGE
+    LTEXT           "Scar",IDM_RENAL_SCAR,31,308,95,19,SS_CENTERIMAGE
+    LTEXT           "Hydronephrosis",IDM_RENAL_HYDRONEPHROSIS,31,328,95,19,SS_CENTERIMAGE
+    LTEXT           "Vascular",IDC_STATIC_VASCULAR,137,15,95,19
+    LTEXT           "AAA",IDM_VASCULAR_AAA,153,34,95,19,SS_CENTERIMAGE
+    LTEXT           "Arterial Calcification",IDM_VASCULAR_CALCIFICATION,153,52,95,19,SS_CENTERIMAGE
+    LTEXT           "Spleen",IDC_STATIC_SPLEEN,137,71,95,19,SS_CENTERIMAGE
+    LTEXT           "Mass",IDM_SPLEEN_MASS,153,93,95,19,SS_CENTERIMAGE
+    LTEXT           "Granuloma",IDM_SPLEEN_GRANULOMA,153,112,95,19,SS_CENTERIMAGE
+    LTEXT           "GI",IDC_STATIC_GI,137,130,95,19,SS_CENTERIMAGE
+    LTEXT           "Inguinal Hernia",IDM_GI_INGUINAL,153,149,95,19,SS_CENTERIMAGE
+    LTEXT           "Hiatal Hernia",IDM_GI_HIATAL,153,169,95,19,SS_CENTERIMAGE
+    LTEXT           "Gynecology",IDC_STATIC_GYNECOLOGY,137,190,95,19,SS_CENTERIMAGE
+    LTEXT           "Uterine Fibroids",IDM_GYNECOLOGY_FIBROIDS,153,209,95,19,SS_CENTERIMAGE
+    LTEXT           "Miscellaneous",IDC_STATIC_MISC,137,232,95,19,SS_CENTERIMAGE
+    LTEXT           "Other",IDM_MISC_OTHER,153,251,95,19,SS_CENTERIMAGE
+END
+
+IDD_RPT_SUB_LUNG1 DIALOGEX 0, 0, 270, 136
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_COMMENTS,157,58,106,66,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Location",IDC_STATIC,8,30,141,99
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,13,43,131,81
+    GROUPBOX        "Size (cm)",IDC_STATIC_SIZE2,153,4,112,37
+    LTEXT           "Maximum",IDC_STATIC,159,22,56,11
+    LTEXT           "Perpendicular",IDC_STATIC,159,47,66,11,NOT WS_VISIBLE
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,219,18,42,17
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,225,44,36,17
+    GROUPBOX        "Comments",IDC_STATIC,153,46,112,84
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,101,4,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C-RADS Category",IDC_STATIC,11,5,88,11
+END
+
+IDD_RPT_SUB_LUNG2 DIALOGEX 0, 0, 270, 158
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_COMMENTS,162,97,100,54,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Location",IDC_STATIC,8,30,141,61
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,19,46,120,35
+    GROUPBOX        "Size",IDC_STATIC_SIZE,158,5,107,70
+    CONTROL         "List1",IDC_LIST_SIZE,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,162,21,99,49
+    GROUPBOX        "Comments",IDC_STATIC,158,84,108,71
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,101,4,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C-RADS Category",IDC_STATIC,11,5,88,11
+END
+
+IDD_RPT_SUB_LIVER1 DIALOGEX 0, 0, 270, 117
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_COMMENTS,159,60,104,47,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Location",IDC_STATIC,8,30,141,81
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,14,42,129,60
+    GROUPBOX        "Size (cm)",IDC_STATIC_SIZE2,155,1,112,39
+    LTEXT           "Maximum",IDC_STATIC,160,20,60,11
+    LTEXT           "Perpendicular",IDC_STATIC,160,44,66,11,NOT WS_VISIBLE
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,222,16,43,17
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,221,41,44,17
+    GROUPBOX        "Comments",IDC_STATIC,155,47,112,65
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,101,4,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C-RADS Category",IDC_STATIC,11,5,88,11
+END
+
+IDD_RPT_SUB_VASCULAR1 DIALOGEX 0, 0, 270, 124
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_COMMENTS,158,81,97,32,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Location",IDC_STATIC,8,30,140,77
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,18,46,116,50
+    GROUPBOX        "Transverse (cm)",IDC_STATIC_SIZE2,154,1,113,61
+    LTEXT           "Maximum",IDC_STATIC,160,19,57,11,NOT WS_GROUP
+    LTEXT           "Perpendicular",IDC_STATIC,160,67,70,11,NOT WS_VISIBLE | NOT WS_GROUP
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,219,16,42,17
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,229,65,34,17
+    LTEXT           "Length",IDC_STATIC,160,41,57,11
+    CONTROL         "",IDC_LENGTH_SIZE,"Static",SS_BLACKFRAME | WS_TABSTOP,219,38,42,17
+    GROUPBOX        "Comments",IDC_STATIC,155,68,111,49
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,101,10,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C-RADS Category",IDC_STATIC,11,11,88,11
+END
+
+IDD_RPT_SUB_ADRENAL1 DIALOGEX 0, 0, 270, 108
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_COMMENTS,158,13,105,86,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Location",IDC_STATIC,8,18,143,50
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,19,30,121,33
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,93,80,50,17
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,95,94,50,17
+    GROUPBOX        "Size (cm)",IDC_STATIC_SIZE2,7,72,143,30
+    LTEXT           "Maximum",IDC_STATIC,21,84,66,11
+    LTEXT           "Perpendicular",IDC_STATIC,23,99,66,11,NOT WS_VISIBLE
+    GROUPBOX        "Comments",IDC_STATIC,154,1,112,101
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,103,4,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C-RADS Category",IDC_STATIC,11,5,88,11
+END
+
+IDD_RPT_SUB_RENAL1 DIALOGEX 0, 0, 270, 155
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_COMMENTS,161,66,97,78,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Location",IDC_STATIC,8,30,141,119
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,19,46,117,97
+    GROUPBOX        "Size (cm)",IDC_STATIC_SIZE2,156,1,111,40
+    LTEXT           "Maximum",IDC_STATIC,160,19,57,11
+    LTEXT           "Perpendicular",IDC_STATIC,160,43,66,11,NOT WS_VISIBLE
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,218,15,42,17
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,229,40,32,17
+    GROUPBOX        "Comments",IDC_STATIC,157,53,109,96
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,101,10,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C-RADS Category",IDC_STATIC,11,11,88,11
+END
+
+IDD_RPT_SUB_RENAL2 DIALOGEX 0, 0, 270, 155
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Location",IDC_STATIC,8,30,141,119
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,19,46,117,97
+    GROUPBOX        "Comments",IDC_STATIC,155,6,110,143
+    EDITTEXT        IDC_COMMENTS,158,19,104,127,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,101,10,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C-RADS Category",IDC_STATIC,11,11,88,11
+END
+
+IDD_RPT_SUB_SPLEEN1 DIALOGEX 0, 0, 270, 126
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_COMMENTS,153,62,110,54,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Location",IDC_STATIC,8,30,136,74
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,15,46,120,50
+    GROUPBOX        "Size (cm)",IDC_STATIC_SIZE2,149,1,118,41
+    LTEXT           "Maximum",IDC_STATIC,154,18,66,11
+    LTEXT           "Perpendicular",IDC_STATIC,154,44,66,11,NOT WS_VISIBLE
+    CONTROL         "",IDC_MAXIMUM_SIZE,"Static",SS_BLACKFRAME,220,15,45,17
+    CONTROL         "",IDC_PERP_SIZE,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,220,38,45,17
+    GROUPBOX        "Comments",IDC_STATIC,149,49,118,71
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,97,10,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C-RADS Category",IDC_STATIC,8,11,88,11
+END
+
+IDD_RPT_SUB_VASCULAR2 DIALOGEX 0, 0, 270, 111
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Degree",IDC_STATIC,8,30,141,75
+    CONTROL         "List1",IDC_LIST_LEVEL,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,19,46,119,49
+    GROUPBOX        "Comments",IDC_STATIC,155,2,111,104
+    EDITTEXT        IDC_COMMENTS,158,15,105,87,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,101,10,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C-RADS Category",IDC_STATIC,11,11,88,11
+END
+
+IDD_RPT_NON_DISTENDED DIALOG 0, 0, 564, 257
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_ENTRIES,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,5,5,174,232
+    CONTROL         "",IDC_OVERVIEW_FRAME,"Static",SS_GRAYFRAME | SS_SUNKEN | WS_BORDER,325,40,210,205
+    GROUPBOX        "Location",IDC_STATIC,185,45,125,145
+    CONTROL         "List1",IDC_GROUP_LOCATION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,200,60,100,125
+    LTEXT           "",IDC_ENTRY_NAME,190,5,360,22
+    CONTROL         "",IDC_LINE,"Static",SS_GRAYRECT,185,34,362,1
+END
+
+IDD_RPT_PREVIEW DIALOG 0, 0, 441, 356
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_RPT_SUB_OTHER DIALOGEX 0, 0, 175, 112
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Comments",IDC_STATIC,10,35,157,71
+    EDITTEXT        IDC_COMMENTS,14,48,146,54,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,118,10,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C-RADS Category",IDC_STATIC,11,11,102,11
+END
+
+IDD_RPT_SUB_RENAL3 DIALOGEX 0, 0, 270, 151
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Location",IDC_STATIC,8,30,141,54
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,17,46,123,31
+    GROUPBOX        "Comments",IDC_STATIC,157,75,109,71
+    EDITTEXT        IDC_COMMENTS,160,88,102,54,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Degree",IDC_STATIC,157,2,109,71
+    CONTROL         "List1",IDC_LIST_LEVEL,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,161,16,97,49
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,101,10,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C-RADS Category",IDC_STATIC,11,11,88,11
+END
+
+IDD_RPT_SUB_GI1 DIALOGEX 0, 0, 270, 90
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Location",IDC_STATIC,8,30,144,54
+    CONTROL         "List1",IDC_LIST_LOCATION,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,13,40,133,40
+    GROUPBOX        "Comments",IDC_STATIC,154,3,113,81
+    EDITTEXT        IDC_COMMENTS,160,12,103,68,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,101,4,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C-RADS Category",IDC_STATIC,11,5,88,11
+END
+
+IDD_RPT_MISC DIALOGEX 0, 0, 478, 435
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Study Information",IDC_STATIC,8,5,237,101
+    LTEXT           "Physician",IDC_STATIC,16,27,50,18
+    EDITTEXT        IDC_PHYSICIAN,70,26,166,18,ES_AUTOHSCROLL
+    LTEXT           "Date",IDC_STATIC,16,52,26,18
+    CONTROL         "DateTimePicker1",IDC_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_APPCANPARSE | WS_TABSTOP,70,49,100,19,WS_EX_LEFTSCROLLBAR
+    LTEXT           "Author",IDC_STATIC,16,81,32,18
+    EDITTEXT        IDC_AUTHOR,70,77,166,18,ES_AUTOHSCROLL
+    GROUPBOX        "Patient Information",IDC_STATIC,8,114,237,93
+    LTEXT           "Name",IDC_STATIC,16,136,35,18
+    EDITTEXT        IDC_NAME,68,135,166,18,ES_AUTOHSCROLL
+    LTEXT           "ID",IDC_STATIC,16,159,35,18
+    EDITTEXT        IDC_ID,68,159,166,18,ES_AUTOHSCROLL
+    LTEXT           "Age",IDC_STATIC,16,186,35,18
+    EDITTEXT        IDC_AGE,68,182,44,18,ES_AUTOHSCROLL
+    LTEXT           "Sex",IDC_STATIC,127,188,31,9
+    COMBOBOX        IDC_SEX,164,186,67,45,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Recommendations",IDC_STATIC,8,206,237,224
+    CONTROL         "List1",IDC_RECOMMENDATIONS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,12,222,12,13,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_TYPE,28,222,132,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_YEARS,160,222,21,16,ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT,182,222,59,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_RECOMMENDATIONS2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,12,247,212,13,WS_EX_TRANSPARENT
+    GROUPBOX        "Indication",IDC_STATIC,251,5,215,342
+    CONTROL         "List1",IDC_INDICATIONS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOCOLUMNHEADER | WS_TABSTOP,263,16,197,230,WS_EX_TRANSPARENT
+    LTEXT           "Other Indication",IDC_STATIC,258,266,85,9
+    EDITTEXT        IDC_INDICATION_OTHER,257,279,204,65,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Other Recommendation",IDC_STATIC,13,288,79,10
+    GROUPBOX        "Overall Impression",IDC_STATIC,251,346,215,84
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,111,270,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C-RADS Category",IDC_STATIC,13,270,94,11
+    LTEXT           "Extra-Colonic C-RADS Category",IDC_STATIC,260,252,162,11
+    EDITTEXT        IDC_RPT_OTHER_CRADS_CAT,427,252,31,13,ES_READONLY,WS_EX_TOOLWINDOW
+    EDITTEXT        IDC_RECOMMEND_OTHER,1,302,227,126,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_RPT_MISC_DUAL DIALOGEX 0, 0, 722, 435
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PHYSICIAN,70,26,166,18,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATE,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_APPCANPARSE | WS_TABSTOP,70,49,100,19
+    EDITTEXT        IDC_AUTHOR,70,77,166,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME,68,130,166,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ID,68,154,166,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AGE,68,177,44,18,ES_AUTOHSCROLL
+    LTEXT           "Sex",IDC_STATIC,127,183,31,9
+    COMBOBOX        IDC_SEX,164,181,67,45,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_RECOMMENDATIONS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,12,222,12,13,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_TYPE,28,222,132,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_YEARS,160,222,21,16,ES_AUTOHSCROLL
+    COMBOBOX        IDC_UNIT,182,222,59,66,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_RECOMMENDATIONS2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_TABSTOP,12,245,212,13,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_RPT_COMBO_CRADSCAT,193,267,47,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_RPTMISC_CRADS_VERBOSE,13,282,227,48,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY
+    EDITTEXT        IDC_RECOMMEND_OTHER,13,345,227,82,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_PHYSICIAN2,316,25,166,18,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    CONTROL         "",IDC_DATE2,"SysDateTimePick32",DTS_RIGHTALIGN | WS_DISABLED | WS_TABSTOP,316,49,100,19
+    EDITTEXT        IDC_NAME2,314,129,166,18,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ID2,314,153,166,18,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_AGE2,314,177,44,18,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Sex",IDC_STATIC,374,183,31,9
+    COMBOBOX        IDC_SEX2,410,180,67,45,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_RPTMISC_EXAMQUALITY,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOCOLUMNHEADER | WS_TABSTOP,257,216,232,115,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_IMPRESSION,258,345,230,82,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "List1",IDC_INDICATIONS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | LVS_NOCOLUMNHEADER | WS_TABSTOP,512,16,197,230,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_RPT_OTHER_CRADS_CAT,680,252,31,13,ES_READONLY,WS_EX_TOOLWINDOW
+    EDITTEXT        IDC_RPTMISC_ERADS_VERBOSE,508,269,203,61,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY
+    EDITTEXT        IDC_INDICATION_OTHER,506,345,204,81,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "Informations d'examen",IDC_STATIC,8,5,237,101
+    LTEXT           "Médecin",IDC_STATIC,16,27,50,18
+    LTEXT           "Date",IDC_STATIC,16,52,26,18
+    LTEXT           "Author",IDC_STATIC,16,81,32,18
+    GROUPBOX        "Informations Patient",IDC_STATIC,8,109,237,93
+    LTEXT           "Nom du Patient",IDC_STATIC,16,131,35,18
+    LTEXT           "ID",IDC_STATIC,16,154,35,18
+    LTEXT           "Agé",IDC_STATIC,16,181,35,18
+    GROUPBOX        "Recommandations",IDC_STATIC,8,206,237,224
+    GROUPBOX        "Indication",IDC_STATIC,500,5,215,425
+    LTEXT           "Other Indication",IDC_STATIC,507,333,85,9
+    LTEXT           "Other Recommendation",IDC_STATIC,13,333,79,10
+    GROUPBOX        "Impression Globale",IDC_STATIC,254,334,237,96
+    LTEXT           "Catégorie de C-RADS",IDC_STATIC,13,267,79,11
+    LTEXT           "C-RADS Catégorie de Lésions Extra-Coliques",IDC_STATIC,509,252,131,11
+    GROUPBOX        "Informations d'examen",IDC_STATIC,254,5,237,71
+    LTEXT           "Médecin",IDC_STATIC,262,27,50,18
+    LTEXT           "Date",IDC_STATIC,262,52,26,18
+    GROUPBOX        "Informations Patient",IDC_STATIC,254,108,237,93
+    LTEXT           "Nom du Patient",IDC_STATIC,262,131,35,18
+    LTEXT           "ID",IDC_STATIC,262,153,35,18
+    LTEXT           "Agé",IDC_STATIC,262,180,35,18
+    GROUPBOX        "Paramètres d'examen",IDC_STATIC,254,206,237,127
+    LTEXT           "info...",IDC_RPTMISC_CRDAS_LINK_STATIC,100,267,40,13,SS_NOTIFY
+    LTEXT           "info...",IDC_RPTMISC_XCRDAS_LINK_STATIC,647,252,29,13,SS_NOTIFY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_RPT_MISC, DIALOG
+    BEGIN
+    END
+
+    IDD_RPT_MISC_DUAL, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "Viatronix v3D System"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Exits the application\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_INDICATOR_STEP      "                                                           "
+    IDS_INDICATOR_FUNCTION  "                                                           "
+    IDS_INDICATOR_DATETIME  "12:43 PM"
+    IDS_INDICATOR_CAPSLOCK  "Caps Lock Is On"
+    IDS_PICK_SEGMENT_FORMAT "Right-click the %s segment closest to rectum."
+    IDS_PICK_FINISH         "Press 'Finish' to complete verification."
+    IDS_ROTATE_VIEW         "Rotate View"
+    IDS_ZOOM_VIEW           "Zoom View"
+    IDS_MOVE_VIEW           "Move Viewpoint"
+    IDS_FLIGHT_FORWARD      "Fly Forward"
+    IDS_SPIN_REWIND         "Spin/Rewind"
+    IDS_FLIGHT_REVERSE      "Fly Reverse"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PATIENTINFORMATION  "Informations Patient"
+    IDS_STUDYLOAD_HEADER    "Loading Study Information"
+    IDS_STUDYLOAD_AXIAL     "Loading Axial Data"
+    IDS_STUDYLOAD_SAGITTAL  "Loading Sagittal Data"
+    IDS_STUDYLOAD_CORONAL   "Loading Coronal Data"
+    IDS_STUDYLOAD_SKELETON  "Loading Skeleton"
+    IDS_STUDYLOAD_SEGMENTS  "Loading Segments"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STUDYLOAD_THRESHOLD "Reading Threshold Info"
+    IDS_STUDYLOAD_VOLUME    "Loading Volume Data"
+    IDS_STUDYLOAD_DFS       "Loading Fields: DFS"
+    IDS_STUDYLOAD_DFE       "Loading Fields: DFE"
+    IDS_STUDYLOAD_CSI       "Loading Fields: CSI"
+    IDS_STUDYLOAD_SLD       "Loading Fields: SLD"
+    IDS_STUDYLOAD_INS       "Loading Fields: INS"
+    IDS_STUDYLOAD_SUBMARINE "Initializing Submarine"
+    IDS_STUDYLOAD_BOOKMARKS "Loading Bookmarks"
+    IDS_STUDYLOAD_PAINTING  "Initializing Visualization"
+    IDS_STUDYLOAD_ERROR_FORMAT 
+                            "An error occurred while loading Study:\n%s\nPlease contact service for assistance."
+    IDS_STUDYLOAD_ABORTING  "Aborting Load...Please be patient"
+    IDS_STUDYLOAD_COMPLETING "Completing 3D Model Load..."
+    IDS_STUDY_OPEN_FILESYSTEM_FILTER 
+                            "Viatronix V3D Study Files (*.ecv)|*.ecv|All Files (*.*)|*.*||"
+    IDS_STUDY_OPEN_FILESYSTEM_TITLE "Open a Viatronix V3D Study"
+    IDS_INCORRECT_FILE_EXTENSION 
+                            "The selected study has an incorrect file extension."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DISCARD_CHANGES_PROMPT "Discard all changes?"
+    IDS_VERIFY_USER_OPERATION_FORMAT 
+                            "Are you sure you want to %s the selected %s?"
+    IDS_VERIFY_USER_OPERATION_ALL_FORMAT 
+                            "Are you sure you want to %s ALL of the %s?"
+    IDS_OPERATION_SUCCESS_FORMAT "%s successful."
+    IDS_BOOKMARK            "Bookmark"
+    IDS_BOOKMARK_LIST       "Bookmark List"
+    IDS_BOOKMARK_NAME_FORMAT "Bookmark at %.1f cm"
+    IDS_STUDYLOAD_SUPINE    "Loading Supine Study"
+    IDS_STUDYLOAD_PRONE     "Loading Prone Study"
+    IDS_SELECT_FROM_LIST_FORMAT "Select %s from list"
+    IDS_STUDYLOAD_VOLFIELDS "Loading Volume Fields"
+    IDS_STUDYLOAD_MISMATCHED_REGISTRATION 
+                            "Please perform registration again since one of the studies was modified independently of the other."
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this study"
+    ID_FILE_MRU_FILE2       "Open this study"
+    ID_FILE_MRU_FILE3       "Open this study"
+    ID_FILE_MRU_FILE4       "Open this study"
+    ID_FILE_MRU_FILE5       "Open this study"
+    ID_FILE_MRU_FILE6       "Open this study"
+    ID_FILE_MRU_FILE7       "Open this study"
+    ID_FILE_MRU_FILE8       "Open this study"
+    ID_FILE_MRU_FILE9       "Open this study"
+    ID_FILE_MRU_FILE10      "Open this study"
+    ID_FILE_MRU_FILE11      "Open this study"
+    ID_FILE_MRU_FILE12      "Open this study"
+    ID_FILE_MRU_FILE13      "Open this study"
+    ID_FILE_MRU_FILE14      "Open this study"
+    ID_FILE_MRU_FILE15      "Open this study"
+    ID_FILE_MRU_FILE16      "Open this study"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_CDB_MEASURE_RADIO   "Tools"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_CDB_HIGHLIGHTS_RADIO "Move highlights"
+    IDC_CDB_WINDOWLEVEL_RADIO "Window/Level"
+    IDC_CDB_AUTOFLY_RADIO   "AutoPilot"
+    IDC_CDB_FLIPVIEW_BTN    "Rotate View 180°"
+    IDC_CDB_DETECTMISSEDRGNS_BTN "Detect Missed Regions"
+    IDC_CDB_NEXTMISSEDRGN_BTN "Jump To Next Missed Region   F12"
+    IDC_ODB_RESET_OVERVIEW  "Reset Overview Display"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_SDB_RESET_WINDOW_LEVEL "Reset Window/Level"
+    IDC_SDB_WINDOWLEVEL_MODE "Window/Level"
+    IDC_CDB_PAINTING        "Display Viewed Regions"
+    IDC_CDB_ORTHOGONAL_SHADOWS "Show Orthogonal Slice Locations"
+    IDC_CDB_CROSS_SECTIONAL_SHADOW "Show Cross-Sectional Location"
+    IDC_ODB_SLICE_INDICATORS "Show Othogonal Slice Locations"
+    IDC_ODB_TRANSLUCENT     "Transparent"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_HELP_FACILITY       "Help facility"
+    IDS_V3DEXE_DEADLOCKED_FORMAT 
+                            "If the v3D %s Module is loading a study, please abort loading or wait until loading is complete.\n\nOtherwise, the Module may be deadlocked and cannot be closed.\n"
+    IDS_COMMENTS            "Commentaire"
+    IDS_2DSEGMENTS          "2D Segments"
+    IDS_3DSEGMENTS          "UD Segments"
+    IDS_CHECKING_V3DPROCESSOR_ACTIVITY "Checking v3D Processor Activity"
+    IDS_OPEN_WHILE_PROCESSING_PROMPT 
+                            "The local v3D Processor is currently processing a Colon study, which will likely cause reduced performance in viewing and diagnosing other studies.\n\nContinue?"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "\nOpen Study"
+    ID_FILE_PRINT           "Print Study"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_STUDY_OPEN          "Open an existing study"
+    IDM_STUDY_CLOSE         "Close the current study"
+    IDM_REPORT_ADDSNAPSHOT  "Add report snapshot of current view"
+    IDM_BOOKMARKS_ADDBOOKMARK "Add new bookmark at current position"
+    IDM_PROGRAM_PREFERENCES "Set user-specific preferences"
+    IDM_VIEWWINDOW_MAINWINDOW "Maximize this view window"
+    IDT_ENDOSCOPIC_VIEW     "\nEndoscopic View"
+    IDT_SLICE_VIEW_SAGITTAL "\nSagittal View"
+    IDT_SLICE_VIEW_CORONAL  "\nCoronal View"
+    IDT_SLICE_VIEW_TRANSVERSE "\nTransverse View"
+END
+
+STRINGTABLE
+BEGIN
+    ID_OVERVIEW_SLICEINDICATORS_AXIAL "Axial"
+    ID_OVERVIEW_SLICEINDICATORS_SAGITTAL "Sagittal"
+    ID_OVERVIEW_SLICEINDICATORS_CORONAL "Coronal"
+    ID_OVERVIEW_SLICEINDICATORS_CROSSSECTIONAL "Cross-Section"
+    ID_OVERVIEW_RESETDISPLAY "Reset Display"
+    ID_OVERVIEW_OPTIONS_CENTERLINE "Centerline"
+    ID_OVERVIEW_OPTIONS_TRANSPARENT "Transparent"
+    ID_OVERVIEW_OPTIONS_FRAMEBOX "Framebox"
+    ID_ENDOSCOPICVIEW_SLICEINDICATORS_AXIAL "Axial"
+    ID_ENDOSCOPICVIEW_SLICEINDICATORS_SAGITTAL "Sagittal"
+    ID_ENDOSCOPICVIEW_SLICEINDICATORS_CORONAL "Coronal"
+    ID_ENDOSCOPICVIEW_SLICEINDICATORS_CROSSSECTIONAL "Cross-Section"
+    ID_ENDOSCOPICVIEW_OPTIONS_CENTERLINE "Centerline"
+    ID_ENDOSCOPICVIEW_OPTIONS_MARKING "Painting"
+    ID_ENDOSCOPICVIEW_OPTIONS_TRANSLUCENT_DISPLAY "Translucent Display"
+    ID_ENDOSCOPICVIEW_CURRENTMODE_LINEMEASURE "Line Measurement"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ENDOSCOPICVIEW_CURRENTMODE_LIGHTING "Lighting"
+    ID_ENDOSCOPICVIEW_CURRENTMODE_AUTOFLY "Autofly"
+    ID_ENDOSCOPICVIEW_NAVIGATIONHEADING_TORECTUM "To Rectum"
+    ID_ENDOSCOPICVIEW_NAVIGATIONHEADING_TOCECUM "To Cecum"
+    ID_ENDOSCOPICVIEW_FLIPVIEWDIRECTION "Flip View Direction"
+    ID_ORTHOGONALVIEW_RESETWL "Reset Window/Level"
+    ID_OVERVIEW_NEXTSEGMENT "Next Segment To Rectum"
+    ID_OVERVIEW_PREVSEGMENT "Next Segment To Cecum"
+    ID_ORTHOGONALVIEW_MEASUREMENT "Measurement"
+    ID_ORTHOGONALVIEW_WLPRESET_EDITPRESETS "Edit Window/Level Presets"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_WINDOWLEVEL         "Window/Level"
+    IDS_SCROLL_SLICE        "Scroll Slice"
+    IDS_POPUP_MENU          "Option Menu"
+    IDS_SEGMENT_LENGTH_WARNING 
+                            "WARNING: The sum of the segment lengths is only %.0f centimeters.\nA normal colon is between 120 and 150 centimeters.\nMajor portions of the colon are likely not included. Please re-check the colon segmentation."
+    IDS_SELECT              "Select"
+    IDS_CUSTOM              "Custom"
+    IDS_ALIGN_CROSS_SECTIONAL "Align X-Sectional"
+    IDS_LUMEN_COVERAGE      "Lumen Coverage"
+    IDS_PAN_VIEW            "Pan View"
+    IDS_PAN_REWIND          "Pan/Rewind"
+    IDS_MEASURE             "Measure"
+    IDS_MEASURE_DELETE      "Delete Measure"
+    IDS_MEASUREMENT_LIST    "List of Measurements"
+    IDS_MOVE_VIEW_DIRECTION "Move View Dir'n"
+    IDS_DETECTING_MISSED_REGIONS "Detecting Missed Regions..."
+    IDS_MOVELIGHTSOURCE     "Move Light Src"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MOVEBIOPSY          "Move Transluc'y"
+    IDS_VVS_TEST_VERSION    "Beta Test Version (Not Authorized to Perform Examinations)"
+    IDS_NON_PHYSICIAN_USER  "Utilisateur Non Médecin (lecture seule)"
+    IDS_CONTACT_SERVICE     "Please contact service for assistance."
+    IDS_ABOUT_APP_FORMAT    "&About %s..."
+    IDS_ANNOTATIONS_LIST    "List of Annotations"
+    IDS_ANNOTATION          "Annotation"
+    IDS_ANNOTATION_TEXT_PROMPT 
+                            "Please enter your annotation text\nin the space provided below."
+    IDS_EMPTY_LIST          "Empty List"
+    IDS_LUMEN_COVERAGE_VALUE_FORMAT "%d%%"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LOGINNAME           "Login Name"
+    IDS_PERMISSIONS         "Permissions"
+    IDS_USER                "User"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ADMINISTRATOR       "Administrator"
+    IDS_SERVICE             "Service"
+    IDS_FIRST               "First"
+    IDS_NEXT                "Next"
+    IDS_VALUE               "Value"
+    IDS_PHYSICIANNAME       "Nom du Docteur"
+    IDS_PHYSICIANPREFIX     "DR:"
+    IDS_PREFS_DLGNAME       "System Preferences"
+    IDS_DRIVE               "Drive"
+    IDS_SHARENAME           "Share Name"
+    IDS_PATIENTNAME         "Nom du Patient"
+    IDS_PATIENTID           "Code du Patient"
+    IDS_PATIENTINFO         "Informations Patient"
+    IDS_SCANDATE            "Date d'Examen"
+    IDS_REFERRINGPHYSICIAN  "Médecin Référent"
+    IDS_FILETYPE            "Type"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CONTENT             "Content"
+    IDS_FILENAME            "File Name"
+    IDS_FILESTATUS          "Status"
+    IDS_LOCATION            "Localisation"
+    IDS_DBDLG_INFOTITLE     "Study Information for"
+    IDS_INVALID_LOGIN       "The login name/password combination you have entered is invalid."
+    IDS_ERROR_CHANGING_PASSWORD 
+                            "An error occurred while changing login password."
+    IDS_DELETE              "Delete"
+    IDS_TRANSFERRING        "Study Transfer in Progress"
+    IDS_PASSWORD_MISMATCH   "Passwords Don't Match"
+    IDS_PASSWORD_CHANGE     "Change Password"
+    IDS_EXAMSITE            "Examination Site"
+    IDS_FIRST_PAGE_NUMBERING_FORMAT "Page %d"
+    IDS_PAGE_NUMBERING_FORMAT "Page %d sur %d"
+    IDS_PATIENT             "Patient"
+    IDS_STUDYDATE           "Date d'Examen"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_INTRODUCTION        "Introduction"
+    IDS_RELOAD              "Reload"
+    IDS_SUPINE_ABBREV       "Décub"
+    IDS_PRONE_ABBREV        "Procub"
+    IDS_READ_ABBREV         "R"
+    IDS_CDRW_CREATEIMAGE    "Creating CD Image ..."
+    IDS_CDRW_WRITE          "Writing CD ..."
+    IDS_CDRW_FINALIZING     "Finalizing CD ..."
+    IDS_PHYSICIAN           "Physician"
+    IDS_UPDATE              "Update"
+    IDS_FINISH              "Finish"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BACK                "Back"
+    IDS_PICK_VERIFY_FORMAT  "Press 'Update' to change %s model."
+    IDS_PICK_LENGTH_WARNING_FORMAT 
+                            "WARNING!  The selected segment lengths for %s have resulted in an extremely short total length.\n\nPlease re-check the segmentation."
+    IDS_THIS                "This"
+    IDS_SEGMENT             "Segment"
+    IDS_ADD_USER_REGISTRATION 
+                            "User features:  Double-click to add points, drag to move points."
+    IDS_VERIFYTITLE_SEGMENTS "Segment List Verification"
+    IDS_VERIFYTITLE_REGISTRATION "Registration Verification"
+    IDS_RECEIVED            "Received"
+    IDS_CONVERTING          "Converting"
+    IDS_FAILEDCONVERTING    "Conversion Failed"
+    IDS_CONVERTED           "Conversion Complete"
+    IDS_PIPELINING          "Constructing 3D"
+    IDS_FAILEDPIPELINING    "3D Construction Failed"
+    IDS_COMPLETE            "Complete"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DELETED             "Deleted"
+    IDS_INCOMPLETE          "Incomplete"
+    IDS_INVALID             "Invalid"
+    IDS_LOGOUT_USER_FORMAT  "&Logout %s"
+    IDS_TRANSFER_PROGRESS_FORMAT "Transferring %d of %d"
+    IDS_TRANSFER_CANCELLING "Cancelling Transfer..."
+    IDS_STUDY_FILES_NOT_FOUND 
+                            "Study files not found or are inaccessible at this time.\n\nPlease contact service for assistance."
+    IDS_INSUFFICIENT_DISKSPACE_FORMAT 
+                            "Insufficient disk space is available on drive: %s\n\nCannot transfer selected study."
+    IDS_TRANSFER_STUDY_EXISTS 
+                            "The study already exists at the specified location.\nDo you wish to delete the existing data and re-transfer the study?"
+    IDS_STUDY_TRANSFER_CLOSE_CURRENT_STUDY 
+                            "The currently open study must be closed prior to CD transfer.\nClose the open study and continue transferring the selected patient study?"
+    IDS_MULTIPLE            "Multiple"
+    IDS_STUDY_TRANSFER_ERROR "Study could not be transferred"
+    IDS_DATABASE_UPDATE_ERROR 
+                            "An error occurred while updating the patient database."
+    IDS_STUDY_TRANSFER_CD_OVER_CAPACITY 
+                            "The selected study is too large to be transferred to CD."
+    IDS_ERROR_STUDYDELETE_FILES 
+                            "An error occurred while deleting study files."
+    IDS_ERROR_STUDYDELETE_DATABASE 
+                            "An error occurred while deleting study from database."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR_STUDYDELETE_GENERIC "An error occurred while deleting study."
+    IDS_DATABASE_ERROR_CONNECTIONFAILED "Cannot connect to database."
+    IDS_DATABASE_SEARCH_RESULTS_LIST_TITLE_FORMAT 
+                            "Results:  %d-%d of %d Studies"
+    IDS_UNREAD_ONLY         "Unread Only"
+    IDS_DATABASE_DELETING   "Deleting Study...Please Be Patient"
+    IDS_DATABASE_SEARCHING  "Searching for Studies..."
+    IDS_DATABASE_CONNECTING "Connecting To Database..."
+    IDS_CONNECTION_TESTING  "Connecting..."
+    IDS_CONNECTION_TEST_SUCCESS "Connection test completed successfully."
+    IDS_DATABASE_SELECT_UNAVAILABLE_PROMPT 
+                            "The connection test failed for the selected database provider.\n\nDo you wish to select this provider anyway?"
+    IDS_DATABASE_SEARCH_FILESYSTEM_TOOLTIP 
+                            "File System: Drag Studies From Windows Explorer To List Below"
+    IDS_ERROR_STUDYDELETE_CONSTRUCTING 
+                            "Can not delete study now it is being constructed."
+    IDS_STUDY_TRANSFER_INSERT_DISK_FORMAT 
+                            "Please insert a disk with at least %dKB of free disk space into drive %s."
+    IDS_DATABASE_INITIALIZING "Initializing Database..."
+    IDS_APPLICATION_LOADING "Loading Application..."
+END
+
+STRINGTABLE
+BEGIN
+    ID_BOOKMARKS_LEVEL_HIGH "High priority bookmark"
+    ID_BOOKMARKS_LEVEL_MEDIUM "Medium priority bookmark"
+    ID_BOOKMARKS_LEVEL_LOW  "Low priority bookmark"
+    ID_BOOKMARKS_DELETE     "Delete this bookmark"
+    ID_BOOKMARKS_GOTO       "Move viewpoint to this bookmark"
+    ID_REPORT_GENERATEREPORT "Generate report from list of bookmarks"
+    IDM_JUMP_PREVSEGMENT    "Jumps to the Next Segment in the Direction of the Cecum"
+    IDM_JUMP_NEXTSEGMENT    "Jumps to the Next Segment in the Direction of the Rectum"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "Viatronix v3D System"
+    IDS_V3DVIEWER_COLON     "v3D Viewer - Colon"
+    IDS_V3DCONSOLE          "v3D Console"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_CDB_MISSEDRGN_LIST  "List of Missed Regions"
+    IDC_ODB_SHOWHIDE        "Show/Hide Overview Controls"
+    IDC_CDB_SEGMENT_JUMP_PREV "Next Segment To Cecum   F10"
+    IDC_CDB_SEGMENT_JUMP_DIRECTION "Change View Direction   F9"
+    IDC_CDB_SEGMENT_JUMP_NEXT "Next Segment To Rectum   F11"
+    IDC_CDB_REGIONSEGMENT_BTN "mesure volumétrique"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STANDARD            "Standard"
+    IDS_ORTHOGONAL          "Orthogonal"
+    IDS_ENDOSLICE           "Endo-Slice"
+    IDS_DUAL2D3D            "Dual 2D/3D"
+    IDS_FULLOBLIQUE         "Full Oblique"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LOCAL               "Local"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NETWORK             "Network"
+    IDS_COMPACTDISC         "CD"
+    IDS_PACS                "PACS"
+    IDS_FILESYSTEM          "File System"
+    IDS_V1000               "V1000"
+    IDS_V2000               "V2000"
+    IDS_OTHER               "Autre"
+    IDS_DIRECTORY           "Directory"
+    IDS_STUDY               "Study"
+    IDS_DATASET             "Dataset"
+    IDS_PREVIEW             "Preview"
+    IDS_UNMAPPED            "Unmapped"
+    IDS_CLOSING_VIEWER_INSTANCE "Waiting For Viewer To Close..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OTHER_FINDINGS_VASCULARAAA_ENTRY_FORMAT "- %s %s %s %s%s"
+    IDS_OTHER_FINDINGS_RECOMMENDATIONS_FOLLOWUP_FORMAT 
+                            "  - Indication à une surveillance par coloscopie %s dans %d %s"
+    IDS_OTHER_FINDINGS_RECOMMENDATIONS_POLYP_REMOVAL 
+                            "  - Indication à une polypectomie sous contrôle endoscopique"
+    IDS_SCHEDULE_FOR_POLYP_REMOVAL "Prévoir une polypectomie"
+    IDS_RPT_NORMAL          "Normal"
+    IDS_NORMAL_FINDING_FORMAT 
+                            "Examen normal du #<segment> #<flexure>à#<location>. #<comments>"
+    IDS_HEADER_PROMPT       "Please insert a disk containing the Report Header Image into disk drive A:"
+    IDS_E_HEADER            "An error occurred while transferring the Report Header Image."
+    IDS_IMPRESSION          "Impression globale"
+    IDS_IMAGE_TRANSFER_SUCCESSFUL "Image transfer successful"
+    IDS_ERROR_CREATING_REPORT "An error occurred while creating the report."
+    IDS_GENERATING_REPORT   "Generating Report File..."
+    IDS_REPORT_PDF_FILENAME "FinalReport.pdf"
+    IDS_MOVIE_STATS_FORMAT  "Movie Length: %02d:%02d (~%dMB)"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_OPEN_REPORT         "Open Report File\nOpen Report File"
+END
+
+STRINGTABLE
+BEGIN
+    IDM_RPT_DELETE_ENTRY    "Delete Selected Finding\nDelete Selected Finding"
+    IDM_RPT_DELETE_IMAGE    "Delete Selected Image\nDelete Selected Image"
+    IDM_RPT_JUMP            "Jump to segment\nJump to segment"
+    IDM_RPT_DELETE_NONDISTENDED "\nDelete NonDistended area"
+    IDM_RPT_RELOAD_NONDISTENDED 
+                            "Retrieve all  NonDistended areas from study\nRetrieve all  NonDistended areas from study"
+    ID_VIEWWINDOW_JUMPTOVIEWPOSITION 
+                            "Reset current orthogonal slice to view position"
+    IDS_CDRW_ANONYMIZING    "Anonymizing patient study data..."
+    IDM_RPT_DELETE_ALL_FINDINGS "Delete all findings\nDlete all findings"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_ODB_TOGGLE_OVERVIEW_MARKING "Show/Hide Marking"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_CDB_AUTOFLY         "Toggle Autofly   F5"
+    IDC_CDB_TOOLS           "Tools"
+    IDC_PID_SUPINEPRONE_BTN "Switch Datasets"
+    IDC_CDB_SNAPSHOT        "Add Snapshot To Report   F3"
+    IDC_CDB_MOVIE           "Record a movie"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_INDETERMINATE       "Indéterminé"
+    IDS_SIMILAR_TO_COLON_WALL "Similaire à la Paroi Colique"
+    IDS_POLYP               "Polype"
+    IDS_DIVERTICULUM        "Diverticules"
+    IDS_STENOSIS            "Sténose"
+    IDS_ROUND               "Rond"
+    IDS_OVAL                "Oval"
+    IDS_DENSITY_CHANGE_FORMAT "Changement %s de la Densité"
+    IDS_SESSILE             "Sessile"
+    IDS_GRADUAL             "Progressif"
+    IDS_ABRUPT              "Brutal"
+    IDS_INTERMEDIATE        "Intermediate"
+    IDS_IMAGE               "Image"
+    IDS_FINDING             "Résultat"
+    IDS_MOVE                "Move"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CECUM               "Cæcum"
+    IDS_RECTUM              "Rectum"
+    IDS_ASCENDING           "Droit"
+    IDS_ASCENDING_COLON     "Côlon Droit"
+    IDS_HEPATIC_FLEXURE     "Angle Droit"
+    IDS_TRANSVERSE          "Transverse"
+    IDS_TRANSVERSE_COLON    "Transverse colon"
+    IDS_SPLENIC_FLEXURE     "Splenic Flexure"
+    IDS_DESCENDING          "Gauche"
+    IDS_DESCENDING_COLON    "Côlon gauche"
+    IDS_SIGMOID             "Sigmoid"
+    IDS_COLON_FINDINGS      "Examen du Côlon"
+    IDS_NON_DISTENDED_AREAS "Segments Coliques Non Distendus"
+    IDS_OTHER_FINDINGS      "Lésions Extra Coliques"
+    IDS_MISCELLANEOUS       "Autres"
+    IDS_SCREENING           "Dépistage"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PERSONAL_HISTORY_OF_POLYPS "Antécédents personnel de polypes"
+    IDS_CONSTIPATION        "Constipation"
+    IDS_PERSONAL_HISTORY_OF_CANCER "Antécédents personnel de cancer"
+    IDS_FAMILY_HISTORY_OF_CANCER "Antécédents familiaux de cancer"
+    IDS_ANEMIA              "Anémie"
+    IDS_HEMATOCHEZIA        "Rectorragie"
+    IDS_ABNORMAL_IMAGING    "Anomalie vue sur un Autre Examen Radiologique"
+    IDS_ABDOMINAL_PAIN      "Douleurs Abdominales"
+    IDS_IBD                 "Troubles Fonctionnels Intestinaux"
+    IDS_DIARRHEA            "Diarrhée"
+    IDS_POLYP_ON_FLEX_SIGMOID "Polyp on Flex/Sigmoid"
+    IDS_LUNG_NODULE         "nodule pulmonaire"
+    IDS_LUNG_GRANULOMA      "granulome pulomonaire"
+    IDS_PNEUMOTHORAX        "pneumothorax"
+    IDS_LIVER_MASS          "nodule hépatique"
+    IDS_LIVER_CYST          "kyste hépatique"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STUDY_DESCR_FORMAT  "%s Studies"
+    IDS_STUDYTYPE_COLON     "Colonoscopy"
+    IDS_STUDYTYPE_CALCIUM   "Calcium Scoring"
+    IDS_STUDYTYPE_AAA       "Aortic Aneurysm"
+    IDS_STUDYTYPE_EXPLORER  "Explorer"
+    IDS_STUDYTYPE_UNKNOWN   "Unknown"
+    IDS_STUDYABBREV_COLON   "Colon"
+    IDS_STUDYABBREV_CALCIUM "Calcium"
+    IDS_STUDYABBREV_AAA     "AAA"
+    IDS_STUDYABBREV_EXPLORER "Expl"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_GALLSTONES          "lithiase vésiculaire"
+    IDS_FATTY_LIVER         "stéatose"
+    IDS_ADRENAL_MASS        "nodule surrénalien"
+    IDS_RENAL_MASS          "nodule rénal"
+    IDS_RENAL_CYST          "kyste rénal"
+    IDS_RENAL_STONES        "renal stone"
+    IDS_RENAL_SCAR          "séquelle parenchymateuse"
+    IDS_HYDRONEPHROSIS      "hydronéphrose"
+    IDS_AAA                 "AAA"
+    IDS_ARTERAL_CALCIFICATION "calcification artérielle"
+    IDS_SPLENIC_MASS        "nodule"
+    IDS_SPLENIC_GRANULOMA   "splenic granuloma"
+    IDS_INGUINAL_HERNIA     "hernie inguinale"
+    IDS_HIATAL_HERNIA       "hernie hiatale"
+    IDS_UTERINE_FIBROIDS    "fibrome utérin"
+    IDS_RIGHT_UPPER_LOBE    "lobe supérieur droit"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_RIGHT_MIDDLE_LOBE   "lobe moyen droit"
+    IDS_RIGHT_LOWER_LOBE    "lobe inférieur droit"
+    IDS_LEFT_UPPER_LOBE     "1/3 supérieur gauche"
+    IDS_LEFT_MIDDLE_LOBE    "1/3 moyen gauche"
+    IDS_LEFT_LOWER_LOBE     "1/3 inférieur gauche"
+    IDS_RIGHT_LUNG          "poumon droit"
+    IDS_LEFT_LUNG           "poumon gauche"
+    IDS_RIGHT_LOBE_ANTERIOR_SEGMENT "segment V-VIII "
+    IDS_RIGHT_LOBE_POSTERIOR_SEGMENT "segment VI-VII"
+    IDS_LEFT_LOBE_MEDIAL_SEGMENT "segment IV"
+    IDS_LEFT_LOBE_LATERAL_SEGMENT "segment II-III"
+    IDS_RIGHT_LOBE_ANTERIOR "lobe antérieur droit"
+    IDS_RIGHT_LOBE_POSTERIOR "lobe postérieur droit"
+    IDS_LEFT_LOBE_MEDIAL    "lobe moyen gauche"
+    IDS_LEFT_LOBE_LATERAL   "lobe latéral gauche"
+    IDS_RIGHT_KIDNEY        "rein droit"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LEFT_KIDNEY         "rein gauche"
+    IDS_RIGHT_UPPER_POLE    "1/3 supérieur droit"
+    IDS_RIGHT_MIDDLE        "1/3 moyen droit"
+    IDS_RIGHT_LOWER_POLE    "1/3 inferieur droit"
+    IDS_LEFT_UPPER_POLE     "1/3 supérieur gauche"
+    IDS_LEFT_MIDDLE         "tiers moyen gauche"
+    IDS_LEFT_LOWER_POLE     "tiers inférieur gauche"
+    IDS_SUPRARENAL          "surrénale"
+    IDS_JUXTARENAL          "rénale"
+    IDS_INFRARENAL          "sous-rénale"
+    IDS_MALE                "masculin"
+    IDS_FEMALE              "féminin"
+    IDS_OPTICAL             "classique"
+    IDS_VIRTUAL             "virtual"
+    IDS_MONTH               "mois"
+    IDS_YEAR                "années"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_RIGHT               "droit"
+    IDS_LEFT                "gauche"
+    IDS_SMALL               "petit"
+    IDS_MEDIUM              "moyen"
+    IDS_LARGE               "gros"
+    IDS_MILD                "moyenne"
+    IDS_MODERATE            "moderée"
+    IDS_SEVERE              "sévère"
+    IDS_SUPERIOR            "supérieur"
+    IDS_MIDDLE              "moyen"
+    IDS_INFERIOR            "inférier"
+    IDS_RECOMMENDATIONS     "Recommandations"
+    IDS_PERSONAL_HISTORY_OF_COLONCANCER 
+                            "Antécédents personnel de cancer colorectal"
+    IDS_VIRTUAL_COLONOSCOPY_IN " coloscanner dans"
+    IDS_OPTICAL_COLONOSCOPY_IN "colonoscopie classique en"
+    IDS_OTHER_INDICATIONS_LABEL_FULL "Indications non-spécifiques sauf: "
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OTHER_INDICATIONS_LABEL_ABBREV "Autres: "
+    IDS_SAVING_MOVIE        "Saving Movie..."
+    IDS_OTHER_LOCATION      "Clear Location"
+    IDS_ALL                 "All"
+    IDS_BOTH                "both"
+    IDS_MOVIE               "movie"
+    IDS_EXTRA_COLONIC_FINDINGS "Resultats Extra Colique"
+    IDS_COLONFINDING_AREA_UNCERTAIN "Zone Indéterminée"
+    IDS_COLONFINDING_DISTANCE_UNCERTAIN "Distance Indéterminée"
+    IDS_ANNOTATIONS         "Annotations"
+    IDS_DISTANCE_FROM_RECTUM_UNCERTAIN 
+                            "distance indéterminée de la marge anale"
+    IDS_COLONFINDING_MISCELLANEOUS_OTHER_FORMAT " - Divers/Autres %s"
+    IDS_EXTRA_COLONIC_FINDING_FORMAT "Résultat Extra Colique.  %s"
+    IDS_REPORT_FOOTER_PATIENTDATA_FORMAT "%s, ID: %s , Date d'Examen: %s"
+    IDS_FINDINGS            "Resultats"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LOCATION_IN_CM      "Location (cm)"
+    IDS_SIZE_FORMAT         "Taille (%s)"
+    IDS_CM                  "cm."
+    IDS_MM                  "mm."
+    IDS_GOTO                "Go To"
+    IDS_ROI_MAJOR_DIAMETER_FORMAT "Maj Radius: %d mm"
+    IDS_ROI_AREA_FORMAT     "Area: %d mm^2"
+    IDS_ROI_AVERAGE_HU_FORMAT "Avg HU: %.1f"
+    IDS_ROI_MAX_HU_FORMAT   "Max HU: %.1f"
+    IDS_ROI_STD_HU_FORMAT   "St Dev HU: %.2f"
+    IDS_DISTANCE_FROM_RECTUM_FORMAT "%.1f cm à partir de la marge anale"
+    IDS_LINEMEASUREMENT_FORMAT " %.1f %s"
+    IDS_DISPLAYING_UNCLEANSED "Displaying Uncleansed"
+    IDS_DISPLAYING_UNCLEANSED_VERBOSE 
+                            "Displaying Uncleansed, Hit 'S' Key for Optimal Performance"
+    IDS_MAX_DIAMETER        "Max Diameter: "
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ERROR_UNSPECIFIED   "An unspecified error occurred."
+    IDS_ERROR_MEMORY_EXCEPTION "An out-of-memory error has occurred."
+    IDS_ERROR_SWITCHVIEW_EXCEPTION 
+                            "An error occurred while switching to view."
+    IDS_VASCULAR_FINDING_LENGTH_FORMAT ", %.1f cm dans la longueur "
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STUDY_BROWSER       "Console"
+    IDS_VERIFICATION        "Verification"
+    IDS_NAVIGATION          "Navigation"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_REPORT              "Rapport"
+    IDS_STUDY_COMPLETE      "Complete"
+    IDS_STUDY_CLOSING       "Closing Study...Please be patient"
+    IDS_REGISTRATION        "Registration"
+    IDS_NO_REPORT           "No Report"
+    IDS_REPORT_READ_ONLY    "Report (Read Only)"
+    IDS_ENDOSCOPIC          "Endoscopic"
+    IDS_SLICE               "Slice"
+    IDS_OVERVIEW            "Overview"
+    IDS_CHILDVIEW_TITLE_VTXFMT "#<orientation> #<view>"
+    IDS_PRIMARY             "Primary"
+    IDS_SECONDARY           "Secondary"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_REPORT_NOTGENERATED "A report has not been generated for this study."
+    IDS_MARK                "mark"
+    IDS_REMOVE_MARK         "Remove the Study Complete mark on"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STUDY_AS_COMPLETED  "study as Complete"
+    IDS_ERROR_3DMODEL_INCOMPLETE 
+                            "Creation of the 3-D Model for the selected study did not complete successfully."
+    IDS_DELETE_CURRENT_STUDY_PROMPT 
+                            "This study is currently open in the V3D Viewer and must be closed prior to its deletion."
+    IDS_ERROR_REPORT_READONLY 
+                            "This study report is locked and cannot be modified."
+    IDS_ERROR_NO_REPORT_OPEN "There is no currently open study report."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_RPTERR_FORMAT       "Error: Unable to %s in report."
+    IDS_READ_NONDISTENDED_FINDING "Read NonDistended Finding"
+    IDS_DELETE_COLON_FINDING "Delete Colon Finding"
+    IDS_READ_COLON_FINDING_ENTRY "Read Colon Finding Entry"
+    IDS_ADD_REPORT_IMAGE    "Add Report Image"
+    IDS_MOVE_IMAGE          "Move Image"
+    IDS_RETRIEVE_OTHER_FINDING "Retrieve other finding"
+    IDS_ADD_FINDING         "Add finding"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_DELETE_FINDING      "Delete finding"
+    IDS_UPDATE_FINDING      "Update finding"
+    IDS_RETRIEVE_FINDING    "Retrieve finding"
+    IDS_RETRIEVE_STUDY_INFORMATION "Retrieve Study Information"
+    IDS_ADD_NONDISTENDED_AREA "Add NonDistended Area"
+    IDS_DELETE_NONDISTENDED_AREA "Delete NonDistended Area"
+    IDS_ADD_ENTRY           "Add entry"
+    IDS_SAVE                "Save"
+    IDS_OPEN                "Open"
+    IDS_TRANSFER            "Transfer"
+    IDS_REPORT_OPEN_FILESYSTEM_TITLE "Open a Viatronix V3D Report File"
+    IDS_REPORT_OPEN_FILESYSTEM_FILTER "Viatronix V3D Report Files|*.vrx||"
+    IDS_E_LOAD_REPORT       "Unable to locate report file."
+    IDS_REPORT_SNAPSHOT_ADDED "Report Snapshot Added"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_INDICATION_ELECTIVE_COLONSCOPY_FORMAT 
+                            "Patient #<gender> âgé de #<age> ans adressé pour coloscanner."
+    IDS_INDICATION_GENERAL_FORMAT 
+                            "Patient #<gender> âgé de #<age> ans adressé pour:"
+    IDS_COLONFINDING_NOTRANSLUCENCY_FORMAT 
+                            "Polype #<shape> #<dimensions> identifié sur le #<segment> #<flexure> en #<location>. #<comments>"
+    IDS_COLONFINDING_TRANSLUCENCY_FORMAT 
+                            "Polype #<shape> #<dimensions> identifié dans le #<segment> #<flexure> à #<location> avec #<translucency> sur l'outil de translucidité. #<comments>"
+    IDS_COLONFINDING_OTHER_FORMAT 
+                            "#<finding> identifié sur le #<segment> #<flexure>en #<location>. #<comments>"
+    IDS_NONDISTENDEDAREAS_HEADING 
+                            "SEGMENTS NON DISTENDUS (distances mesurées depuis la marge anale)"
+    IDS_OTHER_FINDINGS_ENTRY_FORMAT "- %s%s %s %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OTHER_LOCATION_FORMAT 
+                            "Autre lésion colique identifiée dan le côlon #<segment> #<flexure>en #<location>. #<comments>"
+END
+
+STRINGTABLE
+BEGIN
+    ID_OVERVIEW_OPTIONS_BOOKMARK "Bookmark"
+    ID_STUDY_OPTIONS_SHOWORTHOGONALHISTOGRAM 
+                            "Display Orthogonal Measurement Histograms."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_HAZARD001           "Pre-processing was not properly completed."
+    IDS_HAZARD002           "The colon was poorly inflated."
+    IDS_HAZARD003           "Patient movement during scan."
+    IDS_HAZARD004           "Fluid puddle missed or insufficiently tagged."
+    IDS_HAZARD005           "The acquisition Field-Of-View is too large."
+    IDS_HAZARD006           "Unusual air high threshold detected."
+    IDS_HAZARD007           "Unusual tissue low threshold detected."
+    IDS_HAZARD008           "Unusual tissue high threshold detected."
+    IDS_HAZARD009           "Slice spacing on this dataset exceeds the maximum \n      recommended interval (1.5mm). Published\n      sensitivity value is not guaranteed."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_HAZARD010           "Unable to interpret this hazard warning."
+    IDS_HAZARD_CONTINUE     "Do you wish to begin the examination?"
+    IDS_SUPINE_HAZARDS      "Supine Study Hazards"
+    IDS_PRONE_HAZARDS       "Prone Study Hazards"
+    IDS_STUDY_IN_USE_ERROR_FORMAT 
+                            "Cannot %s the selected study because it is currently in use."
+    IDS_DESTINATION_STUDY_IN_USE_ERROR_FORMAT 
+                            "Cannot %s because the destination study is in use."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_BOOKMARK_ADDED      "Bookmark Added"
+    IDS_ERROR_CREATE_REPORT_PREVIEW 
+                            "An error occurred while creating the report preview."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_ADDUSER_ERR_ILLEGAL_ENTRY 
+                            "The login name should contain only alphabetic and numeric characters (letters and numbers).  Please enter a legal login name."
+    IDS_ADDUSER_ERR_DUPLICATE_ENTRY 
+                            "The same name has already been used by a user. Please select another name."
+    IDS_ADDUSER_ERR_TOOSHORT_ENTRY 
+                            "Please enter a user login name and fullname that are at least 4 characters in length."
+    IDS_ADDUSER_ERR_PASS_VERIFY 
+                            "The passwords entered do not match.  Please re-enter and verify your password."
+    IDS_ADDUSER_ERR_BADPASS "The password you have entered is invalid.  Please ensure that the password entered and user login name are not identical."
+    IDS_ADDUSER_ERR_TOOSHORT_PASSWORD 
+                            "Please enter a password that is at least 4 characters in length."
+    IDS_DELUSER_ERR_CURRENT "Cannot delete the current logged in user."
+    IDS_ULTIMATE_BAD_INTERACTION_USER_IRRITANT 
+                            "The current study must be closed prior to displaying the Study Browser.\n\nThis can also be done by selecting 'Close' from the 'Program' menu above.\n\nClose the current study now and return to the Study Browser?"
+    IDS_ERROR_GENERIC_FORMAT 
+                            "An error occurred while attempting to %s the selected %s.\n\nPlease contact service for assistance."
+    IDS_STUDY_LOCATIONS_FORMAT "Study Located On: %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_TEMPLATE_LINKVIEWS  "Link Two Views"
+    IDC_VERIFY_FINISH       "Complete Verification and Return To Navigation"
+    IDC_VERIFY_SUPINEBACK   "Update List Of Segments/Remove Last Segment From Order"
+    IDC_VERIFY_PRONEBACK    "Update List Of Segments/Remove Last Segment From Order"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_DBS_FIRSTNAMETEXT   "Search For Persons With First Name Matching"
+    IDC_DBS_LASTNAMETEXT    "Search For Persons With Last Name Matching"
+    IDC_DBS_CLEARSEARCH     "Clear Search Criteria And Show All Studies At Location"
+    IDC_DBS_INFO            "Show Detailed Information On The Selected Study"
+    IDC_DBS_OPENREPORT      "Open The Report Of The Selected Study"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_DBS_OPENSTUDY       "Open The Selected Study"
+    IDC_DBS_DELETE          "Delete The Selected Studies"
+    IDC_DBS_TRANSFER        "Transfer The Selected Studies Between Locations Or To/From CD"
+    IDC_DBI_OPENSTUDY       "Open The Selected Item"
+    IDC_DBI_IDONE           "Close And Return To v3D Console"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_DBS_STATUSMESSAGES  "Displays Status Messages From The v3D Processor"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_DBS_OPENMOVIE       "Open The Report Of The Selected Study"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_SUPINE              "Décubitus"
+    IDS_PRONE               "Procubitus"
+    IDS_SCOUT               "Scout"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_NON_CONTRAST        "Non-Contrast"
+    IDS_IMMEDIATE_CONTRAST  "Immediate Contrast"
+    IDS_DELAYED_CONTRAST    "Delayed Contrast"
+    IDS_PROSPECTIVE         "Prospective"
+    IDS_SUPINE_EXTRA        "(Décubitus)"
+    IDS_PRONE_EXTRA         "(Procubitus)"
+    IDS_FAMILY_HISTORY_OF_POLYPS "Antécédents familiaux de polype"
+    IDS_RETROSPECTIVE       "Retrospective"
+    IDS_CYLINDRICAL_SEGMENTS "Cyln Segments"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_MEDIADISK_AUTORUNINF_FORMAT 
+                            "[autorun]\nicon=V3DMediaPlay.exe,1\nlabel=V3DMovie\nopen=V3DMediaPlay.exe %s"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_V3DEXE_CONSOLE      "V3DConsole.exe"
+    IDS_V3DEXE_COLON        "V3DViewerColon.exe"
+    IDS_V3DEXE_DELETER      "DeleteDir.exe"
+    IDS_V3DEXE_MEDIAPLAY    "V3DMediaPlay.exe"
+    IDS_V3DEXE_LAUNCH_ERROR_FORMAT "Could not launch the v3D %s Module."
+    IDS_ERROR_INSUFFICIENT_RESOURCES_FOR_STUDY 
+                            "Insufficient system resources are available to load this study in its entirety.\n\nPlease use the Study Info option from the v3D Console to load the datasets of\n this study individually, or contact service for assistance."
+    IDS_PROMPT_LOAD_LARGE_STUDY 
+                            "The selected study contains a large number of slices.\nYou may experience slower loading and delays switching views.\nDo you wish to contine?"
+END
+
+STRINGTABLE
+BEGIN
+    ID_OVERVIEW_REGISTRATION_ALLFEATURES "Show all features"
+    ID_OVERVIEW_REGISTRATIONOPTIONS_SHOWMATCHEDFEATURES 
+                            "Show matched features"
+    ID_STUDYBROWSERITEM_OPENWITH_EXPLORER 
+                            "Opens The Selected Item In v3D Explorer"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_DBS_SWITCHTOAPP     "Switch to V3D Application"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_MCD_FORMAT_COMPRESSNONE "Uncompressed, large AVI movie."
+    IDC_MCD_FORMAT_COMPRESSLOW "Medium-sized Windows Media movie."
+    IDC_MCD_FORMAT_COMPRESSHIGH "Smaller Windows Media movie."
+    IDC_MCD_INCLUDE_OVERVIEW_CHECK 
+                            "Check this box to include an external view of colon showing location during flight."
+    IDC_NTD_BOOKMARKS_RADIO "Display Bookmarks"
+    IDC_NTD_ANNOTATIONS_RADIO "Display Annotations"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_LUNG                "Poumon"
+    IDS_LIVER               "Foie"
+    IDS_RENAL               "Renal"
+    IDS_ADRENAL             "Adrenal"
+    IDS_SPLEEN              "Rate"
+    IDS_GI                  "GI"
+    IDS_GYNECOLOGY          "Gynécologie"
+    IDS_VASCULAR            "Vasculaire"
+    IDS_LUMEN_COVERAGE_WARNING_FORMAT 
+                            "Only %d%% lumen coverage reached.\nThe current study may not have been fully examined."
+    IDS_FINDING_DISTANCE_DEPENDS_ON_SEGMENTS 
+                            "* Mesure de la distance à la marge anale fonction des segments de côlon sélectionnés au moment du cliché."
+    IDS_ADJUST_THICKNESS    "Set Thickness"
+    IDS_SLAB                "Slab"
+    IDS_MIP                 "MIP"
+    IDS_ANAL_VERGE          "marge anale"
+    IDS_FINDING_LOC_UNKNOWN "Finding location not recorded for this entry (for reports generated prior to version 1.4."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OK                  "OK"
+    IDS_CANCEL              "Cancel"
+    IDS_DISCLAIMER          "Beta Version: For Non-Diagonostic Use Only"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_NTD_DELETEALL_BUTTON "Delete All From Both Lists"
+    IDC_NTD_MEASUREMENTS_RADIO "Display Measurements"
+    IDC_AJT_EDITSELECTED    "Edit Selected Settings"
+    IDC_AJT_SAVENEW         "Create New Settings"
+    IDC_AJT_COLOR_BTN_PREV  "Adjust color for end of previous range"
+    IDC_AJT_COLOR_BTN_NEXT  "Adjust color for start of next range"
+    IDC_CTRLS_PERCEIVED_SPEED_CHECK "Perceived Speed"
+END
+
+STRINGTABLE
+BEGIN
+    ID_OVERVIEW_DISPLAYOPTIONS_MARKING "Overview Missed Regions Marking"
+    IDM_RPT_DELETE_ALL_ENTRIES "Delete All Findings\nDelete All Findings"
+    IDS_PEDUNCULATED_STALK_SEEN "Pédiculé (Pied du Polype Bien Vu)"
+    IDS_PEDUNCULATED_STALK_UNSEEN "Pédiculé (Pied du Polype Mal Vu)"
+    ID_OPTIONS_ADJUSTTRANSLUCENCY 
+                            "Change the colors used in the translucency display"
+    ID_VIEWWINDOW_2DSLICE   "Switch to 2D Slice display"
+    ID_VIEWWINDOW_MIP       "Switch to MIP display"
+    ID_VIEWWINDOW_THINSLAB  "Switch to thin slab display"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PRECONTRAST         "Pré-Contraste"
+    IDS_POSTCONTRAST        "Post-Contraste"
+    IDS_SHOWSUBTRACTED      "Show Subtracted"
+    IDS_SW_LICENSE_REQUESTFAILED 
+                            "Could not verify software license; please try again.\nIf still unable to run, contact your system administrator."
+    IDS_SW_LICENSE_REQUESTNEWPROMPT 
+                            "Unable to renew software license.\n\nIf you cannot obtain a license, the software will be shut down (your current work will be saved).\n\nClick 'Yes' to continue attempting to obtain a new license, or 'No' to close the software."
+    IDS_ELEC_CLEANSING      "Cleansed"
+    IDS_REQUESTING_LICENSE  "Requesting license"
+    IDS_SUBTRACTED          "Subtracted"
+    IDS_DISPLAYING_UNSUBTRACTED "Displaying Unsubtracted"
+    IDS_DISPLAYING_UNSUBTRACTED_VERBOSE 
+                            "Displaying Unsubtracted, Hit 'S' Key for Optimal Performance"
+    IDS_CADFINDINGS_STATS_DUAL 
+                            "#<count>/#<total> #<dataset> Findings (#<total2> #<dataset2>)"
+    IDS_SHOW                "Show"
+    IDS_CADFINDINGS_STATS_SINGLE "#<count>/#<total> #<dataset> Findings"
+    IDS_CAD_RESULTS         "CAD Results"
+    IDS_CAD_VERSION         "%s CAD Version: %s"
+    IDS_BOTHDATASETS_DELETEALL_FORMAT 
+                            "Are you sure you want to delete ALL of the supine and prone %s?"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CADFINDINGS_SPHERICITY_STATS ", Sphericity:%d"
+    IDS_DECUBITUS           "Décubitus"
+    IDS_DECUBITUS_L         "Décubitus Gauche"
+    IDS_DECUBITUS_R         "Décubitus Droit"
+    IDS_DECUB               "Décub"
+    IDS_DECUB_L             "DécubG"
+    IDS_DECUB_R             "DécubD"
+    IDS_POSTCONT            "Post-Ct"
+    IDS_PRECONT             "Pré-Cnt"
+    IDS_SYNCHRONIZE         "Synchronize"
+    IDS_REGIONSEGMENT_NONEFOUND "No region found at selected point."
+    IDS_REGIONSEGMENT_SMALLREGION 
+                            "The region found has a height of less than 2.5 mm.\n\nContinue segmenting the region?"
+    IDS_REGIONSEGMENT_ERROROCCURRED 
+                            "An error occurred during segmentation of suspicious region\n\nPlease contact service for more assistance."
+    IDS_NOT_LOADED          "Not Loaded"
+    IDS_ROI_VOLUME_TXT      "Volume Région d'intérêt: "
+    IDS_UDSEGMENTS_MAUI     "UD Maui"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_CDR_SHOWFINDINGS    "Show/Hide All CAD Findings"
+    IDC_CDR_NEXTFIND        "Jump to Next CAD Finding   spacebar"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_CDR_SLIDER1         "Low <-- Sphericity --> High"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PEDUNCULATED        "Pédonculé"
+    IDS_FLAT                "Plat"
+    IDS_FAILED_COLONOSCOPY  "Échec de Coloscopie"
+    IDS_NEAR_FLEXURE        "Quasi Angle"
+    IDS_PLANE_ANGLE         "Angle Plan"
+    IDS_FMT_ALWAYSSHOWCADINDICATORS "Always Show #<cadname> &Indicators"
+    IDS_FMT_SHOWEXTRACOLONICCAD "Show &Extra-Colonic #<cadname> Findings"
+    IDS_EXTRA_COLONIC_CRADS "Catégorie C-RADS de lésions extra-coliques : E"
+    IDS_CRADS_OUTPUT        "Catégorie C-RADS : C"
+    IDS_ENTERNEWSETTINGSNAME "Enter a name for the new settings"
+    IDS_MEASURE_DISCLAIMER_FMT "all measurments +/-%d mm"
+    IDS_STOOL               "Stool"
+    IDS_ROITOOL             "Region Editing"
+    IDS_QUICKDROP_PROMPT    "Enter text for quick-drop annotations"
+    IDS_REPORT_DRAG_IMAGE_PROMPT 
+                            "Do you wish to move only the selected image, or all images in the finding?\n\nSelect 'Yes' to move only the selected image.\nSelect 'No' to move ALL images and merge the entire finding.\nSelect 'Cancel' to leave both findings in their current state."
+    IDS_REPORT_DRAG_LAST_IMAGE_PROMPT 
+                            "Moving the only image in a finding will delete the finding.\n\nDo you wish to move the selected image and delete the finding?"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_AJT_SAVESELECTED    "Save Selected"
+    IDC_AJT_CANCELEDIT      "Cancel Edit"
+    IDC_AJT_DELETESELECTED  "Delete Setting"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_HIGH_SEDATION_RISK  "Risque Élevé en cas de Sédation"
+    IDS_3DCT                "3D CT"
+    IDS_CRADS_VERBOSE_C0    "Étude inadaptée/en attente de comparaisons antérieures"
+    IDS_CRADS_VERBOSE_C1    "Côlon normal ou lésion bénigne ; continuer le dépistage de routine"
+    IDS_CRADS_VERBOSE_C2    "Polype intermédiaire ou découverte indéterminée ; surveillance ou coloscopie recommandée"
+    IDS_CRADS_VERBOSE_C3    "Polype, possibilité d’adénome avancé ; coloscopie de suivi recommandée"
+    IDS_CRADS_VERBOSE_C4    "Masse dans le côlon, probablement maligne ; consultation chirurgicale recommandée"
+    IDS_CRADS_VERBOSE_E0    "Examen limité. Compromis par des artéfacts ; évaluation des tissus mous extra-coliques extrêmement limitée"
+    IDS_CRADS_VERBOSE_E1    "Examen normal ou variante anatomique. Aucune anomalie extra-colique visible"
+    IDS_CRADS_VERBOSE_E2    "Découverte sans importance clinique. Aucun bilan n’est indiqué."
+    IDS_CRADS_VERBOSE_E3    "Découverte probablement sans importance, caractérisation incomplète. En fonctions des pratiques locales et des préférences du patient un bilan peut être indiqué"
+    IDS_CRADS_VERBOSE_E4    "Potentially Important Finding.  Communicate to referring physician as per accepted practice guidelines"
+    IDS_FECAL_TAGGING       "Marquage des selles"
+    IDS_CO2                 "Dioxyde de carbonne"
+    IDS_ROOMAIR             "Air de la chambre"
+    IDS_BARIUM              "Barium"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_IODINE              "Produit de Contraste Iodé"
+    IDS_GLUCAGON            "Glucagon"
+    IDS_BUSCOPAN            "Buscopan"
+    IDS_EXAMINATION_QUALITY "Paramètres d'examen"
+    IDS_CRADS_WEBLINK       "http://radiology.rsna.org/content/236/1/3.full.pdf+html"
+    IDS_MEASUREMENT         "measurement"
+    IDS_STATUS_INDICATOR_LINKED "The datasets are linked"
+    IDS_STATUS_INDICATOR_UNLINKED "The datasets are unlinked"
+    IDS_PREFS_DEFAULTS_LAYOUT "Screen Layout"
+    IDS_PREFS_DEFAULTS_LAYOUT_OPTIONS 
+                            "Auto-Detect (by monitor settings)|Standard|Widescreen|Portrait"
+    IDS_PREFS_DEFAULTS_MOUSE_COORDS "Display mouse cursor coordinates in 2D"
+    IDS_PREFS_DEFAULTS_MOUSE_COORDS_OPTIONS "Off|Volume|World"
+    IDS_PREFS_DEFAULTS_FLIGHT_SPEED "Camera fly speed [0-200]"
+    IDS_PREFS_DEFAULTS_QUICK_ANNOTATION "Quick drop annotation text"
+    IDS_PREFS_DEFAULTS_SCROLLBAR_ORIENTATION "2D scrollbar position"
+    IDS_PREFS_DEFAULTS_SCROLLBAR_ORIENTATION_OPTIONS "Horizontal|Vertical"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_CDB_TOOL_LINEMEASURE "Line Measure    F6"
+    IDC_CDB_TOOL_ANNOTATION "Annotation"
+    IDC_CDB_TOOL_2DROI      "ROI Measurement Stats    CTRL+F6"
+END
+
+STRINGTABLE
+BEGIN
+    IDC_CDB_TOOL_LIGHTING   "Move Lighting    F7"
+    IDC_CDB_TOOL_TRANSLUCENCY "Translucent Window    F8"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PREFS_DEFAULTS_DISPLAY_EC_CAD "Display extra-colonic CAD finding"
+    IDS_PREFS_DEFAULTS_DISPLAY_CLEANSED "Show cleansed or uncleansed"
+    IDS_PREFS_DEFAULTS_DISPLAY_CLEANSED_OPTIONS "Cleansed|Uncleansed"
+    IDS_PREFS_DEFAULTS_2D_MEASUREMENT_PROFILE 
+                            "Display intensity profile for linear measure in 2D"
+    IDS_PREFS_DEFAULTS_COLOR_SCHEME "Color scheme for 3D endoluminal view"
+    IDS_PREFS_DEFAULTS_COLOR_SCHEME_OPTIONS "Standard|Color Blind"
+    IDS_PREFS_DEFAULTS_VOLUME_MEASURE "Volume measure method"
+    IDS_PREFS_DEFAULTS_VOLUME_MEASURE_OPTIONS "Air|Total (Air & Tagged)"
+    IDS_PREFS_DEFAULTS_LINK_DATASETS "Link datasets"
+    IDS_PREFS_DEFAULTS_DISPLAY_CENTERLINE 
+                            "Display centerline in the 3D endoluminal view"
+    IDS_PREFS_DEFAULTS_PSUEDO_COLOR "Display pseudo color in 2D"
+    IDS_PREFS_DEFAULTS_RESET_BUTTON "Reset"
+    IDS_PREFS_DEFAULTS_YES_NO_OPTIONS "Yes|No"
+    IDS_PREFS_DEFAULTS_ON_OFF_OPTIONS "On|Off"
+    IDS_PREFS_DEFAULTS_RESET_QUESTION 
+                            "This will reset all your settings to system defaults.\nAre you sure you want to continue?"
+    IDS_PREFS_DEFAULTS_GENERAL_LABEL " Layout Settings"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_PREFS_DEFAULTS_DISPLAY_LABEL " Tool Settings"
+    IDS_PREFS_DEFAULTS_WARNING 
+                            "These changes will not take effect until the application is restarted."
+    IDS_PREFS_DEFAULTS_APPLY_NOW "Apply Now"
+    IDS_PREFS_DEFAULTS_FOV  "Field of View"
+    IDS_PROGRESS_DLG_LABEL  "Sending report|snapshots to PACS..."
+    IDS_REPORT_COMPLETED_STATUS "Report Completed"
+    IDS_PREFS_DEFAULTS_TOOLBAR_POSITION "Widescreen layout toolbar position"
+    IDS_PREFS_DEFAULTS_TOOLBAR_POSITION_OPTIONS "Top|Bottom"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#include "l.fra\afxres.rc"         // Standard components
+#endif
+
+// 1 TYPELIB "ConsoleInterop.tlb"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

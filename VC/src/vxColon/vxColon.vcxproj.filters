@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{21c7e48e-1073-4e68-af79-07d1fe8f3b5e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\stdafx.C">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Bookmark.C" />
+    <ClCompile Include="src\BookmarkList.C" />
+    <ClCompile Include="src\Camera.C" />
+    <ClCompile Include="src\ColonSession.C" />
+    <ClCompile Include="src\Component.C" />
+    <ClCompile Include="src\Dataset.C" />
+    <ClCompile Include="src\Dataset_ext.C" />
+    <ClCompile Include="src\DatasetLoadParams.C" />
+    <ClCompile Include="src\Fields.C" />
+    <ClCompile Include="src\Fields_ext.C" />
+    <ClCompile Include="src\GlDisplayList.C" />
+    <ClCompile Include="src\glFont.C" />
+    <ClCompile Include="src\Hazards.C" />
+    <ClCompile Include="src\MatrixNxM.C" />
+    <ClCompile Include="src\MeasureArea.C" />
+    <ClCompile Include="src\MeasureAreaList.C" />
+    <ClCompile Include="src\MeasureLine.C" />
+    <ClCompile Include="src\MeasureLineList.C" />
+    <ClCompile Include="src\OverviewRender.C" />
+    <ClCompile Include="src\Patch.C" />
+    <ClCompile Include="src\ReaderGlobal.C" />
+    <ClCompile Include="src\ReaderGlobalRegistration.C" />
+    <ClCompile Include="src\RenderContext.C" />
+    <ClCompile Include="src\RenderThread.C" />
+    <ClCompile Include="src\RenderUtil.C" />
+    <ClCompile Include="src\Segment.C" />
+    <ClCompile Include="src\Segment2DViewer.C" />
+    <ClCompile Include="src\Segment3DViewer.C" />
+    <ClCompile Include="src\SegmentCylindricalViewer.C" />
+    <ClCompile Include="src\SegmentList.C" />
+    <ClCompile Include="src\SeriesVersion.C" />
+    <ClCompile Include="src\SkeletonRender.C" />
+    <ClCompile Include="src\SkeletonVCExt.C" />
+    <ClCompile Include="src\SliceViewer.C" />
+    <ClCompile Include="src\SliceViewerDBG.C" />
+    <ClCompile Include="src\StripProjection.C" />
+    <ClCompile Include="src\StripViewer.C" />
+    <ClCompile Include="src\StudyLoadParams.C" />
+    <ClCompile Include="src\Submarine.C" />
+    <ClCompile Include="src\Thresholds.C" />
+    <ClCompile Include="src\TrackBall.C" />
+    <ClCompile Include="src\TransferFunctionVC.C" />
+    <ClCompile Include="src\TriangleStrip.C" />
+    <ClCompile Include="src\VCSettings.C" />
+    <ClCompile Include="src\VolumePaint.C" />
+    <ClCompile Include="src\VolumeRender.C" />
+    <ClCompile Include="src\VolumeRenderASExternal.C" />
+    <ClCompile Include="src\vxPolypSegmentation.C" />
+    <ClCompile Include="src\vxSuspiciousROIoutput4CADpartner.C" />
+    <ClCompile Include="src\Dataset_64b.C" />
+    <ClCompile Include="src\Fields_64b.C" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Bookmark.h" />
+    <ClInclude Include="include\BookmarkList.h" />
+    <ClInclude Include="include\Camera.h" />
+    <ClInclude Include="include\ColonSession.h" />
+    <ClInclude Include="include\Component.h" />
+    <ClInclude Include="include\DatabaseConst.h" />
+    <ClInclude Include="include\Dataset.h" />
+    <ClInclude Include="include\DatasetLoadParams.h" />
+    <ClInclude Include="include\Decider.h" />
+    <ClInclude Include="include\Fields.h" />
+    <ClInclude Include="include\GlDisplayList.h" />
+    <ClInclude Include="include\glFont.h" />
+    <ClInclude Include="include\Hazards.h" />
+    <ClInclude Include="include\HUconverter.h" />
+    <ClInclude Include="include\MatchingFeature.h" />
+    <ClInclude Include="include\MatrixNxM.h" />
+    <ClInclude Include="include\MeasureArea.h" />
+    <ClInclude Include="include\MeasureAreaList.h" />
+    <ClInclude Include="include\MeasureLine.h" />
+    <ClInclude Include="include\MeasureLineList.h" />
+    <ClInclude Include="include\OverviewRender.h" />
+    <ClInclude Include="include\Patch.h" />
+    <ClInclude Include="include\ReaderGlobal.h" />
+    <ClInclude Include="include\ReaderLib.h" />
+    <ClInclude Include="include\RenderContext.h" />
+    <ClInclude Include="include\RenderThread.h" />
+    <ClInclude Include="include\RenderUtil.h" />
+    <ClInclude Include="include\Segment.h" />
+    <ClInclude Include="include\Segment2DViewer.h" />
+    <ClInclude Include="include\Segment3DViewer.h" />
+    <ClInclude Include="include\SegmentCylindricalViewer.h" />
+    <ClInclude Include="include\SegmentList.h" />
+    <ClInclude Include="include\SeriesVersion.h" />
+    <ClInclude Include="include\SkeletonNodeVCExt.h" />
+    <ClInclude Include="include\SkeletonRender.h" />
+    <ClInclude Include="include\SkeletonVCExt.h" />
+    <ClInclude Include="include\SliceViewer.h" />
+    <ClInclude Include="include\StripProjection.h" />
+    <ClInclude Include="include\StripViewer.h" />
+    <ClInclude Include="include\StudyLoad.h" />
+    <ClInclude Include="include\StudyLoadParams.h" />
+    <ClInclude Include="include\Submarine.h" />
+    <ClInclude Include="include\Thresholds.h" />
+    <ClInclude Include="include\TrackBall.h" />
+    <ClInclude Include="include\TransferFunctionVC.h" />
+    <ClInclude Include="include\TriangleStrip.h" />
+    <ClInclude Include="include\VCSettings.h" />
+    <ClInclude Include="include\VolumePaint.h" />
+    <ClInclude Include="include\VolumeRender.h" />
+    <ClInclude Include="include\VtxViewModes.h" />
+    <ClInclude Include="include\vxPolypSegmentation.h" />
+    <ClInclude Include="include\vxSuspiciousROIoutput4CADpartner.h" />
+    <ClInclude Include="include\WindowLevel.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\Camera.inl" />
+    <None Include="include\Component.inl" />
+    <None Include="include\Decider.inl" />
+    <None Include="include\HUconverter.inl" />
+    <None Include="include\ReaderGlobal.inl" />
+    <None Include="include\RenderUtil.inl" />
+    <None Include="include\Segment.inl" />
+    <None Include="include\Segment2DViewer.inl" />
+    <None Include="include\Segment3DViewer.inl" />
+    <None Include="include\SegmentViewer.inl" />
+    <None Include="include\SliceViewer.inl" />
+    <None Include="include\Submarine.inl" />
+    <None Include="include\TrackBall.inl" />
+    <None Include="include\VolumeRender.inl" />
+    <None Include="include\VtxViewModes.inl" />
+    <None Include="BuildNumber.ver">
+      <Filter>dll</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vxColon.rc">
+      <Filter>dll</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

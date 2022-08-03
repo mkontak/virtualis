@@ -1,0 +1,1476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{17b90b93-1766-4425-92b4-b182d7f7a0e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{65ee735d-4091-4b2a-b5f6-3d839cc09338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{2688a4b6-b8d4-407e-a902-d39d32df07c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\frames, layouts and views">
+      <UniqueIdentifier>{4f68cefa-9ab0-4f2c-beef-ef36b9d7d319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\dialogs">
+      <UniqueIdentifier>{0979c7e8-bfff-467d-ba4e-a3dfb57a6df4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\ui and controls">
+      <UniqueIdentifier>{8ee0d6da-2d89-4ba4-8431-0b5a5675e278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="language">
+      <UniqueIdentifier>{5ad21a3c-0a47-490e-8677-b1bf3e328f96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\misc">
+      <UniqueIdentifier>{658ab779-579b-4e25-99e2-b681e0fbb83f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\misc\movies">
+      <UniqueIdentifier>{bb8305fd-2613-4daa-b0a8-ccecbf8a5b92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\misc\loading">
+      <UniqueIdentifier>{ba97eefa-81fe-4a5f-9492-e296562b13f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\misc\controllers">
+      <UniqueIdentifier>{d8a9e3bf-acdf-4168-8c14-da894cb2e4b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\misc\services">
+      <UniqueIdentifier>{3ce73e7a-41ea-436a-85c0-55cc64beaa75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\misc\services\database">
+      <UniqueIdentifier>{75b89055-7348-4e14-9aac-8d85839491da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\misc\services\xml">
+      <UniqueIdentifier>{8a0b0cd9-0921-4d1c-a408-f5d5a4dee910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\misc\services\pacs">
+      <UniqueIdentifier>{137440b4-e44b-44cf-83ad-ed8b25df23ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\misc\services\rest">
+      <UniqueIdentifier>{702541a3-590e-48a6-b7ff-5e6cc59a0137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\misc\console">
+      <UniqueIdentifier>{9ed21f7e-bced-4c20-bb6d-93dab238e792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\misc\utilities">
+      <UniqueIdentifier>{6892dbc0-4dc6-449c-82eb-fbbcaafcc270}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AdjustTranslucencyDlg.C">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="CadResultsDlg.C">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlsDialog.C">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="NotationsDialog.C">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="OverViewDlgBar.C">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="PatientInfoDlg.C">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="PickScreenPoint.C">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="PreferencesDlg.C">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectSeriesDialog.C">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ViatronSplash.C">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ComServer.C">
+      <Filter>gui\misc\console</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildViewFrame.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawOverView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="EndoAxialView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="FullObliqueView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="GLChildView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="GLPopupMenu.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="GLTimer.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="GLUpdateBuffer.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="GLWnd.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadStudy.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="MainAppFrame.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="MainAppFrameBkgndProc.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="MovieFrame.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="MovieView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="NavigationView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="OverView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="RegistrationView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportColonFindings.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportMiscellaneous.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="reportnondistendedareas.c">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="reportotherfindings.c">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportPreview.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportSubFinding.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportVariant.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportViewFrame.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportViewWnd.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportWndBase.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="Segment2DChildView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="Segment3DChildView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="SegmentCylindricalChildView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="Segments2DView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="Segments3DView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="SegmentsCylindricalView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="SliceChildView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="SliceChildView.Input.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="SliceChildView.Region.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="SliceChildView.Render.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="StudyBrowserView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="SupineProneViewWnd.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="UDSegmentsChildView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="UDSegmentsColonWnd.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="VCRenderUtils.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="VerifyView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="VFrameManager.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="ViatronChildView.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="ViatronDialog.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="ViatronixWnd.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="ViatronMenus.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="ViatronViewWnd.C">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundProcess.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="ColonLicense.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandLineInfoEx.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionProgress.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="IdleManager.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="MonitorDisplay.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="ThinClientLoadParams.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="User.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="V3DAppMutex.cpp">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="v3DSystemSettings.c">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="VersionInfo.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="ViatronStudy.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="VxConsole.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="VxReportCreator.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="VxVCReport.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="WmTimer.C">
+      <Filter>gui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="MovieCapture.C">
+      <Filter>gui\misc\movies</Filter>
+    </ClCompile>
+    <ClCompile Include="MovieCreateDialog.C">
+      <Filter>gui\misc\movies</Filter>
+    </ClCompile>
+    <ClCompile Include="MovieFormat.C">
+      <Filter>gui\misc\movies</Filter>
+    </ClCompile>
+    <ClCompile Include="MovieSaveStateOptions.C">
+      <Filter>gui\misc\movies</Filter>
+    </ClCompile>
+    <ClCompile Include="WriteAVI.C">
+      <Filter>gui\misc\movies</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportedLibraries.C">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.C">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="Viatron.C" />
+    <ClCompile Include="MissedRegionsDlg.C">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="LanguageSupport.cpp">
+      <Filter>language</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundBrush.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorProgressCtrl.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorTabCtrl.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Dib.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="GdiplusUtilities.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="glComboBox.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Gradient.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="GradientCtrl.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="GradientCtrlImpl.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Menubar.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="MenubarItem.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuButton.cpp">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageWnd.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseHelp.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="NavigationBar.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressCtrl.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertySheetDlg.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportControls.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportGroupCtrl.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportSpinEdit.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="RightBorder.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellTree.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="SkinButton.cpp">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="SliceScrollBar.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="SliderButton.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="SlidingPaneView.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="TabStrip.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="TabStripItem.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="TextPromptWnd.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="Theme.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewSelectDlgBar.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="WinGLUtils.C">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="WinUtils.cpp">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ExeResourceSwapper.cpp">
+      <Filter>language</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusIndicator.cpp">
+      <Filter>gui\ui and controls</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationController.cpp">
+      <Filter>gui\misc\controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutDlg.C">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSystemLoader.cpp">
+      <Filter>gui\misc\loading</Filter>
+    </ClCompile>
+    <ClCompile Include="LoaderFactory.cpp">
+      <Filter>gui\misc\loading</Filter>
+    </ClCompile>
+    <ClCompile Include="Loader.cpp">
+      <Filter>gui\misc\loading</Filter>
+    </ClCompile>
+    <ClCompile Include="StudyLoadParamsEx.cpp">
+      <Filter>gui\misc\loading</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseLoader.cpp">
+      <Filter>gui\misc\loading</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationSettings.cpp">
+      <Filter>gui\misc\controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressDlg.cpp">
+      <Filter>gui\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="CadInputMonitor.cpp">
+      <Filter>gui\misc\controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseLoginService.cpp">
+      <Filter>gui\misc\services\database</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceLocator.cpp">
+      <Filter>gui\misc\services</Filter>
+    </ClCompile>
+    <ClCompile Include="Database.C">
+      <Filter>gui\misc\services\database</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseRetrievalService.cpp">
+      <Filter>gui\misc\services\database</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportingUtils.cpp">
+      <Filter>gui\misc\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexUtils.cpp">
+      <Filter>gui\misc\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="ImagingUtils.cpp">
+      <Filter>gui\misc\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DatasetUtils.cpp">
+      <Filter>gui\misc\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="CadUtils.cpp">
+      <Filter>gui\misc\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlUtils.cpp">
+      <Filter>gui\misc\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DicomPacsService.cpp">
+      <Filter>gui\misc\services\pacs</Filter>
+    </ClCompile>
+    <ClCompile Include="FullScreenController.cpp">
+      <Filter>gui\misc\controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="vcUtils.cpp">
+      <Filter>gui\misc\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="RestLoginService.cpp">
+      <Filter>gui\misc\services\rest</Filter>
+    </ClCompile>
+    <ClCompile Include="RestRetrievalService.cpp">
+      <Filter>gui\misc\services\rest</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlConfigurationService.cpp">
+      <Filter>gui\misc\services\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseConfigurationService.cpp">
+      <Filter>gui\misc\services\database</Filter>
+    </ClCompile>
+    <ClCompile Include="RestConfigurationService.cpp">
+      <Filter>gui\misc\services\rest</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseExceptionFactory.cpp">
+      <Filter>gui\misc\services\database</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AdjustTranslucencyDlg.h">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="CadResultsDlg.h">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlsDialog.h">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="NotationsDialog.h">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="OverViewDlgBar.h">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="PatientInfoDlg.h">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="PickScreenPoint.h">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="PreferencesDlg.h">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectSeriesDialog.h">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ViatronSplash.h">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ComServer.h">
+      <Filter>gui\misc\console</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonMenus.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildViewFrame.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawOverView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="EndoAxialView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="FullObliqueView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="GLChildView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="GLPopupMenu.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="GLTimer.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="GLUpdateBuffer.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="GLWnd.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="MainAppFrame.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="MovieFrame.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="MovieView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="NavigationView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="OverView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="RegistrationView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportColonFindings.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportMiscellaneous.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="reportnondistendedareas.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="reportotherfindings.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportPreview.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportSubFinding.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportVariant.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportViewFrame.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportViewWnd.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportWndBase.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="Segment2DChildView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="Segment3DChildView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="SegmentCylindricalChildView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="Segments2DView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="Segments3DView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="SegmentsCylindricalView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="SliceChildView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="StudyBrowserView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="SupineProneViewWnd.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="UDSegmentsChildView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="UDSegmentsColonWnd.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="VCRenderUtils.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="VerifyView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="VFrameManager.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ViatronChildView.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ViatronDialog.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ViatronixWnd.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ViatronViewWnd.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundProcess.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ColonLicense.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandLineInfoEx.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionProgress.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="IdleManager.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="MonitorDisplay.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ThinClientLoadParams.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="V1KMessages.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="V3DAppMutex.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="V3DSystemSettings.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="VersionInfo.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="ViatronStudy.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="VxConsole.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="VxReportCreator.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="VxVCReport.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="WmTimer.h">
+      <Filter>gui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="MovieCapture.h">
+      <Filter>gui\misc\movies</Filter>
+    </ClInclude>
+    <ClInclude Include="MovieCreateDialog.h">
+      <Filter>gui\misc\movies</Filter>
+    </ClInclude>
+    <ClInclude Include="MovieFormat.h">
+      <Filter>gui\misc\movies</Filter>
+    </ClInclude>
+    <ClInclude Include="MovieSaveStateOptions.h">
+      <Filter>gui\misc\movies</Filter>
+    </ClInclude>
+    <ClInclude Include="WriteAVI.h">
+      <Filter>gui\misc\movies</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="VCResource.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="Viatron.h" />
+    <ClInclude Include="MissedRegionsDlg.h">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="LanguageSupport.h">
+      <Filter>language</Filter>
+    </ClInclude>
+    <ClInclude Include="WinUtils.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundBrush.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorProgressCtrl.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorTabCtrl.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Dib.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="GdiplusUtilities.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="glComboBox.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Gradient.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="gradientctrl.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="GradientCtrlImpl.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Menubar.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="MenubarItem.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="menubutton.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuUtils.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageWnd.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseHelp.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="NavigationBar.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressCtrl.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertySheetDlg.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportControls.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportGroupCtrl.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportSpinEdit.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="RightBorder.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellTree.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="SkinButton.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="SliceScrollBar.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="SliderButton.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="SlidingPaneView.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="TabStrip.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="TabStripItem.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="TextPromptWnd.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="Theme.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewSelectDlgBar.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="WinGDIUtils.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="WinGLUtils.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="ExeResourceSwapper.h">
+      <Filter>language</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusIndicator.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="MainAppFrameStates.h">
+      <Filter>gui\frames, layouts and views</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationController.h">
+      <Filter>gui\misc\controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="AppSettings.h">
+      <Filter>gui\misc\controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="IToolTipProvider.h">
+      <Filter>gui\ui and controls</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystemLoader.h">
+      <Filter>gui\misc\loading</Filter>
+    </ClInclude>
+    <ClInclude Include="LoaderFactory.h">
+      <Filter>gui\misc\loading</Filter>
+    </ClInclude>
+    <ClInclude Include="Loader.h">
+      <Filter>gui\misc\loading</Filter>
+    </ClInclude>
+    <ClInclude Include="StudyLoadParamsEx.h">
+      <Filter>gui\misc\loading</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseLoader.h">
+      <Filter>gui\misc\loading</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationSettings.h">
+      <Filter>gui\misc\controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressDlg.h">
+      <Filter>gui\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="CadInputMonitor.h">
+      <Filter>gui\misc\controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="ILoginService.h">
+      <Filter>gui\misc\services</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseLoginService.h">
+      <Filter>gui\misc\services\database</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceLocator.h">
+      <Filter>gui\misc\services</Filter>
+    </ClInclude>
+    <ClInclude Include="Database.h">
+      <Filter>gui\misc\services\database</Filter>
+    </ClInclude>
+    <ClInclude Include="IRetrievalService.h">
+      <Filter>gui\misc\services</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseRetrievalService.h">
+      <Filter>gui\misc\services\database</Filter>
+    </ClInclude>
+    <ClInclude Include="vcUtils.h">
+      <Filter>gui\misc\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportingUtils.h">
+      <Filter>gui\misc\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexUtils.h">
+      <Filter>gui\misc\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="ImagingUtils.h">
+      <Filter>gui\misc\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="DatasetUtils.h">
+      <Filter>gui\misc\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CadUtils.h">
+      <Filter>gui\misc\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlUtils.h">
+      <Filter>gui\misc\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="IPacsService.h">
+      <Filter>gui\misc\services</Filter>
+    </ClInclude>
+    <ClInclude Include="DicomPacsService.h">
+      <Filter>gui\misc\services\pacs</Filter>
+    </ClInclude>
+    <ClInclude Include="FullScreenController.h">
+      <Filter>gui\misc\controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="RestLoginService.h">
+      <Filter>gui\misc\services\rest</Filter>
+    </ClInclude>
+    <ClInclude Include="RestRetrievalService.h">
+      <Filter>gui\misc\services\rest</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlConfigurationService.h">
+      <Filter>gui\misc\services\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseConfigurationService.h">
+      <Filter>gui\misc\services\database</Filter>
+    </ClInclude>
+    <ClInclude Include="RestConfigurationService.h">
+      <Filter>gui\misc\services\rest</Filter>
+    </ClInclude>
+    <ClInclude Include="IConfigurationService.h">
+      <Filter>gui\misc\services</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseExceptionFectory.h">
+      <Filter>gui\misc\services\database</Filter>
+    </ClInclude>
+    <ClInclude Include="PacsInfo.h">
+      <Filter>gui\misc\utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dialogs.inl">
+      <Filter>gui\dialogs</Filter>
+    </None>
+    <None Include="OverView.inl">
+      <Filter>gui\frames, layouts and views</Filter>
+    </None>
+    <None Include="ViatronStudy.inl">
+      <Filter>gui\misc</Filter>
+    </None>
+    <None Include="res\Viatron.rc2">
+      <Filter>dll</Filter>
+    </None>
+    <None Include="res\annotation.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\annotationBtn.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\annotationBtnSmall.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\arrowpaintcan.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\arrowwait.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\autofly.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\bkgnd-corner-bottom-left.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\bkgnd-corner-bottom-right.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\bkgnd-corner-top-left.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\bkgnd-header-left.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\bkgnd-header-middle.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\bkgnd-header-right.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\bkgnd-side-bottom-yellow.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\bkgnd-side-left-yellow.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\bkgnd-side-right.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\bkmkDrop.wav">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\blaster.wav">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\bluemetalskin.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\BookmarksBtnSmall.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\ButtonLarge.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\ButtonMedium.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\ButtonSmall.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\ButtonSquare.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\cadres-dlgbar-bkgd.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\camera1.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\cameraClick.wav">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\chain-unlink.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\chain_link.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\check3state.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\ColormapSystemBtn.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\ColormapUserBtn.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\ComboMenuButtonMedium.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\ConsoleBackground.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\crossmc.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\Dataset_link.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\dataset_link_vertical.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\Dataset_unlink.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\Dataset_unlink_vertical.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\DeleteAllBtn.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\DetectCADFindings.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\endoview-horiz-dlgbar-bkgd.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\endoview-vertl-dlgbar-bkgd.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\EndoviewMarking.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\Entry.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\explosion.wav">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\file copy from net.avi">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\FindingAccept.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\FindingReject.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\FindingUndecided.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\flipview.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\grasphan.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\greyedge.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\group24.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\harrow.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\highlights.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\highlights.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\leftmouse.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\listhdrsortdn.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\listhdrsortup.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\logo-registration-view.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\magnify.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\measure.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\measure.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\MeasurementsBtnSmall.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\menubar-left.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\menubar-middle.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\menubar-right.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\metalskin.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\midmouse.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\MissedRegionsDetect.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\MovieButton.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\movieheader.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\NextCADFinding.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\NextMissedRegion.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\NextRegionSmall.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\overview-dlgbar-bkgd.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\OverviewMarking.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\PatientInfoHorizBkgd.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\PatientInfoVertlBkgd.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\PostContrastBtn.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\PreContrastBtn.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\resetoverview.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\rightmouse.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\scroll.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\ScrollBarRes.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\scrolldown.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\scrollup.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\segdir-cecum.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\segdir-rectum.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\segjump-cecum-next.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\segjump-cecum-prev.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\segjump-rectum-next.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\segjump-rectum-prev.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\segmentationbtn.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\ShowRegionSmall.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\side-tab-active-end.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\side-tab-active-left.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\side-tab-active-middle.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\side-tab-active-right.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\side-tab-inactive-end.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\side-tab-inactive-left.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\side-tab-inactive-middle.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\side-tab-inactive-right.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\SliceOptions.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\SlidingPaneHeader.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\SlidingPaneHeaderDown.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\snapshot.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\SPProneToggleBtn.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\SPSupineToggleBtn.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\tab-active-end.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\tab-active-left.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\tab-active-middle.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\tab-active-right.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\tab-inactive-end.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\tab-inactive-left.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\tab-inactive-middle.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\tab-inactive-right.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\thumbnail.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\tools.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\translucent.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\TranslucentOverview.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\v3D-Colon-About.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\v3D-Console-About.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\English\v3D-Console-Splash.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\v3DButtonSquare.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\v3dColonBackground.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\V3DColonRegistrationBkgd.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\Viatron.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\videocam.ico">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\vtxcad.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\windowlevel.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\viatronix_logo.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\v3d_colo.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\PatientInfoHorizBkgdHD.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="app.config" />
+    <None Include="WinGDIUtils.inl">
+      <Filter>gui\ui and controls</Filter>
+    </None>
+    <None Include="BuildNumber.ver">
+      <Filter>dll</Filter>
+    </None>
+    <None Include="res\arrowpaintcan_add.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\slider_thumb.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\arrowpaintcan_del.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\arrowpaintcan_new.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\arrowpaintcan_remove.cur">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\bkgnd-header-right_widescreen.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\bkgnd-side-top-yellow.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\buttonSmallRight.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\dashboardbkgd.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\linked-unlinked.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\regedit_size_btnbar.PNG">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\regionedit_btnbar.png">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\roi_measure.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\slider_bkgd.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="res\checkMark.bmp">
+      <Filter>res</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="ConsoleInterop.idl">
+      <Filter>gui\misc\console</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\viatron.manifest">
+      <Filter>dll</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Viatron.rc">
+      <Filter>dll</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

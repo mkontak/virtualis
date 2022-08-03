@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="a_global">
+      <UniqueIdentifier>{3bb86d3c-0305-47da-81d4-957d5a812ca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="e_seg">
+      <UniqueIdentifier>{817cba64-a735-4017-8563-9a9ae6fc3b3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="f_ecv">
+      <UniqueIdentifier>{0d3eb090-72fa-413f-9c33-6e507a4e4f61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="h_ins">
+      <UniqueIdentifier>{ac4a3d55-130e-4f3f-ac4a-39427a08f0e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="i_mix">
+      <UniqueIdentifier>{1c4308ea-d81a-4af5-969f-17cbf9c565bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="j_tri">
+      <UniqueIdentifier>{d399e73e-5cd5-4f3a-ab45-279aac3cfed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="l_dfb">
+      <UniqueIdentifier>{9cfb35d9-acb3-4013-a894-7e61ac4bcc13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="n_ske">
+      <UniqueIdentifier>{61c5b97a-abb5-4803-a47c-d1a1312c4f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p_pipeline">
+      <UniqueIdentifier>{af222478-8229-4d78-ab20-8000b3eee9cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{5aa77a5f-e0f9-4eaa-9c6c-d307ec7f256f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FatalPipelineException.h">
+      <Filter>a_global</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>a_global</Filter>
+    </ClInclude>
+    <ClInclude Include="vxBackgroundRemoval.h">
+      <Filter>e_seg</Filter>
+    </ClInclude>
+    <ClInclude Include="vxLungRemoval.h">
+      <Filter>e_seg</Filter>
+    </ClInclude>
+    <ClInclude Include="vxBoneRemoval.h">
+      <Filter>f_ecv</Filter>
+    </ClInclude>
+    <ClInclude Include="vxCRES.h">
+      <Filter>f_ecv</Filter>
+    </ClInclude>
+    <ClInclude Include="vxSegmentFinder.h">
+      <Filter>h_ins</Filter>
+    </ClInclude>
+    <ClInclude Include="mixmops.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="mixmsg.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="mixvops.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxAsp.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxBlock.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxBlock2.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxBlock3.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxBlockModel.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxCmdParser.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxDynBlock.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxEdgeFilter.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxGeom3D.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxGeoPrims.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxHeap.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxLineModel.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxManipulator.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxMat2.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxMat3.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxMat4.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxMath.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxMatrix.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxPropSlim.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxQMetric.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxQMetric2.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxQMetric3.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxQSlim.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxRaster.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxSMF.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxStack.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxStdModel.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxStdSlim.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxVec2.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxVec3.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxVec4.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="MxVector.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="stdmix.h">
+      <Filter>i_mix</Filter>
+    </ClInclude>
+    <ClInclude Include="BSPTreePolygon.h">
+      <Filter>j_tri</Filter>
+    </ClInclude>
+    <ClInclude Include="ColonWallPNG.h">
+      <Filter>j_tri</Filter>
+    </ClInclude>
+    <ClInclude Include="MCToObjTransfer.h">
+      <Filter>j_tri</Filter>
+    </ClInclude>
+    <ClInclude Include="ViaQSlim.h">
+      <Filter>j_tri</Filter>
+    </ClInclude>
+    <ClInclude Include="ViaStrip.h">
+      <Filter>j_tri</Filter>
+    </ClInclude>
+    <ClInclude Include="vxTriangulator.h">
+      <Filter>j_tri</Filter>
+    </ClInclude>
+    <ClInclude Include="vxDistanceFromBoundary.h">
+      <Filter>l_dfb</Filter>
+    </ClInclude>
+    <ClInclude Include="VoxelCost.h">
+      <Filter>n_ske</Filter>
+    </ClInclude>
+    <ClInclude Include="vxSkeletonator.h">
+      <Filter>n_ske</Filter>
+    </ClInclude>
+    <ClInclude Include="vxPipeline.h">
+      <Filter>p_pipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="V2kApp.h" />
+    <ClInclude Include="resource.h">
+      <Filter>res</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.C">
+      <Filter>a_global</Filter>
+    </ClCompile>
+    <ClCompile Include="vxBackgroundRemoval.C">
+      <Filter>e_seg</Filter>
+    </ClCompile>
+    <ClCompile Include="vxLungRemoval.C">
+      <Filter>e_seg</Filter>
+    </ClCompile>
+    <ClCompile Include="vxBoneRemoval.C">
+      <Filter>f_ecv</Filter>
+    </ClCompile>
+    <ClCompile Include="vxCRES.C">
+      <Filter>f_ecv</Filter>
+    </ClCompile>
+    <ClCompile Include="vxSegmentFinder.C">
+      <Filter>h_ins</Filter>
+    </ClCompile>
+    <ClCompile Include="mixmops.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="mixmsg.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxAsp.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxBlockModel.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxCmdParser.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxEdgeFilter.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxGeom3D.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxHeap.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxLineModel.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxMat2.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxMat3.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxMat4.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxMatrix.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxPropSlim.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxQMetric.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxQMetric2.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxQMetric3.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxQSlim.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxRaster.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxSMF.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxStdModel.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxStdSlim.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="MxTriProject.C">
+      <Filter>i_mix</Filter>
+    </ClCompile>
+    <ClCompile Include="BSPTreePolygon.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ColonWallPNG.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="MCToObjTransfer.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="qslim.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaAdd.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaCommon.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaFree.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaInit.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaLocal.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaNewpolve.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaOutput.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaOutputex.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaPartial.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaQSlim.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaQueue.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaSgi_triang.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaSgi_triangex.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaStrip.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaStripe.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaStruct.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaStructex.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaTies.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="ViaUtil.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="vxTriangulator.C">
+      <Filter>j_tri</Filter>
+    </ClCompile>
+    <ClCompile Include="vxDistanceFromBoundary.C">
+      <Filter>l_dfb</Filter>
+    </ClCompile>
+    <ClCompile Include="VoxelCost.C">
+      <Filter>n_ske</Filter>
+    </ClCompile>
+    <ClCompile Include="vxSkeletonator.C">
+      <Filter>n_ske</Filter>
+    </ClCompile>
+    <ClCompile Include="vxPipeline.C">
+      <Filter>p_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="vxPipelineDataManipulation.C">
+      <Filter>p_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="vxPipelineStages.C">
+      <Filter>p_pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportedLibraries.C" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="V2kApp.C" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BSPTreePolygon.inl">
+      <Filter>j_tri</Filter>
+    </None>
+    <None Include="app.config" />
+    <None Include="BuildNumber.ver">
+      <Filter>res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

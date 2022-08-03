@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug-Release|Win32">
+      <Configuration>Debug-Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-Release|x64">
+      <Configuration>Debug-Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{75C0A8DA-8B02-43B1-9A33-81831CEF43A3}</ProjectGuid>
+    <RootNamespace>vxColon</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'">bin\$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'">bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'">obj\$(Platform)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)32d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)32</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/TP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\include;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxMessaging;..\..\..\Libraries\xerces\include;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\nvidia\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_LIB;VXCOLON_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy /Y /R $(OutDir)$(TargetName)$(TargetExt) $(ProjectDir)..\..\..\Libraries\vx\lib</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/TP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\include;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxMessaging;..\..\..\Libraries\xerces\include;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\nvidia\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;_USRDLL;VXCOLON_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4244;4251;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy /Y /R $(OutDir)$(TargetName)$(TargetExt) $(ProjectDir)..\..\..\Libraries\vx\lib</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/TP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.\include;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxMessaging;..\..\..\Libraries\xerces\include;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\nvidia\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;FINAL_RELEASE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4244;4251;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy /Y /R $(OutDir)$(TargetName)$(TargetExt) $(ProjectDir)..\..\..\Libraries\vx\lib</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/TP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.\include;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxMessaging;..\..\..\Libraries\xerces\include;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\nvidia\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;NDEBUG;FINAL_RELEASE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4244;4251;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>echo Post-Build
+
+echo Copying target to Libraries 
+xcopy /Y /R "$(OutDir)$(TargetName)$(TargetExt)" "$(ProjectDir)..\..\..\Libraries\vx\lib"
+
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/TP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.\include;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxMessaging;..\..\..\Libraries\xerces\include;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\nvidia\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy /Y /R $(OutDir)$(TargetName)$(TargetExt) $(ProjectDir)..\..\..\Libraries\vx\lib</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/TP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>.\include;..\..\..\Libraries\vx\include\vxLogger;..\..\..\Libraries\vx\include\vxBase;..\..\..\Libraries\vx\include\vxBlockVolume;..\..\..\Libraries\vx\include\vxViewer;..\..\..\Libraries\vx\include\vxCAD;..\..\..\Libraries\vx\include\vxMessaging;..\..\..\Libraries\xerces\include;..\..\..\Libraries\minilzo\include;..\..\..\Libraries\zlib\include;..\..\..\Libraries\libxml\include;..\..\..\Libraries\libiconv\include;..\..\..\Libraries\nvidia\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4005;4018;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy /Y /R $(OutDir)$(TargetName)$(TargetExt) $(ProjectDir)..\..\..\Libraries\vx\lib</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Dataset_64b.C" />
+    <ClCompile Include="src\Fields_64b.C" />
+    <ClCompile Include="src\stdafx.C">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Bookmark.C" />
+    <ClCompile Include="src\BookmarkList.C" />
+    <ClCompile Include="src\Camera.C" />
+    <ClCompile Include="src\ColonSession.C" />
+    <ClCompile Include="src\Component.C" />
+    <ClCompile Include="src\Dataset.C" />
+    <ClCompile Include="src\Dataset_ext.C" />
+    <ClCompile Include="src\DatasetLoadParams.C" />
+    <ClCompile Include="src\Fields.C" />
+    <ClCompile Include="src\Fields_ext.C" />
+    <ClCompile Include="src\GlDisplayList.C" />
+    <ClCompile Include="src\glFont.C" />
+    <ClCompile Include="src\Hazards.C" />
+    <ClCompile Include="src\MatrixNxM.C" />
+    <ClCompile Include="src\MeasureArea.C" />
+    <ClCompile Include="src\MeasureAreaList.C" />
+    <ClCompile Include="src\MeasureLine.C" />
+    <ClCompile Include="src\MeasureLineList.C" />
+    <ClCompile Include="src\OverviewRender.C" />
+    <ClCompile Include="src\Patch.C" />
+    <ClCompile Include="src\ReaderGlobal.C" />
+    <ClCompile Include="src\ReaderGlobalRegistration.C" />
+    <ClCompile Include="src\RenderContext.C" />
+    <ClCompile Include="src\RenderThread.C" />
+    <ClCompile Include="src\RenderUtil.C" />
+    <ClCompile Include="src\Segment.C" />
+    <ClCompile Include="src\Segment2DViewer.C" />
+    <ClCompile Include="src\Segment3DViewer.C" />
+    <ClCompile Include="src\SegmentCylindricalViewer.C" />
+    <ClCompile Include="src\SegmentList.C" />
+    <ClCompile Include="src\SeriesVersion.C" />
+    <ClCompile Include="src\SkeletonRender.C" />
+    <ClCompile Include="src\SkeletonVCExt.C" />
+    <ClCompile Include="src\SliceViewer.C" />
+    <ClCompile Include="src\SliceViewerDBG.C" />
+    <ClCompile Include="src\StripProjection.C" />
+    <ClCompile Include="src\StripViewer.C" />
+    <ClCompile Include="src\StudyLoadParams.C" />
+    <ClCompile Include="src\Submarine.C" />
+    <ClCompile Include="src\Thresholds.C" />
+    <ClCompile Include="src\TrackBall.C" />
+    <ClCompile Include="src\TransferFunctionVC.C" />
+    <ClCompile Include="src\TriangleStrip.C" />
+    <ClCompile Include="src\VCSettings.C" />
+    <ClCompile Include="src\VolumePaint.C" />
+    <ClCompile Include="src\VolumeRender.C" />
+    <ClCompile Include="src\VolumeRenderASExternal.C" />
+    <ClCompile Include="src\vxPolypSegmentation.C" />
+    <ClCompile Include="src\vxSuspiciousROIoutput4CADpartner.C" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\stdafx.h" />
+    <ClInclude Include="include\Bookmark.h" />
+    <ClInclude Include="include\BookmarkList.h" />
+    <ClInclude Include="include\Camera.h" />
+    <ClInclude Include="include\ColonSession.h" />
+    <ClInclude Include="include\Component.h" />
+    <ClInclude Include="include\DatabaseConst.h" />
+    <ClInclude Include="include\Dataset.h" />
+    <ClInclude Include="include\DatasetLoadParams.h" />
+    <ClInclude Include="include\Decider.h" />
+    <ClInclude Include="include\Fields.h" />
+    <ClInclude Include="include\GlDisplayList.h" />
+    <ClInclude Include="include\glFont.h" />
+    <ClInclude Include="include\Hazards.h" />
+    <ClInclude Include="include\HUconverter.h" />
+    <ClInclude Include="include\MatchingFeature.h" />
+    <ClInclude Include="include\MatrixNxM.h" />
+    <ClInclude Include="include\MeasureArea.h" />
+    <ClInclude Include="include\MeasureAreaList.h" />
+    <ClInclude Include="include\MeasureLine.h" />
+    <ClInclude Include="include\MeasureLineList.h" />
+    <ClInclude Include="include\OverviewRender.h" />
+    <ClInclude Include="include\Patch.h" />
+    <ClInclude Include="include\ReaderGlobal.h" />
+    <ClInclude Include="include\ReaderLib.h" />
+    <ClInclude Include="include\RenderContext.h" />
+    <ClInclude Include="include\RenderThread.h" />
+    <ClInclude Include="include\RenderUtil.h" />
+    <ClInclude Include="include\Segment.h" />
+    <ClInclude Include="include\Segment2DViewer.h" />
+    <ClInclude Include="include\Segment3DViewer.h" />
+    <ClInclude Include="include\SegmentCylindricalViewer.h" />
+    <ClInclude Include="include\SegmentList.h" />
+    <ClInclude Include="include\SeriesVersion.h" />
+    <ClInclude Include="include\SkeletonNodeVCExt.h" />
+    <ClInclude Include="include\SkeletonRender.h" />
+    <ClInclude Include="include\SkeletonVCExt.h" />
+    <ClInclude Include="include\SliceViewer.h" />
+    <ClInclude Include="include\StripProjection.h" />
+    <ClInclude Include="include\StripViewer.h" />
+    <ClInclude Include="include\StudyLoad.h" />
+    <ClInclude Include="include\StudyLoadParams.h" />
+    <ClInclude Include="include\Submarine.h" />
+    <ClInclude Include="include\Thresholds.h" />
+    <ClInclude Include="include\TrackBall.h" />
+    <ClInclude Include="include\TransferFunctionVC.h" />
+    <ClInclude Include="include\TriangleStrip.h" />
+    <ClInclude Include="include\VCSettings.h" />
+    <ClInclude Include="include\VolumePaint.h" />
+    <ClInclude Include="include\VolumeRender.h" />
+    <ClInclude Include="include\VtxViewModes.h" />
+    <ClInclude Include="include\vxPolypSegmentation.h" />
+    <ClInclude Include="include\vxSuspiciousROIoutput4CADpartner.h" />
+    <ClInclude Include="include\WindowLevel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BuildNumber.ver" />
+    <None Include="include\Camera.inl" />
+    <None Include="include\Component.inl" />
+    <None Include="include\Decider.inl" />
+    <None Include="include\HUconverter.inl" />
+    <None Include="include\ReaderGlobal.inl" />
+    <None Include="include\RenderUtil.inl" />
+    <None Include="include\Segment.inl" />
+    <None Include="include\Segment2DViewer.inl" />
+    <None Include="include\Segment3DViewer.inl" />
+    <None Include="include\SegmentViewer.inl" />
+    <None Include="include\SliceViewer.inl" />
+    <None Include="include\Submarine.inl" />
+    <None Include="include\TrackBall.inl" />
+    <None Include="include\VolumeRender.inl" />
+    <None Include="include\VtxViewModes.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vxColon.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
