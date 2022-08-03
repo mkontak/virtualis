@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{efa3e248-4546-4340-890c-e09d1d70ea3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="messaging">
+      <UniqueIdentifier>{ec958e7d-26b5-42ae-8a5a-11dfb0fea140}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\vxMessagingManager.h">
+      <Filter>messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxIMessage.h">
+      <Filter>messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxProcessingMessage.h">
+      <Filter>messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MessagingLibrary.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxMessagingLibrary.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ImportedLibraries.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxProcesingMessage.cpp">
+      <Filter>messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Stdafx.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxMessagingManager.cpp">
+      <Filter>messaging</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vxmessaging.rc" />
+  </ItemGroup>
+</Project>

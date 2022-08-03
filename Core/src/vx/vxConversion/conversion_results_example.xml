@@ -1,0 +1,17 @@
+<pipeline task="conversion" jid="478A5C87-19F5-494D-A897-DB42C54A6FC9" >
+  <volumes>
+    <volume name="volume1" app="VC" sub="SubType" icnt="359" uid="1.2.840.113619.2.55.1.1762894869.1885.1113319934.35.9" path="d::\vxstudies\564681141_1_2_840_113619_2_55_1_1762882978_2182_1046869733_677\dicom_2013830165454440\volumes\" file="1_2_840_113619_2_55_1_1762894869_1885_1113319934_35_9_0.vol" desc="" >
+      <ext>
+        <properties  prop1="test1" hot="shot" auto="matic" />
+        <again  are="we there" />
+      </ext>
+    </volume>
+    <volume name="volume2" app="VC" sub="SubType" icnt="359" uid="1.2.840.113619.2.55.1.1762894869.1885.1113319934.35.9" path="d::\vxstudies\564681141_1_2_840_113619_2_55_1_1762882978_2182_1046869733_677\dicom_2013830165454440\volumes\" file="1_2_840_113619_2_55_1_1762894869_1885_1113319934_35_9_0.vol" desc="" >
+      <ext>
+        <properties  prop1="test1" hot="shot" auto="matic" />
+        <more  id="no" />
+      </ext>
+    </volume>
+
+  </volumes>
+</pipeline>

@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{34AF0BC8-45A3-41A2-B375-7C6F747AACB0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>vxConversion</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)d</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>$(ProjectName)</TargetName>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;_USRDLL;CONVERSION_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Libraries\zlib\include;..\..\..\..\Libraries\libxml\include;..\..\..\..\Libraries\dcmtk\include;..\..\..\..\Libraries\libiconv\include;..\vxBlockVolume\include;..\vxBase\include;..\vxDicom;..\vxLogger\include;..\..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo Post Build
+
+echo - Making destination Libraries directories
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\include" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\include"
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\bin" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\bin"
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\lib" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\lib"
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\include\$(ProjectName)" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\include\$(ProjectName)"
+
+echo - Copying binaries 
+xcopy /Y /R /S $(ProjectDir)include\* "$(ProjectDir)..\..\..\..\Libraries\vx\include\$(ProjectName)"
+xcopy /Y /R $(OutDir)$(TargetName).dll "$(ProjectDir)..\..\..\..\Libraries\vx\bin"
+xcopy /Y /R $(OutDir)$(TargetName).lib "$(ProjectDir)..\..\..\..\Libraries\vx\lib"
+
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_WINDOWS;_USRDLL;CONVERSION_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Libraries\zlib\include;..\..\..\..\Libraries\libxml\include;..\..\..\..\Libraries\dcmtk\include;..\..\..\..\Libraries\libiconv\include;..\vxBlockVolume\include;..\vxBase\include;..\vxDicom;..\vxLogger\include;..\..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo Post Build
+
+echo - Making destination Libraries directories
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\include" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\include"
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\bin" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\bin"
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\lib" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\lib"
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\include\$(ProjectName)" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\include\$(ProjectName)"
+
+echo - Copying binaries 
+xcopy /Y /R /S $(ProjectDir)include\* "$(ProjectDir)..\..\..\..\Libraries\vx\include\$(ProjectName)"
+xcopy /Y /R $(OutDir)$(TargetName).dll "$(ProjectDir)..\..\..\..\Libraries\vx\bin"
+xcopy /Y /R $(OutDir)$(TargetName).lib "$(ProjectDir)..\..\..\..\Libraries\vx\lib"
+
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_USRDLL;CONVERSION_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Libraries\zlib\include;..\..\..\..\Libraries\libxml\include;..\..\..\..\Libraries\dcmtk\include;..\..\..\..\Libraries\libiconv\include;..\vxBlockVolume\include;..\vxBase\include;..\vxDicom;..\vxLogger\include;..\..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo Post Build
+
+echo - Making destination Libraries directories
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\include" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\include"
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\bin" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\bin"
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\lib" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\lib"
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\include\$(ProjectName)" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\include\$(ProjectName)"
+
+echo - Copying include files
+xcopy /Y /R /S $(ProjectDir)*.h "$(ProjectDir)..\..\..\..\Libraries\vx\include\$(ProjectName)"
+
+echo - Copying binary files
+xcopy /Y /R $(OutDir)$(TargetName).dll "$(ProjectDir)..\..\..\..\Libraries\vx\bin"
+xcopy /Y /R $(OutDir)$(TargetName).lib "$(ProjectDir)..\..\..\..\Libraries\vx\lib"
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_USRDLL;CONVERSION_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Libraries\zlib\include;..\..\..\..\Libraries\libxml\include;..\..\..\..\Libraries\dcmtk\include;..\..\..\..\Libraries\libiconv\include;..\vxBlockVolume\include;..\vxBase\include;..\vxDicom;..\vxLogger\include;..\..\..\..\Libraries\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo Post Build
+
+echo - Making destination Libraries directories
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\include" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\include"
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\bin" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\bin"
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\lib" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\lib"
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Libraries\vx\include\$(ProjectName)" mkdir "$(ProjectDir)..\..\..\..\Libraries\vx\include\$(ProjectName)"
+
+echo - Copying binaries 
+xcopy /Y /R /S $(ProjectDir)include\* "$(ProjectDir)..\..\..\..\Libraries\vx\include\$(ProjectName)"
+xcopy /Y /R $(OutDir)$(TargetName).dll "$(ProjectDir)..\..\..\..\Libraries\vx\bin"
+xcopy /Y /R $(OutDir)$(TargetName).lib "$(ProjectDir)..\..\..\..\Libraries\vx\lib"
+
+echo - Creating core.info 
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Viatronix\Info" mkdir "$(ProjectDir)..\..\..\..\Viatronix\Info" 
+IF NOT EXIST "$(ProjectDir)..\..\..\..\Viatronix\Info\core.info" "$(DevEnvDir)tf.exe" info $(ProjectDir)..  &gt;  "$(ProjectDir)..\..\..\..\Viatronix\Info\core.info"
+
+echo $(TargetName).dll &gt;&gt; "$(ProjectDir)..\..\..\..\Viatronix\Info\core.info"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>$(ProjectDir)..\..\..\..\Libraries\utilities\Versioning -c "$(Configuration)" -p "$(TargetName)" -f "$(ProjectPath)" -r "$(TeamProject)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CvnLibrary.h" />
+    <ClInclude Include="CvnCallback.h" />
+    <ClInclude Include="CvnConverter.h" />
+    <ClInclude Include="CvnFileConverter.h" />
+    <ClInclude Include="CvnPacsConverter.h" />
+    <ClInclude Include="CvnThread.h" />
+    <ClInclude Include="CvnEnums.h" />
+    <ClInclude Include="CvnLog.h" />
+    <ClInclude Include="CvnExceptions.h" />
+    <ClInclude Include="CvnIterator.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="CvnSubVolumeInfo.h" />
+    <ClInclude Include="CvnUnitTest.h" />
+    <ClInclude Include="vxConversionLibrary.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CvnCallback.cpp" />
+    <ClCompile Include="CvnConverter.cpp" />
+    <ClCompile Include="CvnConverter_enh.cpp" />
+    <ClCompile Include="CvnFileConverter.cpp" />
+    <ClCompile Include="CvnLog.cpp" />
+    <ClCompile Include="CvnPacsConverter.cpp" />
+    <ClCompile Include="CvnThread.cpp" />
+    <ClCompile Include="CvnExceptions.cpp" />
+    <ClCompile Include="CvnIterator.cpp" />
+    <ClCompile Include="ImportedLibraries.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">WIN64;_DEBUG;_WINDOWS;_USRDLL;VXCONVERSION_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN64;_DEBUG;_WINDOWS;_USRDLL;VXCONVERSION_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CvnSubVolumeInfo.cpp" />
+    <ClCompile Include="CvnUnitTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BuildNumber.ver" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vxConversion.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="conversion_results_example.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

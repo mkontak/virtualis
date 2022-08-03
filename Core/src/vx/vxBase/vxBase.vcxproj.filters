@@ -1,0 +1,912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{0636162e-7ccd-47ad-9a24-4299e44ecf98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="diagnostics">
+      <UniqueIdentifier>{5bb61bc0-aa53-4736-ad27-568b3f613a30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="global">
+      <UniqueIdentifier>{23869d42-db5b-4c31-bc5f-4bf140e00edb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image">
+      <UniqueIdentifier>{359ef97f-de2f-448c-94ae-0b6bad6de435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{b2d5c590-76af-4642-a211-8430b6ee15a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mathGFX">
+      <UniqueIdentifier>{728fb74a-cb62-4991-af5e-d81e7e69535e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="threading">
+      <UniqueIdentifier>{8e4003b7-beae-4727-8fbd-063f95d89285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{590e56bc-72d3-4541-b8a2-68a0ef890dec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{96eb35f0-fc5a-4489-b7fe-ac189fa2c89b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto">
+      <UniqueIdentifier>{d3070653-3b25-471c-a57a-6cff6c9d1c51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sys">
+      <UniqueIdentifier>{72be235f-b9e3-403b-b9ad-795d8ba37c06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="text">
+      <UniqueIdentifier>{2d354bc3-9280-4b09-8c76-bf2eab7ba9ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sql">
+      <UniqueIdentifier>{51c9513d-976e-4c6f-a92f-1eb8285691b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{cecdf320-1522-4c9e-afd6-c6d46d4a0ae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\net">
+      <UniqueIdentifier>{1f1f3fe8-7b93-4dd7-aab6-614dcbe4d43f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\file">
+      <UniqueIdentifier>{2abe554f-49c1-4e8a-bf99-bac08147fdaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\dir">
+      <UniqueIdentifier>{9679fcc9-d75d-4544-848c-98cf695bf9d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\streams">
+      <UniqueIdentifier>{3dadbdb5-28d6-4d78-a4cc-85d841b3ac3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{9a450820-aa27-4515-822b-90081d52f8dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\net\http">
+      <UniqueIdentifier>{8ee88933-2831-4492-b88e-90196f10dd15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\net\http\request">
+      <UniqueIdentifier>{3e4e8459-1dcc-4ba2-b3bf-b95f55604b79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io\net\http\response">
+      <UniqueIdentifier>{1d0dee03-01cb-40f2-86ef-2c11ba1818bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{1caab236-2c73-44f8-bacf-c58179afad23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="reg">
+      <UniqueIdentifier>{e990d514-5916-4d3b-adea-4d1c9a21b405}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\stdafx.C">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CpuId.C">
+      <Filter>diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CpuInfo.C">
+      <Filter>diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SystemInfo.C">
+      <Filter>diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxFunctionProfiler.C">
+      <Filter>diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxPerformanceCounter.C">
+      <Filter>diagnostics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CRC.C">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Deflate.C">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Image.C">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImageUtilities.C">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PixelRGBA.C">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResourceImage.C">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScanlineFilter.C">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\V3DFile.C">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Variable.C">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VarMap.C">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CubicSplineInterpolator.C">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Double.C">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Normal.C">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Normal3D.C">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plane.C">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Point3D.C">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SingularValueDecomp.C">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Triple.C">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector3D.C">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Intersection.C">
+      <Filter>mathGFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Line.C">
+      <Filter>mathGFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PrimitiveUtilities.C">
+      <Filter>mathGFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Quadrilateral.C">
+      <Filter>mathGFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RaySegment.C">
+      <Filter>mathGFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Rect.C">
+      <Filter>mathGFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Triangle.C">
+      <Filter>mathGFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxTetrahedron.C">
+      <Filter>mathGFX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thread.C">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BaseHistogram.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CmdLineSwitches.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Date.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Exception.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ExceptionSetup.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileBinder.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileExtensions.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileNameFilter.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemoryBuffer.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemoryBufferPool.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Timer.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utilities.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxElement.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxProgressBar.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxSystemSettings.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDOMAttribute.C">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDOMDocument.C">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDOMElement.C">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDOMNamedNodeMap.C">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDOMNode.C">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDOMNodeList.C">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImportedLibraries.C">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Crypt.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Wmi.cpp">
+      <Filter>sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BitConverter.cpp">
+      <Filter>text</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto\AESCrypt.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto\CryptData.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto\CryptHash.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto\CryptKey.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto\CryptProvider.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql\SqlCommand.cpp">
+      <Filter>sql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql\SqlConnection.cpp">
+      <Filter>sql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql\SqlError.cpp">
+      <Filter>sql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql\SqlHandle.cpp">
+      <Filter>sql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql\SqlParameter.cpp">
+      <Filter>sql</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LicenseFile.cpp">
+      <Filter>sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto\CryptStream.cpp">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImpersonateUser.cpp">
+      <Filter>sys</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ThreadTask.cpp">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="src\File.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileTable.cpp">
+      <Filter>io\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TcpClient.cpp">
+      <Filter>io\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxFileServer.cpp">
+      <Filter>io\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxTransportLayer.cpp">
+      <Filter>io\net</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxInflate.C">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FilePtr.cpp">
+      <Filter>io\file</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FilePtrFactory.cpp">
+      <Filter>io\file</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TcpFilePtr.cpp">
+      <Filter>io\file</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DirPtrFactory.cpp">
+      <Filter>io\dir</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LocalDirPtr.cpp">
+      <Filter>io\dir</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TcpDirPtr.cpp">
+      <Filter>io\dir</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LocalFilePtr.cpp">
+      <Filter>io\file</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NetworkStream.cpp">
+      <Filter>io\streams</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemoryStream.cpp">
+      <Filter>io\streams</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HttpFilePtr.cpp">
+      <Filter>io\file</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\HttpRequest.cpp">
+      <Filter>io\net\http\request</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\HttpResponse.cpp">
+      <Filter>io\net\http\response</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxUrl.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\HttpClient.cpp">
+      <Filter>io\net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\HttpConnection.cpp">
+      <Filter>io\net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\HttpHandle.cpp">
+      <Filter>io\net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http\HttpSession.cpp">
+      <Filter>io\net\http</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBuffer.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Base64.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HttpDirPtr.cpp">
+      <Filter>io\dir</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDOMParseErrorHandler.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DemoRegistry.cpp">
+      <Filter>reg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Registry.cpp">
+      <Filter>reg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sql\DatabaseConnectionStrings.cpp">
+      <Filter>sql</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\CpuId.h">
+      <Filter>diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CpuInfo.h">
+      <Filter>diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SystemInfo.h">
+      <Filter>diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxFunctionProfiler.h">
+      <Filter>diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxPerformanceCounter.h">
+      <Filter>diagnostics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Enums.h">
+      <Filter>global</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Global.h">
+      <Filter>global</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Typedef.h">
+      <Filter>global</Filter>
+    </ClInclude>
+    <ClInclude Include="include\V2kVersion.h">
+      <Filter>global</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CRC.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Deflate.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Image.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImageUtilities.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PixelRGB.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PixelRGBA.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ResourceImage.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ScanlineFilter.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\V3DFile.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Variable.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VarMap.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BezierCurve.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CubicSplineInterpolator.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Double.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Line2D.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Matrix.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Normal.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Normal3D.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Plane.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Point.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Point2D.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Point3D.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Quaternion.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SingularValueDecomp.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Triple.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Vector.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Vector3D.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Vector4d.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxComplex.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ZeroOne.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BoundingRect.h">
+      <Filter>mathGFX</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Box.h">
+      <Filter>mathGFX</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Intersection.h">
+      <Filter>mathGFX</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Line.h">
+      <Filter>mathGFX</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PrimitiveUtilities.h">
+      <Filter>mathGFX</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Quadrilateral.h">
+      <Filter>mathGFX</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RaySegment.h">
+      <Filter>mathGFX</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Rect.h">
+      <Filter>mathGFX</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Triangle.h">
+      <Filter>mathGFX</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxTetrahedron.h">
+      <Filter>mathGFX</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CriticalSection.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Mutex.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SingleLock.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Thread.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ThreadSafeQueue.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BaseHistogram.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CmdLineSwitches.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ColorList.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Date.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Exception.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ExceptionSetup.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\File.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FileBinder.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FileExtensions.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FileNameFilter.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MemoryBuffer.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MemoryBufferPool.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgressPrinter.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Timer.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\utilities.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ValueRange.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxElement.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxProgressBar.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxSystemSettings.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDOM.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDOMAttribute.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDOMDocument.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDOMElement.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDOMNamedNodeMap.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDOMNode.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDOMNodeList.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Crypt.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Wmi.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BitConverter.h">
+      <Filter>text</Filter>
+    </ClInclude>
+    <ClInclude Include="include\crypto\AESCrypt.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="include\crypto\CryptData.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="include\crypto\CryptExceptions.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="include\crypto\CryptHash.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="include\crypto\CryptKey.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="include\crypto\CryptProvider.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sql\SqlCommand.h">
+      <Filter>sql</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sql\SqlConnection.h">
+      <Filter>sql</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sql\SqlError.h">
+      <Filter>sql</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sql\SqlHandle.h">
+      <Filter>sql</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sql\SqlParameter.h">
+      <Filter>sql</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LicenseFile.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\crypto\CryptStream.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ObservableObject.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImpersonateUser.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ThreadTask.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\File.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FileTable.h">
+      <Filter>io\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TcpClient.h">
+      <Filter>io\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxFileServer.h">
+      <Filter>io\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxTransportLayer.h">
+      <Filter>io\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxInflate.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FilePtr.h">
+      <Filter>io\file</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FilePtrFactory.h">
+      <Filter>io\file</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LocalFilePtr.h">
+      <Filter>io\file</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TcpFilePtr.h">
+      <Filter>io\file</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirPtr.h">
+      <Filter>io\dir</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirPtrFactory.h">
+      <Filter>io\dir</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LocalDirPtr.h">
+      <Filter>io\dir</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TcpDirPtr.h">
+      <Filter>io\dir</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Stream.h">
+      <Filter>io\streams</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NetworkStream.h">
+      <Filter>io\streams</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MemoryStream.h">
+      <Filter>io\streams</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FileServerHeader.h">
+      <Filter>io\net</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HttpFilePtr.h">
+      <Filter>io\file</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\HttpRequest.h">
+      <Filter>io\net\http\request</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\HttpResponse.h">
+      <Filter>io\net\http\response</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxUrl.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\HttpEnums.h">
+      <Filter>io\net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\HttpClient.h">
+      <Filter>io\net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\HttpConnection.h">
+      <Filter>io\net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\HttpHandle.h">
+      <Filter>io\net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\http\HttpSession.h">
+      <Filter>io\net\http</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBuffer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Base64.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HttpDirPtr.h">
+      <Filter>io\dir</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDOMParseErrorHandler.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBaseLibrary.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DemoRegistry.h">
+      <Filter>reg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Registry.h">
+      <Filter>reg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SoftwareRegistry.h">
+      <Filter>reg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sql\DatabaseConnectionStrings.h">
+      <Filter>sql</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\Image.inl">
+      <Filter>image</Filter>
+    </None>
+    <None Include="include\PixelRGB.inl">
+      <Filter>image</Filter>
+    </None>
+    <None Include="include\PixelRGBA.inl">
+      <Filter>image</Filter>
+    </None>
+    <None Include="include\BezierCurve.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\Double.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\Line2D.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\Matrix.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\Normal.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\Normal3D.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\Plane.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\Point.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\Point2D.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\Point3D.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\Quaternion.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\Vector.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\Vector3D.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\Vector4d.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\ZeroOne.inl">
+      <Filter>math</Filter>
+    </None>
+    <None Include="include\BoundingRect.inl">
+      <Filter>mathGFX</Filter>
+    </None>
+    <None Include="include\Box.inl">
+      <Filter>mathGFX</Filter>
+    </None>
+    <None Include="include\Quadrilateral.inl">
+      <Filter>mathGFX</Filter>
+    </None>
+    <None Include="include\Rect.inl">
+      <Filter>mathGFX</Filter>
+    </None>
+    <None Include="include\Triangle.inl">
+      <Filter>mathGFX</Filter>
+    </None>
+    <None Include="include\BaseHistogram.inl">
+      <Filter>utilities</Filter>
+    </None>
+    <None Include="include\CmdLineSwitches.inl">
+      <Filter>utilities</Filter>
+    </None>
+    <None Include="include\ColorList.inl">
+      <Filter>utilities</Filter>
+    </None>
+    <None Include="include\FileExtensions.inl">
+      <Filter>utilities</Filter>
+    </None>
+    <None Include="include\MemoryBufferPool.inl">
+      <Filter>utilities</Filter>
+    </None>
+    <None Include="include\Timer.inl">
+      <Filter>utilities</Filter>
+    </None>
+    <None Include="include\ValueRange.inl">
+      <Filter>utilities</Filter>
+    </None>
+    <None Include="include\Crypt.inl">
+      <Filter>utilities</Filter>
+    </None>
+    <None Include="res\BuildNumber.ver">
+      <Filter>res</Filter>
+    </None>
+    <None Include="buildnumber.ver">
+      <Filter>dll</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\CpuId64.asm">
+      <Filter>utilities</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vxBase.rc">
+      <Filter>dll</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

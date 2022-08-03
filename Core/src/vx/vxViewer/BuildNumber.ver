@@ -1,0 +1,4 @@
+#define FILEVER        3,0,0,73
+#define PRODUCTVER     2,0,0,1
+#define STRFILEVER     "3, 0, 0, 73\0"
+#define STRPRODUCTVER  "2, 0, 0, 1\0"

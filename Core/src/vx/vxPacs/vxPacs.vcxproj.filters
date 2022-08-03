@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{ab796be0-1217-45e0-bea3-2c256fcae77a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="BuildNumber.ver">
+      <Filter>dll</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="PacsLibrary.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="vxPacsLibrary.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="PacsClient.h" />
+    <ClInclude Include="resource.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportedLibraries.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="PacsClient.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vxPacs.rc">
+      <Filter>dll</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{87037707-4bd5-491e-93e5-577189f146b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="block volume">
+      <UniqueIdentifier>{f580d360-ef8c-4e9d-b030-159a1c05fe60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="linear volume">
+      <UniqueIdentifier>{bfd0c71e-0948-4979-b3c9-f836ac2a2ac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{572c993c-850e-48ad-a576-d4f29ccddb00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ImportedLibraries.C">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stdafx.C">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlock.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolume.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeFileReader.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeFilter.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeFilterAverage.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeFilterCubicBSpline.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeFilterFitLinearZ.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeFilterKernel.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeFilterLinear.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeFilterMajority.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeFilterMajorityNonZero.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeFilterMedian.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeFilterMedianSameSize.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeIterator.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeIteratorNeighbors.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeRayIterator.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeRegionGrowIterator.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeRegionGrowIteratorHeap.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeRegionGrowIteratorHist.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeRegionGrowIteratorVoxelValue.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeServer.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDecider.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDeciderVoxelValue.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxECGSignal.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxPhaseVolume.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxTimeVolume.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxVolumeHeader.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxVolumeHistogram.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxVoxelCost.C">
+      <Filter>block volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AnyVolume.C">
+      <Filter>linear volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Block.C">
+      <Filter>linear volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BlockVolume.C">
+      <Filter>linear volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LinearVolume.C">
+      <Filter>linear volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Volume.C">
+      <Filter>linear volume</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HessianMatrix.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Histogram.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PatientAnonymizer.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PersonName.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SerializedDicom.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TimeVolume.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VolumeUtilities.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVolumeUtilities.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxVoxelizer.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XPDirectoryAnonymizer.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDicomRCSutilities.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeLibrary.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlock.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolume.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeFileReader.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeFilter.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeFilterAverage.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeFilterCubicBSpline.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeFilterFitLinearZ.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeFilterKernel.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeFilterLinear.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeFilterMajority.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeFilterMajorityNonZero.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeFilterMedian.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeFilterMedianSameSize.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeIterator.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeIteratorConsts.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeIteratorNeighbors.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeIteratorNeighborsConsts.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeRayIterator.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeRegionGrowIterator.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeRegionGrowIteratorHeap.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeRegionGrowIteratorHist.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeRegionGrowIteratorVoxelValue.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeServer.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxCost.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDecider.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDeciderVoxelValue.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxECGSignal.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxHistogramUpdaterIntensity.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxHistogramUpdaterLabel.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxHistogramUpdaterNull.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxInserter.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxIntensityConverter.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxPhaseVolume.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxTimeVolume.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxVolumeHeader.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxVolumeHistogram.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxVoxelCost.h">
+      <Filter>block volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AnyVolume.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Block.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BlockSubVolIterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BlockVector.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BlockVolIterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BlockVolRayIterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BlockVolSliceIterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BlockVolume.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HeaderVolume.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinearSubVolIterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinearVolIterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinearVolRayIterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinearVolSliceIterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LinearVolume.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Neighbor18Iterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Neighbor18Walker.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Neighbor26Iterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Neighbor26Walker.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Neighbor6Iterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Neighbor6Walker.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Neighbor8Walker.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\NeighborIterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegGrow18Iterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegGrow26Iterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegGrow6Iterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegGrowHeap6Iterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegGrowHeapIterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegGrowIterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SerializedBlockVolume.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SpiralIterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VolAPI.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Volume.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VxVolIterator.h">
+      <Filter>linear volume</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HessianMatrix.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Histogram.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PatientAnonymizer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PersonName.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Serialization.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SerializedDicom.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TimeVolume.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VolumeUtilities.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVolumeUtilities.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxVoxelizer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XPDirectoryAnonymizer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDicomRCSutilities.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\vxBlock.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeFileReader.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeFilter.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeFilterAverage.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeFilterCubicBSpline.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeFilterKernel.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeFilterMajority.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeFilterMajorityNonZero.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeFilterMedian.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeIterator.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeIteratorNeighbors.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeRayIterator.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeRegionGrowIterator.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeRegionGrowIteratorHeap.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeRegionGrowIteratorHist.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeRegionGrowIteratorVoxelValue.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxBlockVolumeServer.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxDecider.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxIntensityConverter.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxTimeVolume.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxTimeVolumeIO.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxVolumeHeader.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\vxVolumeHistogram.inl">
+      <Filter>block volume</Filter>
+    </None>
+    <None Include="include\Block.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\BlockVector.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\BlockVolume.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\HeaderVolume.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\LinearVolume.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\Neighbor18Iterator.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\Neighbor18Walker.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\Neighbor26Iterator.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\Neighbor26Walker.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\Neighbor6Iterator.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\Neighbor6Walker.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\Neighbor8Walker.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\NeighborIterator.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\RegGrow18Iterator.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\RegGrow26Iterator.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\RegGrow6Iterator.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\RegGrowHeap6Iterator.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\RegGrowHeapIterator.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\RegGrowIterator.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\SpiralIterator.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\VolAPI.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\Volume.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\VxVolIterator.inl">
+      <Filter>linear volume</Filter>
+    </None>
+    <None Include="include\Histogram.inl">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="include\TimeVolume.inl">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="BuildNumber.ver">
+      <Filter>dll</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vxBlockVolume.rc">
+      <Filter>dll</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

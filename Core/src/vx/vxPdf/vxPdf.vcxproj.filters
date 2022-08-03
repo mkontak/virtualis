@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{fcc8cc0d-b530-4ef1-8984-8f372625f424}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="PdfBuffer.h" />
+    <ClInclude Include="PdfExceptions.h" />
+    <ClInclude Include="Pdf.h" />
+    <ClInclude Include="PdfLibrary.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="vxPdfLibrary.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="PdfUtilities.h" />
+    <ClInclude Include="PdfGdiplusEngine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="PdfBuffer.cpp" />
+    <ClCompile Include="ImportedLibraries.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="Pdf.cpp" />
+    <ClCompile Include="PdfExceptions.cpp" />
+    <ClCompile Include="PdfUtilities.cpp" />
+    <ClCompile Include="PdfGdiplusEngine.cpp" />
+    <ClCompile Include="QuickPDFDLL0916.cpp" />
+  </ItemGroup>
+</Project>

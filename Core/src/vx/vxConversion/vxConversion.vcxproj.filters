@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{1aa1d6f1-a1b1-4abb-a6ff-f9d953cb0907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logging">
+      <UniqueIdentifier>{0a3c625f-9988-4cd6-ab08-a21a43bdf4ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="converters">
+      <UniqueIdentifier>{c361d75d-8fbf-48ef-ab02-5ac75f2761bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="threading">
+      <UniqueIdentifier>{6d39c0f6-c7c8-4d31-aecc-c909ed485728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{bfbfc400-bead-491d-af4c-69e588577f1f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="vxConversionLibrary.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="CvnLog.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="CvnLibrary.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="CvnConverter.h">
+      <Filter>converters</Filter>
+    </ClInclude>
+    <ClInclude Include="CvnFileConverter.h">
+      <Filter>converters</Filter>
+    </ClInclude>
+    <ClInclude Include="CvnPacsConverter.h">
+      <Filter>converters</Filter>
+    </ClInclude>
+    <ClInclude Include="CvnIterator.h">
+      <Filter>converters</Filter>
+    </ClInclude>
+    <ClInclude Include="CvnCallback.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="CvnThread.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="CvnEnums.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="CvnExceptions.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="CvnSubVolumeInfo.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="CvnUnitTest.h">
+      <Filter>converters</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportedLibraries.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="CvnConverter.cpp">
+      <Filter>converters</Filter>
+    </ClCompile>
+    <ClCompile Include="CvnFileConverter.cpp">
+      <Filter>converters</Filter>
+    </ClCompile>
+    <ClCompile Include="CvnPacsConverter.cpp">
+      <Filter>converters</Filter>
+    </ClCompile>
+    <ClCompile Include="CvnIterator.cpp">
+      <Filter>converters</Filter>
+    </ClCompile>
+    <ClCompile Include="CvnCallback.cpp">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="CvnThread.cpp">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="CvnExceptions.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="CvnConverter_enh.cpp">
+      <Filter>converters</Filter>
+    </ClCompile>
+    <ClCompile Include="CvnLog.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="CvnSubVolumeInfo.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="CvnUnitTest.cpp">
+      <Filter>converters</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BuildNumber.ver">
+      <Filter>dll</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vxConversion.rc">
+      <Filter>dll</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="conversion_results_example.xml" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{2b0b3731-f8d7-467c-b8b2-db11b36a10e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logging">
+      <UniqueIdentifier>{9d5c235a-28f1-4c20-b5a3-63984a13a7db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="threading">
+      <UniqueIdentifier>{3cf58ca7-a469-4b10-801c-4b3b14802076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{ca5ed144-a0da-4bf5-8ec5-266d84b0ce8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="host">
+      <UniqueIdentifier>{d7f5d1f7-7558-4c53-9e8d-32d001cc1d16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="types">
+      <UniqueIdentifier>{ae9a11eb-7d65-4925-8542-b6e4392c6b21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="types\element">
+      <UniqueIdentifier>{2b21fa9e-878f-47d9-a22c-5fce543f347c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="types\image">
+      <UniqueIdentifier>{2a60a578-6a0d-40a7-8364-649e959a1564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="types\interfaces">
+      <UniqueIdentifier>{c43f23ba-bb68-462a-9a39-6c5a80e88d1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Devices">
+      <UniqueIdentifier>{18343925-0aad-4c64-bfc3-6a929097c585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Devices\SCP">
+      <UniqueIdentifier>{5966a8e2-d240-41c5-8578-1ace703113a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Devices\SCU">
+      <UniqueIdentifier>{925548ca-c867-4e0c-a544-016ded807883}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmLog.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="vxDicomLibrary.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmLibrary.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmFind.h">
+      <Filter>Devices\SCU</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmGet.h">
+      <Filter>Devices\SCU</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmMove.h">
+      <Filter>Devices\SCU</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmClient.h">
+      <Filter>Devices\SCU</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmStore.h">
+      <Filter>Devices\SCU</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmAssociation.h">
+      <Filter>Devices\SCP</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmServer.h">
+      <Filter>Devices\SCP</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmName.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmBuffer.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmDate.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmTime.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmTriple.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmCosines.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmDouble.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmUtility.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmRange.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmQueryRetrieveParameters.h">
+      <Filter>Devices\SCU</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmMoveParameters.h">
+      <Filter>Devices\SCU</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmFindParameters.h">
+      <Filter>Devices\SCU</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmGetParameters.h">
+      <Filter>Devices\SCU</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmList.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmHost.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmDictionary.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmElement.h">
+      <Filter>types\element</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmSequence.h">
+      <Filter>types\element</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmCallback.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmThread.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmExceptions.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmEnums.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmElementFactory.h">
+      <Filter>types\element</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmObject.h">
+      <Filter>types\element</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmGroup.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmElementCollection.h">
+      <Filter>types\element</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmImage.h">
+      <Filter>types\image</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmImageFactory.h">
+      <Filter>types\image</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmImageCollection.h">
+      <Filter>types\image</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmFrame.h">
+      <Filter>types\image</Filter>
+    </ClInclude>
+    <ClInclude Include="IDcmImage.h">
+      <Filter>types\image</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmIndex.h">
+      <Filter>types\image</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmTypedefs.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmIndexList.h">
+      <Filter>types\image</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmLut.h">
+      <Filter>types</Filter>
+    </ClInclude>
+    <ClInclude Include="ICollection.h">
+      <Filter>types\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmDevice.h">
+      <Filter>Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmGdiplusEngine.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="DcmHostTable.h">
+      <Filter>host</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmFind.cpp">
+      <Filter>Devices\SCU</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmGet.cpp">
+      <Filter>Devices\SCU</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmMove.cpp">
+      <Filter>Devices\SCU</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmClient.cpp">
+      <Filter>Devices\SCU</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmStore.cpp">
+      <Filter>Devices\SCU</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmAssociation.cpp">
+      <Filter>Devices\SCP</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmServer.cpp">
+      <Filter>Devices\SCP</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmName.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmDate.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmTime.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmUtility.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmCosines.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmBuffer.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmLog.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmQueryRetrieveParameters.cpp">
+      <Filter>Devices\SCU</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmMoveParameters.cpp">
+      <Filter>Devices\SCU</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmFindParameters.cpp">
+      <Filter>Devices\SCU</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmGetParameters.cpp">
+      <Filter>Devices\SCU</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmList.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmHost.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmDictionary.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmElement.cpp">
+      <Filter>types\element</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmSequence.cpp">
+      <Filter>types\element</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmRange.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmCallback.cpp">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmThread.cpp">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmExceptions.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportedLibaries.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmElementFactory.cpp">
+      <Filter>types\element</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmObject.cpp">
+      <Filter>types\element</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmElementCollection.cpp">
+      <Filter>types\element</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmImage.cpp">
+      <Filter>types\image</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmImageFactory.cpp">
+      <Filter>types\image</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmImageCollection.cpp">
+      <Filter>types\image</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmFrame.cpp">
+      <Filter>types\image</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmTriple.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="IDcmImage.cpp">
+      <Filter>types\image</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmIndex.cpp">
+      <Filter>types\image</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmIndexList.cpp">
+      <Filter>types\image</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmLut.cpp">
+      <Filter>types</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmDevice.cpp">
+      <Filter>Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmGdiplusEngine.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="DcmHostTable.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="BuildNumber.ver">
+      <Filter>dll</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vxDicom.rc">
+      <Filter>dll</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

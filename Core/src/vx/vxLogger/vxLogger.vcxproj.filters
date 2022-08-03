@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="source\ImportLibraries.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stdafx.C">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxUtilThread.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxUtilStrings.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxUtilIO.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxLogger.cpp">
+      <Filter>loggers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxLoggerClassic.cpp">
+      <Filter>loggers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxLoggerServer.cpp">
+      <Filter>loggers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxLoggerInfo.cpp">
+      <Filter>loggers</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxLogCallback.cpp">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxLogMutex.cpp">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxLogThread.cpp">
+      <Filter>threading</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxLogUtility.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxLogExceptions.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxLogFactory.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxLogRecord.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxLogServer.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxLogTimer.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxXmlDocument.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxXmlNode.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxXmlSchema.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="source\vxXmlExceptions.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DllMain.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxUtilThread.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxUtilStrings.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxUtilIO.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLoggerServer.h">
+      <Filter>loggers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLoggerInfo.h">
+      <Filter>loggers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLoggerClassic.h">
+      <Filter>loggers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLogger.h">
+      <Filter>loggers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Logger.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLogCallback.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLogMutex.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLogThread.h">
+      <Filter>threading</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLogUtility.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLogEnums.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLogExceptions.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLogFactory.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLogRecord.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLogServer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxLogTimer.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxXmlDocument.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxXmlExceptions.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxXmlNode.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxXmlSchema.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxTaskGroup.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxTask.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\scope_exit.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{3c0af649-e702-45e3-95e6-0f3b3d128ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{006a827d-8fef-421e-ba10-74f3a567417a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="loggers">
+      <UniqueIdentifier>{ddb41898-beec-4a31-95ae-6523bd10003b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="threading">
+      <UniqueIdentifier>{9de64f7e-5167-4765-984a-97172440814d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{09e5d7f9-b1c7-4103-a656-f8e7f5cce2a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{5352904b-85e0-4136-a049-4301709bd228}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="BuildNumber.ver">
+      <Filter>dll</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="vxLogger.rc">
+      <Filter>dll</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

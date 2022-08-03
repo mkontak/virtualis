@@ -1,0 +1,1978 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dll">
+      <UniqueIdentifier>{f717b73e-1e18-40e6-bbc2-27205c12d9fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="annotations">
+      <UniqueIdentifier>{61ca7591-0ccd-4f69-9934-4d7ae0c492cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="viewer types">
+      <UniqueIdentifier>{a8ca4b60-249c-45ee-9ed5-0cf34e8e7222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="manipulators">
+      <UniqueIdentifier>{84ac8759-60df-4b71-91e7-8cc17bb2ad4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="misc">
+      <UniqueIdentifier>{88d822f3-2069-4eca-bbc4-4a666ad3b769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="renderers">
+      <UniqueIdentifier>{95dd8d73-61a3-41be-9dcf-ef5be13df68a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="renderers\deprecated">
+      <UniqueIdentifier>{38f8ef23-6a5b-48b3-94d4-dc5a333845e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="segmentation">
+      <UniqueIdentifier>{04828fcf-f305-48eb-9467-eaaeb2cdfe04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{89d8d9ff-c215-4588-ac42-ba175ee32228}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vc">
+      <UniqueIdentifier>{9ee0d7e2-ac7f-4d33-8369-b1919fdf04e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="modified queue">
+      <UniqueIdentifier>{207fc038-b378-44c8-9174-2d75ffb860e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="serialization">
+      <UniqueIdentifier>{81c4a18a-a4e2-4b6a-a814-ecef2815f0e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interfaces">
+      <UniqueIdentifier>{c78c968b-877c-41ab-bedc-d10d8444eaae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{f8fb23e7-0b59-4fcf-8505-a32aefea100b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="software rendering">
+      <UniqueIdentifier>{4400b3f6-07a1-42b7-bd6d-7adf5d0a1a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="software rendering\planetracer">
+      <UniqueIdentifier>{fc0e2af5-688c-4c97-b6e8-1a869b00007c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="software rendering\raytracer">
+      <UniqueIdentifier>{8fd4fa8d-1a82-43e3-9ac2-d763f8689bf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="software rendering\curvetracer">
+      <UniqueIdentifier>{d9568e14-e13a-4803-9007-cc23027a80ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="controllers - global">
+      <UniqueIdentifier>{c91184f0-4489-4e63-8094-3ae858b34438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="controllers - local">
+      <UniqueIdentifier>{b62b8b12-1179-4985-bcd7-690cb2f48372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="undo actions">
+      <UniqueIdentifier>{a15992ff-f616-4b99-b596-50fe3d18de1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graph">
+      <UniqueIdentifier>{435e996d-f751-4df6-baa8-c138f30a19c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graph\nodes">
+      <UniqueIdentifier>{674dc39e-9ef4-42e8-a2eb-01182662ea32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graph\nodes\rendering node">
+      <UniqueIdentifier>{a07cef7a-d33a-4e07-82ff-2af9529e2670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graph\nodes\rendering node\plugins">
+      <UniqueIdentifier>{70d62658-11eb-42bd-b4d0-f8c436ba6d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graph\nodes\datasets node">
+      <UniqueIdentifier>{9ae478ac-0e2b-4e79-9747-8e4fcb53f305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{7834eade-cff6-44f7-9fe4-e65de7c94ed7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ImportLibraries.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stdafx.cpp">
+      <Filter>dll</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxAnnotation.C">
+      <Filter>annotations</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxAnnotationAngle.C">
+      <Filter>annotations</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxAnnotationArrow.C">
+      <Filter>annotations</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxAnnotationBox.C">
+      <Filter>annotations</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxAnnotationComponent.C">
+      <Filter>annotations</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxAnnotationDistance.C">
+      <Filter>annotations</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxAnnotationEllipse.C">
+      <Filter>annotations</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxAnnotationPoint.C">
+      <Filter>annotations</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxAnnotations.C">
+      <Filter>annotations</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxHandlesObj.C">
+      <Filter>annotations</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerType.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerType3D.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerTypeGraph.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerTypeMesh.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerTypeMPRCurved.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerTypeMPRCurvedLuminal.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerTypeMPROblique.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerTypeMPRObliqueOld.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerTypeMPROrtho.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerTypeMPROrthoPanZoom.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerTypeUndefined.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerTypeVesselDetail3D.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerTypeVesselDetailEndoluminal.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerTypeVesselDetailMPROblique.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerTypeVesselDetailMPRORtho.C">
+      <Filter>viewer types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulator.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulator3dCursor.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorAddVoxel.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorAlphaActiveRange.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorAnnotationAdjust.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorAnnotationCreate.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorCamera.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorCameraExamine.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorCameraFly.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorCameraMomentum.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorCameraMPR.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorCameraPath.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorCenterSelection.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorColorChooser.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorColorMap.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorContour.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorContourAdjust.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorCropBox.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorCurrentVoxel.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorDataRendererSoftware3d.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorFullScreen.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorIncrementalGrowth.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorMPROrthoPanZoom.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorPathCurvedCreate.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorPlaneCurved.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorPlaneOblique.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorPlaneObliqueCreate.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorPlaneOrtho.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorPreset.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorRemoveVoxel.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorResearch.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorSampleRegion.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorSculpt.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorSegmentation.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorSubcube.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorUtils.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorVessel.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorVesselCurved.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorVesselCurvedCreate.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorVesselCurvedProjected.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorVesselDetailMPROblique.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorVesselDetailMPROrtho.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorVesselLuminal.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorVesselNavigation.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxManipulatorWindowLevel.C">
+      <Filter>manipulators</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLEnv.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLFontGeorge.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLFormat.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Illuminator.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IncrementalDensityStatistics.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Jitter.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resampler.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SpaceLeapInfoMaker.C">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderer.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderer3dCursor.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderer3DOrientationCube.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererAlphaActiveRange.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererAlphaFullRange.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererAnnotations.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererBorder.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererCadFindings.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererColorChooser.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererColorMap.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererContour.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererCropBox.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererCurvetracer.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererGraph.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererMesh.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererMPROrthoPanZoom.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlay.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlay3D.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlay3dDetail.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlayCArm.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlayIncrementalGrowth.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlayMPR.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlayMPRCurved.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlayMPROblique.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlayMPROrtho.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlayNoVessel.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlayPhaseVolume.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlayRayProfile.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlaySeedpointsMPROrtho.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlayVessel.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlayVesselDetailMPROblique.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererOverlayVesselSection.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererPath3D.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererPlaneObliqueCreate.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererPlanetracer.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererRaytracer.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSampleRange.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSculpt.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSliceShadows.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSliceShadows3d.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSliceShadowsMPRCurved.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSliceShadowsMPROblique.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSliceShadowsMPROrtho.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererUtils.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererVessel3D.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererVesselCurved.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererVesselDetailMPROblique.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererVesselDetailMPROrtho.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderThread.C">
+      <Filter>renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererCpu3D.C">
+      <Filter>renderers\deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSoftware.C">
+      <Filter>renderers\deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSoftware3dSpaceLeap.C">
+      <Filter>renderers\deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSoftwareMPR.C">
+      <Filter>renderers\deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSoftwareMPRCurved.C">
+      <Filter>renderers\deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSoftwareMPRCurvedLuminal.C">
+      <Filter>renderers\deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSoftwareMPRCurvedProjected.C">
+      <Filter>renderers\deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSoftwareMPROblique.C">
+      <Filter>renderers\deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererSoftwareMPROrtho.C">
+      <Filter>renderers\deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererTexMap.C">
+      <Filter>renderers\deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRendererTexMap2DMPRNew.C">
+      <Filter>renderers\deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ComponentHandler.C">
+      <Filter>segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InteractiveSegmentation.C">
+      <Filter>segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MorphOp.C">
+      <Filter>segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RegionGrow.C">
+      <Filter>segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RegionSampler.C">
+      <Filter>segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RegionThresholdSegment.C">
+      <Filter>segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SegmentationParameters.C">
+      <Filter>segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SegmentationVolumes.C">
+      <Filter>segmentation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GlDisplayList.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxBlockVisibilityTester.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxComponentUtils.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxEventTimer.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxInput.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxInputFeedback.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxMathUtils.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxMessageBox.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxMouseCursor.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxShareableObject.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxSubmarine.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxUtils.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewer.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewerControl.C">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxSliceRenderer.C">
+      <Filter>vc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxSliceRendererData.C">
+      <Filter>vc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxModifiedInfo.C">
+      <Filter>modified queue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxModifiedInfoList.C">
+      <Filter>modified queue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxModifiedQueue.C">
+      <Filter>modified queue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxModifiedSet.C">
+      <Filter>modified queue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxISerializeFactoryManager.C">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxISerializeFactoryXP.C">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxSerializer.C">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DirectInput.C">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DirectInputDevice.C">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DirectInputEffect.C">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxPlanetracer.C">
+      <Filter>software rendering\planetracer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxPlanetracerSettings.C">
+      <Filter>software rendering\planetracer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRayGenerator.C">
+      <Filter>software rendering\raytracer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRaytracer.C">
+      <Filter>software rendering\raytracer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRaytracerSettings.C">
+      <Filter>software rendering\raytracer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxCurvetracer.C">
+      <Filter>software rendering\curvetracer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxCurvetracerSettings.C">
+      <Filter>software rendering\curvetracer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerGlobal.C">
+      <Filter>controllers - global</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerGlobalActiveEnvironment.C">
+      <Filter>controllers - global</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerGlobalSliceShadows.C">
+      <Filter>controllers - global</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerGlobalSyncPlane.C">
+      <Filter>controllers - global</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerGlobalSyncViewers.C">
+      <Filter>controllers - global</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxController.C">
+      <Filter>controllers - local</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerCADFindings.C">
+      <Filter>controllers - local</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerCameraFly.C">
+      <Filter>controllers - local</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerCine2D.C">
+      <Filter>controllers - local</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerCursor3D.C">
+      <Filter>controllers - local</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerMomentum.C">
+      <Filter>controllers - local</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerRebox.C">
+      <Filter>controllers - local</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerRibbon.C">
+      <Filter>controllers - local</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerVesselDetail.C">
+      <Filter>controllers - local</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxControllerVesselSeedpoints.C">
+      <Filter>controllers - local</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxUndoAction.C">
+      <Filter>undo actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxUndoActionAnnotation.C">
+      <Filter>undo actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxUndoActionCamera.C">
+      <Filter>undo actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxUndoActionPlane.C">
+      <Filter>undo actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxUndoActionPreset.C">
+      <Filter>undo actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxUndoActionSegmentation.C">
+      <Filter>undo actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxUndoActionStack.C">
+      <Filter>undo actions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxNodeIDs.C">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxVisualizationGraph.C">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxVisualizationGraphNode.C">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxNodeDatasetsCycler.C">
+      <Filter>graph\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxNodeDispatcher.C">
+      <Filter>graph\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxNodeDrawing.C">
+      <Filter>graph\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxNodeGlobalController.C">
+      <Filter>graph\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxNodeLocalController.C">
+      <Filter>graph\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxNodeRendering.C">
+      <Filter>graph\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxHighQualityThread.C">
+      <Filter>graph\nodes\rendering node</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderingNodePlugin.C">
+      <Filter>graph\nodes\rendering node</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderingNodeThread.C">
+      <Filter>graph\nodes\rendering node</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderingNodeThreadManager.C">
+      <Filter>graph\nodes\rendering node</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderingNodePluginCurvetracer.C">
+      <Filter>graph\nodes\rendering node\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderingNodePluginPlanetracer.C">
+      <Filter>graph\nodes\rendering node\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderingNodePluginRaytracer.C">
+      <Filter>graph\nodes\rendering node\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxNodeDatasetsCyclerThread.C">
+      <Filter>graph\nodes\datasets node</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CrossPlane.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Skeleton.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkeletonNode.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxCamera.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxCameraFlySettings.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxCameraPreset.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxCine.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxColoredVertex.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxColormap.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxColorTable.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxColorTableCPU.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxComponent.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxComponentArray.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxComponentData.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxContour.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxContourList.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxCropBox.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxCursor3d.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxCycleSettings.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDataAnnotationCreate.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDataColormapEditor.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDataPlaneObliqueCreate.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDataRendererSoftware.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDataset.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDatasetsInfo.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxDib.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxEasySelection.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxElements.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxElementStack.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxEnvironment.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxEnvironmentList.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxFontInfo.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxFullScreen.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxGraph.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxHandle.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxIDs.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxIncrementalGrowth.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxIncrementalGrowthImage.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxIncrementalHeap.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxIncrementalSlider.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxIntensityStatistic.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxIntensityStatistics.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxMesh.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxMomentum.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxOverlayStrings.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxPhaseInfo.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxPlaneCurved.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxPreset.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderBuffer.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderingContextDIB.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderingContextGL.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderingContextPBuffer.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRenderingMode.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRibbon.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxSeedpoints.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxSyncData.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxTexMap2dTile.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxTexMap3DBrick.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxVessel.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxVesselArray.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxVesselPreferences.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxVesselSection.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxVesselUtilities.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxViewObliqueData.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxVisualizationPreferences.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxVisualizationPreset.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxWindowLevel.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxWinRect.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxZoomFactor.C">
+      <Filter>data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vxRuler2D.C">
+      <Filter>data</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\stdafx.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxAnnotation.h">
+      <Filter>annotations</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxAnnotationAngle.h">
+      <Filter>annotations</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxAnnotationArrow.h">
+      <Filter>annotations</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxAnnotationBox.h">
+      <Filter>annotations</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxAnnotationComponent.h">
+      <Filter>annotations</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxAnnotationDistance.h">
+      <Filter>annotations</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxAnnotationEllipse.h">
+      <Filter>annotations</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxAnnotationPoint.h">
+      <Filter>annotations</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxAnnotations.h">
+      <Filter>annotations</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxHandlesObj.h">
+      <Filter>annotations</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerType.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerType3D.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypeGraph.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypeMesh.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypeMPRCurved.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypeMPRCurvedLuminal.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypeMPROblique.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypeMPRObliqueOld.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypeMPROrtho.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypeMPROrthoPanZoom.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypes.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypeUndefined.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypeVesselDetail3D.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypeVesselDetailEndoluminal.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypeVesselDetailMPROblique.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerTypeVesselDetailMPRORtho.h">
+      <Filter>viewer types</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulator.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulator3dCursor.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorAddVoxel.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorAlphaActiveRange.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorAnnotationAdjust.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorAnnotationCreate.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorCamera.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorCameraExamine.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorCameraFly.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorCameraMomentum.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorCameraMPR.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorCameraPath.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorCenterSelection.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorColorChooser.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorColorMap.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorContour.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorContourAdjust.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorCropBox.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorCurrentVoxel.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorDataRendererSoftware3d.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorFullScreen.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorIncrementalGrowth.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorMPROrthoPanZoom.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorPathCurvedCreate.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorPlaneCurved.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorPlaneOblique.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorPlaneObliqueCreate.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorPlaneOrtho.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorPreset.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorRemoveVoxel.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorResearch.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorSampleRegion.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorSculpt.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorSegmentation.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorSubcube.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorUtils.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorVessel.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorVesselCurved.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorVesselCurvedCreate.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorVesselCurvedProjected.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorVesselDetailMPROblique.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorVesselDetailMPROrtho.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorVesselLuminal.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorVesselNavigation.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxManipulatorWindowLevel.h">
+      <Filter>manipulators</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLEnv.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glExtensionStr.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLFontGeorge.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLFormat.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLPaintDevice.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Illuminator.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IncrementalDensityStatistics.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Jitter.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resampler.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SpaceLeapInfoMaker.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderer.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderer3dCursor.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderer3DOrientationCube.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererAlphaActiveRange.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererAlphaFullRange.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererAnnotations.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererBorder.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererCadFindings.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererColorChooser.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererColormap.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererContour.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererCropBox.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererCurvetracer.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererGraph.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererMesh.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererMPROrthoPanZoom.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlay.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlay3D.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlayCArm.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlayIncrementalGrowth.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlayMPR.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlayMPRCurved.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlayMPROblique.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlayMPROrtho.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlayNoVessel.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlayPhaseVolume.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlayRayProfile.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlaySeedpointsMPROrtho.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlayVessel.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlayVesselDetailMPROblique.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererOverlayVesselSection.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererPath3D.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererPlaneObliqueCreate.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererPlanetracer.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererRaytracer.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSampleRange.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSculpt.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSliceShadows.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSliceShadows3d.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSliceShadowsMPRCurved.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSliceShadowsMPROblique.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSliceShadowsMPROrtho.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererUtils.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererVessel3D.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererVesselCurved.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererVesselDetailMPROblique.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererVesselDetailMPROrtho.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderThread.h">
+      <Filter>renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererCpu3D.h">
+      <Filter>renderers\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSoftware.h">
+      <Filter>renderers\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSoftware3dSpaceLeap.h">
+      <Filter>renderers\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSoftwareMPR.h">
+      <Filter>renderers\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSoftwareMPRCurved.h">
+      <Filter>renderers\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSoftwareMPRCurvedLuminal.h">
+      <Filter>renderers\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSoftwareMPRCurvedProjected.h">
+      <Filter>renderers\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSoftwareMPROblique.h">
+      <Filter>renderers\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererSoftwareMPROrtho.h">
+      <Filter>renderers\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererTexMap.h">
+      <Filter>renderers\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRendererTexMap2DMPRNew.h">
+      <Filter>renderers\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ComponentHandler.h">
+      <Filter>segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\InteractiveSegmentation.h">
+      <Filter>segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MorphOp.h">
+      <Filter>segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegionGrow.h">
+      <Filter>segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegionSampler.h">
+      <Filter>segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegionThresholdSegment.h">
+      <Filter>segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SegmentationParameters.h">
+      <Filter>segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SegmentationVolumes.h">
+      <Filter>segmentation</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GlDisplayList.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxBlockVisibilityTester.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxComponentUtils.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxEventTimer.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxInput.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxInputFeedback.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxMathUtils.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxMessageBox.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxMouseCursor.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxObserver.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxShareableObject.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxSubmarine.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxUtils.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewer.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerControl.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewerLibrary.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxSliceRenderer.h">
+      <Filter>vc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxSliceRendererData.h">
+      <Filter>vc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxModifiedInfo.h">
+      <Filter>modified queue</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxModifiedInfoList.h">
+      <Filter>modified queue</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxModifiedQueue.h">
+      <Filter>modified queue</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxModifiedSet.h">
+      <Filter>modified queue</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxISerialize.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxISerializeFactory.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxISerializeFactoryManager.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxISerializeFactoryXP.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxSerializer.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxIComponentize.h">
+      <Filter>interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxIRenderingContext.h">
+      <Filter>interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirectInput.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirectInputDevice.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DirectInputEffect.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxPlanetracer.h">
+      <Filter>software rendering\planetracer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxPlanetracerRenderArgs.h">
+      <Filter>software rendering\planetracer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxPlanetracerSettings.h">
+      <Filter>software rendering\planetracer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRayGenerator.h">
+      <Filter>software rendering\raytracer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRaytracer.h">
+      <Filter>software rendering\raytracer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRaytracerRenderArgs.h">
+      <Filter>software rendering\raytracer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRaytracerSettings.h">
+      <Filter>software rendering\raytracer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxCurvetracer.h">
+      <Filter>software rendering\curvetracer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxCurvetracerRenderArgs.h">
+      <Filter>software rendering\curvetracer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxCurvetracerSettings.h">
+      <Filter>software rendering\curvetracer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerGlobal.h">
+      <Filter>controllers - global</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerGlobalActiveEnvironment.h">
+      <Filter>controllers - global</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerGlobalSliceShadows.h">
+      <Filter>controllers - global</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerGlobalSyncPlane.h">
+      <Filter>controllers - global</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerGlobalSyncViewers.h">
+      <Filter>controllers - global</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxController.h">
+      <Filter>controllers - local</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerCADFindings.h">
+      <Filter>controllers - local</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerCameraFly.h">
+      <Filter>controllers - local</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerCine2D.h">
+      <Filter>controllers - local</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerCursor3D.h">
+      <Filter>controllers - local</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerMomentum.h">
+      <Filter>controllers - local</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerRebox.h">
+      <Filter>controllers - local</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerRibbon.h">
+      <Filter>controllers - local</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerVesselDetail.h">
+      <Filter>controllers - local</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControllerVesselSeedpoints.h">
+      <Filter>controllers - local</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxUndoAction.h">
+      <Filter>undo actions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxUndoActionAnnotation.h">
+      <Filter>undo actions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxUndoActionCamera.h">
+      <Filter>undo actions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxUndoActionPlane.h">
+      <Filter>undo actions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxUndoActionPreset.h">
+      <Filter>undo actions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxUndoActionSegmentation.h">
+      <Filter>undo actions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxUndoActionStack.h">
+      <Filter>undo actions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxNodeIDs.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxVisualizationGraph.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxVisualizationGraphNode.h">
+      <Filter>graph</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxNodeDatasetsCycler.h">
+      <Filter>graph\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxNodeDispatcher.h">
+      <Filter>graph\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxNodeDrawing.h">
+      <Filter>graph\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxNodeGlobalController.h">
+      <Filter>graph\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxNodeLocalController.h">
+      <Filter>graph\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxNodeRendering.h">
+      <Filter>graph\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxHighQualityThread.h">
+      <Filter>graph\nodes\rendering node</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderingNodePlugin.h">
+      <Filter>graph\nodes\rendering node</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderingNodeThread.h">
+      <Filter>graph\nodes\rendering node</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderingNodeThreadArgs.h">
+      <Filter>graph\nodes\rendering node</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderingNodeThreadManager.h">
+      <Filter>graph\nodes\rendering node</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderingNodePluginCurvetracer.h">
+      <Filter>graph\nodes\rendering node\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderingNodePluginPlanetracer.h">
+      <Filter>graph\nodes\rendering node\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderingNodePluginRaytracer.h">
+      <Filter>graph\nodes\rendering node\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxNodeDatasetsCyclerThread.h">
+      <Filter>graph\nodes\datasets node</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CrossPlane.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Skeleton.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkeletonNode.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxCamera.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxCameraFlySettings.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxCameraPreset.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxCine.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxColoredVertex.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxColormap.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxColorTable.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxColorTableCPU.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxComponent.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxComponentArray.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxComponentData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxContour.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxContourList.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxControlPoint.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxCropBox.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxCursor3d.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxCycleSettings.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDataAnnotationCreate.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDataColormapEditor.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDataPlaneObliqueCreate.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDataRenderer.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDataRendererSoftware.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDataset.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDatasetsInfo.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxDib.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxEasySelection.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxElementBool.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxElementFloat4.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxElementInt4.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxElementPixelRGBA.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxElementPoint3D.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxElementStack.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxElementString.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxElementVector.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxEnvironment.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxEnvironmentList.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxFixedPoint.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxFontInfo.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxFullScreen.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxGraph.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxHandle.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxIDs.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxIncrementalGrowth.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxIncrementalGrowthImage.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxIncrementalHeap.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxIncrementalSlider.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxIntensityStatistic.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxIntensityStatistics.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxMesh.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxMomentum.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxOverlayStrings.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxPhaseInfo.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxPlane.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxPlaneCurved.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxPlaneOblique.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxPlaneOrtho.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxPreset.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRayProfile.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderBuffer.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderingContextDIB.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderingContextGL.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderingContextPBuffer.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRenderingMode.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRibbon.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxSeedpoints.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxSyncData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxTexMap2dTile.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxTexMap3DBrick.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxVessel.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxVesselArray.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxVesselPreferences.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxVesselSection.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxVesselUtilities.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxViewObliqueData.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxVisualizationPreferences.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxVisualizationPreset.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxWindowHandle.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxWindowLevel.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxWinRect.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxZoomFactor.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="include\resource.h">
+      <Filter>dll</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vxRuler2D.h">
+      <Filter>data</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\GLFormat.inl">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="include\Illuminator.inl">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="include\Jitter.inl">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="include\SpaceLeapInfoMaker.inl">
+      <Filter>misc</Filter>
+    </None>
+    <None Include="include\ComponentHandler.inl">
+      <Filter>segmentation</Filter>
+    </None>
+    <None Include="include\InteractiveSegmentation.inl">
+      <Filter>segmentation</Filter>
+    </None>
+    <None Include="include\vxMathUtils.inl">
+      <Filter>utilities</Filter>
+    </None>
+    <None Include="include\vxRendererUtils.inl">
+      <Filter>utilities</Filter>
+    </None>
+    <None Include="include\vxShareableObject.inl">
+      <Filter>utilities</Filter>
+    </None>
+    <None Include="include\vxSubmarine.inl">
+      <Filter>utilities</Filter>
+    </None>
+    <None Include="include\vxModifiedSet.inl">
+      <Filter>modified queue</Filter>
+    </None>
+    <None Include="include\vxSerializer.inl">
+      <Filter>serialization</Filter>
+    </None>
+    <None Include="include\vxRaytracer.inl">
+      <Filter>software rendering\raytracer</Filter>
+    </None>
+    <None Include="include\vxRaytracerSettings.inl">
+      <Filter>software rendering\raytracer</Filter>
+    </None>
+    <None Include="include\vxControlPoint.inl">
+      <Filter>data</Filter>
+    </None>
+    <None Include="include\vxCropBox.inl">
+      <Filter>data</Filter>
+    </None>
+    <None Include="include\vxEnvironment.inl">
+      <Filter>data</Filter>
+    </None>
+    <None Include="include\vxPlaneOblique.inl">
+      <Filter>data</Filter>
+    </None>
+    <None Include="include\vxPlaneOrtho.inl">
+      <Filter>data</Filter>
+    </None>
+    <None Include="src\resource.rc2">
+      <Filter>dll</Filter>
+    </None>
+    <None Include="BuildNumber.ver">
+      <Filter>dll</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\resource.rc">
+      <Filter>dll</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
