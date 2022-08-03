@@ -1,0 +1,38 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly v3dfsrprv, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly v3dcrypt, Version=3.5.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly v3dent, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly v3dentsvr, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Assembly v3dlog, Version=4.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Class scoped_ptr<std::shared_ptr<io::FileServer> >: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    reset(): PrivateScope, Public, HideBySig
+    reset(shared_ptr<io::FileServer>*): PrivateScope, Public, HideBySig
+    get(): PrivateScope, Public, HideBySig
+    op_PointerDereference(scoped_ptr<std::shared_ptr<io::FileServer> > IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Viatronix.Enterprise.Providers.FileServerProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Viatronix.Enterprise.Providers.IFileServerProvider
+    System.IDisposable
+  Methods:
+    ProcessRequest(Byte[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ~FileServerProvider(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig

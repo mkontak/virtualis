@@ -1,0 +1,719 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        pdflib_dotnet
+    </assembly>
+    <members>
+        <member name="M:PDFlib_dotnet.PDFlib.translate(System.Double,System.Double)">
+            <summary> Translate the origin of the coordinate system.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.suspend_page(System.String)">
+            <summary> Suspend the current page so that it can later be resumed.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.stroke">
+            <summary> Stroke the path with the current color and line width, and clear it.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.stringwidth(System.String,System.Int32,System.Double)">
+            <summary> Same as PDF_stringwidth(), but with explicit string length.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.skew(System.Double,System.Double)">
+            <summary> Skew the coordinate system.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.show_xy(System.String,System.Double,System.Double)">
+            <summary> Same as PDF_show_xy() but with explicit string length.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.show(System.String)">
+            <summary> Same as PDF_show() but with explicit string length.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.shfill(System.Int32)">
+            <summary> Fill an area with a shading, based on a shading object (requires PDF 1.4).
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.shading_pattern(System.Int32,System.String)">
+            <summary> Define a shading pattern using a shading object (requires PDF 1.4).
+</summary>
+            <returns>  A pattern handle. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.shading(System.String,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)">
+            <summary> Define a blend from the current fill color to another color (requires PDF 1.4 or above).
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setrgbcolor_stroke(System.Double,System.Double,System.Double)">
+            <summary> Deprecated, use PDF_setcolor().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setrgbcolor_fill(System.Double,System.Double,System.Double)">
+            <summary> Deprecated, use PDF_setcolor().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setrgbcolor(System.Double,System.Double,System.Double)">
+            <summary> Deprecated, use PDF_setcolor().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setmiterlimit(System.Double)">
+            <summary> Set the miter limit.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setmatrix(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> Explicitly set the current transformation matrix.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setlinewidth(System.Double)">
+            <summary> Set the current linewidth.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setlinejoin(System.Int32)">
+            <summary> Set the linejoin parameter.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setlinecap(System.Int32)">
+            <summary> Set the linecap parameter.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setgray_stroke(System.Double)">
+            <summary> Deprecated, use PDF_setcolor().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setgray_fill(System.Double)">
+            <summary> Deprecated, use PDF_setcolor().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setgray(System.Double)">
+            <summary> Deprecated, use PDF_setcolor().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setfont(System.Int32,System.Double)">
+            <summary> Set the current font in the specified size.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setflat(System.Double)">
+            <summary> Set the flatness parameter.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setdashpattern(System.String)">
+            <summary> Set a dash pattern defined by an option list.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setdash(System.Double,System.Double)">
+            <summary> Set the current dash pattern.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setcolor(System.String,System.String,System.Double,System.Double,System.Double,System.Double)">
+            <summary> Set the current color space and color.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.set_value(System.String,System.Double)">
+            <summary> Set the value of some PDFlib parameter with numerical type.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.set_text_pos(System.Double,System.Double)">
+            <summary> Set the position for simple text output on the page.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.set_parameter(System.String,System.String)">
+            <summary> Set some PDFlib parameter with string type.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.set_option(System.String)">
+            <summary> Set one or more global options.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.set_layer_dependency(System.String,System.String)">
+            <summary> Define layer relationships and variants (requires PDF 1.5).
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.set_info(System.String,System.String)">
+            <summary> Like PDF_set_info(), but with explicit string length.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.set_gstate(System.Int32)">
+            <summary> Activate a graphics state object.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.set_border_style(System.String,System.Double)">
+            <summary> Deprecated, use PDF_create_annotation().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.set_border_dash(System.Double,System.Double)">
+            <summary> Deprecated, use PDF_create_annotation().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.set_border_color(System.Double,System.Double,System.Double)">
+            <summary> Deprecated, use PDF_create_annotation().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.scale(System.Double,System.Double)">
+            <summary> Scale the coordinate system.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.save">
+            <summary> Save the current graphics state to a stack.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.rotate(System.Double)">
+            <summary> Rotate the coordinate system.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.resume_page(System.String)">
+            <summary> Resume a page to add more content to it.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.restore">
+            <summary> Restore the most recently saved graphics state from the stack.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.rect(System.Double,System.Double,System.Double,System.Double)">
+            <summary> Draw a rectangle.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.process_pdi(System.Int32,System.Int32,System.String)">
+            <summary> Process certain elements of an imported PDF document.
+</summary>
+            <returns>  -1 (in PHP: 0) on error, and 1 otherwise. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.place_pdi_page(System.Int32,System.Double,System.Double,System.Double,System.Double)">
+            <summary> Deprecated, use PDF_fit_pdi_page().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.place_image(System.Int32,System.Double,System.Double,System.Double)">
+            <summary> Deprecated, use PDF_fit_image().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.pcos_get_stream(System.Int32,System.String,System.String)">
+            <summary> Get the contents of a pCOS path with type stream, fstream, or string.
+</summary>
+            <returns>  The unencrypted data contained in the stream or string. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.pcos_get_string(System.Int32,System.String)">
+            <summary> Get the value of a pCOS path with type name, string or boolean.
+</summary>
+            <returns>  A string with the value of the object identified by the pCOS path. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.pcos_get_number(System.Int32,System.String)">
+            <summary> Get the value of a pCOS path with type number or boolean.
+</summary>
+            <returns>  The numerical value of the object identified by the pCOS path. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.open_pdi_page(System.Int32,System.Int32,System.String)">
+            <summary> Prepare a page for later use with PDF_fit_pdi_page().
+</summary>
+            <returns>  A page handle. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.open_pdi_document(System.String,System.String)">
+            <summary> Open a disk-based or virtual PDF document and prepare it for later use.
+</summary>
+            <returns>  A PDI document handle. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.open_image_file(System.String,System.String,System.String,System.Int32)">
+            <summary> Deprecated, use PDF_load_image().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.open_file(System.String)">
+            <summary> Deprecated, use PDF_begin_document().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.open_CCITT(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary> Deprecated, use PDF_load_image().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.moveto(System.Double,System.Double)">
+            <summary> Set the current point for graphics output.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.mc_point(System.String,System.String)">
+            <summary> Add a marked content point with optional properties.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.makespotcolor(System.String)">
+            <summary> Find a built-in spot color name, or make a named spot color from the current fill color.
+</summary>
+            <returns>  A color handle. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.load_image(System.String,System.String,System.String)">
+            <summary> Open a disk-based or virtual image file subject to various options.
+</summary>
+            <returns>  An image handle, or -1 (in PHP: 0) on error. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.load_iccprofile(System.String,System.String)">
+            <summary> Search for an ICC profile, and prepare it for later use.
+</summary>
+            <returns>  A profile handle. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.load_font(System.String,System.String,System.String)">
+            <summary> Search for a font and prepare it for later use.
+</summary>
+            <returns>  A font handle. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.load_3ddata(System.String,System.String)">
+            <summary> Load a 3D model from a disk-based or virtual file (requires PDF 1.6).
+</summary>
+            <returns>  A 3D handle, or -1 (in PHP: 0) on error. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.lineto(System.Double,System.Double)">
+            <summary> Draw a line from the current point to another point.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.initgraphics">
+            <summary> Reset all color and graphics state parameters to their default values.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.info_textline(System.String,System.String,System.String)">
+            <summary> Perform textline formatting without creating output and query the resulting metrics.
+</summary>
+            <returns>  The value of some text metric value as requested by keyword.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.info_textflow(System.Int32,System.String)">
+            <summary> Query the current state of a Textflow.
+</summary>
+            <returns>  The value of some Textflow parameter as requested by keyword. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.info_table(System.Int32,System.String)">
+            <summary> Query table information related to the most recently placed table instance.
+</summary>
+            <returns>  The value of some table parameter as requested by keyword.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.info_pdi_page(System.Int32,System.String,System.String)">
+            <summary> Perform formatting calculations for a PDI page and query the resulting metrics.
+</summary>
+            <returns>  The value of some page metrics as requested by keyword.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.info_path(System.Int32,System.String,System.String)">
+            <summary> Query the results of drawing a path object without actually drawing it.
+</summary>
+            <returns>  The value of some geometrical values as requested by keyword.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.info_matchbox(System.String,System.Int32,System.String)">
+            <summary> Query information about a matchbox on the current page.
+</summary>
+            <returns>  The value of some matchbox parameter as requested by keyword. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.info_image(System.Int32,System.String,System.String)">
+            <summary> Format an image and query metrics and other image properties.
+</summary>
+            <returns>  The value of some image metrics as requested by keyword.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.info_font(System.Int32,System.String,System.String)">
+            <summary> Query detailed information about a loaded font.
+</summary>
+            <returns>  The value of some font property as requested by keyword. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.get_value(System.String,System.Double)">
+            <summary> Get the value of some PDFlib parameter with numerical type.
+</summary>
+            <returns>  The numerical value of the parameter. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.get_pdi_value(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary> Deprecated, use PDF_pcos_get_number().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.get_parameter(System.String,System.Double)">
+            <summary> Get the contents of some PDFlib parameter with string type.
+</summary>
+            <returns>  The string value of the parameter as a hypertext string. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.get_errnum">
+            <summary> Get the number of the last thrown exception or the reason of a failed function call.
+</summary>
+            <returns>  The error code of the most recent error condition. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.get_errmsg">
+            <summary> Get the text of the last thrown exception or the reason of a failed function call.
+</summary>
+            <returns>  Text containing the description of the most recent error condition. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.get_buffer">
+            <summary> Get the contents of the PDF output buffer.
+</summary>
+            <returns>  A buffer full of binary PDF data for consumption by the client. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.get_apiname">
+            <summary> Get the name of the API function which threw the last exception or failed.
+</summary>
+            <returns>  Name of an API function. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.fit_textline(System.String,System.Double,System.Double,System.String)">
+            <summary> Place a single line of text at position (x, y) subject to various options.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.fit_textflow(System.Int32,System.Double,System.Double,System.Double,System.Double,System.String)">
+            <summary> Format the next portion of a Textflow.
+</summary>
+            <returns>  A string which specifies the reason for returning. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.fit_table(System.Int32,System.Double,System.Double,System.Double,System.Double,System.String)">
+            <summary> Fully or partially place a table on the page.
+</summary>
+            <returns>  A string which specifies the reason for returning. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.fit_pdi_page(System.Int32,System.Double,System.Double,System.String)">
+            <summary> Place an imported PDF page on the page subject to various options.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.fit_image(System.Int32,System.Double,System.Double,System.String)">
+            <summary> Place an image or template on the page, subject to various options.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.findfont(System.String,System.String,System.Int32)">
+            <summary> Deprecated, use  PDF_load_font().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.fill_textblock(System.Int32,System.String,System.String,System.String)">
+            <summary> Fill a Textline or Textflow Block with variable data according to its properties.
+</summary>
+            <returns>  -1 (in PHP: 0) on error, and 1 otherwise. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.fill_stroke">
+            <summary> Fill and stroke the path with the current fill and stroke color.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.fill_pdfblock(System.Int32,System.String,System.Int32,System.String)">
+            <summary> Fill a PDF block with variable data according to its properties.
+</summary>
+            <returns>  -1 (in PHP: 0) on error, and 1 otherwise. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.fill_imageblock(System.Int32,System.String,System.Int32,System.String)">
+            <summary> Fill an image block with variable data according to its properties.
+</summary>
+            <returns>  -1 (in PHP: 0) on error, and 1 otherwise. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.fill">
+            <summary> Fill the interior of the path with the current fill color.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.endpath">
+            <summary> End the current path without filling or stroking it.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.end_template_ext(System.Double,System.Double)">
+            <summary> Finish a template definition.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.end_template">
+            <summary> Deprecated, use PDF_end_template_ext().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.end_pattern">
+            <summary> Finish a pattern definition.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.end_page_ext(System.String)">
+            <summary> Finish a page, and apply various options.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.end_page">
+            <summary> Deprecated, use PDF_end_page_ext().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.end_mc">
+            <summary> End the least recently opened marked content sequence.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.end_layer">
+            <summary> Deactivate all active layers (requires PDF 1.5).
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.end_item(System.Int32)">
+            <summary> Close a structure element or other content item.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.end_glyph">
+            <summary> Terminate a glyph definition for a Type 3 font.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.end_font">
+            <summary> Terminate a Type 3 font definition.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.end_document(System.String)">
+            <summary> Close the generated PDF document and apply various options.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.encoding_set_char(System.String,System.Int32,System.String,System.Int32)">
+            <summary> Add a glyph name and/or Unicode value to a custom 8-bit encoding.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.ellipse(System.Double,System.Double,System.Double,System.Double)">
+            <summary> Draw an ellipse.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.draw_path(System.Int32,System.Double,System.Double,System.String)">
+            <summary> Draw a path object.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.delete_textflow(System.Int32)">
+            <summary> Delete a textflow and all associated data structures.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.delete_table(System.Int32,System.String)">
+            <summary> Delete a table and all associated data structures.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.delete_pvf(System.String)">
+            <summary> Delete a named virtual file and free its data structures (but not the contents).
+</summary>
+            <returns>  -1 (in PHP: 0) if the virtual file exists but is locked, and 1 otherwise. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.delete_path(System.Int32)">
+            <summary> Delete a path object.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.define_layer(System.String,System.String)">
+            <summary> Create a new layer definition (requires PDF 1.5).
+</summary>
+            <returns>  A layer handle which can be used in subsequent layer-related calls. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.curveto(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> Draw a Bezier curve from the current point, using 3 more control points.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.create_textflow(System.String,System.String)">
+            <summary> Create a Textflow object from text contents, inline options, and explicit options.
+</summary>
+            <returns>  A Textflow handle, or -1 (in PHP: 0) on error. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.create_pvf(System.String,System.Byte[],System.String)">
+            <summary> Create a named virtual read-only file from data provided in memory.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.create_gstate(System.String)">
+            <summary> Create a graphics state object subject to various options.
+</summary>
+            <returns>  A graphic state handle.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.create_fieldgroup(System.String,System.String)">
+            <summary> Create a form field group subject to various options.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.create_field(System.Double,System.Double,System.Double,System.Double,System.String,System.String,System.String)">
+            <summary> Create a form field on the current page subject to various options.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.create_bookmark(System.String,System.String)">
+            <summary> Create a bookmark subject to various options.
+</summary>
+            <returns>  A handle for the generated bookmark. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.create_annotation(System.Double,System.Double,System.Double,System.Double,System.String,System.String)">
+            <summary> Create an annotation on the current page.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.create_action(System.String,System.String)">
+            <summary> Create an action which can be applied to various objects and events.
+</summary>
+            <returns>  An action handle. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.create_3dview(System.String,System.String)">
+            <summary> Create a 3D view (requires PDF 1.6).
+</summary>
+            <returns>  A 3D view handle, or -1 (in PHP: 0) on error. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.continue_text(System.String)">
+            <summary> Same as PDF_continue_text(), but with explicit string length.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.concat(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> Apply a transformation matrix to the current coordinate system.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.closepath_stroke">
+            <summary> Close the path, and stroke it.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.closepath_fill_stroke">
+            <summary> Close the path, fill, and stroke it.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.closepath">
+            <summary> Close the current path.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.close_pdi_page(System.Int32)">
+            <summary> Close the page handle and free all page-related resources.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.close_pdi_document(System.Int32)">
+            <summary> Close all open PDI page handles, and close the input PDF document.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.close_pdi(System.Int32)">
+            <summary> Deprecated, use PDF_close_pdi_document().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.close_image(System.Int32)">
+            <summary> Close an image.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.close_font(System.Int32)">
+            <summary> Close an open font handle which has not yet been used in the document.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.close">
+            <summary> Deprecated, use PDF_end_document().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.clip">
+            <summary> Use the current path as clipping path, and terminate the path.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.circular_arc(System.Double,System.Double,System.Double,System.Double)">
+            <summary> Draw a circular arc segment defined by three points.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.circle(System.Double,System.Double,System.Double)">
+            <summary> Draw a circle.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.begin_template_ext(System.Double,System.Double,System.String)">
+            <summary> Start a template definition.
+</summary>
+            <returns>  A template handle.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.begin_template(System.Double,System.Double)">
+            <summary> Deprecated, use PDF_begin_template_ext().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.begin_pattern(System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary> Start a pattern definition.
+</summary>
+            <returns>  A pattern handle.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.begin_page_ext(System.Double,System.Double,System.String)">
+            <summary> Add a new page to the document, and specify various options.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.begin_page(System.Double,System.Double)">
+            <summary> Deprecated, use PDF_begin_page_ext().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.begin_mc(System.String,System.String)">
+            <summary> Begin a marked content sequence with optional properties.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.begin_layer(System.Int32)">
+            <summary> Start a layer for subsequent output on the page (requires PDF 1.5).
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.begin_item(System.String,System.String)">
+            <summary> Open a structure element or other content item with attributes supplied as options.
+</summary>
+            <returns>  An item handle.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.begin_glyph(System.String,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> Start a glyph definition for a Type 3 font.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.begin_font(System.String,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)">
+            <summary> Start a Type 3 font definition.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.begin_document(System.String,System.String)">
+            <summary> Create a new PDF file subject to various options.
+</summary>
+            <returns>  -1 (in PHP: 0) on error, and 1 otherwise.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.attach_file(System.Double,System.Double,System.Double,System.Double,System.String,System.String,System.String,System.String,System.String)">
+            <summary> Deprecated, use  PDF_create_annotation().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.arcn(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> Draw a clockwise circular arc segment.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.arc(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> Draw a counterclockwise circular arc segment.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.align(System.Double,System.Double)">
+            <summary> Align the coordinate system with a relative vector.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.add_weblink(System.Double,System.Double,System.Double,System.Double,System.String)">
+            <summary> Deprecated, use PDF_create_action() and PDF_create_annotation().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.add_thumbnail(System.Int32)">
+            <summary> Add an existing image as thumbnail for the current page.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.add_textflow(System.Int32,System.String,System.String)">
+            <summary> Create a Textflow object, or add text and explicit options to an existing Textflow.
+</summary>
+            <returns>  A Textflow handle, or -1 (in PHP: 0) on error. </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.add_table_cell(System.Int32,System.Int32,System.Int32,System.String,System.String)">
+            <summary> Add a cell to a new or existing table.
+</summary>
+            <returns>  A table handle which can be used in subsequent table-related calls.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.add_portfolio_folder(System.Int32,System.String,System.String)">
+            <summary> Add a folder to a new or existing portfolio (requires PDF 1.7ext3).
+</summary>
+            <returns>  A folder handle which can be used in subsequent portfolio-related calls.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.add_portfolio_file(System.Int32,System.String,System.String)">
+            <summary> Add a file to a portfolio folder or a package (requires PDF 1.7).
+</summary>
+            <returns>  -1 (in PHP: 0) on error, and 1 otherwise.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.add_pdflink(System.Double,System.Double,System.Double,System.Double,System.String,System.Int32,System.String)">
+            <summary> Deprecated, use PDF_create_action() and PDF_create_annotation().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.add_path_point(System.Int32,System.Double,System.Double,System.String,System.String)">
+            <summary> Add a point to a new or existing path object.
+</summary>
+            <returns>  A path handle which can be used in subsequent path-related calls.  </returns>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.add_note(System.Double,System.Double,System.Double,System.Double,System.String,System.String,System.String,System.Int32)">
+            <summary> Deprecated, use PDF_create_annotation().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.add_nameddest(System.String,System.String)">
+            <summary> Create a named destination on a page in the document.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.add_locallink(System.Double,System.Double,System.Double,System.Double,System.Int32,System.String)">
+            <summary> Deprecated, use PDF_create_action() and PDF_create_annotation().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.add_launchlink(System.Double,System.Double,System.Double,System.Double,System.String)">
+            <summary> Deprecated, use PDF_create_action() and PDF_create_annotation().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.add_bookmark(System.String,System.Int32,System.Int32)">
+            <summary> Deprecated, use  PDF_create_bookmark().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.activate_item(System.Int32)">
+            <summary> Activate a previously created structure element or other content item.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.show_boxed(System.String,System.Double,System.Double,System.Double,System.Double,System.String,System.String)">
+            <summary> Deprecated, use PDF_fit_textline() or PDF_fit_textflow().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.setpolydash(System.Single[])">
+            <summary> Deprecated, use PDF_setdashpattern().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.open_pdi(System.String,System.String,System.Int32)">
+            <summary> Deprecated, use PDF_open_pdi_document().
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.open_image(System.String,System.String,System.Byte[],System.Int32!System.Runtime.CompilerServices.IsLong,System.Int32,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary> Deprecated, use PDF_load_image() with virtual files.
+</summary>
+        </member>
+        <member name="M:PDFlib_dotnet.PDFlib.get_pdi_parameter(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary> Deprecated, use PDF_pcos_get_string().
+</summary>
+        </member>
+    </members>
+</doc>

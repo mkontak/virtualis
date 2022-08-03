@@ -1,0 +1,9 @@
+Library		Version			Description		
+zlib		1.2.5			ZLIB Compression Library	
+libxml		2.7.7			Xml Library
+iconv		1.13.1			Character Encoding Library
+libpng		1.4.3			PNG Compression Library
+libQuick_pdf    8.12                    Quick PDF library 2011 for both x86 & x64, both writer and reader
+pdflib_com32    3.0.3.1                 pdflib com library 2000
+pdflib_com34    8.0.2.3                 pdflib com library 2010, trial version that support Win 7
+nurbs           3.0.7                   Non-Uniform Rational B-Splines (NURBS) curves library, Philippe Lavoie, 1996-99>>>>>>> .r171
